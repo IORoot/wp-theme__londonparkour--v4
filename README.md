@@ -34,3 +34,11 @@ The theme DOES however require a couple of 3rd party plugins to run those are:
 1. WPBakery Page Builder https://wpbakery.com/
 
    This is the WYSIWYG Page Builder I use for rapid page creation. All custom plugins interface with this.
+   
+   
+## Brief overview
+
+This theme contains:
+- A Responsive theme for desktop, tablet (1024), and Mobile (768)
+- Advanced Mobile Pagees (AMP) pages for Google
+- Mobile App pages for the companion App.
