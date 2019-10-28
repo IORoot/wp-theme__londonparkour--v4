@@ -1,0 +1,37 @@
+//  ┌─────────────────────────────────────────────────────────────────────────┐ 
+//  │                                                                         │░
+//  │                                                                         │░
+//  │                 Any page on the page_tutorials template                 │░
+//  │                                                                         │░
+//  │                                                                         │░
+//  └─────────────────────────────────────────────────────────────────────────┘░
+//   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+.page-template-page_tutorials {
+
+    .tutorials {
+        padding-top: 58px;
+
+        &__sidebar {
+            width: 16.66%;
+            float: left;
+            padding: 0px 29px;
+ 
+            @import "tutorials-sidebar"; 
+        }
+
+        &__content {
+            width: 83.33%;
+            float: left;
+            color: #fff;
+        } 
+    }
+
+}
+
+// Tutorial Categories
+@import "tutorial-home"; 
+@import "category";  
+@import "playlist"; 
+@import "video"; 
+@import "image_cheatsheets"; 

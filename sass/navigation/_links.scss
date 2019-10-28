@@ -1,0 +1,19 @@
+a {
+	color: $sky;
+
+	&:visited {
+		color: $sky;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $night;
+	}
+	&:focus {
+		outline: 0;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}

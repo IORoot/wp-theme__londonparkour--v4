@@ -1,0 +1,41 @@
+.amp-page--ghost {
+    background-color: $ghost;
+}
+
+.amp_padded {
+    padding: 0px 8.33%;
+
+    &--20 {
+        padding: 0px 20px;
+    }
+}
+
+.amp-panel {
+    height: 696px;
+    max-height: 696px;
+    background-color: $ghost;
+    padding: 29px;
+    overflow: hidden;
+    margin-bottom: 29px;
+
+    &--rose {
+        background:$rose;
+    }
+    &--white {
+        background:$white;
+    }
+    &--dark {
+        background:$night;
+        color: $white;
+    }
+    &__third {
+        display: inline-block;
+        width: 33%;
+        min-width:425px;
+    }
+
+    &--100 {
+        height: 100%;
+    }
+    
+}

@@ -1,0 +1,174 @@
+// ┌─────────────────────────────────────┐ 
+// │                                     │░
+// │                                     │░
+// │             Mobile Menu             │░
+// │                                     │░
+// │                                     │░
+// └─────────────────────────────────────┘░
+//  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+
+@media (max-width: $mobile) {
+    
+	.main-navigation {
+        
+        position: absolute;
+        top: 0;
+        //  ┌───────────────────────────────────────────┐ 
+        //  │                                           │░
+        //  │             Show mobile menu              │░
+        //  │                                           │░
+        //  └───────────────────────────────────────────┘░
+        //   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+        .main-navigation__mobile-toggle-button {
+            position: relative;
+            display: block;
+            height: 58px;
+            width: 100%;
+            background-color: #242424;
+            color: #ffffff;
+
+            > .icon {
+                line-height: 58px;
+                margin-left: 29px; 
+            }
+        }
+
+
+        //  ┌────────────────────────────────────────────────┐
+        //  │            Hide the menu by default            │
+        //  └────────────────────────────────────────────────┘
+        .menu-main-menu-container {
+            display: none;
+        }
+
+        //  ┌────────────────────────────────────────────────┐
+        //  │                 Show the menu                  │
+        //  └────────────────────────────────────────────────┘
+        .menu-visible {
+            display: block;
+        }
+
+        //  ┌────────────────────────────────────────────────┐
+        //  │       Show the mobile londonparkour logo       │
+        //  └────────────────────────────────────────────────┘
+        .main-navigation__mobile-logo {
+            display: block;
+            position: absolute;
+            top: 0px;
+            right: 0;
+            left: 0;
+            margin-left: auto;
+            margin-right: auto;
+                
+            @include logo-ldnpktext($white);
+            background-size: 196px 58px;
+            background-repeat: no-repeat;
+            height:58px; 
+            width:196px;
+
+            &:hover {
+                @include logo-ldnpktext($goo);
+            }
+        }
+        
+
+        //  ┌───────────────────────────────────────────┐ 
+        //  │                                           │░
+        //  │               The Main Menu               │░
+        //  │                                           │░
+        //  └───────────────────────────────────────────┘░
+        //   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+        ul.nav-menu {
+
+            display: block;
+            text-align: left;
+            background-color: $night;
+            padding: 0px 29px 58px;
+
+            > li.menu-item {
+
+                float: none;
+                width: 100%;
+                padding: 0px;
+                display: block;
+                max-height: none;
+
+                a {
+                    font-size: 18px; 
+                    white-space: nowrap;
+                    color: $halo;
+                }
+
+                &__right {
+                    float: right;
+                    display: inline;
+                    width: 58px;
+                }
+
+                &.logo {
+                    
+                    a {
+                        margin: 0 0px;
+                        padding-left: 58px;
+                        width: 58px;
+                        height: 58px;
+                        background-size: 29px 29px;
+                        overflow: hidden; 
+                        float: left; 
+                    }
+
+                    &__londonparkour a {
+                        @include logo-ldnpk($halo);
+                    }
+                    &__apple a {
+                        @include logo-apple($halo);
+                    }
+                    &__android a {
+                        @include logo-android($halo);
+                    }
+                    &__instagram a {
+                        @include logo-instagram($halo);
+                    }
+                    &__youtube a {
+                        @include logo-youtube($halo);
+                    }
+                }
+
+
+                ul.sub-menu {
+                    display: block;
+                    position: relative;
+                    visibility: visible;
+                    opacity: 1; 
+                    padding: 0px 0px 0px 58px;
+
+                    background: $fog;
+                    box-shadow: none;
+                    top: auto;
+
+                    .menu-item {
+                        display: block;
+                        margin: 0px;
+                        background: none;
+
+                        a {
+                            color: $halo;
+                        }  
+
+                        &__highlight--bluepink a {
+                            padding-left: 0px;
+                        }
+                    } 
+                }
+
+                // special case - logo homepage link
+                &.logo__londonparkour a {
+                    background-position: left;
+                    padding-left: 70px;
+                    background-size: 58px;
+                }
+            }
+        }
+	}
+}

@@ -1,0 +1,28 @@
+// Upcoming Shortcode
+.tbk-upcoming {
+
+    margin-top:29px;
+    ul {
+        list-style: none;
+        padding: 0px;
+
+        li {
+            display: inline-block;
+            width: 25%;
+            min-width: 348px;
+            padding: 0px 5px 0px 0px;
+
+            .tbk-slot-wrapper {
+                .tbk-upcoming-slot {
+                    padding: 29px;
+                    color: $night;
+                }
+                .slot-parkour-class     { background-color: $ghost; }
+                .slot-beginner-outdoor  { background-color: $mist; }
+                .slot-youth-class-8-12  { background-color: $halo; } 
+                .slot-commando          { background-color: $commando; }
+                .slot-parkour-free-class{ background-color: $white; }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+// ┌─────────────────────────────────────┐ 
+// │                                     │░
+// │                                     │░
+// │             Tablet Menu             │░
+// │                                     │░
+// │                                     │░
+// └─────────────────────────────────────┘░
+//  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+@media (max-width: $tablet) {
+	.site-header .main-navigation 
+	{
+		ul{
+			&.nav-menu {
+
+				li {
+					//  ┌──────────────────────────────────────┐
+					//  │          LondonParkour logo          │
+					//  └──────────────────────────────────────┘
+					&.logo__londonparkour a {
+						
+						@include logo-ldnpk($night);
+						background-size: 93px 58px;
+						height:58px;
+						width:94px;
+						margin: 0px; 
+
+						&:hover {
+							@include logo-ldnpk($sky);
+						}
+					}
+				}
+			}	
+		}
+	}
+
+	.single-post .site-content .widget-area {
+		padding: 0px 0px 0px 20px !important;
+
+		ul.sub-menu {
+			padding: 5px !important;
+
+			li {
+				padding: 14px 0px 15px 0px;
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+// ┌─────────────────────────────────────┐ 
+// │                                     │░
+// │   Tablet-based responsive utility   │░
+// │               classes               │░
+// │                                     │░
+// └─────────────────────────────────────┘░
+//  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+
+// ┌──────────────────────────────────────┐
+// │       mq-responsiveSidePadding       │
+// │   Remove padding below tablet size   │
+// └──────────────────────────────────────┘
+@media (max-width: $tablet) {
+
+    .mq {
+
+        &-responsiveSidePadding {
+
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+
+        }
+
+    }
+    
+}
+    

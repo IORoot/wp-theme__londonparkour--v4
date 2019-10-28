@@ -1,0 +1,65 @@
+.classes {
+    .asp_product_item {
+
+        border:0px;
+        box-shadow: none;
+        padding: 29px;
+    
+        font-family:$font__main;
+        background-color: $night;
+        color: $white;
+
+        height: 232px;
+        
+        .asp_product_item_thumbnail {
+            display: none;
+        }
+
+        .asp_product_name {
+            font-size: 18px;
+            line-height: 29px;
+            color: $rose;
+            font-weight: 400;
+        }
+
+        .asp_product_description {
+            margin: 0px;
+            border: 0px;
+        }
+        .asp_price_container {
+            margin: 0px;
+
+            .asp_price_amount {
+                font-size: 18px;
+                line-height: 29px;
+                color: $rose;
+                font-weight: 400;
+            }
+        }
+
+        .asp_product_buy_btn_container {
+
+            button {
+                position: absolute;
+                right: 29px;
+
+                border: 0px;
+                border-radius: 0px;
+                background: $rose;
+                color: $white;
+                line-height: 29px;
+                height: 29px;
+                width: 116px;
+                padding: 0px;
+                text-align: center;
+
+                cursor: pointer;
+
+                &:hover {
+                    background-color: $white;
+                    color: $rose;
+                }
+            }
+        }
+    }
+}

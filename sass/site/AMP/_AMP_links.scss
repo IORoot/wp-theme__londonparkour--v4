@@ -1,0 +1,59 @@
+.amp-link {
+    display: block;
+    line-height: 87px;
+    width: 16.6%;
+    text-align: center;
+    text-decoration: none;
+    color: $white;
+
+    &::after { 
+        font-family:"Material Icons";
+        content: '\e5cc';    
+        vertical-align: text-top;
+        line-height: 24px;
+    }
+
+    &:hover {
+        background-color: $night;
+        color: $white;
+    }
+
+    &--crayon {
+        background-color: $crayon;
+        &:hover { background-color: $night; }
+    }
+    &--sky {
+        background-color: $sky;
+        &:hover { background-color: $night; }
+    }
+    &--lavender {
+        background-color: $lavender;
+        &:hover { background-color: $night; }
+    }
+    &--aqua {
+        background-color: $aqua;
+        &:hover { background-color: $night; }
+    }
+    &--rose {
+        background-color: $rose;
+        &:hover { background-color: $night; }
+    }
+    &--dark {
+        background-color: $night;
+        &:hover { background-color: $white; color: $night; }
+    }
+    &--ghost {
+        background-color: $ghost;
+        color: $night;
+        &:hover { background-color: $night; color: $ghost; }
+    }
+
+    &__center {
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    &__fullwidth {
+        width:100%;
+    }
+}

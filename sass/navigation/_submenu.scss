@@ -1,0 +1,85 @@
+            //  ┌──────────────────────────────────────┐
+			//  │          Second level list           │
+			//  └──────────────────────────────────────┘		
+			ul.sub-menu {
+				display: block;
+				position: absolute;
+				top:58px;
+				z-index:3;
+				min-width: 240px;
+				padding:18px;
+
+				background: $white;
+				list-style: none;
+				box-shadow: 0 5px 15px rgba(0,0,0,.1);
+
+				//  ┌──────────────────────────────────────┐
+				//  │        Animation Transitions         │
+				//  └──────────────────────────────────────┘
+				@include fx_fadein();
+
+				//  ┌──────────────────────────────────────┐
+				//  │             Keep Visible             │
+				//  └──────────────────────────────────────┘	
+				&:hover {
+					visibility: visible;
+					opacity: 1;
+				}
+
+				.icon {
+					width: 29px;
+					font-size: 29px;
+				}
+
+				//  ┌──────────────────────────────────────┐
+				//  │             Submenu item             │
+				//  └──────────────────────────────────────┘
+				.menu-item {
+
+					a {
+						display: block;
+                        line-height: 58px;
+                        text-align: left;
+
+						&:hover {
+							color: $smoke;
+							//text-decoration: underline;
+
+							.icon {
+								@include colourmodifier();
+							}
+						}
+					}
+
+					&__separator {
+						border-top: 1px solid $ghost;
+						padding-top: 14px;
+						margin-top: 14px;
+					}
+
+
+					&__highlight--bluepink {
+
+							margin: 14px -18px -18px -18px;
+							background: #53A5E3;
+							background: $bluepink; 
+
+							a {
+								padding-left: 18px;
+								color: $white;
+
+								&:hover {
+									color: $white;
+									text-decoration: underline;
+
+									.icon {
+										color: $white;
+									}
+								}
+
+							}
+						
+					}
+				}
+				
+			}

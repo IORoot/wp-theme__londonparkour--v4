@@ -1,0 +1,27 @@
+// ┌─────────────────────────────────────┐ 
+// │                                     │░
+// │   Mobile-based responsive utility   │░
+// │               classes               │░
+// │                                     │░
+// └─────────────────────────────────────┘░
+//  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+// ┌──────────────────────────────────────┐
+// │       mq-responsiveSidePadding       │
+// │   Remove padding below mobile size   │
+// └──────────────────────────────────────┘
+@media (max-width: $mobile) {
+
+    .mq {
+
+        &-responsiveSidePadding {
+
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+
+        }
+
+    }
+    
+}
+

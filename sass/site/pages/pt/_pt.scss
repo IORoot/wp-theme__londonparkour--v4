@@ -1,0 +1,18 @@
+.ptcontact {
+    &__icon {
+
+        height: 58px;
+        margin-bottom: 29px;
+
+        font-family: "Material Icons";
+        font-size: 58px;
+        line-height: 58px;
+        color: #53A5E3;
+        text-align: center;
+        
+        &:after {
+            content: '\e0be'
+        }
+
+    }
+}

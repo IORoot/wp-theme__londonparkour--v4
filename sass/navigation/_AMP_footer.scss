@@ -1,0 +1,46 @@
+.amp {
+    .site-footer {
+
+        color: $white;
+        background-color: $night;
+        padding: 29px;
+        margin-top: 58px;
+    
+        a {
+            color: $white;
+            text-decoration: none;
+    
+            &:active {
+                color: $white;  
+            }
+    
+            &:hover {
+                color: $sky;
+                text-decoration: underline;  
+            }
+        }
+    
+        ul {
+            list-style: none;
+            padding: 0px;
+    
+            li {
+                i {
+                    display: none;
+                }
+            }
+        }
+    
+        .menu__mainmenu {
+            margin-bottom: 58px;
+        }
+        .footer_column_one {
+            margin-bottom: 58px;
+    
+        }
+    
+        .footer_column_two {
+            display: none;
+        }
+    }
+}

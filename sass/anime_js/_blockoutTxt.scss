@@ -1,0 +1,33 @@
+//  ┌───────────────────────────────────────────┐ 
+//  │                                           │░
+//  │ Blockout - Text                           │░
+//  │                                           │░
+//  │ This class will be applied to the         │░
+//  │ targeted text that the anime JS is        │░
+//  │ working on.                               │░
+//  │                                           │░
+//  │ It will set the default borders,          │░
+//  │ whitespace, display, box size, etc...     │░
+//  │                                           │░
+//  └───────────────────────────────────────────┘░
+//   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+// accompanying JS file is in londonparkour_v4/js/anime_fx.js
+
+.anime { 
+ 
+    &__blockouttxt { 
+        overflow:hidden;  
+        white-space: nowrap;
+        display: inline-block;
+
+        box-sizing: border-box;
+
+        border-left-width: 0px;
+        border-left-style: solid;
+        border-left-color: #242424;
+        border-right-width: 0px;
+        border-right-style: solid;
+        border-right-color: #242424;
+    }
+}

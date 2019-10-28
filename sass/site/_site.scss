@@ -1,0 +1,51 @@
+// @import "../layout/content-sidebar";
+// @import "../layout/sidebar-content";
+
+//   ┌──────────────────────────────────────┐
+//   │              OVERRIDES               │
+//   │                                      │
+//   │These will override default behaviour │
+//   │        of themes and plugins.        │
+//   └──────────────────────────────────────┘
+@import 'overrides/vc-separator';
+@import 'overrides/vc-row';
+@import 'overrides/vc-columns';
+
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+@import "primary/posts-and-pages";
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+@import "primary/comments";
+
+/*--------------------------------------------------------------
+## Custom Pages
+--------------------------------------------------------------*/
+@import "pages/contact/contact_form";
+@import "pages/tutorials/tutorials";
+@import "pages/classes/classes";   
+@import "pages/pt/pt";  
+@import "pages/wiki/wiki";  
+@import "pages/pulse/pulse";   
+@import "pages/ig_news/ig_news";  
+@import "pages/youtube_cover/youtube_cover";  
+   
+/*-------------------------------------------------------------- 
+## Custom Backgrounds
+--------------------------------------------------------------*/
+@import "primary/backgrounds";
+
+/*--------------------------------------------------------------
+## Custom Footer
+--------------------------------------------------------------*/
+@import "primary/footer";
+  
+/*--------------------------------------------------------------
+## Components
+--------------------------------------------------------------*/
+@import "components/button";
+@import "components/cta";
+@import "components/progress_indicator";

@@ -1,0 +1,27 @@
+.single-post {
+
+	article.type-post {
+		margin: 87px 0px ;
+	}
+	
+	.content-area {
+		float: right;
+		margin: 0 0 0 (-$size__site-sidebar);
+		padding: 0px 8.33%;
+		width: $size__site-main;
+	}
+	
+	.site-main {
+		margin: 0;
+        float: right;
+        width: 75%;
+	}
+	
+	.site-content .widget-area {
+		margin: 87px 0px;
+		padding: 0px 0px 0px 8.33%;
+		float: left;
+		overflow: hidden;
+		width: $size__site-sidebar;	
+	} 
+}
