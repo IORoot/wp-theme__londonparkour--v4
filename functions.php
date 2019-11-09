@@ -84,5 +84,5 @@ require get_template_directory() . '/inc/remove_p_tags.php';
 /**
  * Add custom classes to pages
  */
-require get_template_directory() . '/inc/body_Classes.php';
+require get_template_directory() . '/inc/body_classes.php';
 
