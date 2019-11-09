@@ -1,0 +1,29 @@
+//  ┌─────────────────────────────────────────────────────────────────────────┐ 
+//  │                                                                         │░
+//  │                           Background classes                            │░
+//  │                                                                         │░
+//  │     This is used because WPBakery doesn't allow relative paths for      │░
+//  │ background images. Therefore moving between dev-staging-live will break │░
+//  │                              those images.                              │░
+//  │                                                                         │░
+//  └─────────────────────────────────────────────────────────────────────────┘░
+//   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+.background {
+    &-coolbuilding {
+        > .vc_column-inner {
+            background-image: url(/wp-content/uploads/2019/07/cool_building_minipanel.jpg) !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+        }
+        
+    }
+
+    &-starfield {
+        > .vc_column-inner {
+            background-image: url(/wp-content/uploads/2019/07/starfield_minipanel.jpg) !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+        }
+    }
+}  

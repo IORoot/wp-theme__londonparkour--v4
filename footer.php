@@ -49,6 +49,7 @@ function vc_custom_css($id) {
 				}
 
 			?>
+			
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

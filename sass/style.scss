@@ -83,7 +83,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
-@import "modules/clearings";
+@import "modules/clearings"; 
 
 /*--------------------------------------------------------------
 # Widgets
@@ -132,3 +132,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Content
 --------------------------------------------------------------*/
 @import "layout/sidebar_content"; 
+
+/*--------------------------------------------------------------
+## Backgrounds
+--------------------------------------------------------------*/
+@import "media/backgrounds";

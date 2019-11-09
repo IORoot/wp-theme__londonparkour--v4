@@ -2271,7 +2271,7 @@ a:hover, a:active {
   width: 100%;
   height: 100%;
   background-color: rgba(24, 24, 24, 0.7);
-  background-image: url("http://dev.londonparkour.com/wp-content/uploads/2018/03/noisy-texture-200x200_10pc.png");
+  background-image: url("/wp-content/uploads/2018/03/noisy-texture-200x200_10pc.png");
   top: 0;
   left: 0;
 }
@@ -2813,6 +2813,20 @@ a:hover, a:active {
   float: left;
   overflow: hidden;
   width: 25%;
+}
+
+/*--------------------------------------------------------------
+## Backgrounds
+--------------------------------------------------------------*/
+.background-coolbuilding > .vc_column-inner {
+  background-image: url(/wp-content/uploads/2019/07/cool_building_minipanel.jpg) !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+.background-starfield > .vc_column-inner {
+  background-image: url(/wp-content/uploads/2019/07/starfield_minipanel.jpg) !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
 }
 
 /*# sourceMappingURL=style.css.map */
