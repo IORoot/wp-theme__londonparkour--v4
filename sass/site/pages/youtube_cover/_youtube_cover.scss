@@ -25,6 +25,7 @@
         &--E86546 { @include logo-ldnpk--filled($crayon); }
         &--53A5E3 { @include logo-ldnpk--filled($sky); }
 
+        &--sky { @include logo-ldnpk--filled($sky); }
         &--yellow { @include logo-ldnpk--filled($yellow); }
         &--lavender { @include logo-ldnpk--filled($lavender); }
         &--pink { @include logo-ldnpk--filled($pink); }
