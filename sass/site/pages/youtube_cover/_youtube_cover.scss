@@ -24,7 +24,28 @@
         &--FCC53B { @include logo-ldnpk--filled($yellow); }
         &--E86546 { @include logo-ldnpk--filled($crayon); }
         &--53A5E3 { @include logo-ldnpk--filled($sky); }
-        
+
+        &--yellow { @include logo-ldnpk--filled($yellow); }
+        &--lavender { @include logo-ldnpk--filled($lavender); }
+        &--pink { @include logo-ldnpk--filled($pink); }
+        &--aqua { @include logo-ldnpk--filled($aqua); }
+        &--goo { @include logo-ldnpk--filled($goo); }
+        &--crayon { @include logo-ldnpk--filled($crayon); }
+        &--rose { @include logo-ldnpk--filled($rose); }
+        &--black { @include logo-ldnpk--filled($black); }
+        &--night { @include logo-ldnpk--filled($night); }
+        &--fog { @include logo-ldnpk--filled($fog); }
+        &--smoke { @include logo-ldnpk--filled($smoke); }
+        &--commando { @include logo-ldnpk--filled($commando); }
+        &--mist { @include logo-ldnpk--filled($mist); }
+        &--ghost { @include logo-ldnpk--filled($ghost); }
+        &--halo { @include logo-ldnpk--filled($halo); }
+        &--white { @include logo-ldnpk--filled($white); }
+        &--youtube { @include logo-ldnpk--filled($youtube); }
+        &--instagram { @include logo-ldnpk--filled($instagram); }
+        &--apple { @include logo-ldnpk--filled($apple); }
+        &--android { @include logo-ldnpk--filled($android); }
+  
     }
 
     &__grain {
