@@ -2094,7 +2094,7 @@ a:hover, a:active {
   box-shadow: none;
   padding: 29px;
   font-family: Gill Sans, Gill Sans MT, sans-serif;
-  background-color: #242424;
+  background-color: none;
   color: #ffffff;
   height: 232px;
 }
