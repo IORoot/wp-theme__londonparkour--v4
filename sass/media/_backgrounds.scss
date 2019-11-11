@@ -12,23 +12,16 @@
 .background {
 
     &-footer {
-        background: #242424 url(/wp-content/uploads/2019/09/feet_dangle_grad.jpg) !important; 
+        background-color: #242424;
+        @include background_image("/wp-content/uploads/2019/09/feet_dangle_grad.jpg");
     }
 
     &-coolbuilding {
-        > .vc_column-inner {
-            background-image: url(/wp-content/uploads/2019/07/cool_building_minipanel.jpg) !important;
-            background-position: center !important;
-            background-repeat: no-repeat !important;
-        }
+        @include background_image("/wp-content/uploads/2019/07/cool_building_minipanel.jpg");
     }
 
     &-starfield {
-        > .vc_column-inner {
-            background-image: url(/wp-content/uploads/2019/07/starfield_minipanel.jpg) !important;
-            background-position: center !important;
-            background-repeat: no-repeat !important;
-        }
+        @include background_image("/wp-content/uploads/2019/07/starfield_minipanel.jpg");
     }
 
 }  
