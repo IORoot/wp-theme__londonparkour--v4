@@ -2086,7 +2086,7 @@ a:hover, a:active {
 }
 
 .ui.tbk-grid > .tbk-column:not(.tbk-row), .ui.tbk-grid > .tbk-row > .tbk-column {
-  width: 14%;
+  width: 13%;
 }
 
 .classes .asp_product_item {
