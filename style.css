@@ -2900,5 +2900,65 @@ a:hover, a:active {
   background-repeat: no-repeat !important;
   background-size: 100%;
 }
+.background-stairs {
+  background-image: url("/wp-content/uploads/2019/11/stairs.jpg") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: 100%;
+}
+.background-roof {
+  background-image: url("/wp-content/uploads/2019/11/st_pauls.jpg") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: 100%;
+}
+.background-silo {
+  background-image: url("/wp-content/uploads/2019/11/silo.jpg") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: 100%;
+}
+.background-sand {
+  background-image: url("/wp-content/uploads/2019/11/sand.jpg") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: 100%;
+}
+.background-wing {
+  background-image: url("/wp-content/uploads/2019/11/plane_wing.jpg") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: 100%;
+}
+.background-panels {
+  background-image: url("/wp-content/uploads/2019/11/panels.jpg") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: 100%;
+}
+.background-corner {
+  background-image: url("/wp-content/uploads/2019/11/corner.jpg") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: 100%;
+}
+.background-skyline {
+  background-image: url("/wp-content/uploads/2019/11/city_plane.jpg") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: 100%;
+}
+.background-flow {
+  background-image: url("/wp-content/uploads/2019/11/circle_flow.jpg") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: 100%;
+}
+.background-carbon {
+  background-image: url("/wp-content/uploads/2019/11/carbon_fibre.jpg") !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: 100%;
+}
 
 /*# sourceMappingURL=style.css.map */
