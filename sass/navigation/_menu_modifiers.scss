@@ -64,36 +64,38 @@
 //  │                                      │░
 //  └──────────────────────────────────────┘░
 //   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-.home {
-    .main-navigation {
-        ul.nav-menu {
-            // Change to white logo & text
-            li.menu-item {
+@media (min-width: $mobile) {
+    .home {
+        .main-navigation {
+            ul.nav-menu {
+                // Change to white logo & text
+                li.menu-item {
 
-                a {
-                    color: $white;
-                }
-                
-                &.logo__londonparkour {
                     a {
-                        @include logo-ldnpktext($white);
+                        color: $white;
                     }
-                }
-
-                .sub-menu {
-                    .menu-item {
-                        a{
-                            color: $night;
+                    
+                    &.logo__londonparkour {
+                        a {
+                            @include logo-ldnpktext($white);
                         }
+                    }
 
-                        &__highlight--bluepink {
-                            a {
-                                color: $white;
+                    .sub-menu {
+                        .menu-item {
+                            a{
+                                color: $night;
+                            }
+
+                            &__highlight--bluepink {
+                                a {
+                                    color: $white;
+                                }
                             }
                         }
                     }
                 }
             }
         }
-    }
-} 
+    } 
+}

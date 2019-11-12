@@ -174,3 +174,10 @@
 --------------------------------------------------------------*/
 
 @import "_socialmedia";
+
+
+@media (max-width: $tablet) {
+    .footer_column_three h2 {
+        font-size: 5vw;
+    }
+}
