@@ -11,8 +11,11 @@ get_header();
 	<div class="content-area tutorials">
     
         <aside class="tutorials__sidebar">
-            <?php dynamic_sidebar( 'sidebar-tutorials' ); ?>
-        </aside><!-- #tutorial-sidebar -->
+
+			<?php  do_shortcode('[andyp_responsive_menus menu="Tutorials" sidebar="sidebar-tutorials"]'); ?>
+
+		</aside><!-- #tutorial-sidebar -->
+		
 
 		<main class="tutorials__content">
 

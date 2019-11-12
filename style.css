@@ -1101,7 +1101,7 @@ a:hover, a:active {
   color: #ffffff;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .site-header .main-navigation ul.nav-menu li.logo__londonparkour a {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='none'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' stroke='%23242424' stroke-width='8'/%3E%3C/g%3E%3C/svg%3E");
     background-size: 93px 58px;
@@ -1123,7 +1123,7 @@ a:hover, a:active {
     padding: 14px 0px 15px 0px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .main-navigation {
     position: absolute;
     top: 0;
@@ -1552,7 +1552,7 @@ a:hover, a:active {
   margin-right: 0px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .londonparkour .vc_row.vc_column-gap-20 .vc_column_container {
     padding: 0px;
   }
@@ -1729,6 +1729,9 @@ a:hover, a:active {
 .page-template-page_tutorials .tutorials__sidebar section#nav_menu-3 h3:before {
   content: "";
 }
+.page-template-page_tutorials .tutorials__sidebar section#nav_menu-3 li.menu-item {
+  padding-left: 10px;
+}
 .page-template-page_tutorials .tutorials__sidebar section#custom_html-2 h3:before {
   content: "";
 }
@@ -1737,7 +1740,6 @@ a:hover, a:active {
   padding-left: 0px;
 }
 .page-template-page_tutorials .tutorials__sidebar section ul.menu li.menu-item {
-  padding-left: 0px;
   color: #ffffff;
 }
 .page-template-page_tutorials .tutorials__sidebar section ul.menu li.menu-item.menu-item-current {
@@ -1757,6 +1759,10 @@ a:hover, a:active {
 }
 .page-template-page_tutorials .tutorials__sidebar section ul.menu li.menu-item a:visited {
   color: #ffffff;
+}
+.page-template-page_tutorials .tutorials__sidebar section ul.menu .sidebar__categories {
+  padding-left: 0px !important;
+  text-decoration: underline;
 }
 .page-template-page_tutorials .tutorials__sidebar section ul.tutorial-filters li.icon-flip::before {
   transform: rotate(180deg);
@@ -1781,12 +1787,43 @@ a:hover, a:active {
 .page-template-page_tutorials .tutorials__sidebar section ul.tutorial-filters li.item-popularity:before {
   content: "";
 }
+.page-template-page_tutorials .tutorials__sidebar .sidemenu__desktop {
+  display: initial;
+}
+.page-template-page_tutorials .tutorials__sidebar .sidemenu__mobile {
+  display: none;
+  width: 100%;
+  height: 58px;
+  float: left;
+}
+.page-template-page_tutorials .tutorials__sidebar .sidemenu__mobile select {
+  height: 29px;
+  border: 0px;
+  width: 40%;
+  margin-right: 29px;
+}
+@media (max-width: 1023px) {
+  .page-template-page_tutorials .tutorials__sidebar .sidemenu__desktop {
+    display: none;
+  }
+  .page-template-page_tutorials .tutorials__sidebar .sidemenu__mobile {
+    display: initial;
+  }
+}
 .page-template-page_tutorials .tutorials__content {
   width: 83.33%;
   float: left;
   color: #fff;
 }
 
+@media (max-width: 1023px) {
+  .page-template-page_tutorials .tutorials__sidebar {
+    width: 100%;
+  }
+  .page-template-page_tutorials .tutorials__content {
+    width: 100%;
+  }
+}
 .tutorial-home a {
   color: #ffffff;
   text-decoration: none;
