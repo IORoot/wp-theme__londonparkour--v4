@@ -1,0 +1,39 @@
+.single-post {
+
+    // DEFAULT (desktop) view
+    .sidemenu__desktop { display: initial; }
+    .sidemenu__mobile { 
+        display: none; 
+
+        width: 83.3%;
+        height: 58px;
+        position: absolute;
+        left: 8.33%;
+
+        select {
+            height: 29px;
+            border: 0px;
+            width: 100%;
+            margin-right: 29px;
+        }
+    }
+
+    // Mobile view
+    @media (max-width: $tablet) {
+        // Switch menus
+        .sidemenu__desktop { display: none; }
+        .sidemenu__mobile { display: initial; }
+
+        // resize page.
+        div.content-area .site-main {
+            width: 100%;
+            margin-top: 58px;
+        }
+        aside.widget-area {
+            width: 100%;
+            overflow: initial  !important;
+            float: none !important;
+        }
+    }
+
+}

@@ -2189,6 +2189,40 @@ a:hover, a:active {
   content: "";
 }
 
+.single-post .sidemenu__desktop {
+  display: initial;
+}
+.single-post .sidemenu__mobile {
+  display: none;
+  width: 83.3%;
+  height: 58px;
+  position: absolute;
+  left: 8.33%;
+}
+.single-post .sidemenu__mobile select {
+  height: 29px;
+  border: 0px;
+  width: 100%;
+  margin-right: 29px;
+}
+@media (max-width: 1023px) {
+  .single-post .sidemenu__desktop {
+    display: none;
+  }
+  .single-post .sidemenu__mobile {
+    display: initial;
+  }
+  .single-post div.content-area .site-main {
+    width: 100%;
+    margin-top: 58px;
+  }
+  .single-post aside.widget-area {
+    width: 100%;
+    overflow: initial !important;
+    float: none !important;
+  }
+}
+
 .scraper-container .item {
   display: block;
   float: left;

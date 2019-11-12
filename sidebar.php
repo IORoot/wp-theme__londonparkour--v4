@@ -13,5 +13,5 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 ?>
 
 <aside id="secondary" class="widget-area">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
+	<?php  do_shortcode('[andyp_responsive_menus category_mobile="30,32,31" sidebar="sidebar-1"]'); ?>
 </aside><!-- #secondary -->
