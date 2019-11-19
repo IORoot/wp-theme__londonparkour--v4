@@ -87,3 +87,7 @@ require get_template_directory() . '/inc/remove_p_tags.php';
  */
 require get_template_directory() . '/inc/body_classes.php';
 
+/**
+ * Remove VC meta tags
+ */
+require get_template_directory() . '/inc/remove_vc_meta_tags.php';
