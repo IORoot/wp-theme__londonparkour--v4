@@ -28,7 +28,7 @@ function ldnpk_deregister_styles() {
     wp_deregister_style( 'rs-icon-set-pe-7s-' ); // revslider Icon-7
     wp_deregister_style( 'font-awesome-fa' );    // real-media-library
     wp_deregister_style( 'smile_fonts' );        // Ultimate_VC_Addons
-    // wp_deregister_style( 'dashicons' );          // Wordpress dashicons
+    wp_deregister_style( 'dashicons' );          // Wordpress dashicons
     wp_deregister_style( 'wp-block-library' );   // Guttenburg blocks
     //wp_deregister_style( 'js_composer_front' );      // WPBakery - freontend
     wp_deregister_style( 'js_composer_custom_css' );   // WPBakery - custom

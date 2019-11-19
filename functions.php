@@ -40,8 +40,8 @@ add_action( 'after_setup_theme', 'londonparkourv4_setup' );
 function londonparkourv4_scripts() {
 	wp_enqueue_style( 'londonparkourv4-style', get_stylesheet_uri() );
 	wp_enqueue_script( 'londonparkourv4-navigation', get_template_directory_uri() . '/js/navigation_new.js', array(), '20151215', true );
-	wp_enqueue_script( 'londonparkourv4-animejs', get_template_directory_uri() . '/js/anime.3.1.0.min.js', array(), '310', true );
-	wp_enqueue_script( 'londonparkourv4-animefx', get_template_directory_uri() . '/js/anime_fx.js', array(), '010', true );
+	wp_enqueue_script( 'londonparkourv4-animejs', get_template_directory_uri() . '/js/anime.3.1.0.min.js', array(), '310', false );
+	wp_enqueue_script( 'londonparkourv4-animefx', get_template_directory_uri() . '/js/anime_fx.js', array(), '010', false );
 	wp_enqueue_script( 'londonparkourv4-progressbar', get_template_directory_uri() . '/js/progress_bar.js', array(), '001', true );
 	wp_enqueue_script( 'londonparkourv4-lazysizes', get_template_directory_uri() . '/js/lazysizes.min.js', array(), '002', true );
 }
