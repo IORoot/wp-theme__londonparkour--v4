@@ -91,3 +91,8 @@ require get_template_directory() . '/inc/body_classes.php';
  * Remove VC meta tags
  */
 require get_template_directory() . '/inc/remove_vc_meta_tags.php';
+
+/**
+ * Remove W3TC footer comment
+ */
+require get_template_directory() . '/inc/remove_W3TC_footer.php';
