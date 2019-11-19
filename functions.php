@@ -96,3 +96,8 @@ require get_template_directory() . '/inc/remove_vc_meta_tags.php';
  * Remove W3TC footer comment
  */
 require get_template_directory() . '/inc/remove_W3TC_footer.php';
+
+/**
+ * Remove W3TC footer comment
+ */
+require get_template_directory() . '/inc/remove_YOAST_header_comments.php';
