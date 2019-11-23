@@ -51,7 +51,7 @@ function londonparkourv4_scripts() {
 		wp_enqueue_script( 'londonparkourv4-animefx', get_template_directory_uri() . '/js/anime_fx.js', array(), null, false );
 
 		if (is_page('homepage')){
-			wp_enqueue_script( 'londonparkourv4-animefx-homepage', get_template_directory_uri() . '/js/page_specific/homepage_fx.js', array(), null, false );
+			wp_enqueue_script( 'londonparkourv4-animefx-homepage', get_template_directory_uri() . '/js/page_specific/homepage_fx.js', array(), null, true );
 		}
 	}
 }
