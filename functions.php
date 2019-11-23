@@ -70,14 +70,11 @@ function londonparkourv4_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'londonparkourv4_scripts' );
 
-if (!(is_admin())) {
-    function defer_js($url) {
-        if (FALSE === strpos($url, '.js')) return $url;
-        if (strpos($url, 'jquery.js')) return $url;
-        return "$url' defer onload='";
-    }
-    add_filter('clean_url', 'defer_js', 11, 1);
-}
+/**
+ * Register Sidebars and Widgets.
+ */
+require get_template_directory() . '/inc/defer_all_js.php';
+
 
 /**
  * Register Sidebars and Widgets.
