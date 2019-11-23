@@ -50,8 +50,21 @@ function londonparkourv4_scripts() {
 		wp_enqueue_script( 'londonparkourv4-animejs', get_template_directory_uri() . '/js/anime.3.1.0.min.js', array(), null, false );
 		wp_enqueue_script( 'londonparkourv4-animefx', get_template_directory_uri() . '/js/anime_fx.js', array(), null, false );
 
+		// Specific JS for HEROS on specific pages
 		if (is_page('homepage')){
 			wp_enqueue_script( 'londonparkourv4-animefx-homepage', get_template_directory_uri() . '/js/page_specific/homepage_fx.js', array(), null, true );
+		}
+		if (is_page('classes')){
+			wp_enqueue_script( 'londonparkourv4-animefx-homepage', get_template_directory_uri() . '/js/page_specific/classes_fx.js', array(), null, true );
+		}
+		if (is_page('privatesessions')){
+			wp_enqueue_script( 'londonparkourv4-animefx-homepage', get_template_directory_uri() . '/js/page_specific/private_fx.js', array(), null, true );
+		}
+		if (is_page('pt')){
+			wp_enqueue_script( 'londonparkourv4-animefx-homepage', get_template_directory_uri() . '/js/page_specific/pt_fx.js', array(), null, true );
+		}
+		if (is_page('contact')){
+			wp_enqueue_script( 'londonparkourv4-animefx-homepage', get_template_directory_uri() . '/js/page_specific/contact_fx.js', array(), null, true );
 		}
 	}
 }
