@@ -55,20 +55,29 @@ function londonparkourv4_scripts() {
 			wp_enqueue_script( 'londonparkourv4-animefx-homepage', get_template_directory_uri() . '/js/page_specific/homepage_fx.js', array(), null, true );
 		}
 		if (is_page('classes')){
-			wp_enqueue_script( 'londonparkourv4-animefx-homepage', get_template_directory_uri() . '/js/page_specific/classes_fx.js', array(), null, true );
+			wp_enqueue_script( 'londonparkourv4-animefx-classes', get_template_directory_uri() . '/js/page_specific/classes_fx.js', array(), null, true );
 		}
 		if (is_page('privatesessions')){
-			wp_enqueue_script( 'londonparkourv4-animefx-homepage', get_template_directory_uri() . '/js/page_specific/private_fx.js', array(), null, true );
+			wp_enqueue_script( 'londonparkourv4-animefx-private', get_template_directory_uri() . '/js/page_specific/private_fx.js', array(), null, true );
 		}
 		if (is_page('pt')){
-			wp_enqueue_script( 'londonparkourv4-animefx-homepage', get_template_directory_uri() . '/js/page_specific/pt_fx.js', array(), null, true );
+			wp_enqueue_script( 'londonparkourv4-animefx-pt', get_template_directory_uri() . '/js/page_specific/pt_fx.js', array(), null, true );
 		}
 		if (is_page('contact')){
-			wp_enqueue_script( 'londonparkourv4-animefx-homepage', get_template_directory_uri() . '/js/page_specific/contact_fx.js', array(), null, true );
+			wp_enqueue_script( 'londonparkourv4-animefx-contact', get_template_directory_uri() . '/js/page_specific/contact_fx.js', array(), null, true );
 		}
 	}
 }
 add_action( 'wp_enqueue_scripts', 'londonparkourv4_scripts' );
+
+if (!(is_admin())) {
+    function defer_js($url) {
+        if (FALSE === strpos($url, '.js')) return $url;
+        if (strpos($url, 'jquery.js')) return $url;
+        return "$url' defer onload='";
+    }
+    add_filter('clean_url', 'defer_js', 11, 1);
+}
 
 /**
  * Register Sidebars and Widgets.
