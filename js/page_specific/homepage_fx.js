@@ -3,9 +3,9 @@
 */
 
 // Background
-anime__punchin('.c-hero-panel__fly',0,'L');
-anime__punchin('.c-hero-panel__pt', 300, 'R');
-anime__punchin('.c-hero-panel__pulse',600, 'B');
+// anime__punchin('.c-hero-panel__fly',0,'L');
+// anime__punchin('.c-hero-panel__pt', 300, 'R');
+// anime__punchin('.c-hero-panel__pulse',600, 'B');
 
 // FLY
 anime__fadeinX('.c-hero-panel__fly .c-hero-panel__button',2200, -50);
