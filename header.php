@@ -32,6 +32,7 @@
 	$body_classes = get_field('body_classes');
 ?>
 <body <?php body_class('londonparkour ' . $body_classes ); ?>>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5T257F" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div id="progress"><div id="progress__bar"></div></div>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'londonparkourv4' ); ?></a>
