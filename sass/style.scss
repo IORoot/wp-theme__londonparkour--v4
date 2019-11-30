@@ -103,6 +103,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # Responsiveness
 --------------------------------------------------------------*/
+@import "layout/responsive_desktop";
 @import "layout/responsive_tablet";
 @import "layout/responsive_mobile";
 

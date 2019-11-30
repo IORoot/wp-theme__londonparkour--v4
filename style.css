@@ -2646,6 +2646,28 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Responsiveness
 --------------------------------------------------------------*/
+.mq-responsiveSidePadding {
+  padding-left: 29px !important;
+  padding-right: 29px !important;
+}
+
+.responsive-padding__29-10-10 {
+  padding-left: 29px !important;
+  padding-right: 29px !important;
+}
+
+@media (max-width: 1024px) {
+  .responsive-padding__29-20-10 {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+@media (max-width: 768px) {
+  .responsive-padding__29-20-10 {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
 @media (max-width: 1024px) {
   .mq-responsiveSidePadding {
     padding-left: 20px !important;
