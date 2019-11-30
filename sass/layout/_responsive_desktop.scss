@@ -15,26 +15,16 @@
 
 }
 
-
+//  ┌─────────────────────────────────────────────────────────────────────────┐ 
+//  │                                                                         │░
+//  │                           Responsive Padding                            │░
+//  │                           29px - 20px - 10px                            │░
+//  │                                                                         │░
+//  └─────────────────────────────────────────────────────────────────────────┘░
+//   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 .responsive-padding {
-    &__29-10-10 {
+    &__29-20-10 {
         padding-left: 29px !important;
         padding-right: 29px !important;
-    }
-}
-@media (max-width: $tablet) {
-    .responsive-padding {
-        &__29-20-10 {
-            padding-left: 20px !important;
-            padding-right: 20px !important;
-        }
-    }
-}
-@media (max-width: $mobile) {
-    .responsive-padding {
-        &__29-20-10 {
-            padding-left: 10px !important;
-            padding-right: 10px !important;
-        }
     }
 }
