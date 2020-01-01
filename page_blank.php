@@ -9,7 +9,7 @@ get_header();
 ?>
 
 <style>
-	.site-content {margin:87px, 8.33%;}
+	.site-content {margin:87px 8.33%;}
 	.site-footer {display:none;}
 </style>
 
