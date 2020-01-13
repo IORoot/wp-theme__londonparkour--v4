@@ -1,0 +1,141 @@
+//  ┌─────────────────────────────────────────────────────────────────────────┐ 
+//  │                                                                         │░
+//  │                                                                         │░
+//  │                 Anything on the tutorialcategory page                   │░
+//  │                                                                         │░
+//  │                                                                         │░
+//  └─────────────────────────────────────────────────────────────────────────┘░
+//   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+.tax-tutorialcategory {
+    .tutorialcategory { 
+        &__hero {
+            background-color: $night;
+            padding:58px 20px;
+            margin-bottom: 58px;
+            text-align: center;
+        }
+
+        &__title {
+            margin:0px;
+            text-align: center;
+            color: $white;
+        }
+
+        &__subtitle {
+            margin:0px auto 29px; 
+            text-align: center;
+            color: $white;
+            width: 70%;
+        }
+        &__postcount {
+            font-size:18px;
+            color: $white;
+        }
+        &__content {
+            width: 50%;
+            margin: 0px 25% 58px;
+            
+        }
+        &__youtube-link {
+            line-height: 29px;
+            height: 58px;
+            text-decoration: none;
+            background-color: $youtube;
+            color: $white;
+            padding: 14px 29px 15px;
+            margin-bottom: 58px;
+            border-radius: 3px;
+            display: block;
+            text-align: center;
+            display: inline-block;
+
+            span {
+                padding-left:29px;
+                @include logo-youtube($white);
+                background-repeat: no-repeat;
+            }
+
+            &:hover {
+                background-color: $halo;
+                color: $youtube;
+                span {
+                    @include logo-youtube($youtube);
+                }
+            }
+        }
+        &-list {
+
+            list-style: none;
+            padding: 0px;
+            
+            li {
+                background-color: $halo;
+                margin-bottom: 29px;
+
+                &:hover {
+                    background-color: $lavender;
+
+                    * { color: $white; }
+                }
+
+                a {
+                    display: flex;
+                    text-decoration: none;
+                    color: $night;
+                }
+            }
+
+            &__index {
+                height: 58px;
+                line-height: 58px;
+                padding:0px 29px;
+            }
+
+            &__image {
+                display: block;
+                height: 58px;
+                width: auto;
+            }
+
+            &__title {
+                height: 58px;
+                line-height: 58px;
+                padding:0px 29px;
+                overflow:hidden;
+            }
+
+            &__tax {
+                margin-left: auto;
+                height: 58px;
+                line-height: 58px;
+                padding:0px 58px;
+                overflow: hidden;
+            }
+
+            &__arrow {
+                width:58px;
+
+                i {
+                    font-size: 29px;
+                    line-height: 58px;
+                    vertical-align: text-top;
+                    color: $lavender;
+                }
+            }
+        }
+    }
+}
+
+// Change widths on tablet.
+@media (max-width: $tablet) {
+    .tax-tutorialcategory  { 
+        .tutorialcategory {
+            &__content {
+                width: 100%;
+                margin: 0px;
+                padding: 0px 20px 58px;
+            }
+        }
+    }
+}
