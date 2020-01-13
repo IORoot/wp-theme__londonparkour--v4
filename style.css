@@ -1710,363 +1710,385 @@ a:hover, a:active {
   display: none;
 }
 
-.page-template-page_tutorials .tutorials {
-  padding-top: 58px;
+.tutorial__breadcrumbs {
+  width: 100%;
+  margin-top: 58px;
+  padding: 0px 20px;
+  background: #70579f;
+  height: 29px;
+  line-height: 29px;
 }
-.page-template-page_tutorials .tutorials__sidebar {
-  width: 16.66%;
-  float: left;
-  padding: 0px 29px;
+.tutorial__breadcrumbs * {
+  font-size: 12px;
+  color: #fff !important;
 }
-.page-template-page_tutorials .tutorials__sidebar section {
+
+.post-type-archive-tutorial .archiveheader {
   margin-bottom: 29px;
 }
-.page-template-page_tutorials .tutorials__sidebar section h3 a {
-  color: #ffffff;
-  text-decoration: none;
-}
-.page-template-page_tutorials .tutorials__sidebar section h3 a:active, .page-template-page_tutorials .tutorials__sidebar section h3 a:visited {
-  color: #ffffff;
-  text-decoration: none;
-}
-.page-template-page_tutorials .tutorials__sidebar section h3 a:hover {
-  text-decoration: underline;
-}
-.page-template-page_tutorials .tutorials__sidebar section h3:before {
-  font-family: "Material Icons";
-  font-size: 29px;
-  line-height: 58px;
-  margin-right: 10px;
-  vertical-align: sub;
-  color: #ffffff;
-}
-.page-template-page_tutorials .tutorials__sidebar section#nav_menu-3 h3:before {
-  content: "";
-}
-.page-template-page_tutorials .tutorials__sidebar section#nav_menu-3 li.menu-item {
-  padding-left: 10px;
-}
-.page-template-page_tutorials .tutorials__sidebar section#custom_html-2 h3:before {
-  content: "";
-}
-.page-template-page_tutorials .tutorials__sidebar section ul.menu {
+.post-type-archive-tutorial .tutorialarchive-list {
   list-style: none;
-  padding-left: 0px;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
 }
-.page-template-page_tutorials .tutorials__sidebar section ul.menu li.menu-item {
+.post-type-archive-tutorial .tutorialarchive-list li {
+  height: 58px;
+  background-color: #fafafa;
+  margin-bottom: 29px;
+  width: calc(33% - 15px);
+  overflow: hidden;
+}
+.post-type-archive-tutorial .tutorialarchive-list li:nth-child(3n+1) {
+  margin-right: 15px;
+}
+.post-type-archive-tutorial .tutorialarchive-list li:nth-child(3n) {
+  margin-left: 15px;
+}
+.post-type-archive-tutorial .tutorialarchive-list li:hover {
+  background-color: #424242 !important;
+}
+.post-type-archive-tutorial .tutorialarchive-list li:hover * {
   color: #ffffff;
 }
-.page-template-page_tutorials .tutorials__sidebar section ul.menu li.menu-item.menu-item-current {
-  background-color: #F5F5F5;
-}
-.page-template-page_tutorials .tutorials__sidebar section ul.menu li.menu-item a {
-  color: #ffffff;
+.post-type-archive-tutorial .tutorialarchive-list li a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
   text-decoration: none;
+  color: #242424;
+  height: 58px;
+  overflow: hidden;
 }
-.page-template-page_tutorials .tutorials__sidebar section ul.menu li.menu-item a:hover {
-  text-decoration: underline;
-  color: #e86546;
+.post-type-archive-tutorial .tutorialarchive-list__title {
+  height: 58px;
+  line-height: 58px;
+  padding: 0px 29px;
+  font-weight: 600;
 }
-.page-template-page_tutorials .tutorials__sidebar section ul.menu li.menu-item a:active {
-  text-decoration: underline;
-  color: #e86546;
+.post-type-archive-tutorial .tutorialarchive-list__count {
+  font-size: 18px;
+  height: 58px;
+  line-height: 58px;
+  padding: 0px 29px;
+  margin-left: auto;
 }
-.page-template-page_tutorials .tutorials__sidebar section ul.menu li.menu-item a:visited {
+.post-type-archive-tutorial .tutorialarchive-list__arrow {
+  width: 58px;
+  height: 58px;
+}
+.post-type-archive-tutorial .tutorialarchive-list__arrow i {
+  font-size: 18px;
+  line-height: 58px;
+  vertical-align: text-top;
   color: #ffffff;
 }
-.page-template-page_tutorials .tutorials__sidebar section ul.menu .sidebar__categories {
-  padding-left: 0px !important;
-  text-decoration: underline;
+.post-type-archive-tutorial .tutoriallatest__hero {
+  background-color: #242424;
+  padding: 58px 20px;
+  margin-bottom: 58px;
 }
-.page-template-page_tutorials .tutorials__sidebar section ul.tutorial-filters li.icon-flip::before {
-  transform: rotate(180deg);
+.post-type-archive-tutorial .tutoriallatest__title {
+  margin: 0px;
+  text-align: center;
+  color: #ffffff;
 }
-.page-template-page_tutorials .tutorials__sidebar section ul.tutorial-filters li:before {
-  font-family: "Material Icons";
+.post-type-archive-tutorial .tutoriallatest__subtitle {
+  margin: 0px auto 29px;
+  text-align: center;
+  color: #ffffff;
+  width: 70%;
+}
+.post-type-archive-tutorial .tutoriallatest__postcount {
   font-size: 18px;
+  color: #ffffff;
+}
+.post-type-archive-tutorial .tutoriallatest__content {
+  width: 70%;
+  margin: 0px 15% 58px;
+}
+.post-type-archive-tutorial .tutoriallatest-list {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.post-type-archive-tutorial .tutoriallatest-list li {
+  height: 406px;
+  background-color: #fafafa;
+  margin-bottom: 29px;
+  width: calc(33% - 15px);
+  overflow: hidden;
+}
+.post-type-archive-tutorial .tutoriallatest-list li:nth-child(3n+1) {
+  margin-right: 15px;
+}
+.post-type-archive-tutorial .tutoriallatest-list li:nth-child(3n) {
+  margin-left: 15px;
+}
+.post-type-archive-tutorial .tutoriallatest-list li:hover {
+  background-color: #424242;
+}
+.post-type-archive-tutorial .tutoriallatest-list li:hover * {
+  color: #ffffff;
+}
+.post-type-archive-tutorial .tutoriallatest-list li a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  text-decoration: none;
+  color: #242424;
+  height: 406px;
+  overflow: hidden;
+}
+.post-type-archive-tutorial .tutoriallatest-list__hero {
+  width: 100%;
+  height: 203px;
+  background-color: #242424;
+  overflow: hidden;
+}
+.post-type-archive-tutorial .tutoriallatest-list__image {
+  display: block;
+  height: 58px;
+  width: auto;
+}
+.post-type-archive-tutorial .tutoriallatest-list__title {
+  height: 58px;
+  line-height: 58px;
+  width: 100%;
+  padding: 0px 29px;
+  font-weight: 600;
+  overflow: hidden;
+}
+.post-type-archive-tutorial .tutoriallatest-list__description {
+  height: 87px;
+  width: 100%;
   line-height: 29px;
-  margin-right: 10px;
-  vertical-align: sub;
+  padding: 0px 29px;
+  overflow: hidden;
+}
+.post-type-archive-tutorial .tutoriallatest-list__date {
+  font-size: 12px;
+  height: 58px;
+  line-height: 58px;
+  padding: 0px 29px;
+  margin-right: auto;
+}
+.post-type-archive-tutorial .tutoriallatest-list__arrow {
+  width: 58px;
+  height: 58px;
+}
+.post-type-archive-tutorial .tutoriallatest-list__arrow i {
+  font-size: 18px;
+  line-height: 58px;
+  vertical-align: text-top;
+  color: #70579f;
+}
+
+@media (max-width: 1023px) {
+  .post-type-archive-tutorial .tutoriallatest__content {
+    width: 100%;
+    margin: 0px;
+    padding: 0px 20px 58px;
+  }
+  .post-type-archive-tutorial .tutoriallatest__content li {
+    width: calc(50% - 15px);
+  }
+}
+@media (max-width: 767px) {
+  .post-type-archive-tutorial .tutoriallatest__content li {
+    width: calc(100% - 15px);
+  }
+}
+.tax-tutorialcategory .tutorialcategory__hero {
+  background-color: #242424;
+  padding: 58px 20px;
+  margin-bottom: 58px;
+  text-align: center;
+}
+.tax-tutorialcategory .tutorialcategory__title {
+  margin: 0px;
+  text-align: center;
+  color: #ffffff;
+}
+.tax-tutorialcategory .tutorialcategory__subtitle {
+  margin: 0px auto 29px;
+  text-align: center;
+  color: #ffffff;
+  width: 70%;
+}
+.tax-tutorialcategory .tutorialcategory__postcount {
+  font-size: 18px;
+  color: #ffffff;
+}
+.tax-tutorialcategory .tutorialcategory__content {
+  width: 50%;
+  margin: 0px 25% 58px;
+}
+.tax-tutorialcategory .tutorialcategory__youtube-link {
+  line-height: 29px;
+  height: 58px;
+  text-decoration: none;
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 14px 29px 15px;
+  margin-bottom: 58px;
+  border-radius: 3px;
+  display: block;
+  text-align: center;
   display: inline-block;
 }
-.page-template-page_tutorials .tutorials__sidebar section ul.tutorial-filters li.item-alpha:before {
-  content: "";
+.tax-tutorialcategory .tutorialcategory__youtube-link span {
+  padding-left: 29px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFFFFF' viewBox='0 0 576 512'%3e%3cpath d='M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
 }
-.page-template-page_tutorials .tutorials__sidebar section ul.tutorial-filters li.item-newest:before {
-  content: "";
+.tax-tutorialcategory .tutorialcategory__youtube-link:hover {
+  background-color: #fafafa;
+  color: #ff0000;
 }
-.page-template-page_tutorials .tutorials__sidebar section ul.tutorial-filters li.item-oldest:before {
-  content: "";
+.tax-tutorialcategory .tutorialcategory__youtube-link:hover span {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF0000' viewBox='0 0 576 512'%3e%3cpath d='M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z'/%3e%3c/svg%3e");
 }
-.page-template-page_tutorials .tutorials__sidebar section ul.tutorial-filters li.item-popularity:before {
-  content: "";
+.tax-tutorialcategory .tutorialcategory-list {
+  list-style: none;
+  padding: 0px;
 }
-.page-template-page_tutorials .tutorials__sidebar .sidemenu__desktop {
-  display: initial;
+.tax-tutorialcategory .tutorialcategory-list li {
+  background-color: #fafafa;
+  margin-bottom: 29px;
 }
-.page-template-page_tutorials .tutorials__sidebar .sidemenu__mobile {
-  display: none;
-  width: 100%;
+.tax-tutorialcategory .tutorialcategory-list li:hover {
+  background-color: #70579f;
+}
+.tax-tutorialcategory .tutorialcategory-list li:hover * {
+  color: #ffffff;
+}
+.tax-tutorialcategory .tutorialcategory-list li a {
+  display: flex;
+  text-decoration: none;
+  color: #242424;
+}
+.tax-tutorialcategory .tutorialcategory-list__index {
   height: 58px;
-  float: left;
+  line-height: 58px;
+  padding: 0px 29px;
 }
-.page-template-page_tutorials .tutorials__sidebar .sidemenu__mobile select {
-  height: 29px;
-  border: 0px;
-  width: 40%;
-  margin-right: 29px;
+.tax-tutorialcategory .tutorialcategory-list__image {
+  display: block;
+  height: 58px;
+  width: auto;
 }
+.tax-tutorialcategory .tutorialcategory-list__title {
+  height: 58px;
+  line-height: 58px;
+  padding: 0px 29px;
+  overflow: hidden;
+}
+.tax-tutorialcategory .tutorialcategory-list__tax {
+  margin-left: auto;
+  height: 58px;
+  line-height: 58px;
+  padding: 0px 58px;
+  overflow: hidden;
+}
+.tax-tutorialcategory .tutorialcategory-list__arrow {
+  width: 58px;
+}
+.tax-tutorialcategory .tutorialcategory-list__arrow i {
+  font-size: 29px;
+  line-height: 58px;
+  vertical-align: text-top;
+  color: #70579f;
+}
+
 @media (max-width: 1023px) {
-  .page-template-page_tutorials .tutorials__sidebar .sidemenu__desktop {
-    display: none;
-  }
-  .page-template-page_tutorials .tutorials__sidebar .sidemenu__mobile {
-    display: initial;
+  .tax-tutorialcategory .tutorialcategory__content {
+    width: 100%;
+    margin: 0px;
+    padding: 0px 20px 58px;
   }
 }
-.page-template-page_tutorials .tutorials__content {
-  width: 83.33%;
-  float: left;
-  color: #fff;
+.tutorial-template .tutorial__hero {
+  width: 100%;
+}
+.tutorial-template .tutorial__hero--video {
+  width: 100%;
+  height: 100vh;
+}
+.tutorial-template .tutorial__hero--image {
+  display: block;
+  width: 100%;
+}
+.tutorial-template .tutorial__content {
+  width: 50%;
+  margin: 0px 25%;
+}
+.tutorial-template .tutorial__content--title {
+  margin: 58px 0px;
+  text-align: center;
+}
+.tutorial-template .tutorial__content--title h1::first-letter {
+  text-transform: capitalize;
+}
+.tutorial-template .tutorial__content--subtitle {
+  color: #424242;
+}
+.tutorial-template .tutorial__content--catlink {
+  text-decoration: none;
+  color: #424242;
+  font-weight: 700;
+}
+.tutorial-template .tutorial__content--catlink:hover {
+  color: #70579f;
+}
+.tutorial-template .tutorial__content--text {
+  margin-bottom: 87px;
+  overflow-wrap: break-word;
+}
+.tutorial-template .tutorial__content--text h2::first-letter {
+  text-transform: capitalize;
+}
+.tutorial-template .tutorial__content--text hr {
+  height: 1px;
+  margin: 58px 0px 57px;
+}
+.tutorial-template .tutorial__content--text p {
+  font-size: 20px;
+  margin-bottom: 29px;
+}
+.tutorial-template .tutorial__content--youtube-link {
+  line-height: 29px;
+  height: 58px;
+  text-decoration: none;
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 14px 29px 15px;
+  margin-bottom: 58px;
+  border-radius: 3px;
+  display: block;
+  text-align: center;
+}
+.tutorial-template .tutorial__content--youtube-link span {
+  padding-left: 29px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFFFFF' viewBox='0 0 576 512'%3e%3cpath d='M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+}
+.tutorial-template .tutorial__content--youtube-link:hover {
+  background-color: #fafafa;
+  color: #ff0000;
+}
+.tutorial-template .tutorial__content--youtube-link:hover span {
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF0000' viewBox='0 0 576 512'%3e%3cpath d='M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z'/%3e%3c/svg%3e");
 }
 
 @media (max-width: 1023px) {
-  .page-template-page_tutorials .tutorials__sidebar {
+  .tutorial-template .tutorial__content {
     width: 100%;
+    margin: 0px;
+    padding: 0px 20px;
   }
-  .page-template-page_tutorials .tutorials__content {
-    width: 100%;
-  }
 }
-.tutorial-home a {
-  color: #ffffff;
-  text-decoration: none;
-}
-.tutorial-home a:visited, .tutorial-home a:active {
-  color: #ffffff;
-  text-decoration: none;
-}
-.tutorial-home .item {
-  position: relative;
-  float: left;
-  width: calc(24%);
-  min-width: 330px;
-  margin: 0px 1% 58px 0px;
-  padding: 0px;
-  height: 56.25%;
-}
-.tutorial-home .item__link {
-  position: relative;
-  text-decoration: none;
-  display: block;
-}
-.tutorial-home .item__link:hover > p {
-  text-decoration: underline;
-}
-.tutorial-home .item__link:hover > div {
-  background-blend-mode: initial;
-  background-size: 125%;
-}
-.tutorial-home .item__link::before {
-  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='100%25' height='100%25' viewBox='0 0 1921 1082' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Grids' stroke='none' stroke-width='2' fill='none' fill-rule='evenodd' stroke-linecap='square'%3E%3Cg id='Grid-/-GoldenCanonGrid-1920' transform='translate(1.000000, 0.000000)' stroke='%23242424' %3E%3Cpath d='M1.17002645,2.58823529 L1917.67335,1079.41176' id='Line' opacity='0.200000003'%3E%3C/path%3E%3Cpath d='M1.17002645,2.58823529 L1917.67335,1079.41176' id='Line' opacity='0.200000003' transform='translate(959.421687, 541.000000) scale(1, -1) translate(-959.421687, -541.000000) '%3E%3C/path%3E%3Cpath d='M960.0067,2.58823529 L1918.25836,1079.41176' id='Line' opacity='0.200000003'%3E%3C/path%3E%3Cpath d='M960.0067,2.58823529 L1918.25836,1079.41176' id='Line' opacity='0.200000003' transform='translate(1439.132530, 541.000000) scale(1, -1) translate(-1439.132530, -541.000000) '%3E%3C/path%3E%3Cpath d='M0.585013224,2.58823529 L958.836674,1079.41176' id='Line' opacity='0.200000003'%3E%3C/path%3E%3Cpath d='M0.585013224,2.58823529 L958.836674,1079.41176' id='Line' opacity='0.200000003' transform='translate(479.710843, 541.000000) scale(1, -1) translate(-479.710843, -541.000000) '%3E%3C/path%3E%3Cpath d='M0.292682927,1.58970588 L479.707317,1079.41029' id='Line' opacity='0.200000003'%3E%3C/path%3E%3Cpath d='M0.292682927,1.58970588 L479.707317,1079.41029' id='Line' opacity='0.200000003' transform='translate(240.000000, 540.500000) scale(1, -1) translate(-240.000000, -540.500000) '%3E%3C/path%3E%3Cpath d='M479.292507,1.58970588 L958.418337,1079.41029' id='Line' opacity='0.200000003'%3E%3C/path%3E%3Cpath d='M479.292507,1.58970588 L958.418337,1079.41029' id='Line' opacity='0.200000003' transform='translate(718.855422, 540.500000) scale(1, -1) translate(-718.855422, -540.500000) '%3E%3C/path%3E%3Cpath d='M960.291897,1.58970588 L1438.41955,1079.41029' id='Line' opacity='0.200000003'%3E%3C/path%3E%3Cpath d='M960.291897,1.58970588 L1438.41955,1079.41029' id='Line' opacity='0.200000003' transform='translate(1199.355723, 540.500000) scale(1, -1) translate(-1199.355723, -540.500000) '%3E%3C/path%3E%3Cpath d='M1439.29251,1.58970588 L1918.41834,1079.41029' id='Line' opacity='0.200000003'%3E%3C/path%3E%3Cpath d='M1439.29251,1.58970588 L1918.41834,1079.41029' id='Line' opacity='0.200000003' transform='translate(1678.855422, 540.500000) scale(1, -1) translate(-1678.855422, -540.500000) '%3E%3C/path%3E%3Cpath d='M959.421687,1 L959.421687,1081' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M479.37079,1 L479.37079,1081' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M716.340053,1 L716.340053,1081' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M1199.34005,1 L1199.34005,1081' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M238.340053,1 L238.340053,1081' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M1678.34005,1 L1678.34005,1081' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M1438.79248,1 L1438.79248,1081' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M0,217 L1918.84337,217' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M0,865.176471 L1918.84337,865.176471' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M0,720.176471 L1918.84337,720.176471' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M0,360.176471 L1918.84337,360.176471' id='Line' opacity='0.100000001'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  content: "";
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: absolute;
-  z-index: 5;
-  pointer-events: none;
-}
-.tutorial-home .item__image {
-  height: 203px;
-  background-position: 50% 50%;
-  background-size: 120%;
-  background-repeat: no-repeat;
-  border-top: 4px solid;
-  transition: all 0.3s ease;
-}
-.tutorial-home .item__title {
-  display: block;
-  width: 100%;
-  color: #f5f5f5;
-  font-size: 18px;
-  line-height: 29px;
-  text-align: right;
-  max-height: 29px;
-  overflow: hidden;
-}
-.tutorial-home .item__date {
-  text-align: right;
-  color: #ffffff;
-  font-size: 12px;
-  line-height: 29px;
-}
-.tutorial-home .item__iteration {
-  font-size: 12px;
-  position: relative;
-  display: block;
-  text-align: right;
-  line-height: 29px;
-}
-
-.tutorial-categories .item {
-  position: relative;
-  float: left;
-  width: calc(24%);
-  min-width: 330px;
-  margin: 0px 1% 58px 0px;
-  padding: 0px;
-  height: 56.25%;
-}
-.tutorial-categories .item__link {
-  position: relative;
-  text-decoration: none;
-  display: block;
-}
-.tutorial-categories .item__link:hover > p {
-  text-decoration: underline;
-}
-.tutorial-categories .item__link:hover > div {
-  background-blend-mode: initial;
-  background-size: 125%;
-}
-.tutorial-categories .item__link::before {
-  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='100%25' height='100%25' viewBox='0 0 1921 1082' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Grids' stroke='none' stroke-width='2' fill='none' fill-rule='evenodd' stroke-linecap='square'%3E%3Cg id='Grid-/-GoldenCanonGrid-1920' transform='translate(1.000000, 0.000000)' stroke='%23242424' %3E%3Cpath d='M1.17002645,2.58823529 L1917.67335,1079.41176' id='Line' opacity='0.200000003'%3E%3C/path%3E%3Cpath d='M1.17002645,2.58823529 L1917.67335,1079.41176' id='Line' opacity='0.200000003' transform='translate(959.421687, 541.000000) scale(1, -1) translate(-959.421687, -541.000000) '%3E%3C/path%3E%3Cpath d='M960.0067,2.58823529 L1918.25836,1079.41176' id='Line' opacity='0.200000003'%3E%3C/path%3E%3Cpath d='M960.0067,2.58823529 L1918.25836,1079.41176' id='Line' opacity='0.200000003' transform='translate(1439.132530, 541.000000) scale(1, -1) translate(-1439.132530, -541.000000) '%3E%3C/path%3E%3Cpath d='M0.585013224,2.58823529 L958.836674,1079.41176' id='Line' opacity='0.200000003'%3E%3C/path%3E%3Cpath d='M0.585013224,2.58823529 L958.836674,1079.41176' id='Line' opacity='0.200000003' transform='translate(479.710843, 541.000000) scale(1, -1) translate(-479.710843, -541.000000) '%3E%3C/path%3E%3Cpath d='M0.292682927,1.58970588 L479.707317,1079.41029' id='Line' opacity='0.200000003'%3E%3C/path%3E%3Cpath d='M0.292682927,1.58970588 L479.707317,1079.41029' id='Line' opacity='0.200000003' transform='translate(240.000000, 540.500000) scale(1, -1) translate(-240.000000, -540.500000) '%3E%3C/path%3E%3Cpath d='M479.292507,1.58970588 L958.418337,1079.41029' id='Line' opacity='0.200000003'%3E%3C/path%3E%3Cpath d='M479.292507,1.58970588 L958.418337,1079.41029' id='Line' opacity='0.200000003' transform='translate(718.855422, 540.500000) scale(1, -1) translate(-718.855422, -540.500000) '%3E%3C/path%3E%3Cpath d='M960.291897,1.58970588 L1438.41955,1079.41029' id='Line' opacity='0.200000003'%3E%3C/path%3E%3Cpath d='M960.291897,1.58970588 L1438.41955,1079.41029' id='Line' opacity='0.200000003' transform='translate(1199.355723, 540.500000) scale(1, -1) translate(-1199.355723, -540.500000) '%3E%3C/path%3E%3Cpath d='M1439.29251,1.58970588 L1918.41834,1079.41029' id='Line' opacity='0.200000003'%3E%3C/path%3E%3Cpath d='M1439.29251,1.58970588 L1918.41834,1079.41029' id='Line' opacity='0.200000003' transform='translate(1678.855422, 540.500000) scale(1, -1) translate(-1678.855422, -540.500000) '%3E%3C/path%3E%3Cpath d='M959.421687,1 L959.421687,1081' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M479.37079,1 L479.37079,1081' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M716.340053,1 L716.340053,1081' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M1199.34005,1 L1199.34005,1081' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M238.340053,1 L238.340053,1081' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M1678.34005,1 L1678.34005,1081' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M1438.79248,1 L1438.79248,1081' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M0,217 L1918.84337,217' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M0,865.176471 L1918.84337,865.176471' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M0,720.176471 L1918.84337,720.176471' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M0,360.176471 L1918.84337,360.176471' id='Line' opacity='0.100000001'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  content: "";
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: absolute;
-  z-index: 5;
-  pointer-events: none;
-}
-.tutorial-categories .item__image {
-  height: 203px;
-  background-position: 50% 50%;
-  background-size: 120%;
-  background-repeat: no-repeat;
-  border-top: 4px solid;
-  transition: all 0.3s linear;
-}
-.tutorial-categories .item__title {
-  display: block;
-  width: 100%;
-  color: #f5f5f5;
-  font-size: 18px;
-  line-height: 29px;
-  text-align: right;
-  max-height: 29px;
-  overflow: hidden;
-}
-.tutorial-categories .item__title:visited, .tutorial-categories .item__title:active {
-  color: #ffffff;
-}
-.tutorial-categories .item__date {
-  text-align: right;
-  color: #ffffff;
-  font-size: 12px;
-  line-height: 29px;
-}
-.tutorial-categories .item__date:visited, .tutorial-categories .item__date:active {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.tutorial-playlist a {
-  color: #ffffff;
-  text-decoration: none;
-}
-.tutorial-playlist a:visited, .tutorial-playlist a:active {
-  color: #ffffff;
-  text-decoration: none;
-}
-.tutorial-playlist .item {
-  position: relative;
-  float: left;
-  width: calc(24%);
-  min-width: 330px;
-  margin: 0px 1% 58px 0px;
-  padding: 0px;
-  height: 56.25%;
-}
-.tutorial-playlist .item__link {
-  position: relative;
-  text-decoration: none;
-  display: block;
-}
-.tutorial-playlist .item__link:hover > p {
-  text-decoration: underline;
-}
-.tutorial-playlist .item__link:hover > div {
-  background-blend-mode: initial;
-  background-size: 125%;
-}
-.tutorial-playlist .item__link::before {
-  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='100%25' height='100%25' viewBox='0 0 1921 1082' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Grids' stroke='none' stroke-width='2' fill='none' fill-rule='evenodd' stroke-linecap='square'%3E%3Cg id='Grid-/-GoldenCanonGrid-1920' transform='translate(1.000000, 0.000000)' stroke='%23242424' %3E%3Cpath d='M1.17002645,2.58823529 L1917.67335,1079.41176' id='Line' opacity='0.200000003'%3E%3C/path%3E%3Cpath d='M1.17002645,2.58823529 L1917.67335,1079.41176' id='Line' opacity='0.200000003' transform='translate(959.421687, 541.000000) scale(1, -1) translate(-959.421687, -541.000000) '%3E%3C/path%3E%3Cpath d='M960.0067,2.58823529 L1918.25836,1079.41176' id='Line' opacity='0.200000003'%3E%3C/path%3E%3Cpath d='M960.0067,2.58823529 L1918.25836,1079.41176' id='Line' opacity='0.200000003' transform='translate(1439.132530, 541.000000) scale(1, -1) translate(-1439.132530, -541.000000) '%3E%3C/path%3E%3Cpath d='M0.585013224,2.58823529 L958.836674,1079.41176' id='Line' opacity='0.200000003'%3E%3C/path%3E%3Cpath d='M0.585013224,2.58823529 L958.836674,1079.41176' id='Line' opacity='0.200000003' transform='translate(479.710843, 541.000000) scale(1, -1) translate(-479.710843, -541.000000) '%3E%3C/path%3E%3Cpath d='M0.292682927,1.58970588 L479.707317,1079.41029' id='Line' opacity='0.200000003'%3E%3C/path%3E%3Cpath d='M0.292682927,1.58970588 L479.707317,1079.41029' id='Line' opacity='0.200000003' transform='translate(240.000000, 540.500000) scale(1, -1) translate(-240.000000, -540.500000) '%3E%3C/path%3E%3Cpath d='M479.292507,1.58970588 L958.418337,1079.41029' id='Line' opacity='0.200000003'%3E%3C/path%3E%3Cpath d='M479.292507,1.58970588 L958.418337,1079.41029' id='Line' opacity='0.200000003' transform='translate(718.855422, 540.500000) scale(1, -1) translate(-718.855422, -540.500000) '%3E%3C/path%3E%3Cpath d='M960.291897,1.58970588 L1438.41955,1079.41029' id='Line' opacity='0.200000003'%3E%3C/path%3E%3Cpath d='M960.291897,1.58970588 L1438.41955,1079.41029' id='Line' opacity='0.200000003' transform='translate(1199.355723, 540.500000) scale(1, -1) translate(-1199.355723, -540.500000) '%3E%3C/path%3E%3Cpath d='M1439.29251,1.58970588 L1918.41834,1079.41029' id='Line' opacity='0.200000003'%3E%3C/path%3E%3Cpath d='M1439.29251,1.58970588 L1918.41834,1079.41029' id='Line' opacity='0.200000003' transform='translate(1678.855422, 540.500000) scale(1, -1) translate(-1678.855422, -540.500000) '%3E%3C/path%3E%3Cpath d='M959.421687,1 L959.421687,1081' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M479.37079,1 L479.37079,1081' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M716.340053,1 L716.340053,1081' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M1199.34005,1 L1199.34005,1081' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M238.340053,1 L238.340053,1081' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M1678.34005,1 L1678.34005,1081' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M1438.79248,1 L1438.79248,1081' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M0,217 L1918.84337,217' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M0,865.176471 L1918.84337,865.176471' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M0,720.176471 L1918.84337,720.176471' id='Line' opacity='0.100000001'%3E%3C/path%3E%3Cpath d='M0,360.176471 L1918.84337,360.176471' id='Line' opacity='0.100000001'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  content: "";
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: absolute;
-  z-index: 5;
-  pointer-events: none;
-}
-.tutorial-playlist .item__image {
-  height: 203px;
-  background-position: 50% 50%;
-  background-size: 120%;
-  background-repeat: no-repeat;
-  border-top: 4px solid;
-  transition: all 0.3s linear;
-}
-.tutorial-playlist .item__title {
-  display: block;
-  width: 100%;
-  color: #f5f5f5;
-  font-size: 18px;
-  line-height: 29px;
-  text-align: right;
-  max-height: 29px;
-  overflow: hidden;
-}
-.tutorial-playlist .item__date {
-  text-align: right;
-  color: #ffffff;
-  font-size: 12px;
-  line-height: 29px;
-}
-.tutorial-playlist .item__iteration {
-  font-size: 12px;
-  position: relative;
-  display: block;
-  text-align: right;
-  line-height: 29px;
-}
-
-.tutorial-video .item {
-  float: left;
-  width: 100%;
-}
-.tutorial-video .item__title {
-  color: #ffffff;
-  margin: 58px 16.6% 29px 0px;
-}
-.tutorial-video .item__description {
-  color: #ffffff;
-  margin-right: 16.6%;
-}
-.tutorial-video .item__embed {
-  height: 580px;
-}
-.tutorial-video .item__embed iframe {
-  height: 580px;
-  width: 100%;
-}
-.tutorials .wpb_image_grid .wpb_image_grid_ul li {
-  margin: 0px 1% 20px 0px;
-  width: calc(24%);
-}
-
 .classes__gradient--red {
   background: #e86546;
   background: -moz-linear-gradient(180deg, #e86546 0%, #e34f65 100%);

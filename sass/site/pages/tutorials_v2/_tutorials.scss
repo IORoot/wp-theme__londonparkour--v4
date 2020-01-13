@@ -1,0 +1,112 @@
+//  ┌─────────────────────────────────────────────────────────────────────────┐ 
+//  │                                                                         │░
+//  │                                                                         │░
+//  │                 Any page on the page_tutorial template                  │░
+//  │                                                                         │░
+//  │                                                                         │░
+//  └─────────────────────────────────────────────────────────────────────────┘░
+//   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+@import "breadcrumbs";
+@import "tutorialarchive";
+@import "tutorialcategories";
+
+.tutorial-template {
+
+    .tutorial {
+
+        &__hero {
+            width:100%;
+
+            &--video {
+                width: 100%;
+                height: 100vh;
+            }
+
+            &--image {
+                display: block;
+                width: 100%;
+            }
+        }
+
+        &__content {
+            width: 50%;
+            margin: 0px 25%;
+
+            &--title {
+                margin:58px 0px;
+                text-align: center;
+
+                h1::first-letter {
+                    text-transform: capitalize;
+                }
+
+            }
+
+            &--subtitle {
+                color: $fog;
+            }
+
+            &--catlink {
+                text-decoration: none;
+                color: $fog;
+                font-weight: 700;
+
+                &:hover {
+                    color: $lavender;
+                }
+            }
+
+            &--text {
+                margin-bottom:87px;
+                overflow-wrap: break-word;
+                // Import the tutorial-specific typography styling
+                @import "typography"; 
+                
+            }
+
+            &--youtube-link {
+                line-height: 29px;
+                height: 58px;
+                text-decoration: none;
+                background-color: $youtube;
+                color: $white;
+                padding: 14px 29px 15px;
+                margin-bottom: 58px;
+                border-radius: 3px;
+                display: block;
+                text-align: center;
+
+                span {
+                    padding-left:29px;
+                    @include logo-youtube($white);
+                    background-repeat: no-repeat;
+                }
+
+                &:hover {
+                    background-color: $halo;
+                    color: $youtube;
+                    span {
+                        @include logo-youtube($youtube);
+                    }
+                }
+
+            }
+        }
+        
+    }
+    
+}
+
+// Change widths on tablet.
+@media (max-width: $tablet) {
+    .tutorial-template  { 
+        .tutorial {
+            &__content {
+                width: 100%;
+                margin: 0px;
+                padding: 0px 20px;
+            }
+        }        
+    }
+}

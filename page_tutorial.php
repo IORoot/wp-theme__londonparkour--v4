@@ -7,22 +7,23 @@ Template Post Type: tutorial
 
 get_header();
 ?>
+	
+	<!-- Breadcrumbs -->
+	<?php 
+	if ( function_exists('yoast_breadcrumb') ) {
+		yoast_breadcrumb( '<div class="tutorial__breadcrumbs"><p id="breadcrumbs">','</p></div>' );
+	}
+	?>
 
-	<div class="content-area tutorial">
-    
-		<main class="tutorial__content">
+	<?php
+	while ( have_posts() ) :
+		the_post();
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+		// Links to template-parts/content-tutorial.php
+		get_template_part( 'template-parts/content', 'tutorial' );
 
-			get_template_part( 'template-parts/content', 'page' );
-
-		endwhile; // End of the loop.
-		?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
+	endwhile;
+	?>
+	
 <?php
 get_footer();
