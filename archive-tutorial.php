@@ -35,7 +35,7 @@
     <H1 class="tutoriallatest__title">Tutorials, Videos & Articles</H1>
     <h2 class="tutoriallatest__subtitle">
         <?php echo '<span class="tutoriallatest__postcount">'. count($terms) . ' Playlists &bull; </span>' ;?>
-        <?php echo '<span class="tutoriallatest__postcount">'. count($posts) . ' Posts</span>' ;?>
+        <?php echo '<span class="tutoriallatest__postcount">'. count($tutorials) . ' Posts</span>' ;?>
     </H2>
 </div>
 
