@@ -20,7 +20,7 @@
     <H1 class="tutorialcategory__title"><?php echo ucfirst($tutorialcategory); ?></H1>
     <h2 class="tutorialcategory__subtitle">
         <?php echo wp_trim_words($wp_query->queried_object->description, 30); ?>
-        <?php echo '<div class="tutorialcategory__postcount">'.$wp_query->post_count . ' Videos.</div>' ;?>
+        <?php echo '<div class="tutorialcategory__postcount">'.$wp_query->post_count . ' Posts.</div>' ;?>
     </H2>
     <?php
         $playlistID = get_field('youtube_playlist_id', 'tutorialcategory_'.$wp_query->queried_object->term_id);
