@@ -1724,7 +1724,7 @@ a:hover, a:active {
 }
 
 .post-type-archive-tutorial .archiveheader {
-  margin-bottom: 29px;
+  margin: 29px 0px;
 }
 .post-type-archive-tutorial .tutorialarchive-list {
   list-style: none;
