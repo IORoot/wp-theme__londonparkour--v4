@@ -1,14 +1,14 @@
 //  ┌─────────────────────────────────────────────────────────────────────────┐ 
 //  │                                                                         │░
 //  │                                                                         │░
-//  │                 Anything on the tutorialcategory page                   │░
+//  │                 Anything on the articlecategory page                   │░
 //  │                                                                         │░
 //  │                                                                         │░
 //  └─────────────────────────────────────────────────────────────────────────┘░
 //   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
-.tax-tutorialcategory {
-    .tutorialcategory { 
+.tax-articlecategory {
+    .articlecategory { 
         &__hero {
             background-color: $night;
             padding:58px 20px;
@@ -129,8 +129,8 @@
 
 // Change widths on tablet.
 @media (max-width: $tablet) {
-    .tax-tutorialcategory  { 
-        .tutorialcategory {
+    .tax-articlecategory  { 
+        .articlecategory {
             &__content {
                 width: 100%;
                 margin: 0px;

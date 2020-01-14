@@ -1710,7 +1710,7 @@ a:hover, a:active {
   display: none;
 }
 
-.tutorial__breadcrumbs {
+.article__breadcrumbs {
   width: 100%;
   margin-top: 58px;
   padding: 0px 20px;
@@ -1718,40 +1718,40 @@ a:hover, a:active {
   height: 29px;
   line-height: 29px;
 }
-.tutorial__breadcrumbs * {
+.article__breadcrumbs * {
   font-size: 12px;
   color: #fff !important;
 }
 
-.post-type-archive-tutorial .archiveheader {
+.post-type-archive-article .archiveheader {
   margin: 29px 0px;
 }
-.post-type-archive-tutorial .tutorialarchive-list {
+.post-type-archive-article .articlearchive-list {
   list-style: none;
   padding: 0px;
   display: flex;
   flex-wrap: wrap;
 }
-.post-type-archive-tutorial .tutorialarchive-list li {
+.post-type-archive-article .articlearchive-list li {
   height: 58px;
   background-color: #fafafa;
   margin-bottom: 29px;
   width: calc(33% - 15px);
   overflow: hidden;
 }
-.post-type-archive-tutorial .tutorialarchive-list li:nth-child(3n+1) {
+.post-type-archive-article .articlearchive-list li:nth-child(3n+1) {
   margin-right: 15px;
 }
-.post-type-archive-tutorial .tutorialarchive-list li:nth-child(3n) {
+.post-type-archive-article .articlearchive-list li:nth-child(3n) {
   margin-left: 15px;
 }
-.post-type-archive-tutorial .tutorialarchive-list li:hover {
+.post-type-archive-article .articlearchive-list li:hover {
   background-color: #424242 !important;
 }
-.post-type-archive-tutorial .tutorialarchive-list li:hover * {
+.post-type-archive-article .articlearchive-list li:hover * {
   color: #ffffff;
 }
-.post-type-archive-tutorial .tutorialarchive-list li a {
+.post-type-archive-article .articlearchive-list li a {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -1760,79 +1760,79 @@ a:hover, a:active {
   height: 58px;
   overflow: hidden;
 }
-.post-type-archive-tutorial .tutorialarchive-list__title {
+.post-type-archive-article .articlearchive-list__title {
   height: 58px;
   line-height: 58px;
   padding: 0px 29px;
   font-weight: 600;
 }
-.post-type-archive-tutorial .tutorialarchive-list__count {
+.post-type-archive-article .articlearchive-list__count {
   font-size: 18px;
   height: 58px;
   line-height: 58px;
   padding: 0px 29px;
   margin-left: auto;
 }
-.post-type-archive-tutorial .tutorialarchive-list__arrow {
+.post-type-archive-article .articlearchive-list__arrow {
   width: 58px;
   height: 58px;
 }
-.post-type-archive-tutorial .tutorialarchive-list__arrow i {
+.post-type-archive-article .articlearchive-list__arrow i {
   font-size: 18px;
   line-height: 58px;
   vertical-align: text-top;
   color: #ffffff;
 }
-.post-type-archive-tutorial .tutoriallatest__hero {
+.post-type-archive-article .articlelatest__hero {
   background-color: #242424;
   padding: 58px 20px;
   margin-bottom: 58px;
 }
-.post-type-archive-tutorial .tutoriallatest__title {
+.post-type-archive-article .articlelatest__title {
   margin: 0px;
   text-align: center;
   color: #ffffff;
 }
-.post-type-archive-tutorial .tutoriallatest__subtitle {
+.post-type-archive-article .articlelatest__subtitle {
   margin: 0px auto 29px;
   text-align: center;
   color: #ffffff;
   width: 70%;
 }
-.post-type-archive-tutorial .tutoriallatest__postcount {
+.post-type-archive-article .articlelatest__postcount {
   font-size: 18px;
   color: #ffffff;
 }
-.post-type-archive-tutorial .tutoriallatest__content {
+.post-type-archive-article .articlelatest__content {
   width: 70%;
   margin: 0px 15% 58px;
 }
-.post-type-archive-tutorial .tutoriallatest-list {
+.post-type-archive-article .articlelatest-list {
   list-style: none;
   padding: 0px;
   display: flex;
   flex-wrap: wrap;
 }
-.post-type-archive-tutorial .tutoriallatest-list li {
+.post-type-archive-article .articlelatest-list li {
   height: 406px;
   background-color: #fafafa;
   margin-bottom: 29px;
   width: calc(33% - 15px);
   overflow: hidden;
 }
-.post-type-archive-tutorial .tutoriallatest-list li:nth-child(3n+1) {
+.post-type-archive-article .articlelatest-list li:nth-child(3n+1) {
   margin-right: 15px;
 }
-.post-type-archive-tutorial .tutoriallatest-list li:nth-child(3n) {
+.post-type-archive-article .articlelatest-list li:nth-child(3n) {
   margin-left: 15px;
 }
-.post-type-archive-tutorial .tutoriallatest-list li:hover {
+.post-type-archive-article .articlelatest-list li:hover {
   background-color: #424242;
 }
-.post-type-archive-tutorial .tutoriallatest-list li:hover * {
+.post-type-archive-article .articlelatest-list li:hover * {
   color: #ffffff;
 }
-.post-type-archive-tutorial .tutoriallatest-list li a {
+.post-type-archive-article .articlelatest-list li a {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -1841,18 +1841,18 @@ a:hover, a:active {
   height: 406px;
   overflow: hidden;
 }
-.post-type-archive-tutorial .tutoriallatest-list__hero {
+.post-type-archive-article .articlelatest-list__hero {
   width: 100%;
   height: 203px;
   background-color: #242424;
   overflow: hidden;
 }
-.post-type-archive-tutorial .tutoriallatest-list__image {
+.post-type-archive-article .articlelatest-list__image {
   display: block;
   height: 58px;
   width: auto;
 }
-.post-type-archive-tutorial .tutoriallatest-list__title {
+.post-type-archive-article .articlelatest-list__title {
   height: 58px;
   line-height: 58px;
   width: 100%;
@@ -1860,25 +1860,25 @@ a:hover, a:active {
   font-weight: 600;
   overflow: hidden;
 }
-.post-type-archive-tutorial .tutoriallatest-list__description {
+.post-type-archive-article .articlelatest-list__description {
   height: 87px;
   width: 100%;
   line-height: 29px;
   padding: 0px 29px;
   overflow: hidden;
 }
-.post-type-archive-tutorial .tutoriallatest-list__date {
+.post-type-archive-article .articlelatest-list__date {
   font-size: 12px;
   height: 58px;
   line-height: 58px;
   padding: 0px 29px;
   margin-right: auto;
 }
-.post-type-archive-tutorial .tutoriallatest-list__arrow {
+.post-type-archive-article .articlelatest-list__arrow {
   width: 58px;
   height: 58px;
 }
-.post-type-archive-tutorial .tutoriallatest-list__arrow i {
+.post-type-archive-article .articlelatest-list__arrow i {
   font-size: 18px;
   line-height: 58px;
   vertical-align: text-top;
@@ -1886,46 +1886,46 @@ a:hover, a:active {
 }
 
 @media (max-width: 1023px) {
-  .post-type-archive-tutorial .tutoriallatest__content {
+  .post-type-archive-article .articlelatest__content {
     width: 100%;
     margin: 0px;
     padding: 0px 20px 58px;
   }
-  .post-type-archive-tutorial .tutoriallatest__content li {
+  .post-type-archive-article .articlelatest__content li {
     width: calc(50% - 15px);
   }
 }
 @media (max-width: 767px) {
-  .post-type-archive-tutorial .tutoriallatest__content li {
+  .post-type-archive-article .articlelatest__content li {
     width: calc(100% - 15px);
   }
 }
-.tax-tutorialcategory .tutorialcategory__hero {
+.tax-articlecategory .articlecategory__hero {
   background-color: #242424;
   padding: 58px 20px;
   margin-bottom: 58px;
   text-align: center;
 }
-.tax-tutorialcategory .tutorialcategory__title {
+.tax-articlecategory .articlecategory__title {
   margin: 0px;
   text-align: center;
   color: #ffffff;
 }
-.tax-tutorialcategory .tutorialcategory__subtitle {
+.tax-articlecategory .articlecategory__subtitle {
   margin: 0px auto 29px;
   text-align: center;
   color: #ffffff;
   width: 70%;
 }
-.tax-tutorialcategory .tutorialcategory__postcount {
+.tax-articlecategory .articlecategory__postcount {
   font-size: 18px;
   color: #ffffff;
 }
-.tax-tutorialcategory .tutorialcategory__content {
+.tax-articlecategory .articlecategory__content {
   width: 50%;
   margin: 0px 25% 58px;
 }
-.tax-tutorialcategory .tutorialcategory__youtube-link {
+.tax-articlecategory .articlecategory__youtube-link {
   line-height: 29px;
   height: 58px;
   text-decoration: none;
@@ -1938,64 +1938,64 @@ a:hover, a:active {
   text-align: center;
   display: inline-block;
 }
-.tax-tutorialcategory .tutorialcategory__youtube-link span {
+.tax-articlecategory .articlecategory__youtube-link span {
   padding-left: 29px;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFFFFF' viewBox='0 0 576 512'%3e%3cpath d='M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
 }
-.tax-tutorialcategory .tutorialcategory__youtube-link:hover {
+.tax-articlecategory .articlecategory__youtube-link:hover {
   background-color: #fafafa;
   color: #ff0000;
 }
-.tax-tutorialcategory .tutorialcategory__youtube-link:hover span {
+.tax-articlecategory .articlecategory__youtube-link:hover span {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF0000' viewBox='0 0 576 512'%3e%3cpath d='M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z'/%3e%3c/svg%3e");
 }
-.tax-tutorialcategory .tutorialcategory-list {
+.tax-articlecategory .articlecategory-list {
   list-style: none;
   padding: 0px;
 }
-.tax-tutorialcategory .tutorialcategory-list li {
+.tax-articlecategory .articlecategory-list li {
   background-color: #fafafa;
   margin-bottom: 29px;
 }
-.tax-tutorialcategory .tutorialcategory-list li:hover {
+.tax-articlecategory .articlecategory-list li:hover {
   background-color: #70579f;
 }
-.tax-tutorialcategory .tutorialcategory-list li:hover * {
+.tax-articlecategory .articlecategory-list li:hover * {
   color: #ffffff;
 }
-.tax-tutorialcategory .tutorialcategory-list li a {
+.tax-articlecategory .articlecategory-list li a {
   display: flex;
   text-decoration: none;
   color: #242424;
 }
-.tax-tutorialcategory .tutorialcategory-list__index {
+.tax-articlecategory .articlecategory-list__index {
   height: 58px;
   line-height: 58px;
   padding: 0px 29px;
 }
-.tax-tutorialcategory .tutorialcategory-list__image {
+.tax-articlecategory .articlecategory-list__image {
   display: block;
   height: 58px;
   width: auto;
 }
-.tax-tutorialcategory .tutorialcategory-list__title {
+.tax-articlecategory .articlecategory-list__title {
   height: 58px;
   line-height: 58px;
   padding: 0px 29px;
   overflow: hidden;
 }
-.tax-tutorialcategory .tutorialcategory-list__tax {
+.tax-articlecategory .articlecategory-list__tax {
   margin-left: auto;
   height: 58px;
   line-height: 58px;
   padding: 0px 58px;
   overflow: hidden;
 }
-.tax-tutorialcategory .tutorialcategory-list__arrow {
+.tax-articlecategory .articlecategory-list__arrow {
   width: 58px;
 }
-.tax-tutorialcategory .tutorialcategory-list__arrow i {
+.tax-articlecategory .articlecategory-list__arrow i {
   font-size: 29px;
   line-height: 58px;
   vertical-align: text-top;
@@ -2003,61 +2003,61 @@ a:hover, a:active {
 }
 
 @media (max-width: 1023px) {
-  .tax-tutorialcategory .tutorialcategory__content {
+  .tax-articlecategory .articlecategory__content {
     width: 100%;
     margin: 0px;
     padding: 0px 20px 58px;
   }
 }
-.tutorial-template .tutorial__hero {
+.article-template .article__hero {
   width: 100%;
 }
-.tutorial-template .tutorial__hero--video {
+.article-template .article__hero--video {
   width: 100%;
   height: 100vh;
 }
-.tutorial-template .tutorial__hero--image {
+.article-template .article__hero--image {
   display: block;
   width: 100%;
 }
-.tutorial-template .tutorial__content {
+.article-template .article__content {
   width: 50%;
   margin: 0px 25%;
 }
-.tutorial-template .tutorial__content--title {
+.article-template .article__content--title {
   margin: 58px 0px;
   text-align: center;
 }
-.tutorial-template .tutorial__content--title h1::first-letter {
+.article-template .article__content--title h1::first-letter {
   text-transform: capitalize;
 }
-.tutorial-template .tutorial__content--subtitle {
+.article-template .article__content--subtitle {
   color: #424242;
 }
-.tutorial-template .tutorial__content--catlink {
+.article-template .article__content--catlink {
   text-decoration: none;
   color: #424242;
   font-weight: 700;
 }
-.tutorial-template .tutorial__content--catlink:hover {
+.article-template .article__content--catlink:hover {
   color: #70579f;
 }
-.tutorial-template .tutorial__content--text {
+.article-template .article__content--text {
   margin-bottom: 87px;
   overflow-wrap: break-word;
 }
-.tutorial-template .tutorial__content--text h2::first-letter {
+.article-template .article__content--text h2::first-letter {
   text-transform: capitalize;
 }
-.tutorial-template .tutorial__content--text hr {
+.article-template .article__content--text hr {
   height: 1px;
   margin: 58px 0px 57px;
 }
-.tutorial-template .tutorial__content--text p {
+.article-template .article__content--text p {
   font-size: 20px;
   margin-bottom: 29px;
 }
-.tutorial-template .tutorial__content--youtube-link {
+.article-template .article__content--youtube-link {
   line-height: 29px;
   height: 58px;
   text-decoration: none;
@@ -2069,21 +2069,21 @@ a:hover, a:active {
   display: block;
   text-align: center;
 }
-.tutorial-template .tutorial__content--youtube-link span {
+.article-template .article__content--youtube-link span {
   padding-left: 29px;
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23FFFFFF' viewBox='0 0 576 512'%3e%3cpath d='M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
 }
-.tutorial-template .tutorial__content--youtube-link:hover {
+.article-template .article__content--youtube-link:hover {
   background-color: #fafafa;
   color: #ff0000;
 }
-.tutorial-template .tutorial__content--youtube-link:hover span {
+.article-template .article__content--youtube-link:hover span {
   background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23FF0000' viewBox='0 0 576 512'%3e%3cpath d='M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z'/%3e%3c/svg%3e");
 }
 
 @media (max-width: 1023px) {
-  .tutorial-template .tutorial__content {
+  .article-template .article__content {
     width: 100%;
     margin: 0px;
     padding: 0px 20px;

@@ -1,19 +1,19 @@
 //  ┌─────────────────────────────────────────────────────────────────────────┐ 
 //  │                                                                         │░
 //  │                                                                         │░
-//  │                 Anything on the archive /tutorials page                 │░
+//  │                 Anything on the archive /articles page                 │░
 //  │                                                                         │░
 //  │                                                                         │░
 //  └─────────────────────────────────────────────────────────────────────────┘░
 //   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
-.post-type-archive-tutorial {
+.post-type-archive-article {
 
     .archiveheader {
         margin: 29px 0px;
     }
 
-    .tutorialarchive {
+    .articlearchive {
         &-list {
 
             list-style: none;
@@ -84,7 +84,7 @@
         }
     }
 
-    .tutoriallatest {
+    .articlelatest {
         &__hero {
             background-color: $night;
             padding:58px 20px;
@@ -208,8 +208,8 @@
 
 // Change widths on tablet.
 @media (max-width: $tablet) {
-    .post-type-archive-tutorial   { 
-        .tutoriallatest {
+    .post-type-archive-article   { 
+        .articlelatest {
             &__content {
                 width: 100%;
                 margin: 0px;
@@ -225,8 +225,8 @@
 
 // Change widths on tablet.
 @media (max-width: $mobile) {
-    .post-type-archive-tutorial   { 
-        .tutoriallatest {
+    .post-type-archive-article   { 
+        .articlelatest {
             &__content {
                 li {
                     width:calc(100% - 15px); 
