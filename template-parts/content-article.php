@@ -50,8 +50,40 @@
 				echo '<a class="article__content--youtube-link" target="_blank" href="https://www.youtube.com/watch?v='.$videoId.'" ><span>Watch Original on YouTube</span></a>'; } 
 			?>
 			
-
 		</div>
 
 	</article>
+
+	
+	<?php
+	
+	// Schema for 'BlogPost'
+	echo '<script type="application/ld+json">';
+	echo '
+		{
+			"@context": "https://schema.org",
+			"@type": "BlogPosting",
+			"headline": "",
+			"image": "",  
+			"author": {
+				"@type": "",
+				"name": ""
+			},  
+			"publisher": {
+				"@type": "Organization",
+				"name": "",
+				"logo": {
+				"@type": "ImageObject",
+				"url": "",
+				"width": ,
+				"height": 
+				}
+			},
+			"datePublished": ""
+		}
+	';
+
+	echo '</script>';
+	?>
+	
 </div>
