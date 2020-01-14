@@ -1,19 +1,19 @@
 //  ┌─────────────────────────────────────────────────────────────────────────┐ 
 //  │                                                                         │░
 //  │                                                                         │░
-//  │                 Any page on the page_tutorial template                  │░
+//  │                 Any page on the page_article template                  │░
 //  │                                                                         │░
 //  │                                                                         │░
 //  └─────────────────────────────────────────────────────────────────────────┘░
 //   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
 @import "breadcrumbs";
-@import "tutorialarchive";
-@import "tutorialcategories";
+@import "articlearchive";
+@import "articlecategories";
 
-.tutorial-template {
+.article-template {
 
-    .tutorial {
+    .article {
 
         &__hero {
             width:100%;
@@ -60,7 +60,7 @@
             &--text {
                 margin-bottom:87px;
                 overflow-wrap: break-word;
-                // Import the tutorial-specific typography styling
+                // Import the article-specific typography styling
                 @import "typography"; 
                 
             }
@@ -100,8 +100,8 @@
 
 // Change widths on tablet.
 @media (max-width: $tablet) {
-    .tutorial-template  { 
-        .tutorial {
+    .article-template  { 
+        .article {
             &__content {
                 width: 100%;
                 margin: 0px;
