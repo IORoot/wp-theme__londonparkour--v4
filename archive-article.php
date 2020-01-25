@@ -22,13 +22,12 @@
     );
 
     $articles = get_posts([
-        'post_type' => 'article',
+        'post_type'   => 'article',
         'post_status' => 'publish',
         'numberposts' => 6,
-        'order'    => 'DESC'
+        'order'       => 'DESC'
     ]);
 
-    
 ?>
 
 <div class="articlelatest__hero">

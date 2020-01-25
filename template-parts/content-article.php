@@ -50,8 +50,8 @@
 				echo '<a class="article__content--youtube-link" target="_blank" href="https://www.youtube.com/watch?v='.$videoId.'" ><span>Watch Original on YouTube</span></a>'; } 
 			?>
 			
-
 		</div>
 
 	</article>
+	
 </div>

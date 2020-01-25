@@ -91,3 +91,8 @@ require get_template_directory() . '/inc/remove_W3TC_footer.php';
  * Remove W3TC footer comment
  */
 require get_template_directory() . '/inc/remove_YOAST_head_comments.php';
+
+/**
+ * Fix The string “https://api.w.org/” is not a registered keyword
+ */
+require get_template_directory() . '/inc/fix_wp_api_discovery.php';
