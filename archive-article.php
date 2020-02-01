@@ -39,6 +39,16 @@
 </div>
 
 
+<div>   
+    <h3>Search Products</h3>
+    <form role="search" action="<?php echo site_url('/'); ?>" method="get" id="searchform">
+        <input type="text" name="s" placeholder="Search Products"/>
+        <input type="hidden" name="post_type" value="products" /> <!-- // hidden 'products' value -->
+        <input type="submit" alt="Search" value="Search" />
+    </form>
+</div>
+
+
 <div class="articlelatest__content">
 
     <h2 class="archiveheader">All Categories</h2>
@@ -107,6 +117,31 @@
         ?>
     </ul>
 
+
+    <?php if ( have_posts() ) : ?>
+
+        <?php
+        /* Start the Loop */
+        while ( have_posts() ) :
+            the_post();
+
+            /*
+            * Include the Post-Type-specific template for the content.
+            * If you want to override this in a child theme, then include a file
+            * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+            */
+            get_template_part( 'template-parts/content', get_post_type() );
+
+        endwhile;
+
+        the_posts_navigation();
+
+        else :
+
+        get_template_part( 'template-parts/content', 'none' );
+
+        endif;
+        ?>
 </div>
 
 <?php get_footer(); ?>
