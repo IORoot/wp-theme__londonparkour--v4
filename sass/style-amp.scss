@@ -4,35 +4,31 @@ Author URI: https://londonparkour.com
 Description: London Parkour V4 AMP-Theme
 */
 
-// Variables
-@import "variables-site/variables-site";
+// Abstracts
+@import "abstracts/responsive";
+@import "abstracts/colors";
+@import "abstracts/typography";
+@import "abstracts/structure";
+@import "abstracts/columns"; 
+@import "abstracts/mixins/colourmodifiers";
+@import "abstracts/mixins/lineheights";
+@import "abstracts/mixins/colour_encode";
 
-// Mixins
-@import "mixins/colourmodifiers";
-@import "mixins/lineheights";
-@import "mixins/colour_encode";
+// Base
+@import "base/normalize";
+@import "base/typography";  
 
-// Normalize
-@import "normalize";
-@import "elements/elements";
+// Components
+@import "components/elements";
+@import "components/vertical_rhythm";
+@import "components/AMP/AMP_links";
+@import "components/AMP/AMP_images";
+@import "components/AMP/AMP_teambooking";
 
-// Typography
-@import "typography/typography"; 
-
-// Vertical Rhythm
-@import "modules/vertical_rhythm";
-
-// Grid 
+// Layout 
 @import "layout/vertical_grid";
+@import "layout/navigation/AMP_menu";
+@import "layout/navigation/AMP_footer";
 
-// Navigation
-@import "navigation/AMP_menu";
-
-// Footer
-@import "navigation/AMP_footer";
-
-// Content
-@import "site/AMP/AMP_page";
-@import "site/AMP/AMP_links";
-@import "site/AMP/AMP_images";
-@import "site/AMP/AMP_teambooking";
+// Pages
+@import "pages/AMP/AMP_page";

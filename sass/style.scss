@@ -19,127 +19,99 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
+/*--------------------------------------------------------------
+# Abstracts
+--------------------------------------------------------------*/
+@import "abstracts/responsive";
+@import "abstracts/colors";
+@import "abstracts/typography";
+@import "abstracts/structure";
+@import "abstracts/columns"; 
+
+	// Mixins
+	@import "abstracts/mixins/underscores";
+	@import "abstracts/mixins/colourmodifiers";
+	@import "abstracts/mixins/gradientmodifiers";
+	@import "abstracts/mixins/lineheights";
+	@import "abstracts/mixins/colour_encode";
+	@import "abstracts/mixins/logos";
+	@import "abstracts/mixins/fx";
+	@import "abstracts/mixins/background_images";
 
 /*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
-# Normalize
-# Typography
-# Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Widgets
-# Content
-	## Posts and pages
-	## Comments
-# Infinite scroll
-# Media
-	## Captions
-	## Galleries
+# Base
 --------------------------------------------------------------*/
-@import "variables-site/variables-site";
-@import "mixins/mixins-master";
+@import "base/normalize";
+@import "base/typography";
+@import "base/code";
+@import "base/fonts";
+@import "base/accessibility";
+@import "base/clearings"; 
 
 /*--------------------------------------------------------------
-# Normalize
+# Components
 --------------------------------------------------------------*/
-@import "normalize";
-
-/*-------------------------------------------------------------- 
-# Typography
---------------------------------------------------------------*/
-@import "typography/typography";
-
-/*--------------------------------------------------------------
-# Elements
---------------------------------------------------------------*/
-@import "elements/elements";
-
-/*--------------------------------------------------------------
-# Forms
---------------------------------------------------------------*/
-@import "forms/forms";
-
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-@import "navigation/navigation";
-
-/*--------------------------------------------------------------
-# Accessibility
---------------------------------------------------------------*/
-@import "modules/accessibility";
+@import "components/elements";
+@import "components/lists";
+@import "components/tables";
+@import "components/form-buttons";
+@import "components/form-fields";
+@import "components/backgrounds";
+@import "components/breadcrumbs";
+@import "components/captions";
+@import "components/comments";
+@import "components/galleries";
+@import "components/lite-yt-embed";
+@import "components/media";
+@import "components/links";
+@import "components/alignments";
+@import "components/widgets";
+@import "components/vertical_rhythm";
+@import "components/infinite-scroll";  
+@import "components/yt-button";
+@import "components/cta";
+@import "components/progress_indicator";
 
 /*--------------------------------------------------------------
-# Alignments
+# Layout
 --------------------------------------------------------------*/
-@import "modules/alignments";
 
-/*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-@import "modules/clearings"; 
-
-/*--------------------------------------------------------------
-# Widgets
---------------------------------------------------------------*/ 
-@import "site/secondary/widgets";
-
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-@import "site/site";
-
-/*--------------------------------------------------------------
-# Vertical Rhythm
---------------------------------------------------------------*/
-@import "modules/vertical_rhythm";
-
-/*--------------------------------------------------------------
-# Responsiveness
---------------------------------------------------------------*/
+@import "layout/navigation/wiki";
+@import "layout/navigation/menus";
+@import "layout/navigation/footer";
 @import "layout/responsive_desktop";
 @import "layout/responsive_tablet";
 @import "layout/responsive_mobile";
-
-/*--------------------------------------------------------------
-# Grid
---------------------------------------------------------------*/
 @import "layout/vertical_grid";
+@import "layout/no-sidebar"; 
+@import 'layout/vc-separator';
+@import 'layout/vc-row';
+@import 'layout/vc-columns';
+@import "layout/footer";
 
 /*--------------------------------------------------------------
-# Infinite scroll
+# pages
 --------------------------------------------------------------*/
-@import "modules/infinite-scroll";  
- 
-/*--------------------------------------------------------------
-# Infinite scroll
---------------------------------------------------------------*/
-@import "anime_js/anime_js"; 
+@import "pages/posts-and-pages";
+@import "pages/contact/contact_form";
+@import "pages/articles/articles";
+@import "pages/articles/articlearchive";
+@import "pages/articles/articlecategories";
+@import "pages/classes/classes";   
+@import "pages/pt/pt";  
+@import "pages/wiki/wiki";  
+@import "pages/pulse/pulse";    
+@import "pages/ig_news/ig_news";  
+@import "pages/youtube_cover/youtube_cover";  
+@import "pages/privatetuition/private";  
+@import "pages/homepage/homepage"; 
 
 /*--------------------------------------------------------------
-# Cool FX
+# vendor
 --------------------------------------------------------------*/
-@import "fx/fx_kenburns";
-@import "fx/fx_liftup"; 
-@import "fx/fx_floorfade"; 
-
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-@import "layout/sidebar_content"; 
-
-/*--------------------------------------------------------------
-## Backgrounds
---------------------------------------------------------------*/
-@import "media/backgrounds";
-
-/*--------------------------------------------------------------
-## Lite YouTube
---------------------------------------------------------------*/
-@import "media/lite-yt-embed";
+@import "vendor/anime_js"; 
+@import "vendor/tb_calendar";
+@import "vendor/stripe_products"; 
+@import "vendor/pearson_fx/fx_kenburns";
+@import "vendor/pearson_fx/fx_liftup"; 
+@import "vendor/pearson_fx/fx_floorfade"; 

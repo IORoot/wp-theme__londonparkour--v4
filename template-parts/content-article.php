@@ -34,9 +34,11 @@
 
 				<div class="article__content--subtitle">
 					<?php 
-						$termlink = get_term_link( $articlecategory, 'articlecategory' );
-						$categorylink = '<a href="'.$termlink.'" class="article__content--catlink">'.$articlecategory.'</a>';
-						echo  $categorylink. ' &bull; ' . get_the_date(); 
+						if (isset($articlecategory)){
+							$termlink = get_term_link( $articlecategory, 'articlecategory' );
+							$categorylink = '<a href="'.$termlink.'" class="article__content--catlink">'.$articlecategory.'</a>';
+							echo  $categorylink. ' &bull; ' . get_the_date();
+						}
 					?>
 				</div>
 				

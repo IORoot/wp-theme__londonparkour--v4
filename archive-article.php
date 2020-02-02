@@ -39,17 +39,16 @@
 </div>
 
 
-<div>   
-    <h3>Search Products</h3>
-    <form role="search" action="<?php echo site_url('/'); ?>" method="get" id="searchform">
-        <input type="text" name="s" placeholder="Search Products"/>
-        <input type="hidden" name="post_type" value="products" /> <!-- // hidden 'products' value -->
-        <input type="submit" alt="Search" value="Search" />
-    </form>
-</div>
-
-
 <div class="articlelatest__content">
+
+    <div>   
+        <h2>Search Products</h2>
+        <form role="search" action="<?php echo site_url('/'); ?>" method="get" id="searchform">
+            <input type="text" name="s" placeholder="Search Products"/>
+            <input type="hidden" name="post_type" value="article" /> <!-- // hidden 'article' value -->
+            <input type="submit" alt="Search" value="Search" />
+        </form>
+    </div>
 
     <h2 class="archiveheader">All Categories</h2>
 

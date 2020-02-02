@@ -1,0 +1,183 @@
+.site-footer {
+
+    .footer-container {
+        padding-top: 145px !important;
+        padding-right: 8.33% !important;
+        padding-bottom: 696px !important;
+        padding-left: 8.33% !important;
+        background-color: #242424 !important; 
+    }
+
+    a {
+        color: $white;
+
+        &:active {
+            color: $white;  
+        }
+
+        &:hover {
+            color: $sky;
+            text-decoration: underline;  
+        }
+    } 
+
+    .menu__mainmenu {
+        ul {
+            list-style: none; 
+            padding: 0px;
+
+            li {
+                a{
+                    text-decoration: none;
+                }
+                i {
+                    display: none; 
+                }
+            }
+        }
+    }
+
+    .footer {
+
+        &__trustpilot {
+            color: $white;
+            display: inline-block;
+            line-height: 29px;
+            vertical-align: bottom;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: none;
+                color: $trustpilot;
+            }
+
+            &:before {
+                font-family: "Material Icons";
+                content: '\e838\e838\e838\e838\e838';
+                line-height:29px;
+                font-size: 24px;
+                vertical-align: bottom;
+                padding-right: 10px;
+                color: $trustpilot;
+                text-decoration: none;
+            }
+        }
+
+        &__appstore {
+            margin: 29px 0px;
+            display: block;
+            height: 116px;
+            
+
+            a {
+                text-indent: 45px;
+                line-height: 58px;
+                text-decoration: none;
+
+                width: 116px;
+                height: 58px;
+                float:left;
+                margin-right: 10px;
+
+                background-size: 29px 29px;
+                background-position: 10% 50%;
+                background-color: $black;
+                background-repeat: no-repeat;
+
+                &:hover {
+                    color: $white;
+                }
+                
+            }
+
+            &-android {
+                @include logo-android($goo);
+                &:hover {
+                    background-color: $goo;
+                    @include logo-android($white);
+                }
+            }
+            &-apple {
+                @include logo-apple($smoke);
+
+                &:hover {
+                    background-color: $smoke;
+                    @include logo-apple($white);
+                }
+            }
+
+        }
+
+
+        &__powered {
+
+            height: 29px;
+
+            a {
+                display: inline-block; 
+                margin-right: 10px;
+                height: 29px;
+                width: 29px;
+                text-indent:-9999px;
+
+                background-size: 24px 24px;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+            }
+
+            &-stripe {
+                @include logo-stripe($white);
+
+                &:hover {
+                    @include logo-stripe($stripe);
+                }
+            }
+
+            &-github {
+                @include logo-github($white);
+
+                &:hover {
+                    @include logo-github($github);
+                }
+            }
+
+            &-digitalocean {
+                @include logo-digitalocean($white);
+
+                &:hover {
+                    @include logo-digitalocean($digitalocean);
+                }
+            }
+
+        }
+
+
+        &__android {
+            @include logo-android($goo);
+        
+            &:hover {
+                @include logo-android($goo);
+            }
+        }
+        &__apple {
+            @include logo-apple($smoke);
+        
+            &:hover {
+                @include logo-apple($smoke);
+            }
+        }
+    }
+}
+
+/*--------------------------------------------------------------
+## Footer Social Media Menu
+--------------------------------------------------------------*/
+
+@import "_socialmedia";
+
+
+@media (max-width: $tablet) {
+    .footer_column_three h2 {
+        font-size: 5vw;
+    }
+}
