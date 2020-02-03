@@ -83,6 +83,7 @@
 
     <ul class="articlelatest-list">
         <?php
+        
         // Check if any term exists
         if ( ! empty( $articles ) && is_array( $articles ) ) {
 

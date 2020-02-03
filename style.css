@@ -2520,35 +2520,36 @@ a:hover, a:active {
     padding: 0px 20px;
   }
 }
-.post-type-archive-article .archiveheader {
+.archiveheader {
   margin: 29px 0px;
 }
-.post-type-archive-article .articlearchive-list {
+
+.articlearchive-list {
   list-style: none;
   padding: 0px;
   display: flex;
   flex-wrap: wrap;
 }
-.post-type-archive-article .articlearchive-list li {
+.articlearchive-list li {
   height: 58px;
   background-color: #fafafa;
   margin-bottom: 29px;
   width: calc(33% - 15px);
   overflow: hidden;
 }
-.post-type-archive-article .articlearchive-list li:nth-child(3n+1) {
+.articlearchive-list li:nth-child(3n+1) {
   margin-right: 15px;
 }
-.post-type-archive-article .articlearchive-list li:nth-child(3n) {
+.articlearchive-list li:nth-child(3n) {
   margin-left: 15px;
 }
-.post-type-archive-article .articlearchive-list li:hover {
+.articlearchive-list li:hover {
   background-color: #424242 !important;
 }
-.post-type-archive-article .articlearchive-list li:hover * {
+.articlearchive-list li:hover * {
   color: #ffffff;
 }
-.post-type-archive-article .articlearchive-list li a {
+.articlearchive-list li a {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -2557,79 +2558,80 @@ a:hover, a:active {
   height: 58px;
   overflow: hidden;
 }
-.post-type-archive-article .articlearchive-list__title {
+.articlearchive-list__title {
   height: 58px;
   line-height: 58px;
   padding: 0px 29px;
   font-weight: 600;
 }
-.post-type-archive-article .articlearchive-list__count {
+.articlearchive-list__count {
   font-size: 18px;
   height: 58px;
   line-height: 58px;
   padding: 0px 29px;
   margin-left: auto;
 }
-.post-type-archive-article .articlearchive-list__arrow {
+.articlearchive-list__arrow {
   width: 58px;
   height: 58px;
 }
-.post-type-archive-article .articlearchive-list__arrow i {
+.articlearchive-list__arrow i {
   font-size: 18px;
-  line-height: 58px;
+  line-height: 58px !important;
   vertical-align: text-top;
   color: #ffffff;
 }
-.post-type-archive-article .articlelatest__hero {
+
+.articlelatest__hero {
   background-color: #242424;
   padding: 58px 20px;
   margin-bottom: 58px;
 }
-.post-type-archive-article .articlelatest__title {
+.articlelatest__title {
   margin: 0px;
   text-align: center;
   color: #ffffff;
 }
-.post-type-archive-article .articlelatest__subtitle {
+.articlelatest__subtitle {
   margin: 0px auto 29px;
   text-align: center;
   color: #ffffff;
   width: 70%;
 }
-.post-type-archive-article .articlelatest__postcount {
+.articlelatest__postcount {
   font-size: 18px;
   color: #ffffff;
 }
-.post-type-archive-article .articlelatest__content {
+.articlelatest__content {
   width: 70%;
   margin: 0px 15% 58px;
 }
-.post-type-archive-article .articlelatest-list {
+.articlelatest-list {
   list-style: none;
   padding: 0px;
   display: flex;
   flex-wrap: wrap;
 }
-.post-type-archive-article .articlelatest-list li {
+.articlelatest-list li {
   height: 406px;
   background-color: #fafafa;
   margin-bottom: 29px;
   width: calc(33% - 15px);
   overflow: hidden;
 }
-.post-type-archive-article .articlelatest-list li:nth-child(3n+1) {
+.articlelatest-list li:nth-child(3n+1) {
   margin-right: 15px;
 }
-.post-type-archive-article .articlelatest-list li:nth-child(3n) {
+.articlelatest-list li:nth-child(3n) {
   margin-left: 15px;
 }
-.post-type-archive-article .articlelatest-list li:hover {
+.articlelatest-list li:hover {
   background-color: #424242;
 }
-.post-type-archive-article .articlelatest-list li:hover * {
+.articlelatest-list li:hover * {
   color: #ffffff;
 }
-.post-type-archive-article .articlelatest-list li a {
+.articlelatest-list li a {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -2638,18 +2640,18 @@ a:hover, a:active {
   height: 406px;
   overflow: hidden;
 }
-.post-type-archive-article .articlelatest-list__hero {
+.articlelatest-list__hero {
   width: 100%;
   height: 203px;
   background-color: #242424;
   overflow: hidden;
 }
-.post-type-archive-article .articlelatest-list__image {
+.articlelatest-list__image {
   display: block;
   height: 58px;
   width: auto;
 }
-.post-type-archive-article .articlelatest-list__title {
+.articlelatest-list__title {
   height: 58px;
   line-height: 58px;
   width: 100%;
@@ -2657,27 +2659,27 @@ a:hover, a:active {
   font-weight: 600;
   overflow: hidden;
 }
-.post-type-archive-article .articlelatest-list__description {
+.articlelatest-list__description {
   height: 87px;
   width: 100%;
   line-height: 29px;
   padding: 0px 29px;
   overflow: hidden;
 }
-.post-type-archive-article .articlelatest-list__date {
+.articlelatest-list__date {
   font-size: 12px;
   height: 58px;
   line-height: 58px;
   padding: 0px 29px;
   margin-right: auto;
 }
-.post-type-archive-article .articlelatest-list__arrow {
+.articlelatest-list__arrow {
   width: 58px;
   height: 58px;
 }
-.post-type-archive-article .articlelatest-list__arrow i {
+.articlelatest-list__arrow i {
   font-size: 18px;
-  line-height: 58px;
+  line-height: 58px !important;
   vertical-align: text-top;
   color: #70579f;
 }
