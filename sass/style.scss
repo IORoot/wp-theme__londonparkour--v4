@@ -71,6 +71,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "components/yt-button";
 @import "components/cta";
 @import "components/progress_indicator";
+@import "components/pagination";
+@import "components/search";
 
 /*--------------------------------------------------------------
 # Layout
@@ -97,6 +99,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "pages/articles/articles";
 @import "pages/articles/articlearchive";
 @import "pages/articles/articlecategories";
+@import "pages/articles/articlesearch";
 @import "pages/classes/classes";   
 @import "pages/pt/pt";  
 @import "pages/wiki/wiki";  

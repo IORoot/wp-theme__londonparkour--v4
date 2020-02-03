@@ -1,0 +1,16 @@
+.articlesearchform {
+
+    width: 100%;
+    padding-right:20px;
+    margin:0px 0px 58px;
+
+    // Search Box Text Input.
+    input[type='text']{
+        width: 100%;
+        border: none;
+        background: $ghost;
+        line-height: 58px;
+        padding: 0px 29px;
+        font-size: 29px;
+    }
+}

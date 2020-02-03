@@ -1255,6 +1255,40 @@ a:hover, a:active {
   background: #e0e0e0;
 }
 
+.c-pagination {
+  margin-bottom: 29px;
+}
+.c-pagination .pagination {
+  text-align: center;
+}
+.c-pagination .pagination .page-numbers {
+  padding: 0px 1.5%;
+}
+.c-pagination .pagination .current {
+  background: #f5f5f5;
+}
+.c-pagination .pagination a {
+  text-decoration: none;
+}
+.c-pagination .pagination a .next_text,
+.c-pagination .pagination a .prev_text {
+  line-height: 23px;
+}
+
+.articlesearchform {
+  width: 100%;
+  padding-right: 20px;
+  margin: 0px 0px 58px;
+}
+.articlesearchform input[type=text] {
+  width: 100%;
+  border: none;
+  background: #f5f5f5;
+  line-height: 58px;
+  padding: 0px 29px;
+  font-size: 29px;
+}
+
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
@@ -2770,6 +2804,46 @@ a:hover, a:active {
     width: 100%;
     margin: 0px;
     padding: 0px 20px 58px;
+  }
+}
+.articlesearch {
+  width: 75%;
+  margin: 58px 12.5%;
+}
+.articlesearch .searchresults-title {
+  margin-bottom: 29px;
+}
+.articlesearch .searchresults {
+  display: flex;
+  flex-wrap: wrap;
+}
+.articlesearch .searchresults article {
+  background: #f5f5f5;
+  padding: 0px 29px 29px 29px;
+  margin: 0px 29px 29px 0px;
+  flex: 1 1 30%;
+  min-width: 300px;
+}
+.articlesearch .searchresults article .entry-title {
+  line-height: 58px;
+  font-size: 29px;
+}
+.articlesearch .searchresults article .entry-summary {
+  max-height: 203px;
+  overflow: hidden;
+}
+.articlesearch .searchresults article:hover {
+  background: #424242;
+}
+.articlesearch .searchresults article:hover * {
+  color: #fafafa;
+}
+
+@media (max-width: 1023px) {
+  .articlesearch {
+    width: 100%;
+    margin: 0px 0px;
+    padding: 0px 20px;
   }
 }
 .classes__gradient--red {

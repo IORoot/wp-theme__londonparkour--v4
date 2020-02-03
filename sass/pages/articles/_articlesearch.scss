@@ -1,0 +1,52 @@
+.articlesearch {
+    width: 75%;
+    margin: 58px 12.5%;
+
+    .searchresults-title {
+        margin-bottom:29px;
+    }
+
+    // Result wrapper
+    .searchresults {
+        display: flex;
+        flex-wrap: wrap;
+
+        // Each result
+        article {
+            background: $ghost;
+            padding: 0px 29px 29px 29px;
+            margin: 0px 29px 29px 0px; 
+            flex: 1 1 30%;
+            min-width:300px;
+
+            .entry-title {
+                line-height: 58px;
+                font-size: 29px;
+            }
+
+            // Limit the height to stop long results.
+            .entry-summary {
+                max-height: 203px;
+                overflow: hidden;
+            }
+
+            &:hover {
+                background: $fog;
+                * {
+                    color: $halo;
+                }
+            }
+        }
+    }
+
+} 
+
+
+// Change widths on tablet.
+@media (max-width: $tablet) {
+    .articlesearch {
+        width: 100%;
+        margin: 0px 0px;
+        padding: 0px 20px;
+    }        
+}
