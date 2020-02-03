@@ -2928,40 +2928,6 @@ a:hover, a:active {
   content: "";
 }
 
-.single-post .sidemenu__desktop {
-  display: initial;
-}
-.single-post .sidemenu__mobile {
-  display: none;
-  width: 83.3%;
-  height: 58px;
-  position: absolute;
-  left: 8.33%;
-}
-.single-post .sidemenu__mobile select {
-  height: 29px;
-  border: 0px;
-  width: 100%;
-  margin-right: 29px;
-}
-@media (max-width: 1023px) {
-  .single-post .sidemenu__desktop {
-    display: none;
-  }
-  .single-post .sidemenu__mobile {
-    display: initial;
-  }
-  .single-post div.content-area .site-main {
-    width: 100%;
-    margin-top: 58px;
-  }
-  .single-post aside.widget-area {
-    width: 100%;
-    overflow: initial !important;
-    float: none !important;
-  }
-}
-
 .scraper-container .item {
   display: block;
   float: left;
@@ -3177,6 +3143,81 @@ a:hover, a:active {
     line-height: 12vw;
   }
 }
+.single-post .site-content .content-area {
+  float: right;
+  margin: 87px 0 87px -25%;
+  padding: 0px 8.33%;
+  width: 100%;
+}
+.single-post .site-content .content-area .site-main {
+  margin: 0;
+  float: right;
+  width: 75%;
+}
+.single-post .site-content .widget-area {
+  margin: 87px 0px;
+  padding: 0px 0px 0px 8.33%;
+  float: left;
+  overflow: hidden;
+  width: 25%;
+}
+.single-post .no-sidebar .content-area {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+.single-post .no-sidebar .site-main {
+  margin-right: 0;
+}
+.single-post .sidemenu__desktop {
+  display: initial;
+}
+.single-post .sidemenu__mobile {
+  display: none;
+  width: 83.3%;
+  height: 58px;
+  position: absolute;
+  left: 8.33%;
+}
+.single-post .sidemenu__mobile select {
+  height: 29px;
+  border: 0px;
+  width: 100%;
+  margin-right: 29px;
+}
+@media (max-width: 1024px) {
+  .single-post .sidemenu__desktop {
+    display: none;
+  }
+  .single-post .sidemenu__mobile {
+    display: initial;
+  }
+  .single-post .site-content .content-area {
+    float: none;
+    margin: 87px 8.33% 0 0;
+    padding: 0px 8.33%;
+    width: 87.3%;
+  }
+  .single-post .site-content .content-area .site-main {
+    width: 100%;
+    margin-top: 58px;
+    overflow: hidden;
+  }
+  .single-post .site-content .content-area .site-main h1 {
+    font-size: 29px;
+    padding-left: 5px;
+  }
+  .single-post .site-content .content-area .site-main h2 {
+    font-size: 29px;
+    padding-left: 5px;
+  }
+  .single-post .site-content .widget-area {
+    width: 100%;
+    overflow: initial !important;
+    float: none !important;
+  }
+}
+
 /*--------------------------------------------------------------
 # vendor
 --------------------------------------------------------------*/
