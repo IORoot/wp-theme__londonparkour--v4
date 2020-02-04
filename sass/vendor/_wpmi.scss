@@ -1,0 +1,70 @@
+// WordPress My Instagram
+div {
+
+
+    .wp-my-instagram {
+
+        .wpmi-list {
+
+            .wpmi-item {
+
+                line-height: 29px;
+                font-size: 18px;
+                margin-right: 15px;
+                width: calc(33.3% - 15px);
+                background: $night;
+                color: $white;
+
+                a {
+
+                    text-decoration: none;
+
+                    &:hover * {
+                        color: $white;
+                    }
+
+                    .instagram__hero img {
+
+                    }
+
+                    .instagram__content {
+
+                        padding: 29px;
+
+                        .instagram__title {
+                            line-height: 29px;
+                            font-size: 18px;
+                            margin-bottom: 29px;
+                        }
+    
+                        .instagram__description {
+                            line-height: 29px;
+                            font-size: 18px;
+                        }
+    
+                        .instagram__date {
+                            line-height: 29px;
+                            font-size: 18px;
+                        }
+                    }
+                    
+                }
+            } 
+        }
+
+        .wpmi-me {
+
+            display: none;
+
+            position: relative;
+            margin: 29px 0px;
+
+            a {
+                font-size: 18px;
+                line-height: 29px;
+                text-decoration: none;
+                background-color: transparent;
+            }
+        }
+    }
+}
