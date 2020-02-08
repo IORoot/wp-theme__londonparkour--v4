@@ -25,9 +25,14 @@
             }
         } 
 
+        &__main {
+            position: relative;
+        }
+
         &__content {
-            width: 50%;
-            margin: 0px 25%;
+            width: 75%;
+            padding: 0px 12.5%;
+            margin: 0px 12.5%;
 
             &--title {
                 margin:58px 0px;
@@ -56,6 +61,8 @@
             &--text {
                 margin-bottom:87px;
                 overflow-wrap: break-word;
+                // margin-top: -29px;
+                
                 // Import the article-specific typography styling
                 
                 h2::first-letter {

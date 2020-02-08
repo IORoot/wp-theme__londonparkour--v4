@@ -1289,6 +1289,33 @@ a:hover, a:active {
   font-size: 29px;
 }
 
+.dynamic_contents {
+  position: absolute;
+  right: calc(100% + 29px);
+  width: 200px;
+  display: inline-block;
+}
+.dynamic_contents__header {
+  font-weight: 600;
+}
+.dynamic_contents ul {
+  list-style: none;
+  padding: 0px;
+}
+.dynamic_contents ul li a {
+  font-size: 16px;
+  line-height: 29px;
+  text-decoration: none;
+}
+.dynamic_contents ul li a:hover {
+  color: #e86546;
+}
+
+@media (max-width: 1023px) {
+  .dynamic_contents {
+    display: none;
+  }
+}
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
@@ -2451,9 +2478,13 @@ a:hover, a:active {
   display: block;
   width: 100%;
 }
+.article-template .article__main {
+  position: relative;
+}
 .article-template .article__content {
-  width: 50%;
-  margin: 0px 25%;
+  width: 75%;
+  padding: 0px 12.5%;
+  margin: 0px 12.5%;
 }
 .article-template .article__content--title {
   margin: 58px 0px;

@@ -27,32 +27,41 @@
 			?>
 		</div>
 
-		<div class="article__content">
 
-			<div class="article__content--title">
-				<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+			<div class="article__content">
 
-				<div class="article__content--subtitle">
-					<?php 
-						if (isset($articlecategory)){
-							$termlink = get_term_link( $articlecategory, 'articlecategory' );
-							$categorylink = '<a href="'.$termlink.'" class="article__content--catlink">'.$articlecategory.'</a>';
-							echo  $categorylink. ' &bull; ' . get_the_date();
-						}
+				<div class="article__content--title">
+					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+
+					<div class="article__content--subtitle">
+						<?php 
+							if (isset($articlecategory)){
+								$termlink = get_term_link( $articlecategory, 'articlecategory' );
+								$categorylink = '<a href="'.$termlink.'" class="article__content--catlink">'.$articlecategory.'</a>';
+								echo  $categorylink. ' &bull; ' . get_the_date();
+							}
+						?>
+					</div>
+					
+				</div>
+
+
+				<div class="article__main">
+
+					<?php echo do_shortcode('[dynamic_contents]'); ?>
+					
+					<div class="article__content--text">
+						<?php the_content(); ?>
+					</div>
+
+					<?php if ($videoId != ''){ 
+						echo '<a class="article__content--youtube-link" target="_blank" href="https://www.youtube.com/watch?v='.$videoId.'" ><span>Watch Original on YouTube</span></a>'; } 
 					?>
+					
 				</div>
 				
 			</div>
-			
-			<div class="article__content--text">
-				<?php the_content(); ?>
-			</div>
 
-			<?php if ($videoId != ''){ 
-				echo '<a class="article__content--youtube-link" target="_blank" href="https://www.youtube.com/watch?v='.$videoId.'" ><span>Watch Original on YouTube</span></a>'; } 
-			?>
-			
-		</div>
 
 	</article>
 	
