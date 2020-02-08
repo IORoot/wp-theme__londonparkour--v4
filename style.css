@@ -2445,7 +2445,7 @@ a:hover, a:active {
 }
 .article-template .article__hero--video {
   width: 100%;
-  height: 100vh;
+  height: 522px;
 }
 .article-template .article__hero--image {
   display: block;
