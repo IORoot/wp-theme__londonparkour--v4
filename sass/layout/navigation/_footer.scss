@@ -149,6 +149,14 @@
                 }
             }
 
+            &-bitfield {
+                @include logo-bitfield($white);
+
+                &:hover {
+                    @include logo-bitfield(#fc0303);
+                }
+            }
+
         }
 
 

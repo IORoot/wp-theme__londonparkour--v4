@@ -98,6 +98,14 @@
         background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='DigitalOcean' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cpath d='M15,0 L497,0 C505.284271,-1.52179594e-15 512,6.71572875 512,15 L512,497 C512,505.284271 505.284271,512 497,512 L15,512 C6.71572875,512 1.01453063e-15,505.284271 0,497 L0,15 C-1.01453063e-15,6.71572875 6.71572875,1.52179594e-15 15,0 Z M78,373 L78,326 L125,326 L125,430 L182,430 L182,300 L256,300 L256,447 C361.486387,447 447,361.486387 447,256 C447,150.513613 361.486387,65 256,65 C150.513613,65 65,150.513613 65,256 L139,256 C139,191.382684 191.382684,139 256,139 C320.617316,139 373,191.382684 373,256 C373,320.617316 320.617316,373 256,373 L78,373 Z' id='Combined-Shape' fill='#{$color}' %3E%3C/path%3E%3C/g%3E%3C/svg%3E");
 }
 
+//  ┌──────────────────────────────────────┐
+//  │            Bitfield logo             │
+//  └──────────────────────────────────────┘
+@mixin logo-bitfield($hex){
+        $color: encodecolor($hex);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='29px' height='29px'%3E%3Ctext x='0' y='25' font-size='29px' font-family='Lato' fill='#{$color}'%3EB%3C/text%3E%3C/svg%3E");
+}
+
 
 //  ┌──────────────────────────────────────┐
 //  │  Colour controlled by HEX variable   │
