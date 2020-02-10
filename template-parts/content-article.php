@@ -48,7 +48,7 @@
 
 				<div class="article__main">
 
-					<?php echo do_shortcode('[dynamic_minimap]'); ?>
+					<?php echo do_shortcode('[dynamic_contents]'); ?>
 					
 					<div class="article__content--text">
 						<?php the_content(); ?>
