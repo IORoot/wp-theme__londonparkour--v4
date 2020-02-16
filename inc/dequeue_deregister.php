@@ -30,8 +30,10 @@ function ldnpk_deregister_styles() {
     wp_deregister_style( 'smile_fonts' );        // Ultimate_VC_Addons
     wp_deregister_style( 'dashicons' );          // Wordpress dashicons
     wp_deregister_style( 'wp-block-library' );   // Guttenburg blocks
-    //wp_deregister_style( 'js_composer_front' );      // WPBakery - freontend
-    wp_deregister_style( 'js_composer_custom_css' );   // WPBakery - custom
+    //wp_deregister_style( 'js_composer_front' );       // WPBakery - frontend
+    wp_deregister_style( 'js_composer_custom_css' );    // WPBakery - custom
+    wp_deregister_style( 'teambooking_fonts' );         // TeamBooking Fonts
+    wp_deregister_style( 'teambooking_fonts_arrows' );  // TeamBooking Fonts
 
     // Deregister JS Scripts
     wp_deregister_script( 'wp-embed' );
