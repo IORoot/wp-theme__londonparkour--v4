@@ -1347,9 +1347,14 @@ a:hover, a:active {
 .random-video__meta a {
   color: #242424;
   line-height: 58px;
+  background: #ffffff;
+  padding: 0px 29px;
+  display: inline-block;
+  margin-top: 29px;
 }
 .random-video__meta a:hover {
   color: #ffffff;
+  background: #242424;
 }
 .random-video__lite-yt {
   height: 406px;

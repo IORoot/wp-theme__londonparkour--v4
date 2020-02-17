@@ -44,9 +44,14 @@
         a {
             color: $night;
             line-height: 58px;
+            background: $white;
+            padding: 0px 29px;
+            display: inline-block;
+            margin-top: 29px; 
 
             &:hover {
                 color: $white;
+                background: $night;
             }
         }
 
