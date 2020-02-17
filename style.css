@@ -1335,6 +1335,18 @@ a:hover, a:active {
   background: #53a5e3;
   color: #ffffff;
 }
+.random-video__wrap--youth {
+  background: #38ef7d;
+  color: #ffffff;
+}
+.random-video__wrap--private {
+  background: #11998e;
+  color: #ffffff;
+}
+.random-video__wrap--commandotemple {
+  background: #D0C8B3;
+  color: #242424;
+}
 .random-video__left {
   width: 50%;
   float: left;

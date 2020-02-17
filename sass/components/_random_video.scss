@@ -8,22 +8,34 @@
 
     &__wrap {
 
-        // red
         &--outdoor {
             background: $rose;
             color: $white;
         }
 
-        // orange
         &--indoor {
             background: $crayon;
             color: $white;
         }
 
-        // blue
         &--pt {
             background: $sky;
             color: $white;
+        }
+
+        &--youth {
+            background: $goo;
+            color: $white;
+        }
+
+        &--private {
+            background: $aqua;
+            color: $white;
+        }
+
+        &--commandotemple {
+            background: $commando;
+            color: $night;
         }
 
     }
