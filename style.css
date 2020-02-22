@@ -1388,6 +1388,115 @@ a:hover, a:active {
     width: 100%;
   }
 }
+.articlelatest__hero {
+  background-color: #242424;
+  padding: 58px 20px;
+  margin-bottom: 58px;
+}
+.articlelatest__title {
+  margin: 0px;
+  text-align: center;
+  color: #ffffff;
+}
+.articlelatest__subtitle {
+  margin: 0px auto 29px;
+  text-align: center;
+  color: #ffffff;
+  width: 70%;
+}
+.articlelatest__postcount {
+  font-size: 18px;
+  color: #ffffff;
+}
+.articlelatest__content {
+  width: 70%;
+  margin: 0px 15% 58px;
+}
+.articlelatest-list {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.articlelatest-list li {
+  background-color: #fafafa;
+  margin-bottom: 29px;
+  width: calc(33% - 15px);
+  overflow: hidden;
+  flex: 1 0 auto;
+}
+.articlelatest-list li:nth-child(3n+1) {
+  margin-right: 15px;
+}
+.articlelatest-list li:nth-child(3n) {
+  margin-left: 15px;
+}
+.articlelatest-list li:hover {
+  background-color: #424242;
+}
+.articlelatest-list li:hover * {
+  color: #ffffff;
+}
+.articlelatest-list li a {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  text-decoration: none;
+  color: #242424;
+  overflow: hidden;
+}
+.articlelatest-list__hero {
+  width: 100%;
+  background-color: #242424;
+  overflow: hidden;
+}
+.articlelatest-list__hero img {
+  display: block;
+  margin: 0 auto;
+}
+.articlelatest-list__title {
+  height: 58px;
+  line-height: 58px;
+  width: 100%;
+  padding: 0px 29px;
+  font-weight: 600;
+  overflow: hidden;
+}
+.articlelatest-list__description {
+  height: 87px;
+  width: 100%;
+  line-height: 29px;
+  padding: 0px 29px;
+  overflow: hidden;
+}
+.articlelatest-list__date {
+  font-size: 12px;
+  height: 58px;
+  line-height: 58px;
+  padding: 0px 29px;
+  margin-right: auto;
+}
+.articlelatest-list__arrow {
+  width: 58px;
+  height: 58px;
+}
+.articlelatest-list__arrow i {
+  font-size: 18px;
+  line-height: 58px !important;
+  vertical-align: text-top;
+  color: #70579f;
+}
+
+@media (max-width: 1023px) {
+  .articlelatest-list li {
+    width: calc(50% - 15px);
+  }
+}
+@media (max-width: 767px) {
+  .articlelatest-list li {
+    width: calc(100% - 15px);
+  }
+}
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
@@ -2689,108 +2798,6 @@ a:hover, a:active {
   line-height: 58px !important;
   vertical-align: text-top;
   color: #ffffff;
-}
-
-.articlelatest__hero {
-  background-color: #242424;
-  padding: 58px 20px;
-  margin-bottom: 58px;
-}
-.articlelatest__title {
-  margin: 0px;
-  text-align: center;
-  color: #ffffff;
-}
-.articlelatest__subtitle {
-  margin: 0px auto 29px;
-  text-align: center;
-  color: #ffffff;
-  width: 70%;
-}
-.articlelatest__postcount {
-  font-size: 18px;
-  color: #ffffff;
-}
-.articlelatest__content {
-  width: 70%;
-  margin: 0px 15% 58px;
-}
-.articlelatest-list {
-  list-style: none;
-  padding: 0px;
-  display: flex;
-  flex-wrap: wrap;
-}
-.articlelatest-list li {
-  height: 406px;
-  background-color: #fafafa;
-  margin-bottom: 29px;
-  width: calc(33% - 15px);
-  overflow: hidden;
-}
-.articlelatest-list li:nth-child(3n+1) {
-  margin-right: 15px;
-}
-.articlelatest-list li:nth-child(3n) {
-  margin-left: 15px;
-}
-.articlelatest-list li:hover {
-  background-color: #424242;
-}
-.articlelatest-list li:hover * {
-  color: #ffffff;
-}
-.articlelatest-list li a {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  text-decoration: none;
-  color: #242424;
-  height: 406px;
-  overflow: hidden;
-}
-.articlelatest-list__hero {
-  width: 100%;
-  height: 203px;
-  background-color: #242424;
-  overflow: hidden;
-}
-.articlelatest-list__image {
-  display: block;
-  height: 58px;
-  width: auto;
-}
-.articlelatest-list__title {
-  height: 58px;
-  line-height: 58px;
-  width: 100%;
-  padding: 0px 29px;
-  font-weight: 600;
-  overflow: hidden;
-}
-.articlelatest-list__description {
-  height: 87px;
-  width: 100%;
-  line-height: 29px;
-  padding: 0px 29px;
-  overflow: hidden;
-}
-.articlelatest-list__date {
-  font-size: 12px;
-  height: 58px;
-  line-height: 58px;
-  padding: 0px 29px;
-  margin-right: auto;
-}
-.articlelatest-list__arrow {
-  width: 58px;
-  height: 58px;
-}
-.articlelatest-list__arrow i {
-  font-size: 18px;
-  line-height: 58px !important;
-  vertical-align: text-top;
-  color: #70579f;
 }
 
 @media (max-width: 1023px) {
