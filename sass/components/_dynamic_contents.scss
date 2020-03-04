@@ -35,8 +35,8 @@
 
 // dynamic sticky menu. 
 @media (min-height: 300px) {
-    .dynamic_contents {
-        position: sticky;
+    .sticky {
+        position: sticky; 
         top: 29px;
     }
 }

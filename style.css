@@ -1317,7 +1317,7 @@ a:hover, a:active {
   }
 }
 @media (min-height: 300px) {
-  .dynamic_contents {
+  .sticky {
     position: sticky;
     top: 29px;
   }
