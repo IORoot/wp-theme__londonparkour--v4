@@ -1316,6 +1316,12 @@ a:hover, a:active {
     display: none;
   }
 }
+@media (min-height: 300px) {
+  nav ul {
+    position: sticky;
+    top: 0;
+  }
+}
 .random-video {
   position: relative;
   display: table;
