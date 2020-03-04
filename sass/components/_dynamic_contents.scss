@@ -32,3 +32,11 @@
         display: none;
     }
 }
+
+// dynamic sticky menu.
+@media (min-height: 300px) {
+    nav ul {
+        position: sticky;
+        top: 0;
+    }
+}
