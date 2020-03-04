@@ -1317,9 +1317,9 @@ a:hover, a:active {
   }
 }
 @media (min-height: 300px) {
-  nav ul {
+  .dynamic_contents {
     position: sticky;
-    top: 0;
+    top: 29px;
   }
 }
 .random-video {
