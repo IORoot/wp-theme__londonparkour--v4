@@ -28,7 +28,8 @@
         'post_status'       => 'publish',
         'numberposts'       => 12,
         'offset'            => $paged * 12,
-        'order'             => 'DESC'
+        'order'             => 'DESC',
+        'has_password'      => FALSE
     ]);
 
 ?>
