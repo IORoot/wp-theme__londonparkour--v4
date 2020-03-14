@@ -1276,9 +1276,9 @@ a:hover, a:active {
 }
 
 .articlesearchform {
-  width: 100%;
+  width: 66.66%;
   padding-right: 20px;
-  margin: 0px 0px 58px;
+  margin: 0px 0px 29px;
 }
 .articlesearchform input[type=text] {
   width: 100%;
@@ -1551,6 +1551,42 @@ a:hover, a:active {
   vertical-align: text-top;
   width: 16px;
   margin-right: 8px;
+}
+
+.widget-area .widget_nav_menu h2.widget-title {
+  font-size: 29px;
+  line-height: 58px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 400;
+}
+.widget-area .widget_nav_menu .menu-articles-dashboard-container ul {
+  padding: 0px 20px;
+  list-style: none;
+}
+.widget-area .widget_nav_menu .menu-articles-dashboard-container ul li {
+  line-height: 58px;
+}
+.widget-area .widget_nav_menu .menu-articles-dashboard-container ul li.menu-item-current {
+  background-color: #F5F5F5;
+}
+.widget-area .widget_nav_menu .menu-articles-dashboard-container ul li a {
+  text-decoration: none;
+  color: #757575;
+}
+.widget-area .widget_nav_menu .menu-articles-dashboard-container ul li a:hover {
+  color: #53A5E3;
+}
+.widget-area .widget_nav_menu .menu-articles-dashboard-container ul li a:active {
+  color: #E34F65;
+}
+.widget-area .widget_nav_menu .menu-articles-dashboard-container ul li a .menu-item-icon {
+  font-size: 24px;
+  padding-top: 2px;
+  line-height: 16px;
+  vertical-align: text-top;
+  width: 16px;
+  margin-right: 16px;
 }
 
 .menu-toggle {
@@ -2744,83 +2780,80 @@ a:hover, a:active {
     padding: 0px 20px;
   }
 }
-.archiveheader {
-  margin: 29px 0px;
+.post-type-archive-article .site-content .content-area {
+  float: right;
+  margin: 87px 0 87px -16.66%;
+  width: 100%;
 }
-
-.articlearchive-list {
-  list-style: none;
-  padding: 0px;
-  display: flex;
-  flex-wrap: wrap;
+.post-type-archive-article .site-content .content-area .site-main {
+  margin: 0;
+  float: right;
+  width: 83.33%;
 }
-.articlearchive-list li {
-  height: 58px;
-  background-color: #fafafa;
-  margin-bottom: 29px;
-  width: calc(33% - 15px);
+.post-type-archive-article .site-content .widget-area {
+  margin: 87px 0px;
+  padding: 0px 0px 0px 0%;
+  float: left;
   overflow: hidden;
+  width: 16.66%;
 }
-.articlearchive-list li:nth-child(3n+1) {
-  margin-right: 15px;
-}
-.articlearchive-list li:nth-child(3n) {
-  margin-left: 15px;
-}
-.articlearchive-list li:hover {
-  background-color: #424242 !important;
-}
-.articlearchive-list li:hover * {
-  color: #ffffff;
-}
-.articlearchive-list li a {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  text-decoration: none;
-  color: #242424;
-  height: 58px;
-  overflow: hidden;
-}
-.articlearchive-list__title {
-  height: 58px;
-  line-height: 58px;
-  padding: 0px 29px;
-  font-weight: 600;
-}
-.articlearchive-list__count {
-  font-size: 18px;
-  height: 58px;
-  line-height: 58px;
-  padding: 0px 29px;
+.post-type-archive-article .no-sidebar .content-area {
+  float: none;
   margin-left: auto;
+  margin-right: auto;
 }
-.articlearchive-list__arrow {
-  width: 58px;
+.post-type-archive-article .no-sidebar .site-main {
+  margin-right: 0;
+}
+.post-type-archive-article .sidemenu__desktop {
+  display: initial;
+}
+.post-type-archive-article .sidemenu__mobile {
+  display: none;
+  width: 83.3%;
   height: 58px;
+  position: absolute;
+  left: 8.33%;
 }
-.articlearchive-list__arrow i {
-  font-size: 18px;
-  line-height: 58px !important;
-  vertical-align: text-top;
-  color: #ffffff;
+.post-type-archive-article .sidemenu__mobile select {
+  height: 29px;
+  border: 0px;
+  width: 100%;
+  margin-right: 29px;
+}
+@media (max-width: 1023px) {
+  .post-type-archive-article .sidemenu__desktop {
+    display: none;
+  }
+  .post-type-archive-article .sidemenu__mobile {
+    display: initial;
+  }
+  .post-type-archive-article .site-content .content-area {
+    float: none;
+    margin: 87px 8.33% 0 0;
+    padding: 0px 8.33%;
+    width: 100%;
+  }
+  .post-type-archive-article .site-content .content-area .site-main {
+    width: 100%;
+    margin-top: 58px;
+    overflow: hidden;
+  }
+  .post-type-archive-article .site-content .content-area .site-main h1 {
+    font-size: 29px;
+    padding-left: 5px;
+  }
+  .post-type-archive-article .site-content .content-area .site-main h2 {
+    font-size: 29px;
+    padding-left: 5px;
+  }
+  .post-type-archive-article .site-content .widget-area {
+    width: 100%;
+    overflow: initial !important;
+    float: none !important;
+  }
 }
 
-@media (max-width: 1023px) {
-  .post-type-archive-article .articlelatest__content {
-    width: 100%;
-    margin: 0px;
-    padding: 0px 20px 58px;
-  }
-  .post-type-archive-article .articlelatest__content li {
-    width: calc(50% - 15px);
-  }
-}
-@media (max-width: 767px) {
-  .post-type-archive-article .articlelatest__content li {
-    width: calc(100% - 15px);
-  }
-}
 .tax-articlecategory .articlecategory__hero {
   background-color: #242424;
   padding: 58px 20px;

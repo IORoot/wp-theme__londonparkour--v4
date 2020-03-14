@@ -57,7 +57,7 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/customizer.php';
 
- /*
+/*
  * Remove Gutenberg bullshit
  */
 require get_template_directory() . '/inc/disable_gutenberg.php';
@@ -96,3 +96,13 @@ require get_template_directory() . '/inc/remove_YOAST_head_comments.php';
  * Fix The string “https://api.w.org/” is not a registered keyword
  */
 require get_template_directory() . '/inc/fix_wp_api_discovery.php';
+
+/**
+ * Enable SVGs to be uploaded and used.
+ */
+require get_template_directory() . '/inc/svg_enable.php';
+
+/**
+ * Redesign the article grids.
+ */
+require get_template_directory() . '/inc/article_grid_filters.php';

@@ -9,107 +9,95 @@
 
 
 
-.archiveheader {
-    margin: 29px 0px;
-}
+.post-type-archive-article {
 
-.articlearchive {
-    &-list {
+    .site-content {
 
-        list-style: none;
-        padding: 0px;
+        .content-area {
+            float: right;
+            margin: 87px 0 87px -16.66%;
+            width: 100%;
 
-        display: flex;
-        flex-wrap: wrap;
-
-        li {
-            height: 58px;
-            background-color: $halo;
-            margin-bottom: 29px;
-            width:calc(33% - 15px);  
-            overflow:hidden;              
-
-            // Left column
-            &:nth-child(3n+1){
-                margin-right:15px;
-            }
-
-            // right column
-            &:nth-child(3n){
-                margin-left:15px;
-            }
-
-            &:hover {
-                background-color: $fog !important;
-
-                * { color: $white; }
-            }
-
-            a {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: flex-start;
-                text-decoration: none;
-                color: $night;
-                height: 58px;
-                overflow: hidden;
+            .site-main {
+                margin: 0;
+                float: right;
+                width: 83.33%;
             }
         }
 
-        &__title {
-            height: 58px;
-            line-height: 58px;
-            padding:0px 29px;
-            font-weight:600;
+        .widget-area {
+            margin: 87px 0px;
+            padding: 0px 0px 0px 0%;
+            float: left;
+            overflow: hidden;
+            width: 16.66%;
         }
 
-        &__count {
-            font-size: 18px;
-            height: 58px;
-            line-height: 58px;
-            padding:0px 29px;
-            margin-left: auto;
-        }
+    }
+    
+    .no-sidebar .content-area {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .no-sidebar .site-main {
+        margin-right: 0;
+    } 
 
-        &__arrow {
-            width:58px;
-            height:58px;
-            i {
-                font-size: 18px;
-                line-height: 58px !important;
-                vertical-align: text-top;
-                color: $white;
-            }
+
+
+    // DEFAULT (desktop) view
+    .sidemenu__desktop { display: initial; }
+    .sidemenu__mobile { 
+        display: none; 
+
+        width: 83.3%;
+        height: 58px;
+        position: absolute;
+        left: 8.33%;
+
+        select {
+            height: 29px;
+            border: 0px;
+            width: 100%;
+            margin-right: 29px;
         }
     }
-}
 
-// Change widths on tablet. 
-@media (max-width: $tablet) {
-    .post-type-archive-article   { 
-        .articlelatest {
-            &__content {
+    // Mobile view
+    @media (max-width: $tablet) {
+
+        // Switch menus
+        .sidemenu__desktop { display: none; }
+        .sidemenu__mobile { display: initial; }
+
+        .site-content {
+            .content-area {
+
+                float: none;
+                margin: 87px 8.33% 0 0;
+                padding: 0px 8.33%;
                 width: 100%;
-                margin: 0px;
-                padding: 0px 20px 58px;
+                
 
-                li {
-                    width:calc(50% - 15px); 
+                .site-main {
+                    width: 100%;
+                    margin-top: 58px;
+                    overflow: hidden;
+
+                    // Resize titles
+                    h1 {  font-size: 29px; padding-left: 5px; }
+                    h2 {  font-size: 29px; padding-left: 5px;}
                 }
             }
-        }
-    }
-}
 
-// Change widths on tablet.
-@media (max-width: $mobile) {
-    .post-type-archive-article   { 
-        .articlelatest {
-            &__content {
-                li {
-                    width:calc(100% - 15px); 
-                }
+            .widget-area {
+                width: 100%;
+                overflow: initial  !important;
+                float: none !important;
             }
+            
         }
     }
+        
 }

@@ -81,7 +81,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Layout
 --------------------------------------------------------------*/
 
-@import "layout/navigation/wiki";
+@import "layout/navigation/sidebar-wiki";
+@import "layout/navigation/sidebar-dashboard";
 @import "layout/navigation/menus";
 @import "layout/navigation/footer";
 @import "layout/responsive_desktop";
