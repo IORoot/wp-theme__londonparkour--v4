@@ -8,134 +8,93 @@
 //   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
 .tax-articlecategory {
-    .articlecategory { 
-        &__hero {
-            background-color: $night;
-            padding:58px 20px;
-            margin-bottom: 58px;
-            text-align: center;
-        }
 
-        &__title {
-            margin:0px;
-            text-align: center;
-            color: $white;
-        }
+    .site-content {
 
-        &__subtitle {
-            margin:0px auto 29px; 
-            text-align: center;
-            color: $white;
-            width: 70%;
-        }
-        &__postcount {
-            font-size:18px;
-            color: $white;
-        }
-        &__content {
-            width: 50%;
-            margin: 0px 25% 58px;
-            
-        }
-        &__youtube-link {
-            line-height: 29px;
-            height: 58px;
-            text-decoration: none;
-            background-color: $youtube;
-            color: $white;
-            padding: 14px 29px 15px;
-            margin-bottom: 58px;
-            border-radius: 3px;
-            display: block;
-            text-align: center;
-            display: inline-block;
+        .content-area {
+            float: right;
+            margin: 29px 0 87px -16.66%;
+            width: 100%;
 
-            span {
-                padding-left:29px;
-                @include logo-youtube($white);
-                background-repeat: no-repeat;
-            }
-
-            &:hover {
-                background-color: $halo;
-                color: $youtube;
-                span {
-                    @include logo-youtube($youtube);
-                }
+            .site-main {
+                margin: 0;
+                float: right;
+                width: 83.33%;
             }
         }
-        &-list {
 
-            list-style: none;
-            padding: 0px;
-            
-            li {
-                background-color: $halo;
-                margin-bottom: 29px;
+        .widget-area {
+            margin: 29px 0px;
+            padding: 0px 0px 0px 0%;
+            float: left;
+            overflow: hidden;
+            width: 16.66%;
+        }
 
-                &:hover {
-                    background-color: $lavender;
+    }
+    
+    .no-sidebar .content-area {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .no-sidebar .site-main {
+        margin-right: 0;
+    } 
 
-                    * { color: $white; }
-                }
 
-                a {
-                    display: flex;
-                    text-decoration: none;
-                    color: $night;
-                }
-            }
 
-            &__index {
-                height: 58px;
-                line-height: 58px;
-                padding:0px 29px;
-            }
+    // DEFAULT (desktop) view
+    .sidemenu__desktop { display: initial; }
+    .sidemenu__mobile { 
+        display: none; 
 
-            &__image {
-                display: block;
-                height: 58px;
-                width: auto;
-            }
+        width: 83.3%;
+        height: 58px;
+        position: absolute;
+        left: 8.33%;
 
-            &__title {
-                height: 58px;
-                line-height: 58px;
-                padding:0px 29px;
-                overflow:hidden;
-            }
-
-            &__tax {
-                margin-left: auto;
-                height: 58px;
-                line-height: 58px;
-                padding:0px 58px;
-                overflow: hidden;
-            }
-
-            &__arrow {
-                width:58px;
-
-                i {
-                    font-size: 29px;
-                    line-height: 58px;
-                    vertical-align: text-top;
-                    color: $lavender;
-                }
-            }
+        select {
+            height: 29px;
+            border: 0px;
+            width: 100%;
+            margin-right: 29px;
         }
     }
-}
 
-// Change widths on tablet.
-@media (max-width: $tablet) {
-    .tax-articlecategory  { 
-        .articlecategory {
-            &__content {
+    // Mobile view
+    @media (max-width: $tablet) {
+
+        // Switch menus
+        .sidemenu__desktop { display: none; }
+        .sidemenu__mobile { display: initial; }
+
+        .site-content {
+            .content-area {
+
+                float: none;
+                margin: 87px 8.33% 0 0;
+                padding: 0px 8.33%;
                 width: 100%;
-                margin: 0px;
-                padding: 0px 20px 58px;
+                
+
+                .site-main {
+                    width: 100%;
+                    margin-top: 58px;
+                    overflow: hidden;
+
+                    // Resize titles
+                    h1 {  font-size: 29px; padding-left: 5px; }
+                    h2 {  font-size: 29px; padding-left: 5px;}
+                }
             }
+
+            .widget-area {
+                width: 100%;
+                overflow: initial  !important;
+                float: none !important;
+            }
+            
         }
     }
 }

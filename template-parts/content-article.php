@@ -7,6 +7,11 @@
  * @package londonparkour.com_v4
  */
 
+	// Increment to post views counter
+	$count = (int) get_field('post_views');
+	$count++;
+	update_field('post_views', $count);
+
 ?>
 
 <div class="article">

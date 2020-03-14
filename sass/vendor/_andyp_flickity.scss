@@ -1,0 +1,3 @@
+//Hide cells by default at theme load. This will prevent shitty loading performance from displaying.
+// Make sure you add a .andyp-grid__cell { display:initial; } to display them!
+.andyp-grid__cell { display:none; }
