@@ -21,6 +21,8 @@
                 li {
 
                     line-height: 58px;
+                    overflow: hidden;
+                    height: 58px;
 
                     &.menu-item-current {
                         background-color: #F5F5F5;
@@ -34,7 +36,7 @@
                         }
 
                         &:active {
-                            color: #E34F65;
+                            color: #E34F65; 
                         }
 
                         .menu-item-icon {
@@ -43,11 +45,39 @@
                             line-height: 16px;
                             vertical-align: text-top;
                             width: 16px;
-                            margin-right: 16px;
+                            margin-right: 16px; 
                         }
                         
                     }
+                    &.menu-item-icon::before {
+                        font-size: 24px;
+                        line-height: 23px;
+                        vertical-align: text-top;
+                        width: 16px;
+                        margin-right: 7px;
+                        margin-left: 4px;
+                        font-family: "Material Icons";
+                        color: #757575;
+                    }
+                    &.view_quilt::before {
+                        content: '\e8f1';
+                    }
+                    &.chrome_reader_mode::before {
+                        content: '\e86d';
+                    }
+                    &.theaters::before {
+                        content: '\e8da';
+                    }
+                    &.subscriptions::before {
+                        content: '\e064';
+                    }
+                    &.play_circle_filled::before {
+                        content: '\e038';
+                        color: $youtube;
+                    }
+                    
                 }
+                
             }
         } 
     }

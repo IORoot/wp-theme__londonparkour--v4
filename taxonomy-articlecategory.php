@@ -9,19 +9,43 @@
 
     get_header();
 
-    //RANKMATH
-	if( function_exists( 'rank_math_get_breadcrumbs' ) ) {
-		echo '<div class="article__breadcrumbs"><p id="breadcrumbs">' . rank_math_get_breadcrumbs() . '</p></div>';
-	}
-    
 ?> 
 
     <!-- #content -->
     <div class="content-area">
         <div class="site-main">
             <?php //include get_template_directory().'/components/_search.php'; ?>
-            <?php  do_shortcode('[andyp_grid_posts slug="taxonomy_latest" tax="articlecategory" term="'.$wp_query->query['articlecategory'].'"]'); ?>
-            <?php  do_shortcode('[andyp_grid_posts slug="taxonomy_popular" tax="articlecategory" term="'.$wp_query->query['articlecategory'].'"]'); ?>
+            <?php  
+
+                // ┌─────────────────────────────────────────────────────────────────────────┐
+                // │                                                                         │
+                // │                   Reference Library (looks different)                   │
+                // │                                                                         │
+                // └─────────────────────────────────────────────────────────────────────────┘
+                if ($wp_query->query['articlecategory'] == 'reference-library'){ 
+                    do_shortcode('[andyp_grid_posts slug="reference_library_popular" tax="articlecategory" term="'.$wp_query->query['articlecategory'].'"]');
+                    do_shortcode('[andyp_isotope slug="reference_library_default" tax="articlecategory" term="'.$wp_query->query['articlecategory'].'"]'); 
+
+                // ┌─────────────────────────────────────────────────────────────────────────┐
+                // │                                                                         │
+                // │                           All other Categories                          │
+                // │                                                                         │
+                // └─────────────────────────────────────────────────────────────────────────┘
+                } elseif ($wp_query->query['articlecategory'] == 'tutorials') {
+                    do_shortcode('[andyp_isotope slug="category_listing" tax="articlecategory"]'); 
+                
+                // ┌─────────────────────────────────────────────────────────────────────────┐
+                // │                                                                         │
+                // │                           All other Categories                          │
+                // │                                                                         │
+                // └─────────────────────────────────────────────────────────────────────────┘
+                } else {
+                    do_shortcode('[andyp_grid_posts slug="taxonomy_latest" tax="articlecategory" term="'.$wp_query->query['articlecategory'].'"]');
+                    do_shortcode('[andyp_grid_posts slug="taxonomy_popular" tax="articlecategory" term="'.$wp_query->query['articlecategory'].'"]');
+                    do_shortcode('[andyp_isotope slug="taxonomy_default" tax="articlecategory" term="'.$wp_query->query['articlecategory'].'" ]'); 
+                }
+                
+            ?>
         </div>
     </div>
 

@@ -25,7 +25,10 @@ include get_template_directory().'/components/_breadcrumbs.php';
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main">
 
-		<?php include get_template_directory().'/components/_search.php'; ?>
+		<?php
+			do_shortcode('[articles_searchbar]'); 
+			//include get_template_directory().'/components/_search.php'; 
+		?>
 
 		<?php if ( have_posts() ) : ?>
 
