@@ -32,13 +32,11 @@ get_header();
 				?>
 			</h2>
 
-			
 			<div class="searchresults__search-bar"><?php do_shortcode('[articles_searchbar]'); ?></div>
-
 
 			<?php include get_template_directory().'/components/_pagination.php'; ?>
 
-			
+
 			<div class="searchresults">
 				<?php
 
