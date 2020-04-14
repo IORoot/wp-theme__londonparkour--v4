@@ -2035,18 +2035,53 @@ a:hover, a:active {
     text-align: left;
     background-color: #242424;
     padding: 0px 29px 58px;
+    overflow: hidden;
   }
   .main-navigation ul.nav-menu > li.menu-item {
-    float: none;
-    width: 100%;
-    padding: 0px;
+    float: left;
+    width: 50%;
     display: block;
     max-height: none;
+    padding: 0px;
+    line-height: 116px;
+    contain: content;
+  }
+  .main-navigation ul.nav-menu > li.menu-item.menu-item-has-children {
+    width: 100%;
   }
   .main-navigation ul.nav-menu > li.menu-item a {
+    float: left;
+    width: 100%;
+    height: 116px;
     font-size: 18px;
     white-space: nowrap;
     color: #fafafa;
+    background-color: #424242;
+    margin: 2px 2px 0px;
+    line-height: 145px;
+    text-align: center;
+  }
+  .main-navigation ul.nav-menu > li.menu-item a .icon {
+    position: absolute;
+    left: 50%;
+    top: 29px;
+    transform: translateX(-50%);
+    margin: 0px;
+  }
+  .main-navigation ul.nav-menu > li.menu-item a .icon.icon--crayon {
+    color: #e86546;
+  }
+  .main-navigation ul.nav-menu > li.menu-item a .icon.icon--aqua {
+    color: #11998e;
+  }
+  .main-navigation ul.nav-menu > li.menu-item a .icon.icon--sky {
+    color: #53a5e3;
+  }
+  .main-navigation ul.nav-menu > li.menu-item a .icon.icon--lavender {
+    color: #70579f;
+  }
+  .main-navigation ul.nav-menu > li.menu-item a .icon.icon--rose {
+    color: #e34f65;
   }
   .main-navigation ul.nav-menu > li.menu-item__right {
     float: right;
@@ -2054,16 +2089,30 @@ a:hover, a:active {
     width: 58px;
   }
   .main-navigation ul.nav-menu > li.menu-item.logo a {
-    margin: 0 0px;
+    margin: 20px 0px 0px;
     padding-left: 58px;
     width: 58px;
     height: 58px;
     background-size: 29px 29px;
     overflow: hidden;
     float: left;
+    background-color: transparent;
+  }
+  .main-navigation ul.nav-menu > li.menu-item.logo__londonparkour {
+    width: 100%;
   }
   .main-navigation ul.nav-menu > li.menu-item.logo__londonparkour a {
+    margin: 2px 2px 0px;
+    padding-left: 0px;
+    width: 100%;
+    height: 116px;
+    background-size: initial;
+    overflow: initial;
+    float: none;
+    text-align: center;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='none'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' stroke='%23FAFAFA' stroke-width='8'/%3E%3C/g%3E%3C/svg%3E");
+    background-position-y: 20px;
+    background-size: 58px;
   }
   .main-navigation ul.nav-menu > li.menu-item.logo__apple a {
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23FAFAFA' viewBox='0 0 170 170' version='1.1' %3e%3cpath d='m150.37 130.25c-2.45 5.66-5.35 10.87-8.71 15.66-4.58 6.53-8.33 11.05-11.22 13.56-4.48 4.12-9.28 6.23-14.42 6.35-3.69 0-8.14-1.05-13.32-3.18-5.197-2.12-9.973-3.17-14.34-3.17-4.58 0-9.492 1.05-14.746 3.17-5.262 2.13-9.501 3.24-12.742 3.35-4.929 0.21-9.842-1.96-14.746-6.52-3.13-2.73-7.045-7.41-11.735-14.04-5.032-7.08-9.169-15.29-12.41-24.65-3.471-10.11-5.211-19.9-5.211-29.378 0-10.857 2.346-20.221 7.045-28.068 3.693-6.303 8.606-11.275 14.755-14.925s12.793-5.51 19.948-5.629c3.915 0 9.049 1.211 15.429 3.591 6.362 2.388 10.447 3.599 12.238 3.599 1.339 0 5.877-1.416 13.57-4.239 7.275-2.618 13.415-3.702 18.445-3.275 13.63 1.1 23.87 6.473 30.68 16.153-12.19 7.386-18.22 17.731-18.1 31.002 0.11 10.337 3.86 18.939 11.23 25.769 3.34 3.17 7.07 5.62 11.22 7.36-0.9 2.61-1.85 5.11-2.86 7.51zm-31.26-123.01c0 8.1021-2.96 15.667-8.86 22.669-7.12 8.324-15.732 13.134-25.071 12.375-0.119-0.972-0.188-1.995-0.188-3.07 0-7.778 3.386-16.102 9.399-22.908 3.002-3.446 6.82-6.3113 11.45-8.597 4.62-2.2516 8.99-3.4968 13.1-3.71 0.12 1.0831 0.17 2.1663 0.17 3.2409z'/%3e%3c/svg%3e");
@@ -2077,31 +2126,47 @@ a:hover, a:active {
   .main-navigation ul.nav-menu > li.menu-item.logo__youtube a {
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23FAFAFA' viewBox='0 0 576 512'%3e%3cpath d='M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z'/%3e%3c/svg%3e");
   }
+  .main-navigation ul.nav-menu > li.menu-item#menu-item-2351 > a {
+    display: none;
+  }
   .main-navigation ul.nav-menu > li.menu-item ul.sub-menu {
     display: block;
     position: relative;
     visibility: visible;
     opacity: 1;
-    padding: 0px 0px 0px 29px;
-    background: #242424;
+    padding: 0px;
+    background: #424242;
     box-shadow: none;
     top: auto;
+    min-width: initial;
   }
-  .main-navigation ul.nav-menu > li.menu-item ul.sub-menu .menu-item {
+  .main-navigation ul.nav-menu > li.menu-item ul.sub-menu li {
     display: block;
     margin: 0px;
     background: none;
+    float: left;
+    width: 50%;
+    line-height: 116px;
+    contain: content;
   }
-  .main-navigation ul.nav-menu > li.menu-item ul.sub-menu .menu-item a {
+  .main-navigation ul.nav-menu > li.menu-item ul.sub-menu li a {
+    float: left;
+    width: 100%;
+    height: 116px;
+    text-align: center !important;
     color: #fafafa;
+    margin: 2px 2px 0px;
+    line-height: 145px !important;
   }
-  .main-navigation ul.nav-menu > li.menu-item ul.sub-menu .menu-item__highlight--bluepink a {
+  .main-navigation ul.nav-menu > li.menu-item ul.sub-menu li a .icon {
+    position: absolute;
+    left: 50%;
+    top: 29px;
+    transform: translateX(-50%);
+    margin: 0px;
+  }
+  .main-navigation ul.nav-menu > li.menu-item ul.sub-menu li__highlight--bluepink a {
     padding-left: 0px;
-  }
-  .main-navigation ul.nav-menu > li.menu-item.logo__londonparkour a {
-    background-position: left;
-    padding-left: 70px;
-    background-size: 58px;
   }
 }
 .site-footer .footer-container {

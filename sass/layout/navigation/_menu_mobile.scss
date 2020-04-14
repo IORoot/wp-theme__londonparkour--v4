@@ -31,9 +31,9 @@
             > .icon {
                 line-height: 58px;
                 margin-left: 29px; 
-            }
+            } 
         }
- 
+
 
         //  ┌────────────────────────────────────────────────┐
         //  │            Hide the menu by default            │
@@ -79,25 +79,55 @@
         //  │                                           │░
         //  └───────────────────────────────────────────┘░
         //   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
         ul.nav-menu {
 
             display: block;
             text-align: left;
             background-color: $night;
             padding: 0px 29px 58px;
+            overflow: hidden;
 
             > li.menu-item {
 
-                float: none;
-                width: 100%;
-                padding: 0px;
+                float: left;
+                width: 50%;
                 display: block;
                 max-height: none;
+                padding: 0px;
+                line-height: 116px;
+                contain: content;
 
-                a {
+                &.menu-item-has-children {
+                    width:100%; 
+                }
+
+                a { 
+                    float: left;
+                    width: 100%;
+                    height: 116px;
                     font-size: 18px; 
                     white-space: nowrap;
                     color: $halo;
+                    background-color: $fog;
+                    margin: 2px 2px 0px;
+                    line-height: 145px;
+                    text-align: center;
+
+                    .icon {
+                        position: absolute;
+                        left: 50%;
+                        top: 29px;
+                        transform: translateX(-50%);
+                        margin: 0px;
+
+                        &.icon--crayon { color: $crayon; }
+                        &.icon--aqua { color: $aqua; }
+                        &.icon--sky { color: $sky; }
+                        &.icon--lavender { color: $lavender; }
+                        &.icon--rose { color: $rose; }
+
+                    }
                 }
 
                 &__right {
@@ -109,17 +139,32 @@
                 &.logo {
                     
                     a {
-                        margin: 0 0px;
+                        margin: 20px 0px 0px;
                         padding-left: 58px;
                         width: 58px;
                         height: 58px;
                         background-size: 29px 29px;
                         overflow: hidden; 
                         float: left; 
+                        background-color: transparent;
                     }
 
-                    &__londonparkour a {
-                        @include logo-ldnpk($halo);
+                    &__londonparkour { 
+                        width: 100%;
+                        a {
+                            margin: 2px 2px 0px;
+                            padding-left: 0px;
+                            width: 100%;
+                            height: 116px;
+                            background-size: initial;
+                            overflow: initial; 
+                            float: none; 
+                            text-align: center;
+
+                            @include logo-ldnpk($halo);
+                            background-position-y: 20px;
+                            background-size: 58px;
+                        }
                     }
                     &__apple a {
                         @include logo-apple($halo);
@@ -135,38 +180,68 @@
                     }
                 }
 
+                //  ┌───────────────────────────────────────────┐ 
+                //  │                                           │░
+                //  │       Hide the 'classes' dropdown         │░
+                //  │                                           │░
+                //  └───────────────────────────────────────────┘░
+                //   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
+                &#menu-item-2351 > a {
+                    display:none;
+                }
+
+
+                //  ┌───────────────────────────────────────────┐ 
+                //  │                                           │░
+                //  │              The submenus                 │░
+                //  │                                           │░
+                //  └───────────────────────────────────────────┘░
+                //   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
                 ul.sub-menu {
+                    
                     display: block;
                     position: relative;
                     visibility: visible;
                     opacity: 1; 
-                    padding: 0px 0px 0px 29px;
+                    padding: 0px;
 
-                    background: $night;
+                    background: $fog;
                     box-shadow: none;
                     top: auto;
+                    min-width: initial;
 
-                    .menu-item {
+                    li {
                         display: block;
                         margin: 0px;
                         background: none;
+                        float: left;
+                        width: 50%;
+                        line-height: 116px;
+                        contain: content;
 
                         a {
+                            float: left;
+                            width: 100%;
+                            height: 116px;
+                            text-align: center !important;
                             color: $halo;
+                            margin: 2px 2px 0px;
+                            line-height: 145px !important;
+
+                            .icon {
+                                position: absolute;
+                                left: 50%;
+                                top: 29px;
+                                transform: translateX(-50%);
+                                margin: 0px;
+                            }
                         }  
 
                         &__highlight--bluepink a {
                             padding-left: 0px;
                         }
                     } 
-                }
-
-                // special case - logo homepage link
-                &.logo__londonparkour a {
-                    background-position: left;
-                    padding-left: 70px;
-                    background-size: 58px;
                 }
             }
         }
