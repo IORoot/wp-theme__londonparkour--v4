@@ -3596,19 +3596,22 @@ div .wp-my-instagram .wpmi-list .wpmi-item {
   margin-right: 15px;
   margin-bottom: 29px;
   width: calc(33.3% - 15px);
-  background: #242424;
-  color: #ffffff;
+  background: #ffffff;
+  color: #242424;
   flex: 1 0 auto;
   overflow: hidden;
+  max-height: 580px;
 }
 div .wp-my-instagram .wpmi-list .wpmi-item a {
   text-decoration: none;
 }
 div .wp-my-instagram .wpmi-list .wpmi-item a:hover * {
-  color: #ffffff;
+  color: #242424;
 }
 div .wp-my-instagram .wpmi-list .wpmi-item a .instagram__content {
   padding: 29px;
+  max-height: 348px;
+  overflow: hidden;
 }
 div .wp-my-instagram .wpmi-list .wpmi-item a .instagram__content .instagram__title {
   line-height: 29px;
@@ -3622,6 +3625,9 @@ div .wp-my-instagram .wpmi-list .wpmi-item a .instagram__content .instagram__des
 div .wp-my-instagram .wpmi-list .wpmi-item a .instagram__content .instagram__date {
   line-height: 29px;
   font-size: 12px;
+}
+div .wp-my-instagram .wpmi-list .wpmi-item a .instagram__content:hover * {
+  color: #242424;
 }
 div .wp-my-instagram .wpmi-me {
   display: none;

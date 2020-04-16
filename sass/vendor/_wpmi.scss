@@ -12,26 +12,25 @@ div {
                 margin-right: 15px;
                 margin-bottom: 29px;
                 width: calc(33.3% - 15px);
-                background: $night;
-                color: $white;
+                background: $white;
+                color: $night;
                 flex: 1 0 auto; 
                 overflow:hidden;    
+                max-height: 580px;
 
                 a {
 
                     text-decoration: none;
 
                     &:hover * {
-                        color: $white;
-                    }
-
-                    .instagram__hero img {
-
+                        color: $night;
                     }
 
                     .instagram__content {
 
                         padding: 29px;
+                        max-height: 348px;
+                        overflow: hidden;
 
                         .instagram__title {
                             line-height: 29px;
@@ -47,6 +46,10 @@ div {
                         .instagram__date {
                             line-height: 29px;
                             font-size: 12px;
+                        }
+
+                        &:hover * {
+                            color: $night;
                         }
                     }
                     
