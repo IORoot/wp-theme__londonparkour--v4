@@ -1,0 +1,20 @@
+
+/* Posts slider
+---------------------------------------------------------- */
+.wpb_posts_slider .flex-caption,
+.wpb_posts_slider .nivo-caption {
+  background-color: #f7f7f7;
+  opacity: 1;
+  filter: alpha(opacity=100);
+  color: inherit;
+  padding: 10px 15px;
+  position: static;
+}
+.wpb_posts_slider .wpb_gallery_slides > ul > li {
+  background-image: none;
+  list-style: none !important;
+}
+.wpb_posts_slider .wpb_gallery_slides > ul > li:after,
+.wpb_posts_slider .wpb_gallery_slides > ul > li:before {
+  display: none !important;
+}

@@ -1,0 +1,20 @@
+@media (max-width: 767px) {
+    .vc_hidden-xs {
+      display: none !important;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 991px) {
+    .vc_hidden-sm {
+      display: none !important;
+    }
+  }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    .vc_hidden-md {
+      display: none !important;
+    }
+  }
+  @media (min-width: 1200px) {
+    .vc_hidden-lg {
+      display: none !important;
+    }
+  }

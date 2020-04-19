@@ -1,0 +1,1747 @@
+/* 1. Buttons
+---------------------------------------------------------- */
+.vc_btn,
+a.vc_btn,
+button.vc_btn {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none !important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  padding: 9px 12px;
+  font-size: 100%;
+  line-height: 20px;
+  border-radius: 4px;
+  /* Button colors variations */
+}
+.vc_btn,
+a.vc_btn,
+button.vc_btn,
+.vc_btn:hover,
+a.vc_btn:hover,
+button.vc_btn:hover,
+.vc_btn:focus,
+a.vc_btn:focus,
+button.vc_btn:focus {
+  border: 1px solid transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.vc_btn-lg,
+a.vc_btn-lg,
+button.vc_btn-lg {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+.vc_btn-sm,
+a.vc_btn-sm,
+button.vc_btn-sm {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.vc_btn-xs,
+a.vc_btn-xs,
+button.vc_btn-xs {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.vc_btn_square,
+a.vc_btn_square,
+button.vc_btn_square {
+  border-radius: 0;
+}
+.vc_btn_square_outlined,
+a.vc_btn_square_outlined,
+button.vc_btn_square_outlined {
+  border-radius: 0;
+  background: none !important;
+}
+.vc_btn_square_outlined,
+a.vc_btn_square_outlined,
+button.vc_btn_square_outlined,
+.vc_btn_square_outlined:hover,
+a.vc_btn_square_outlined:hover,
+button.vc_btn_square_outlined:hover,
+.vc_btn_square_outlined:focus,
+a.vc_btn_square_outlined:focus,
+button.vc_btn_square_outlined:focus {
+  border: 2px solid;
+}
+.vc_btn_round,
+a.vc_btn_round,
+button.vc_btn_round {
+  border-radius: 25px;
+}
+.vc_btn_outlined,
+a.vc_btn_outlined,
+button.vc_btn_outlined {
+  background: none !important;
+}
+.vc_btn_outlined,
+a.vc_btn_outlined,
+button.vc_btn_outlined,
+.vc_btn_outlined:hover,
+a.vc_btn_outlined:hover,
+button.vc_btn_outlined:hover,
+.vc_btn_outlined:focus,
+a.vc_btn_outlined:focus,
+button.vc_btn_outlined:focus {
+  border: 2px solid;
+}
+.vc_btn-blue,
+a.vc_btn-blue,
+button.vc_btn-blue {
+  background-color: #5472D2;
+  color: #ffffff !important;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.vc_btn-blue:hover,
+a.vc_btn-blue:hover,
+button.vc_btn-blue:hover {
+  background-color: #3c5ecc;
+  color: #f7f7f7 !important;
+}
+.vc_btn-blue.vc_btn_outlined,
+a.vc_btn-blue.vc_btn_outlined,
+button.vc_btn-blue.vc_btn_outlined,
+.vc_btn-blue.vc_btn_square_outlined,
+a.vc_btn-blue.vc_btn_square_outlined,
+button.vc_btn-blue.vc_btn_square_outlined {
+  color: #5472D2 !important;
+}
+.vc_btn-blue.vc_btn_outlined:hover,
+a.vc_btn-blue.vc_btn_outlined:hover,
+button.vc_btn-blue.vc_btn_outlined:hover,
+.vc_btn-blue.vc_btn_square_outlined:hover,
+a.vc_btn-blue.vc_btn_square_outlined:hover,
+button.vc_btn-blue.vc_btn_square_outlined:hover {
+  border-color: #3c5ecc;
+}
+.vc_btn-blue.vc_btn_3d,
+a.vc_btn-blue.vc_btn_3d,
+button.vc_btn-blue.vc_btn_3d {
+  -webkit-box-shadow: 0 5px 0 #3253bc;
+  box-shadow: 0 5px 0 #3253bc;
+  margin-bottom: 5px;
+}
+.vc_btn-blue.vc_btn_3d.vc_btn_xs,
+a.vc_btn-blue.vc_btn_3d.vc_btn_xs,
+button.vc_btn-blue.vc_btn_3d.vc_btn_xs {
+  -webkit-box-shadow: 0 3px 0 #3253bc;
+  box-shadow: 0 3px 0 #3253bc;
+  margin-bottom: 3px;
+}
+.vc_btn-blue.vc_btn_3d.vc_btn_sm,
+a.vc_btn-blue.vc_btn_3d.vc_btn_sm,
+button.vc_btn-blue.vc_btn_3d.vc_btn_sm {
+  -webkit-box-shadow: 0 4px 0 #3253bc;
+  box-shadow: 0 4px 0 #3253bc;
+  margin-bottom: 4px;
+}
+.vc_btn-turquoise,
+a.vc_btn-turquoise,
+button.vc_btn-turquoise {
+  background-color: #00C1CF;
+  color: #ffffff !important;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.vc_btn-turquoise:hover,
+a.vc_btn-turquoise:hover,
+button.vc_btn-turquoise:hover {
+  background-color: #00a4b0;
+  color: #f7f7f7 !important;
+}
+.vc_btn-turquoise.vc_btn_outlined,
+a.vc_btn-turquoise.vc_btn_outlined,
+button.vc_btn-turquoise.vc_btn_outlined,
+.vc_btn-turquoise.vc_btn_square_outlined,
+a.vc_btn-turquoise.vc_btn_square_outlined,
+button.vc_btn-turquoise.vc_btn_square_outlined {
+  color: #00C1CF !important;
+}
+.vc_btn-turquoise.vc_btn_outlined:hover,
+a.vc_btn-turquoise.vc_btn_outlined:hover,
+button.vc_btn-turquoise.vc_btn_outlined:hover,
+.vc_btn-turquoise.vc_btn_square_outlined:hover,
+a.vc_btn-turquoise.vc_btn_square_outlined:hover,
+button.vc_btn-turquoise.vc_btn_square_outlined:hover {
+  border-color: #00a4b0;
+}
+.vc_btn-turquoise.vc_btn_3d,
+a.vc_btn-turquoise.vc_btn_3d,
+button.vc_btn-turquoise.vc_btn_3d {
+  -webkit-box-shadow: 0 5px 0 #008d97;
+  box-shadow: 0 5px 0 #008d97;
+  margin-bottom: 5px;
+}
+.vc_btn-turquoise.vc_btn_3d.vc_btn_xs,
+a.vc_btn-turquoise.vc_btn_3d.vc_btn_xs,
+button.vc_btn-turquoise.vc_btn_3d.vc_btn_xs {
+  -webkit-box-shadow: 0 3px 0 #008d97;
+  box-shadow: 0 3px 0 #008d97;
+  margin-bottom: 3px;
+}
+.vc_btn-turquoise.vc_btn_3d.vc_btn_sm,
+a.vc_btn-turquoise.vc_btn_3d.vc_btn_sm,
+button.vc_btn-turquoise.vc_btn_3d.vc_btn_sm {
+  -webkit-box-shadow: 0 4px 0 #008d97;
+  box-shadow: 0 4px 0 #008d97;
+  margin-bottom: 4px;
+}
+.vc_btn-pink,
+a.vc_btn-pink,
+button.vc_btn-pink {
+  background-color: #FE6C61;
+  color: #ffffff !important;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.vc_btn-pink:hover,
+a.vc_btn-pink:hover,
+button.vc_btn-pink:hover {
+  background-color: #fe5043;
+  color: #f7f7f7 !important;
+}
+.vc_btn-pink.vc_btn_outlined,
+a.vc_btn-pink.vc_btn_outlined,
+button.vc_btn-pink.vc_btn_outlined,
+.vc_btn-pink.vc_btn_square_outlined,
+a.vc_btn-pink.vc_btn_square_outlined,
+button.vc_btn-pink.vc_btn_square_outlined {
+  color: #FE6C61 !important;
+}
+.vc_btn-pink.vc_btn_outlined:hover,
+a.vc_btn-pink.vc_btn_outlined:hover,
+button.vc_btn-pink.vc_btn_outlined:hover,
+.vc_btn-pink.vc_btn_square_outlined:hover,
+a.vc_btn-pink.vc_btn_square_outlined:hover,
+button.vc_btn-pink.vc_btn_square_outlined:hover {
+  border-color: #fe5043;
+}
+.vc_btn-pink.vc_btn_3d,
+a.vc_btn-pink.vc_btn_3d,
+button.vc_btn-pink.vc_btn_3d {
+  -webkit-box-shadow: 0 5px 0 #fe3829;
+  box-shadow: 0 5px 0 #fe3829;
+  margin-bottom: 5px;
+}
+.vc_btn-pink.vc_btn_3d.vc_btn_xs,
+a.vc_btn-pink.vc_btn_3d.vc_btn_xs,
+button.vc_btn-pink.vc_btn_3d.vc_btn_xs {
+  -webkit-box-shadow: 0 3px 0 #fe3829;
+  box-shadow: 0 3px 0 #fe3829;
+  margin-bottom: 3px;
+}
+.vc_btn-pink.vc_btn_3d.vc_btn_sm,
+a.vc_btn-pink.vc_btn_3d.vc_btn_sm,
+button.vc_btn-pink.vc_btn_3d.vc_btn_sm {
+  -webkit-box-shadow: 0 4px 0 #fe3829;
+  box-shadow: 0 4px 0 #fe3829;
+  margin-bottom: 4px;
+}
+.vc_btn-violet,
+a.vc_btn-violet,
+button.vc_btn-violet {
+  background-color: #8D6DC4;
+  color: #ffffff !important;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.vc_btn-violet:hover,
+a.vc_btn-violet:hover,
+button.vc_btn-violet:hover {
+  background-color: #7c57bb;
+  color: #f7f7f7 !important;
+}
+.vc_btn-violet.vc_btn_outlined,
+a.vc_btn-violet.vc_btn_outlined,
+button.vc_btn-violet.vc_btn_outlined,
+.vc_btn-violet.vc_btn_square_outlined,
+a.vc_btn-violet.vc_btn_square_outlined,
+button.vc_btn-violet.vc_btn_square_outlined {
+  color: #8D6DC4 !important;
+}
+.vc_btn-violet.vc_btn_outlined:hover,
+a.vc_btn-violet.vc_btn_outlined:hover,
+button.vc_btn-violet.vc_btn_outlined:hover,
+.vc_btn-violet.vc_btn_square_outlined:hover,
+a.vc_btn-violet.vc_btn_square_outlined:hover,
+button.vc_btn-violet.vc_btn_square_outlined:hover {
+  border-color: #7c57bb;
+}
+.vc_btn-violet.vc_btn_3d,
+a.vc_btn-violet.vc_btn_3d,
+button.vc_btn-violet.vc_btn_3d {
+  -webkit-box-shadow: 0 5px 0 #6e48b1;
+  box-shadow: 0 5px 0 #6e48b1;
+  margin-bottom: 5px;
+}
+.vc_btn-violet.vc_btn_3d.vc_btn_xs,
+a.vc_btn-violet.vc_btn_3d.vc_btn_xs,
+button.vc_btn-violet.vc_btn_3d.vc_btn_xs {
+  -webkit-box-shadow: 0 3px 0 #6e48b1;
+  box-shadow: 0 3px 0 #6e48b1;
+  margin-bottom: 3px;
+}
+.vc_btn-violet.vc_btn_3d.vc_btn_sm,
+a.vc_btn-violet.vc_btn_3d.vc_btn_sm,
+button.vc_btn-violet.vc_btn_3d.vc_btn_sm {
+  -webkit-box-shadow: 0 4px 0 #6e48b1;
+  box-shadow: 0 4px 0 #6e48b1;
+  margin-bottom: 4px;
+}
+.vc_btn-peacoc,
+a.vc_btn-peacoc,
+button.vc_btn-peacoc {
+  background-color: #4CADC9;
+  color: #ffffff !important;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.vc_btn-peacoc:hover,
+a.vc_btn-peacoc:hover,
+button.vc_btn-peacoc:hover {
+  background-color: #39a0bd;
+  color: #f7f7f7 !important;
+}
+.vc_btn-peacoc.vc_btn_outlined,
+a.vc_btn-peacoc.vc_btn_outlined,
+button.vc_btn-peacoc.vc_btn_outlined,
+.vc_btn-peacoc.vc_btn_square_outlined,
+a.vc_btn-peacoc.vc_btn_square_outlined,
+button.vc_btn-peacoc.vc_btn_square_outlined {
+  color: #4CADC9 !important;
+}
+.vc_btn-peacoc.vc_btn_outlined:hover,
+a.vc_btn-peacoc.vc_btn_outlined:hover,
+button.vc_btn-peacoc.vc_btn_outlined:hover,
+.vc_btn-peacoc.vc_btn_square_outlined:hover,
+a.vc_btn-peacoc.vc_btn_square_outlined:hover,
+button.vc_btn-peacoc.vc_btn_square_outlined:hover {
+  border-color: #39a0bd;
+}
+.vc_btn-peacoc.vc_btn_3d,
+a.vc_btn-peacoc.vc_btn_3d,
+button.vc_btn-peacoc.vc_btn_3d {
+  -webkit-box-shadow: 0 5px 0 #338faa;
+  box-shadow: 0 5px 0 #338faa;
+  margin-bottom: 5px;
+}
+.vc_btn-peacoc.vc_btn_3d.vc_btn_xs,
+a.vc_btn-peacoc.vc_btn_3d.vc_btn_xs,
+button.vc_btn-peacoc.vc_btn_3d.vc_btn_xs {
+  -webkit-box-shadow: 0 3px 0 #338faa;
+  box-shadow: 0 3px 0 #338faa;
+  margin-bottom: 3px;
+}
+.vc_btn-peacoc.vc_btn_3d.vc_btn_sm,
+a.vc_btn-peacoc.vc_btn_3d.vc_btn_sm,
+button.vc_btn-peacoc.vc_btn_3d.vc_btn_sm {
+  -webkit-box-shadow: 0 4px 0 #338faa;
+  box-shadow: 0 4px 0 #338faa;
+  margin-bottom: 4px;
+}
+.vc_btn-chino,
+a.vc_btn-chino,
+button.vc_btn-chino {
+  background-color: #CEC2AB;
+  color: #ffffff !important;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.vc_btn-chino:hover,
+a.vc_btn-chino:hover,
+button.vc_btn-chino:hover {
+  background-color: #c3b498;
+  color: #f7f7f7 !important;
+}
+.vc_btn-chino.vc_btn_outlined,
+a.vc_btn-chino.vc_btn_outlined,
+button.vc_btn-chino.vc_btn_outlined,
+.vc_btn-chino.vc_btn_square_outlined,
+a.vc_btn-chino.vc_btn_square_outlined,
+button.vc_btn-chino.vc_btn_square_outlined {
+  color: #CEC2AB !important;
+}
+.vc_btn-chino.vc_btn_outlined:hover,
+a.vc_btn-chino.vc_btn_outlined:hover,
+button.vc_btn-chino.vc_btn_outlined:hover,
+.vc_btn-chino.vc_btn_square_outlined:hover,
+a.vc_btn-chino.vc_btn_square_outlined:hover,
+button.vc_btn-chino.vc_btn_square_outlined:hover {
+  border-color: #c3b498;
+}
+.vc_btn-chino.vc_btn_3d,
+a.vc_btn-chino.vc_btn_3d,
+button.vc_btn-chino.vc_btn_3d {
+  -webkit-box-shadow: 0 5px 0 #b9a888;
+  box-shadow: 0 5px 0 #b9a888;
+  margin-bottom: 5px;
+}
+.vc_btn-chino.vc_btn_3d.vc_btn_xs,
+a.vc_btn-chino.vc_btn_3d.vc_btn_xs,
+button.vc_btn-chino.vc_btn_3d.vc_btn_xs {
+  -webkit-box-shadow: 0 3px 0 #b9a888;
+  box-shadow: 0 3px 0 #b9a888;
+  margin-bottom: 3px;
+}
+.vc_btn-chino.vc_btn_3d.vc_btn_sm,
+a.vc_btn-chino.vc_btn_3d.vc_btn_sm,
+button.vc_btn-chino.vc_btn_3d.vc_btn_sm {
+  -webkit-box-shadow: 0 4px 0 #b9a888;
+  box-shadow: 0 4px 0 #b9a888;
+  margin-bottom: 4px;
+}
+.vc_btn-mulled_wine,
+a.vc_btn-mulled_wine,
+button.vc_btn-mulled_wine {
+  background-color: #50485B;
+  color: #ffffff !important;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.vc_btn-mulled_wine:hover,
+a.vc_btn-mulled_wine:hover,
+button.vc_btn-mulled_wine:hover {
+  background-color: #413a4a;
+  color: #f7f7f7 !important;
+}
+.vc_btn-mulled_wine.vc_btn_outlined,
+a.vc_btn-mulled_wine.vc_btn_outlined,
+button.vc_btn-mulled_wine.vc_btn_outlined,
+.vc_btn-mulled_wine.vc_btn_square_outlined,
+a.vc_btn-mulled_wine.vc_btn_square_outlined,
+button.vc_btn-mulled_wine.vc_btn_square_outlined {
+  color: #50485B !important;
+}
+.vc_btn-mulled_wine.vc_btn_outlined:hover,
+a.vc_btn-mulled_wine.vc_btn_outlined:hover,
+button.vc_btn-mulled_wine.vc_btn_outlined:hover,
+.vc_btn-mulled_wine.vc_btn_square_outlined:hover,
+a.vc_btn-mulled_wine.vc_btn_square_outlined:hover,
+button.vc_btn-mulled_wine.vc_btn_square_outlined:hover {
+  border-color: #413a4a;
+}
+.vc_btn-mulled_wine.vc_btn_3d,
+a.vc_btn-mulled_wine.vc_btn_3d,
+button.vc_btn-mulled_wine.vc_btn_3d {
+  -webkit-box-shadow: 0 5px 0 #342f3c;
+  box-shadow: 0 5px 0 #342f3c;
+  margin-bottom: 5px;
+}
+.vc_btn-mulled_wine.vc_btn_3d.vc_btn_xs,
+a.vc_btn-mulled_wine.vc_btn_3d.vc_btn_xs,
+button.vc_btn-mulled_wine.vc_btn_3d.vc_btn_xs {
+  -webkit-box-shadow: 0 3px 0 #342f3c;
+  box-shadow: 0 3px 0 #342f3c;
+  margin-bottom: 3px;
+}
+.vc_btn-mulled_wine.vc_btn_3d.vc_btn_sm,
+a.vc_btn-mulled_wine.vc_btn_3d.vc_btn_sm,
+button.vc_btn-mulled_wine.vc_btn_3d.vc_btn_sm {
+  -webkit-box-shadow: 0 4px 0 #342f3c;
+  box-shadow: 0 4px 0 #342f3c;
+  margin-bottom: 4px;
+}
+.vc_btn-vista_blue,
+a.vc_btn-vista_blue,
+button.vc_btn-vista_blue {
+  background-color: #75D69C;
+  color: #ffffff !important;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.vc_btn-vista_blue:hover,
+a.vc_btn-vista_blue:hover,
+button.vc_btn-vista_blue:hover {
+  background-color: #5dcf8b;
+  color: #f7f7f7 !important;
+}
+.vc_btn-vista_blue.vc_btn_outlined,
+a.vc_btn-vista_blue.vc_btn_outlined,
+button.vc_btn-vista_blue.vc_btn_outlined,
+.vc_btn-vista_blue.vc_btn_square_outlined,
+a.vc_btn-vista_blue.vc_btn_square_outlined,
+button.vc_btn-vista_blue.vc_btn_square_outlined {
+  color: #75D69C !important;
+}
+.vc_btn-vista_blue.vc_btn_outlined:hover,
+a.vc_btn-vista_blue.vc_btn_outlined:hover,
+button.vc_btn-vista_blue.vc_btn_outlined:hover,
+.vc_btn-vista_blue.vc_btn_square_outlined:hover,
+a.vc_btn-vista_blue.vc_btn_square_outlined:hover,
+button.vc_btn-vista_blue.vc_btn_square_outlined:hover {
+  border-color: #5dcf8b;
+}
+.vc_btn-vista_blue.vc_btn_3d,
+a.vc_btn-vista_blue.vc_btn_3d,
+button.vc_btn-vista_blue.vc_btn_3d {
+  -webkit-box-shadow: 0 5px 0 #4ac97d;
+  box-shadow: 0 5px 0 #4ac97d;
+  margin-bottom: 5px;
+}
+.vc_btn-vista_blue.vc_btn_3d.vc_btn_xs,
+a.vc_btn-vista_blue.vc_btn_3d.vc_btn_xs,
+button.vc_btn-vista_blue.vc_btn_3d.vc_btn_xs {
+  -webkit-box-shadow: 0 3px 0 #4ac97d;
+  box-shadow: 0 3px 0 #4ac97d;
+  margin-bottom: 3px;
+}
+.vc_btn-vista_blue.vc_btn_3d.vc_btn_sm,
+a.vc_btn-vista_blue.vc_btn_3d.vc_btn_sm,
+button.vc_btn-vista_blue.vc_btn_3d.vc_btn_sm {
+  -webkit-box-shadow: 0 4px 0 #4ac97d;
+  box-shadow: 0 4px 0 #4ac97d;
+  margin-bottom: 4px;
+}
+.vc_btn-black,
+a.vc_btn-black,
+button.vc_btn-black {
+  background-color: #2A2A2A;
+  color: #ffffff !important;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.vc_btn-black:hover,
+a.vc_btn-black:hover,
+button.vc_btn-black:hover {
+  background-color: #1b1b1b;
+  color: #f7f7f7 !important;
+}
+.vc_btn-black.vc_btn_outlined,
+a.vc_btn-black.vc_btn_outlined,
+button.vc_btn-black.vc_btn_outlined,
+.vc_btn-black.vc_btn_square_outlined,
+a.vc_btn-black.vc_btn_square_outlined,
+button.vc_btn-black.vc_btn_square_outlined {
+  color: #2A2A2A !important;
+}
+.vc_btn-black.vc_btn_outlined:hover,
+a.vc_btn-black.vc_btn_outlined:hover,
+button.vc_btn-black.vc_btn_outlined:hover,
+.vc_btn-black.vc_btn_square_outlined:hover,
+a.vc_btn-black.vc_btn_square_outlined:hover,
+button.vc_btn-black.vc_btn_square_outlined:hover {
+  border-color: #1b1b1b;
+}
+.vc_btn-black.vc_btn_3d,
+a.vc_btn-black.vc_btn_3d,
+button.vc_btn-black.vc_btn_3d {
+  -webkit-box-shadow: 0 5px 0 #0e0e0e;
+  box-shadow: 0 5px 0 #0e0e0e;
+  margin-bottom: 5px;
+}
+.vc_btn-black.vc_btn_3d.vc_btn_xs,
+a.vc_btn-black.vc_btn_3d.vc_btn_xs,
+button.vc_btn-black.vc_btn_3d.vc_btn_xs {
+  -webkit-box-shadow: 0 3px 0 #0e0e0e;
+  box-shadow: 0 3px 0 #0e0e0e;
+  margin-bottom: 3px;
+}
+.vc_btn-black.vc_btn_3d.vc_btn_sm,
+a.vc_btn-black.vc_btn_3d.vc_btn_sm,
+button.vc_btn-black.vc_btn_3d.vc_btn_sm {
+  -webkit-box-shadow: 0 4px 0 #0e0e0e;
+  box-shadow: 0 4px 0 #0e0e0e;
+  margin-bottom: 4px;
+}
+.vc_btn-grey,
+a.vc_btn-grey,
+button.vc_btn-grey {
+  background-color: #EBEBEB;
+  color: #666666 !important;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.vc_btn-grey:hover,
+a.vc_btn-grey:hover,
+button.vc_btn-grey:hover {
+  background-color: #dcdcdc;
+  color: #5e5e5e !important;
+}
+.vc_btn-grey.vc_btn_outlined,
+a.vc_btn-grey.vc_btn_outlined,
+button.vc_btn-grey.vc_btn_outlined,
+.vc_btn-grey.vc_btn_square_outlined,
+a.vc_btn-grey.vc_btn_square_outlined,
+button.vc_btn-grey.vc_btn_square_outlined {
+  color: #EBEBEB !important;
+}
+.vc_btn-grey.vc_btn_outlined:hover,
+a.vc_btn-grey.vc_btn_outlined:hover,
+button.vc_btn-grey.vc_btn_outlined:hover,
+.vc_btn-grey.vc_btn_square_outlined:hover,
+a.vc_btn-grey.vc_btn_square_outlined:hover,
+button.vc_btn-grey.vc_btn_square_outlined:hover {
+  border-color: #dcdcdc;
+}
+.vc_btn-grey.vc_btn_3d,
+a.vc_btn-grey.vc_btn_3d,
+button.vc_btn-grey.vc_btn_3d {
+  -webkit-box-shadow: 0 5px 0 #cfcfcf;
+  box-shadow: 0 5px 0 #cfcfcf;
+  margin-bottom: 5px;
+}
+.vc_btn-grey.vc_btn_3d.vc_btn_xs,
+a.vc_btn-grey.vc_btn_3d.vc_btn_xs,
+button.vc_btn-grey.vc_btn_3d.vc_btn_xs {
+  -webkit-box-shadow: 0 3px 0 #cfcfcf;
+  box-shadow: 0 3px 0 #cfcfcf;
+  margin-bottom: 3px;
+}
+.vc_btn-grey.vc_btn_3d.vc_btn_sm,
+a.vc_btn-grey.vc_btn_3d.vc_btn_sm,
+button.vc_btn-grey.vc_btn_3d.vc_btn_sm {
+  -webkit-box-shadow: 0 4px 0 #cfcfcf;
+  box-shadow: 0 4px 0 #cfcfcf;
+  margin-bottom: 4px;
+}
+.vc_btn-orange,
+a.vc_btn-orange,
+button.vc_btn-orange {
+  background-color: #F7BE68;
+  color: #ffffff !important;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.vc_btn-orange:hover,
+a.vc_btn-orange:hover,
+button.vc_btn-orange:hover {
+  background-color: #f5b14b;
+  color: #f7f7f7 !important;
+}
+.vc_btn-orange.vc_btn_outlined,
+a.vc_btn-orange.vc_btn_outlined,
+button.vc_btn-orange.vc_btn_outlined,
+.vc_btn-orange.vc_btn_square_outlined,
+a.vc_btn-orange.vc_btn_square_outlined,
+button.vc_btn-orange.vc_btn_square_outlined {
+  color: #F7BE68 !important;
+}
+.vc_btn-orange.vc_btn_outlined:hover,
+a.vc_btn-orange.vc_btn_outlined:hover,
+button.vc_btn-orange.vc_btn_outlined:hover,
+.vc_btn-orange.vc_btn_square_outlined:hover,
+a.vc_btn-orange.vc_btn_square_outlined:hover,
+button.vc_btn-orange.vc_btn_square_outlined:hover {
+  border-color: #f5b14b;
+}
+.vc_btn-orange.vc_btn_3d,
+a.vc_btn-orange.vc_btn_3d,
+button.vc_btn-orange.vc_btn_3d {
+  -webkit-box-shadow: 0 5px 0 #f4a733;
+  box-shadow: 0 5px 0 #f4a733;
+  margin-bottom: 5px;
+}
+.vc_btn-orange.vc_btn_3d.vc_btn_xs,
+a.vc_btn-orange.vc_btn_3d.vc_btn_xs,
+button.vc_btn-orange.vc_btn_3d.vc_btn_xs {
+  -webkit-box-shadow: 0 3px 0 #f4a733;
+  box-shadow: 0 3px 0 #f4a733;
+  margin-bottom: 3px;
+}
+.vc_btn-orange.vc_btn_3d.vc_btn_sm,
+a.vc_btn-orange.vc_btn_3d.vc_btn_sm,
+button.vc_btn-orange.vc_btn_3d.vc_btn_sm {
+  -webkit-box-shadow: 0 4px 0 #f4a733;
+  box-shadow: 0 4px 0 #f4a733;
+  margin-bottom: 4px;
+}
+.vc_btn-sky,
+a.vc_btn-sky,
+button.vc_btn-sky {
+  background-color: #5AA1E3;
+  color: #ffffff !important;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.vc_btn-sky:hover,
+a.vc_btn-sky:hover,
+button.vc_btn-sky:hover {
+  background-color: #4092df;
+  color: #f7f7f7 !important;
+}
+.vc_btn-sky.vc_btn_outlined,
+a.vc_btn-sky.vc_btn_outlined,
+button.vc_btn-sky.vc_btn_outlined,
+.vc_btn-sky.vc_btn_square_outlined,
+a.vc_btn-sky.vc_btn_square_outlined,
+button.vc_btn-sky.vc_btn_square_outlined {
+  color: #5AA1E3 !important;
+}
+.vc_btn-sky.vc_btn_outlined:hover,
+a.vc_btn-sky.vc_btn_outlined:hover,
+button.vc_btn-sky.vc_btn_outlined:hover,
+.vc_btn-sky.vc_btn_square_outlined:hover,
+a.vc_btn-sky.vc_btn_square_outlined:hover,
+button.vc_btn-sky.vc_btn_square_outlined:hover {
+  border-color: #4092df;
+}
+.vc_btn-sky.vc_btn_3d,
+a.vc_btn-sky.vc_btn_3d,
+button.vc_btn-sky.vc_btn_3d {
+  -webkit-box-shadow: 0 5px 0 #2a86db;
+  box-shadow: 0 5px 0 #2a86db;
+  margin-bottom: 5px;
+}
+.vc_btn-sky.vc_btn_3d.vc_btn_xs,
+a.vc_btn-sky.vc_btn_3d.vc_btn_xs,
+button.vc_btn-sky.vc_btn_3d.vc_btn_xs {
+  -webkit-box-shadow: 0 3px 0 #2a86db;
+  box-shadow: 0 3px 0 #2a86db;
+  margin-bottom: 3px;
+}
+.vc_btn-sky.vc_btn_3d.vc_btn_sm,
+a.vc_btn-sky.vc_btn_3d.vc_btn_sm,
+button.vc_btn-sky.vc_btn_3d.vc_btn_sm {
+  -webkit-box-shadow: 0 4px 0 #2a86db;
+  box-shadow: 0 4px 0 #2a86db;
+  margin-bottom: 4px;
+}
+.vc_btn-green,
+a.vc_btn-green,
+button.vc_btn-green {
+  background-color: #6DAB3C;
+  color: #ffffff !important;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.vc_btn-green:hover,
+a.vc_btn-green:hover,
+button.vc_btn-green:hover {
+  background-color: #5f9434;
+  color: #f7f7f7 !important;
+}
+.vc_btn-green.vc_btn_outlined,
+a.vc_btn-green.vc_btn_outlined,
+button.vc_btn-green.vc_btn_outlined,
+.vc_btn-green.vc_btn_square_outlined,
+a.vc_btn-green.vc_btn_square_outlined,
+button.vc_btn-green.vc_btn_square_outlined {
+  color: #6DAB3C !important;
+}
+.vc_btn-green.vc_btn_outlined:hover,
+a.vc_btn-green.vc_btn_outlined:hover,
+button.vc_btn-green.vc_btn_outlined:hover,
+.vc_btn-green.vc_btn_square_outlined:hover,
+a.vc_btn-green.vc_btn_square_outlined:hover,
+button.vc_btn-green.vc_btn_square_outlined:hover {
+  border-color: #5f9434;
+}
+.vc_btn-green.vc_btn_3d,
+a.vc_btn-green.vc_btn_3d,
+button.vc_btn-green.vc_btn_3d {
+  -webkit-box-shadow: 0 5px 0 #53812d;
+  box-shadow: 0 5px 0 #53812d;
+  margin-bottom: 5px;
+}
+.vc_btn-green.vc_btn_3d.vc_btn_xs,
+a.vc_btn-green.vc_btn_3d.vc_btn_xs,
+button.vc_btn-green.vc_btn_3d.vc_btn_xs {
+  -webkit-box-shadow: 0 3px 0 #53812d;
+  box-shadow: 0 3px 0 #53812d;
+  margin-bottom: 3px;
+}
+.vc_btn-green.vc_btn_3d.vc_btn_sm,
+a.vc_btn-green.vc_btn_3d.vc_btn_sm,
+button.vc_btn-green.vc_btn_3d.vc_btn_sm {
+  -webkit-box-shadow: 0 4px 0 #53812d;
+  box-shadow: 0 4px 0 #53812d;
+  margin-bottom: 4px;
+}
+.vc_btn-juicy_pink,
+a.vc_btn-juicy_pink,
+button.vc_btn-juicy_pink {
+  background-color: #F4524D;
+  color: #ffffff !important;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.vc_btn-juicy_pink:hover,
+a.vc_btn-juicy_pink:hover,
+button.vc_btn-juicy_pink:hover {
+  background-color: #f23630;
+  color: #f7f7f7 !important;
+}
+.vc_btn-juicy_pink.vc_btn_outlined,
+a.vc_btn-juicy_pink.vc_btn_outlined,
+button.vc_btn-juicy_pink.vc_btn_outlined,
+.vc_btn-juicy_pink.vc_btn_square_outlined,
+a.vc_btn-juicy_pink.vc_btn_square_outlined,
+button.vc_btn-juicy_pink.vc_btn_square_outlined {
+  color: #F4524D !important;
+}
+.vc_btn-juicy_pink.vc_btn_outlined:hover,
+a.vc_btn-juicy_pink.vc_btn_outlined:hover,
+button.vc_btn-juicy_pink.vc_btn_outlined:hover,
+.vc_btn-juicy_pink.vc_btn_square_outlined:hover,
+a.vc_btn-juicy_pink.vc_btn_square_outlined:hover,
+button.vc_btn-juicy_pink.vc_btn_square_outlined:hover {
+  border-color: #f23630;
+}
+.vc_btn-juicy_pink.vc_btn_3d,
+a.vc_btn-juicy_pink.vc_btn_3d,
+button.vc_btn-juicy_pink.vc_btn_3d {
+  -webkit-box-shadow: 0 5px 0 #f11f18;
+  box-shadow: 0 5px 0 #f11f18;
+  margin-bottom: 5px;
+}
+.vc_btn-juicy_pink.vc_btn_3d.vc_btn_xs,
+a.vc_btn-juicy_pink.vc_btn_3d.vc_btn_xs,
+button.vc_btn-juicy_pink.vc_btn_3d.vc_btn_xs {
+  -webkit-box-shadow: 0 3px 0 #f11f18;
+  box-shadow: 0 3px 0 #f11f18;
+  margin-bottom: 3px;
+}
+.vc_btn-juicy_pink.vc_btn_3d.vc_btn_sm,
+a.vc_btn-juicy_pink.vc_btn_3d.vc_btn_sm,
+button.vc_btn-juicy_pink.vc_btn_3d.vc_btn_sm {
+  -webkit-box-shadow: 0 4px 0 #f11f18;
+  box-shadow: 0 4px 0 #f11f18;
+  margin-bottom: 4px;
+}
+.vc_btn-sandy_brown,
+a.vc_btn-sandy_brown,
+button.vc_btn-sandy_brown {
+  background-color: #F79468;
+  color: #ffffff !important;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.vc_btn-sandy_brown:hover,
+a.vc_btn-sandy_brown:hover,
+button.vc_btn-sandy_brown:hover {
+  background-color: #f57f4b;
+  color: #f7f7f7 !important;
+}
+.vc_btn-sandy_brown.vc_btn_outlined,
+a.vc_btn-sandy_brown.vc_btn_outlined,
+button.vc_btn-sandy_brown.vc_btn_outlined,
+.vc_btn-sandy_brown.vc_btn_square_outlined,
+a.vc_btn-sandy_brown.vc_btn_square_outlined,
+button.vc_btn-sandy_brown.vc_btn_square_outlined {
+  color: #F79468 !important;
+}
+.vc_btn-sandy_brown.vc_btn_outlined:hover,
+a.vc_btn-sandy_brown.vc_btn_outlined:hover,
+button.vc_btn-sandy_brown.vc_btn_outlined:hover,
+.vc_btn-sandy_brown.vc_btn_square_outlined:hover,
+a.vc_btn-sandy_brown.vc_btn_square_outlined:hover,
+button.vc_btn-sandy_brown.vc_btn_square_outlined:hover {
+  border-color: #f57f4b;
+}
+.vc_btn-sandy_brown.vc_btn_3d,
+a.vc_btn-sandy_brown.vc_btn_3d,
+button.vc_btn-sandy_brown.vc_btn_3d {
+  -webkit-box-shadow: 0 5px 0 #f46e33;
+  box-shadow: 0 5px 0 #f46e33;
+  margin-bottom: 5px;
+}
+.vc_btn-sandy_brown.vc_btn_3d.vc_btn_xs,
+a.vc_btn-sandy_brown.vc_btn_3d.vc_btn_xs,
+button.vc_btn-sandy_brown.vc_btn_3d.vc_btn_xs {
+  -webkit-box-shadow: 0 3px 0 #f46e33;
+  box-shadow: 0 3px 0 #f46e33;
+  margin-bottom: 3px;
+}
+.vc_btn-sandy_brown.vc_btn_3d.vc_btn_sm,
+a.vc_btn-sandy_brown.vc_btn_3d.vc_btn_sm,
+button.vc_btn-sandy_brown.vc_btn_3d.vc_btn_sm {
+  -webkit-box-shadow: 0 4px 0 #f46e33;
+  box-shadow: 0 4px 0 #f46e33;
+  margin-bottom: 4px;
+}
+.vc_btn-purple,
+a.vc_btn-purple,
+button.vc_btn-purple {
+  background-color: #B97EBB;
+  color: #ffffff !important;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.vc_btn-purple:hover,
+a.vc_btn-purple:hover,
+button.vc_btn-purple:hover {
+  background-color: #ae6ab0;
+  color: #f7f7f7 !important;
+}
+.vc_btn-purple.vc_btn_outlined,
+a.vc_btn-purple.vc_btn_outlined,
+button.vc_btn-purple.vc_btn_outlined,
+.vc_btn-purple.vc_btn_square_outlined,
+a.vc_btn-purple.vc_btn_square_outlined,
+button.vc_btn-purple.vc_btn_square_outlined {
+  color: #B97EBB !important;
+}
+.vc_btn-purple.vc_btn_outlined:hover,
+a.vc_btn-purple.vc_btn_outlined:hover,
+button.vc_btn-purple.vc_btn_outlined:hover,
+.vc_btn-purple.vc_btn_square_outlined:hover,
+a.vc_btn-purple.vc_btn_square_outlined:hover,
+button.vc_btn-purple.vc_btn_square_outlined:hover {
+  border-color: #ae6ab0;
+}
+.vc_btn-purple.vc_btn_3d,
+a.vc_btn-purple.vc_btn_3d,
+button.vc_btn-purple.vc_btn_3d {
+  -webkit-box-shadow: 0 5px 0 #a559a8;
+  box-shadow: 0 5px 0 #a559a8;
+  margin-bottom: 5px;
+}
+.vc_btn-purple.vc_btn_3d.vc_btn_xs,
+a.vc_btn-purple.vc_btn_3d.vc_btn_xs,
+button.vc_btn-purple.vc_btn_3d.vc_btn_xs {
+  -webkit-box-shadow: 0 3px 0 #a559a8;
+  box-shadow: 0 3px 0 #a559a8;
+  margin-bottom: 3px;
+}
+.vc_btn-purple.vc_btn_3d.vc_btn_sm,
+a.vc_btn-purple.vc_btn_3d.vc_btn_sm,
+button.vc_btn-purple.vc_btn_3d.vc_btn_sm {
+  -webkit-box-shadow: 0 4px 0 #a559a8;
+  box-shadow: 0 4px 0 #a559a8;
+  margin-bottom: 4px;
+}
+.vc_btn-white,
+a.vc_btn-white,
+button.vc_btn-white {
+  background-color: #FFFFFF;
+  color: #666666 !important;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.vc_btn-white:hover,
+a.vc_btn-white:hover,
+button.vc_btn-white:hover {
+  background-color: #f0f0f0;
+  color: #5e5e5e !important;
+}
+.vc_btn-white.vc_btn_outlined,
+a.vc_btn-white.vc_btn_outlined,
+button.vc_btn-white.vc_btn_outlined,
+.vc_btn-white.vc_btn_square_outlined,
+a.vc_btn-white.vc_btn_square_outlined,
+button.vc_btn-white.vc_btn_square_outlined {
+  color: #FFFFFF !important;
+}
+.vc_btn-white.vc_btn_outlined:hover,
+a.vc_btn-white.vc_btn_outlined:hover,
+button.vc_btn-white.vc_btn_outlined:hover,
+.vc_btn-white.vc_btn_square_outlined:hover,
+a.vc_btn-white.vc_btn_square_outlined:hover,
+button.vc_btn-white.vc_btn_square_outlined:hover {
+  border-color: #f0f0f0;
+}
+.vc_btn-white.vc_btn_3d,
+a.vc_btn-white.vc_btn_3d,
+button.vc_btn-white.vc_btn_3d {
+  -webkit-box-shadow: 0 5px 0 #e3e3e3;
+  box-shadow: 0 5px 0 #e3e3e3;
+  margin-bottom: 5px;
+}
+.vc_btn-white.vc_btn_3d.vc_btn_xs,
+a.vc_btn-white.vc_btn_3d.vc_btn_xs,
+button.vc_btn-white.vc_btn_3d.vc_btn_xs {
+  -webkit-box-shadow: 0 3px 0 #e3e3e3;
+  box-shadow: 0 3px 0 #e3e3e3;
+  margin-bottom: 3px;
+}
+.vc_btn-white.vc_btn_3d.vc_btn_sm,
+a.vc_btn-white.vc_btn_3d.vc_btn_sm,
+button.vc_btn-white.vc_btn_3d.vc_btn_sm {
+  -webkit-box-shadow: 0 4px 0 #e3e3e3;
+  box-shadow: 0 4px 0 #e3e3e3;
+  margin-bottom: 4px;
+}
+.vc_btn-grace,
+a.vc_btn-grace,
+button.vc_btn-grace {
+  background-color: #AED13B;
+  color: #ffffff !important;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.vc_btn-grace:hover,
+a.vc_btn-grace:hover,
+button.vc_btn-grace:hover {
+  background-color: #9ec02d;
+  color: #f7f7f7 !important;
+}
+.vc_btn-grace.vc_btn_outlined,
+a.vc_btn-grace.vc_btn_outlined,
+button.vc_btn-grace.vc_btn_outlined,
+.vc_btn-grace.vc_btn_square_outlined,
+a.vc_btn-grace.vc_btn_square_outlined,
+button.vc_btn-grace.vc_btn_square_outlined {
+  color: #AED13B !important;
+}
+.vc_btn-grace.vc_btn_outlined:hover,
+a.vc_btn-grace.vc_btn_outlined:hover,
+button.vc_btn-grace.vc_btn_outlined:hover,
+.vc_btn-grace.vc_btn_square_outlined:hover,
+a.vc_btn-grace.vc_btn_square_outlined:hover,
+button.vc_btn-grace.vc_btn_square_outlined:hover {
+  border-color: #9ec02d;
+}
+.vc_btn-grace.vc_btn_3d,
+a.vc_btn-grace.vc_btn_3d,
+button.vc_btn-grace.vc_btn_3d {
+  -webkit-box-shadow: 0 5px 0 #8dac28;
+  box-shadow: 0 5px 0 #8dac28;
+  margin-bottom: 5px;
+}
+.vc_btn-grace.vc_btn_3d.vc_btn_xs,
+a.vc_btn-grace.vc_btn_3d.vc_btn_xs,
+button.vc_btn-grace.vc_btn_3d.vc_btn_xs {
+  -webkit-box-shadow: 0 3px 0 #8dac28;
+  box-shadow: 0 3px 0 #8dac28;
+  margin-bottom: 3px;
+}
+.vc_btn-grace.vc_btn_3d.vc_btn_sm,
+a.vc_btn-grace.vc_btn_3d.vc_btn_sm,
+button.vc_btn-grace.vc_btn_3d.vc_btn_sm {
+  -webkit-box-shadow: 0 4px 0 #8dac28;
+  box-shadow: 0 4px 0 #8dac28;
+  margin-bottom: 4px;
+}
+.vc_btn-default,
+a.vc_btn-default,
+button.vc_btn-default {
+  color: #7d7d7d;
+  background-color: #fff;
+  border-color: transparent;
+}
+.vc_btn-default:hover,
+a.vc_btn-default:hover,
+button.vc_btn-default:hover,
+.vc_btn-default:focus,
+a.vc_btn-default:focus,
+button.vc_btn-default:focus,
+.vc_btn-default:active,
+a.vc_btn-default:active,
+button.vc_btn-default:active,
+.vc_btn-default.active,
+a.vc_btn-default.active,
+button.vc_btn-default.active,
+.open > .dropdown-toggle.vc_btn-default,
+.open > .dropdown-togglea.vc_btn-default,
+.open > .dropdown-togglebutton.vc_btn-default {
+  color: #7d7d7d;
+  background-color: #e6e6e6;
+  border-color: rgba(0, 0, 0, 0);
+}
+.vc_btn-default:active,
+a.vc_btn-default:active,
+button.vc_btn-default:active,
+.vc_btn-default.active,
+a.vc_btn-default.active,
+button.vc_btn-default.active,
+.open > .dropdown-toggle.vc_btn-default,
+.open > .dropdown-togglea.vc_btn-default,
+.open > .dropdown-togglebutton.vc_btn-default {
+  background-image: none;
+}
+.vc_btn-default.disabled,
+a.vc_btn-default.disabled,
+button.vc_btn-default.disabled,
+.vc_btn-default[disabled],
+a.vc_btn-default[disabled],
+button.vc_btn-default[disabled],
+fieldset[disabled] .vc_btn-default,
+fieldset[disabled] a.vc_btn-default,
+fieldset[disabled] button.vc_btn-default,
+.vc_btn-default.disabled:hover,
+a.vc_btn-default.disabled:hover,
+button.vc_btn-default.disabled:hover,
+.vc_btn-default[disabled]:hover,
+a.vc_btn-default[disabled]:hover,
+button.vc_btn-default[disabled]:hover,
+fieldset[disabled] .vc_btn-default:hover,
+fieldset[disabled] a.vc_btn-default:hover,
+fieldset[disabled] button.vc_btn-default:hover,
+.vc_btn-default.disabled:focus,
+a.vc_btn-default.disabled:focus,
+button.vc_btn-default.disabled:focus,
+.vc_btn-default[disabled]:focus,
+a.vc_btn-default[disabled]:focus,
+button.vc_btn-default[disabled]:focus,
+fieldset[disabled] .vc_btn-default:focus,
+fieldset[disabled] a.vc_btn-default:focus,
+fieldset[disabled] button.vc_btn-default:focus,
+.vc_btn-default.disabled:active,
+a.vc_btn-default.disabled:active,
+button.vc_btn-default.disabled:active,
+.vc_btn-default[disabled]:active,
+a.vc_btn-default[disabled]:active,
+button.vc_btn-default[disabled]:active,
+fieldset[disabled] .vc_btn-default:active,
+fieldset[disabled] a.vc_btn-default:active,
+fieldset[disabled] button.vc_btn-default:active,
+.vc_btn-default.disabled.active,
+a.vc_btn-default.disabled.active,
+button.vc_btn-default.disabled.active,
+.vc_btn-default[disabled].active,
+a.vc_btn-default[disabled].active,
+button.vc_btn-default[disabled].active,
+fieldset[disabled] .vc_btn-default.active,
+fieldset[disabled] a.vc_btn-default.active,
+fieldset[disabled] button.vc_btn-default.active {
+  background-color: #fff;
+  border-color: transparent;
+}
+.vc_btn-default .badge,
+a.vc_btn-default .badge,
+button.vc_btn-default .badge {
+  color: #fff;
+  background-color: #7d7d7d;
+}
+.vc_btn-primary,
+a.vc_btn-primary,
+button.vc_btn-primary {
+  color: #fff;
+  background-color: #00aef0;
+  border-color: transparent;
+}
+.vc_btn-primary:hover,
+a.vc_btn-primary:hover,
+button.vc_btn-primary:hover,
+.vc_btn-primary:focus,
+a.vc_btn-primary:focus,
+button.vc_btn-primary:focus,
+.vc_btn-primary:active,
+a.vc_btn-primary:active,
+button.vc_btn-primary:active,
+.vc_btn-primary.active,
+a.vc_btn-primary.active,
+button.vc_btn-primary.active,
+.open > .dropdown-toggle.vc_btn-primary,
+.open > .dropdown-togglea.vc_btn-primary,
+.open > .dropdown-togglebutton.vc_btn-primary {
+  color: #fff;
+  background-color: #0089bd;
+  border-color: rgba(0, 0, 0, 0);
+}
+.vc_btn-primary:active,
+a.vc_btn-primary:active,
+button.vc_btn-primary:active,
+.vc_btn-primary.active,
+a.vc_btn-primary.active,
+button.vc_btn-primary.active,
+.open > .dropdown-toggle.vc_btn-primary,
+.open > .dropdown-togglea.vc_btn-primary,
+.open > .dropdown-togglebutton.vc_btn-primary {
+  background-image: none;
+}
+.vc_btn-primary.disabled,
+a.vc_btn-primary.disabled,
+button.vc_btn-primary.disabled,
+.vc_btn-primary[disabled],
+a.vc_btn-primary[disabled],
+button.vc_btn-primary[disabled],
+fieldset[disabled] .vc_btn-primary,
+fieldset[disabled] a.vc_btn-primary,
+fieldset[disabled] button.vc_btn-primary,
+.vc_btn-primary.disabled:hover,
+a.vc_btn-primary.disabled:hover,
+button.vc_btn-primary.disabled:hover,
+.vc_btn-primary[disabled]:hover,
+a.vc_btn-primary[disabled]:hover,
+button.vc_btn-primary[disabled]:hover,
+fieldset[disabled] .vc_btn-primary:hover,
+fieldset[disabled] a.vc_btn-primary:hover,
+fieldset[disabled] button.vc_btn-primary:hover,
+.vc_btn-primary.disabled:focus,
+a.vc_btn-primary.disabled:focus,
+button.vc_btn-primary.disabled:focus,
+.vc_btn-primary[disabled]:focus,
+a.vc_btn-primary[disabled]:focus,
+button.vc_btn-primary[disabled]:focus,
+fieldset[disabled] .vc_btn-primary:focus,
+fieldset[disabled] a.vc_btn-primary:focus,
+fieldset[disabled] button.vc_btn-primary:focus,
+.vc_btn-primary.disabled:active,
+a.vc_btn-primary.disabled:active,
+button.vc_btn-primary.disabled:active,
+.vc_btn-primary[disabled]:active,
+a.vc_btn-primary[disabled]:active,
+button.vc_btn-primary[disabled]:active,
+fieldset[disabled] .vc_btn-primary:active,
+fieldset[disabled] a.vc_btn-primary:active,
+fieldset[disabled] button.vc_btn-primary:active,
+.vc_btn-primary.disabled.active,
+a.vc_btn-primary.disabled.active,
+button.vc_btn-primary.disabled.active,
+.vc_btn-primary[disabled].active,
+a.vc_btn-primary[disabled].active,
+button.vc_btn-primary[disabled].active,
+fieldset[disabled] .vc_btn-primary.active,
+fieldset[disabled] a.vc_btn-primary.active,
+fieldset[disabled] button.vc_btn-primary.active {
+  background-color: #00aef0;
+  border-color: transparent;
+}
+.vc_btn-primary .badge,
+a.vc_btn-primary .badge,
+button.vc_btn-primary .badge {
+  color: #00aef0;
+  background-color: #fff;
+}
+.vc_btn-success,
+a.vc_btn-success,
+button.vc_btn-success {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: transparent;
+}
+.vc_btn-success:hover,
+a.vc_btn-success:hover,
+button.vc_btn-success:hover,
+.vc_btn-success:focus,
+a.vc_btn-success:focus,
+button.vc_btn-success:focus,
+.vc_btn-success:active,
+a.vc_btn-success:active,
+button.vc_btn-success:active,
+.vc_btn-success.active,
+a.vc_btn-success.active,
+button.vc_btn-success.active,
+.open > .dropdown-toggle.vc_btn-success,
+.open > .dropdown-togglea.vc_btn-success,
+.open > .dropdown-togglebutton.vc_btn-success {
+  color: #fff;
+  background-color: #449d44;
+  border-color: rgba(0, 0, 0, 0);
+}
+.vc_btn-success:active,
+a.vc_btn-success:active,
+button.vc_btn-success:active,
+.vc_btn-success.active,
+a.vc_btn-success.active,
+button.vc_btn-success.active,
+.open > .dropdown-toggle.vc_btn-success,
+.open > .dropdown-togglea.vc_btn-success,
+.open > .dropdown-togglebutton.vc_btn-success {
+  background-image: none;
+}
+.vc_btn-success.disabled,
+a.vc_btn-success.disabled,
+button.vc_btn-success.disabled,
+.vc_btn-success[disabled],
+a.vc_btn-success[disabled],
+button.vc_btn-success[disabled],
+fieldset[disabled] .vc_btn-success,
+fieldset[disabled] a.vc_btn-success,
+fieldset[disabled] button.vc_btn-success,
+.vc_btn-success.disabled:hover,
+a.vc_btn-success.disabled:hover,
+button.vc_btn-success.disabled:hover,
+.vc_btn-success[disabled]:hover,
+a.vc_btn-success[disabled]:hover,
+button.vc_btn-success[disabled]:hover,
+fieldset[disabled] .vc_btn-success:hover,
+fieldset[disabled] a.vc_btn-success:hover,
+fieldset[disabled] button.vc_btn-success:hover,
+.vc_btn-success.disabled:focus,
+a.vc_btn-success.disabled:focus,
+button.vc_btn-success.disabled:focus,
+.vc_btn-success[disabled]:focus,
+a.vc_btn-success[disabled]:focus,
+button.vc_btn-success[disabled]:focus,
+fieldset[disabled] .vc_btn-success:focus,
+fieldset[disabled] a.vc_btn-success:focus,
+fieldset[disabled] button.vc_btn-success:focus,
+.vc_btn-success.disabled:active,
+a.vc_btn-success.disabled:active,
+button.vc_btn-success.disabled:active,
+.vc_btn-success[disabled]:active,
+a.vc_btn-success[disabled]:active,
+button.vc_btn-success[disabled]:active,
+fieldset[disabled] .vc_btn-success:active,
+fieldset[disabled] a.vc_btn-success:active,
+fieldset[disabled] button.vc_btn-success:active,
+.vc_btn-success.disabled.active,
+a.vc_btn-success.disabled.active,
+button.vc_btn-success.disabled.active,
+.vc_btn-success[disabled].active,
+a.vc_btn-success[disabled].active,
+button.vc_btn-success[disabled].active,
+fieldset[disabled] .vc_btn-success.active,
+fieldset[disabled] a.vc_btn-success.active,
+fieldset[disabled] button.vc_btn-success.active {
+  background-color: #5cb85c;
+  border-color: transparent;
+}
+.vc_btn-success .badge,
+a.vc_btn-success .badge,
+button.vc_btn-success .badge {
+  color: #5cb85c;
+  background-color: #fff;
+}
+.vc_btn-info,
+a.vc_btn-info,
+button.vc_btn-info {
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: transparent;
+}
+.vc_btn-info:hover,
+a.vc_btn-info:hover,
+button.vc_btn-info:hover,
+.vc_btn-info:focus,
+a.vc_btn-info:focus,
+button.vc_btn-info:focus,
+.vc_btn-info:active,
+a.vc_btn-info:active,
+button.vc_btn-info:active,
+.vc_btn-info.active,
+a.vc_btn-info.active,
+button.vc_btn-info.active,
+.open > .dropdown-toggle.vc_btn-info,
+.open > .dropdown-togglea.vc_btn-info,
+.open > .dropdown-togglebutton.vc_btn-info {
+  color: #fff;
+  background-color: #31b0d5;
+  border-color: rgba(0, 0, 0, 0);
+}
+.vc_btn-info:active,
+a.vc_btn-info:active,
+button.vc_btn-info:active,
+.vc_btn-info.active,
+a.vc_btn-info.active,
+button.vc_btn-info.active,
+.open > .dropdown-toggle.vc_btn-info,
+.open > .dropdown-togglea.vc_btn-info,
+.open > .dropdown-togglebutton.vc_btn-info {
+  background-image: none;
+}
+.vc_btn-info.disabled,
+a.vc_btn-info.disabled,
+button.vc_btn-info.disabled,
+.vc_btn-info[disabled],
+a.vc_btn-info[disabled],
+button.vc_btn-info[disabled],
+fieldset[disabled] .vc_btn-info,
+fieldset[disabled] a.vc_btn-info,
+fieldset[disabled] button.vc_btn-info,
+.vc_btn-info.disabled:hover,
+a.vc_btn-info.disabled:hover,
+button.vc_btn-info.disabled:hover,
+.vc_btn-info[disabled]:hover,
+a.vc_btn-info[disabled]:hover,
+button.vc_btn-info[disabled]:hover,
+fieldset[disabled] .vc_btn-info:hover,
+fieldset[disabled] a.vc_btn-info:hover,
+fieldset[disabled] button.vc_btn-info:hover,
+.vc_btn-info.disabled:focus,
+a.vc_btn-info.disabled:focus,
+button.vc_btn-info.disabled:focus,
+.vc_btn-info[disabled]:focus,
+a.vc_btn-info[disabled]:focus,
+button.vc_btn-info[disabled]:focus,
+fieldset[disabled] .vc_btn-info:focus,
+fieldset[disabled] a.vc_btn-info:focus,
+fieldset[disabled] button.vc_btn-info:focus,
+.vc_btn-info.disabled:active,
+a.vc_btn-info.disabled:active,
+button.vc_btn-info.disabled:active,
+.vc_btn-info[disabled]:active,
+a.vc_btn-info[disabled]:active,
+button.vc_btn-info[disabled]:active,
+fieldset[disabled] .vc_btn-info:active,
+fieldset[disabled] a.vc_btn-info:active,
+fieldset[disabled] button.vc_btn-info:active,
+.vc_btn-info.disabled.active,
+a.vc_btn-info.disabled.active,
+button.vc_btn-info.disabled.active,
+.vc_btn-info[disabled].active,
+a.vc_btn-info[disabled].active,
+button.vc_btn-info[disabled].active,
+fieldset[disabled] .vc_btn-info.active,
+fieldset[disabled] a.vc_btn-info.active,
+fieldset[disabled] button.vc_btn-info.active {
+  background-color: #5bc0de;
+  border-color: transparent;
+}
+.vc_btn-info .badge,
+a.vc_btn-info .badge,
+button.vc_btn-info .badge {
+  color: #5bc0de;
+  background-color: #fff;
+}
+.vc_btn-warning,
+a.vc_btn-warning,
+button.vc_btn-warning {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: transparent;
+}
+.vc_btn-warning:hover,
+a.vc_btn-warning:hover,
+button.vc_btn-warning:hover,
+.vc_btn-warning:focus,
+a.vc_btn-warning:focus,
+button.vc_btn-warning:focus,
+.vc_btn-warning:active,
+a.vc_btn-warning:active,
+button.vc_btn-warning:active,
+.vc_btn-warning.active,
+a.vc_btn-warning.active,
+button.vc_btn-warning.active,
+.open > .dropdown-toggle.vc_btn-warning,
+.open > .dropdown-togglea.vc_btn-warning,
+.open > .dropdown-togglebutton.vc_btn-warning {
+  color: #fff;
+  background-color: #ec971f;
+  border-color: rgba(0, 0, 0, 0);
+}
+.vc_btn-warning:active,
+a.vc_btn-warning:active,
+button.vc_btn-warning:active,
+.vc_btn-warning.active,
+a.vc_btn-warning.active,
+button.vc_btn-warning.active,
+.open > .dropdown-toggle.vc_btn-warning,
+.open > .dropdown-togglea.vc_btn-warning,
+.open > .dropdown-togglebutton.vc_btn-warning {
+  background-image: none;
+}
+.vc_btn-warning.disabled,
+a.vc_btn-warning.disabled,
+button.vc_btn-warning.disabled,
+.vc_btn-warning[disabled],
+a.vc_btn-warning[disabled],
+button.vc_btn-warning[disabled],
+fieldset[disabled] .vc_btn-warning,
+fieldset[disabled] a.vc_btn-warning,
+fieldset[disabled] button.vc_btn-warning,
+.vc_btn-warning.disabled:hover,
+a.vc_btn-warning.disabled:hover,
+button.vc_btn-warning.disabled:hover,
+.vc_btn-warning[disabled]:hover,
+a.vc_btn-warning[disabled]:hover,
+button.vc_btn-warning[disabled]:hover,
+fieldset[disabled] .vc_btn-warning:hover,
+fieldset[disabled] a.vc_btn-warning:hover,
+fieldset[disabled] button.vc_btn-warning:hover,
+.vc_btn-warning.disabled:focus,
+a.vc_btn-warning.disabled:focus,
+button.vc_btn-warning.disabled:focus,
+.vc_btn-warning[disabled]:focus,
+a.vc_btn-warning[disabled]:focus,
+button.vc_btn-warning[disabled]:focus,
+fieldset[disabled] .vc_btn-warning:focus,
+fieldset[disabled] a.vc_btn-warning:focus,
+fieldset[disabled] button.vc_btn-warning:focus,
+.vc_btn-warning.disabled:active,
+a.vc_btn-warning.disabled:active,
+button.vc_btn-warning.disabled:active,
+.vc_btn-warning[disabled]:active,
+a.vc_btn-warning[disabled]:active,
+button.vc_btn-warning[disabled]:active,
+fieldset[disabled] .vc_btn-warning:active,
+fieldset[disabled] a.vc_btn-warning:active,
+fieldset[disabled] button.vc_btn-warning:active,
+.vc_btn-warning.disabled.active,
+a.vc_btn-warning.disabled.active,
+button.vc_btn-warning.disabled.active,
+.vc_btn-warning[disabled].active,
+a.vc_btn-warning[disabled].active,
+button.vc_btn-warning[disabled].active,
+fieldset[disabled] .vc_btn-warning.active,
+fieldset[disabled] a.vc_btn-warning.active,
+fieldset[disabled] button.vc_btn-warning.active {
+  background-color: #f0ad4e;
+  border-color: transparent;
+}
+.vc_btn-warning .badge,
+a.vc_btn-warning .badge,
+button.vc_btn-warning .badge {
+  color: #f0ad4e;
+  background-color: #fff;
+}
+.vc_btn-danger,
+a.vc_btn-danger,
+button.vc_btn-danger {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: transparent;
+}
+.vc_btn-danger:hover,
+a.vc_btn-danger:hover,
+button.vc_btn-danger:hover,
+.vc_btn-danger:focus,
+a.vc_btn-danger:focus,
+button.vc_btn-danger:focus,
+.vc_btn-danger:active,
+a.vc_btn-danger:active,
+button.vc_btn-danger:active,
+.vc_btn-danger.active,
+a.vc_btn-danger.active,
+button.vc_btn-danger.active,
+.open > .dropdown-toggle.vc_btn-danger,
+.open > .dropdown-togglea.vc_btn-danger,
+.open > .dropdown-togglebutton.vc_btn-danger {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: rgba(0, 0, 0, 0);
+}
+.vc_btn-danger:active,
+a.vc_btn-danger:active,
+button.vc_btn-danger:active,
+.vc_btn-danger.active,
+a.vc_btn-danger.active,
+button.vc_btn-danger.active,
+.open > .dropdown-toggle.vc_btn-danger,
+.open > .dropdown-togglea.vc_btn-danger,
+.open > .dropdown-togglebutton.vc_btn-danger {
+  background-image: none;
+}
+.vc_btn-danger.disabled,
+a.vc_btn-danger.disabled,
+button.vc_btn-danger.disabled,
+.vc_btn-danger[disabled],
+a.vc_btn-danger[disabled],
+button.vc_btn-danger[disabled],
+fieldset[disabled] .vc_btn-danger,
+fieldset[disabled] a.vc_btn-danger,
+fieldset[disabled] button.vc_btn-danger,
+.vc_btn-danger.disabled:hover,
+a.vc_btn-danger.disabled:hover,
+button.vc_btn-danger.disabled:hover,
+.vc_btn-danger[disabled]:hover,
+a.vc_btn-danger[disabled]:hover,
+button.vc_btn-danger[disabled]:hover,
+fieldset[disabled] .vc_btn-danger:hover,
+fieldset[disabled] a.vc_btn-danger:hover,
+fieldset[disabled] button.vc_btn-danger:hover,
+.vc_btn-danger.disabled:focus,
+a.vc_btn-danger.disabled:focus,
+button.vc_btn-danger.disabled:focus,
+.vc_btn-danger[disabled]:focus,
+a.vc_btn-danger[disabled]:focus,
+button.vc_btn-danger[disabled]:focus,
+fieldset[disabled] .vc_btn-danger:focus,
+fieldset[disabled] a.vc_btn-danger:focus,
+fieldset[disabled] button.vc_btn-danger:focus,
+.vc_btn-danger.disabled:active,
+a.vc_btn-danger.disabled:active,
+button.vc_btn-danger.disabled:active,
+.vc_btn-danger[disabled]:active,
+a.vc_btn-danger[disabled]:active,
+button.vc_btn-danger[disabled]:active,
+fieldset[disabled] .vc_btn-danger:active,
+fieldset[disabled] a.vc_btn-danger:active,
+fieldset[disabled] button.vc_btn-danger:active,
+.vc_btn-danger.disabled.active,
+a.vc_btn-danger.disabled.active,
+button.vc_btn-danger.disabled.active,
+.vc_btn-danger[disabled].active,
+a.vc_btn-danger[disabled].active,
+button.vc_btn-danger[disabled].active,
+fieldset[disabled] .vc_btn-danger.active,
+fieldset[disabled] a.vc_btn-danger.active,
+fieldset[disabled] button.vc_btn-danger.active {
+  background-color: #d9534f;
+  border-color: transparent;
+}
+.vc_btn-danger .badge,
+a.vc_btn-danger .badge,
+button.vc_btn-danger .badge {
+  color: #d9534f;
+  background-color: #fff;
+}
+.vc_button-2-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+}
+.vc_button-2-wrapper.vc_button-2-align-left {
+  display: block;
+  text-align: left;
+}
+.vc_button-2-wrapper.vc_button-2-align-right {
+  display: block;
+  text-align: right;
+}
+.vc_button-2-wrapper.vc_button-2-align-center {
+  display: block;
+  text-align: center;
+}
+i.icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  vertical-align: text-top;
+  margin-left: 5px;
+}
+.wpb_btn-large i.icon {
+  height: 19px;
+  margin-left: 9px;
+}
+.wpb_btn-small i.icon {
+  height: 15px;
+}
+.wpb_btn-mini i.icon {
+  display: none;
+}
+.wpb_address_book i.icon,
+option.wpb_address_book {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/address-book.png) no-repeat right center;
+}
+.wpb_alarm_clock i.icon,
+option.wpb_alarm_clock {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/alarm-clock.png) no-repeat right center;
+}
+.wpb_anchor i.icon,
+option.wpb_anchor {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/anchor.png) no-repeat right center;
+}
+.wpb_application_image i.icon,
+option.wpb_application_image {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/application-image.png) no-repeat right center;
+}
+.wpb_arrow i.icon,
+option.wpb_arrow {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/arrow.png) no-repeat right center;
+}
+.wpb_asterisk i.icon,
+option.wpb_asterisk {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/asterisk.png) no-repeat right center;
+}
+.wpb_hammer i.icon,
+option.wpb_hammer {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/auction-hammer.png) no-repeat right center;
+}
+.wpb_balloon i.icon,
+option.wpb_balloon {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/balloon.png) no-repeat right center;
+}
+.wpb_balloon_buzz i.icon,
+option.wpb_balloon_buzz {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/balloon-buzz.png) no-repeat right center;
+}
+.wpb_balloon_facebook i.icon,
+option.wpb_balloon_facebook {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/balloon-facebook.png) no-repeat right center;
+}
+.wpb_balloon_twitter i.icon,
+option.wpb_balloon_twitter {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/balloon-twitter.png) no-repeat right center;
+}
+.wpb_battery i.icon,
+option.wpb_battery {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/battery-full.png) no-repeat right center;
+}
+.wpb_binocular i.icon,
+option.wpb_binocular {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/binocular.png) no-repeat right center;
+}
+.wpb_document_excel i.icon,
+option.wpb_document_excel {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/blue-document-excel.png) no-repeat right center;
+}
+.wpb_document_image i.icon,
+option.wpb_document_image {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/blue-document-image.png) no-repeat right center;
+}
+.wpb_document_music i.icon,
+option.wpb_document_music {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/blue-document-music.png) no-repeat right center;
+}
+.wpb_document_office i.icon,
+option.wpb_document_office {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/blue-document-office.png) no-repeat right center;
+}
+.wpb_document_pdf i.icon,
+option.wpb_document_pdf {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/blue-document-pdf.png) no-repeat right center;
+}
+.wpb_document_powerpoint i.icon,
+option.wpb_document_powerpoint {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/blue-document-powerpoint.png) no-repeat right center;
+}
+.wpb_document_word i.icon,
+option.wpb_document_word {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/blue-document-word.png) no-repeat right center;
+}
+.wpb_bookmark i.icon,
+option.wpb_bookmark {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/bookmark.png) no-repeat right center;
+}
+.wpb_camcorder i.icon,
+option.wpb_camcorder {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/camcorder.png) no-repeat right center;
+}
+.wpb_camera i.icon,
+option.wpb_camera {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/camera.png) no-repeat right center;
+}
+.wpb_chart i.icon,
+option.wpb_chart {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/chart.png) no-repeat right center;
+}
+.wpb_chart_pie i.icon,
+option.wpb_chart_pie {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/chart-pie.png) no-repeat right center;
+}
+.wpb_clock i.icon,
+option.wpb_clock {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/clock.png) no-repeat right center;
+}
+.wpb_play i.icon,
+option.wpb_play {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/control.png) no-repeat right center;
+}
+.wpb_fire i.icon,
+option.wpb_fire {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/fire.png) no-repeat right center;
+}
+.wpb_heart i.icon,
+option.wpb_heart {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/heart.png) no-repeat right center;
+}
+.wpb_mail i.icon,
+option.wpb_mail {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/mail.png) no-repeat right center;
+}
+.wpb_shield i.icon,
+option.wpb_shield {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/plus-shield.png) no-repeat right center;
+}
+.wpb_video i.icon,
+option.wpb_video {
+  background: url(//dev.londonparkour.com/wp-content/plugins/js_composer/assets/images/icons/video.png) no-repeat right center;
+}
+.vc_column_container .vc_btn,
+.vc_column_container .wpb_button {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

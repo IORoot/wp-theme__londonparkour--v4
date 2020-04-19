@@ -33,14 +33,14 @@ function ldnpk_deregister_styles() {
     wp_deregister_style( 'js_composer_custom_css' );    // WPBakery - custom
     wp_deregister_style( 'teambooking_fonts' );         // TeamBooking Fonts
     wp_deregister_style( 'teambooking_fonts_arrows' );  // TeamBooking Fonts
+    wp_deregister_style( 'wp-my-instagram' );           // Instagram plugin
 
     // This is replaced in the sass/vendor/js_composer.sass file so we
     // can remove bits not needed.
     wp_deregister_style( 'js_composer_front' );       // WPBakery - frontend
 
-    // Other styles
-    wp_deregister_style( 'semantic-style' );              // TeamBooking SemanticUI
-    wp_deregister_style( 'wp-my-instagram' );             // Instagram plugin
+    // This may have broken things - keep checking!
+    wp_deregister_style( 'semantic-style' );            // TeamBooking SemanticUI
 
 
     // Deregister JS Scripts

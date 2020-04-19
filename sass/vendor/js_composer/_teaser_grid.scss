@@ -1,0 +1,38 @@
+
+/* Teaser Grid
+---------------------------------------------------------- */
+.wpb_column .wpb_wrapper .wpb_teaser_grid {
+    float: none;
+  }
+  body ul.wpb_thumbnails-fluid li {
+    /* some themes add bg image as a bullet */
+    padding: 0;
+    margin-left: 0;
+    background-image: none;
+    list-style: none !important;
+  }
+  body ul.wpb_thumbnails-fluid li:after,
+  body ul.wpb_thumbnails-fluid li:before {
+    display: none !important;
+  }
+  body ul.wpb_thumbnails-fluid li .entry-content *:last-child {
+    margin-bottom: 0;
+  }
+  .wpb_row .wpb_grid ul.wpb_thumbnails-fluid,
+  .wpb_row .wpb_filtered_grid ul.wpb_thumbnails-fluid {
+    padding: 0;
+    overflow: visible !important;
+  }
+  /* Teaser grid
+  ---------------------------------------------------------- */
+  .wpb_teaser_grid .entry-content {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .grid_layout-thumbnail .post-thumb {
+    margin-bottom: 0;
+  }
+  .grid_layout-thumbnail .post-thumb img {
+    max-width: 100%;
+  }

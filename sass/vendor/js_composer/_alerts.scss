@@ -1,0 +1,910 @@
+
+/* 2. Alerts (Message boxes)
+---------------------------------------------------------- */
+/* ================================
+ * Message box
+ * ================================ */
+ .vc_message_box {
+    border: 1px solid transparent;
+    display: block;
+    overflow: hidden;
+    margin: 0 0 0px 0;
+    padding: 1em 1em 1em 4em;
+    position: relative;
+    font-size: 1em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .vc_message_box > p:first-child {
+    margin-top: 0;
+  }
+  .vc_message_box > p:last-child {
+    margin-bottom: 0;
+  }
+  .vc_message_box-icon {
+    bottom: 0;
+    font-size: 1em;
+    font-style: normal;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 4em;
+  }
+  .vc_message_box-icon > * {
+    font-size: 1.7em;
+    line-height: 1;
+    font-style: normal;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .vc_message_box-icon > .fa {
+    font-size: 1.7em;
+    line-height: 1;
+  }
+  .vc_color-blue.vc_message_box {
+    color: #364a8a;
+    border-color: #c5cff0;
+    background-color: #edf1fa;
+  }
+  .vc_color-blue.vc_message_box .vc_message_box-icon {
+    color: #5472D2;
+  }
+  .vc_color-blue.vc_message_box-solid {
+    color: #fff;
+    border-color: transparent;
+    background-color: #5472D2;
+  }
+  .vc_color-blue.vc_message_box-solid .vc_message_box-icon {
+    color: #fff;
+  }
+  .vc_color-blue.vc_message_box-outline,
+  .vc_color-blue.vc_message_box-solid-icon {
+    color: #364a8a;
+    border-color: #5472D2;
+    background-color: transparent;
+  }
+  .vc_color-blue.vc_message_box-outline .vc_message_box-icon,
+  .vc_color-blue.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #5472D2;
+  }
+  .vc_color-blue.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #fff;
+    background-color: #5472D2;
+  }
+  .vc_color-blue.vc_message_box-3d {
+    box-shadow: 0 5px 0 #9daee5;
+  }
+  .vc_color-turquoise.vc_message_box {
+    color: #085b61;
+    border-color: #c6ecee;
+    background-color: #ebfcfd;
+  }
+  .vc_color-turquoise.vc_message_box .vc_message_box-icon {
+    color: #00C1CF;
+  }
+  .vc_color-turquoise.vc_message_box-solid {
+    color: #fff;
+    border-color: transparent;
+    background-color: #00C1CF;
+  }
+  .vc_color-turquoise.vc_message_box-solid .vc_message_box-icon {
+    color: #fff;
+  }
+  .vc_color-turquoise.vc_message_box-outline,
+  .vc_color-turquoise.vc_message_box-solid-icon {
+    color: #085b61;
+    border-color: #00C1CF;
+    background-color: transparent;
+  }
+  .vc_color-turquoise.vc_message_box-outline .vc_message_box-icon,
+  .vc_color-turquoise.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #00C1CF;
+  }
+  .vc_color-turquoise.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #fff;
+    background-color: #00C1CF;
+  }
+  .vc_color-turquoise.vc_message_box-3d {
+    box-shadow: 0 5px 0 #9fdee3;
+  }
+  .vc_color-pink.vc_message_box {
+    color: #d82e21;
+    border-color: #ffd8d6;
+    background-color: #fff0ef;
+  }
+  .vc_color-pink.vc_message_box .vc_message_box-icon {
+    color: #FE6C61;
+  }
+  .vc_color-pink.vc_message_box-solid {
+    color: #fff;
+    border-color: transparent;
+    background-color: #FE6C61;
+  }
+  .vc_color-pink.vc_message_box-solid .vc_message_box-icon {
+    color: #fff;
+  }
+  .vc_color-pink.vc_message_box-outline,
+  .vc_color-pink.vc_message_box-solid-icon {
+    color: #d82e21;
+    border-color: #FE6C61;
+    background-color: transparent;
+  }
+  .vc_color-pink.vc_message_box-outline .vc_message_box-icon,
+  .vc_color-pink.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #FE6C61;
+  }
+  .vc_color-pink.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #fff;
+    background-color: #FE6C61;
+  }
+  .vc_color-pink.vc_message_box-3d {
+    box-shadow: 0 5px 0 #fea9a3;
+  }
+  .vc_color-violet.vc_message_box {
+    color: #5e4a81;
+    border-color: #d4c8e9;
+    background-color: #f0ecf7;
+  }
+  .vc_color-violet.vc_message_box .vc_message_box-icon {
+    color: #8D6DC4;
+  }
+  .vc_color-violet.vc_message_box-solid {
+    color: #fff;
+    border-color: transparent;
+    background-color: #8D6DC4;
+  }
+  .vc_color-violet.vc_message_box-solid .vc_message_box-icon {
+    color: #fff;
+  }
+  .vc_color-violet.vc_message_box-outline,
+  .vc_color-violet.vc_message_box-solid-icon {
+    color: #5e4a81;
+    border-color: #8D6DC4;
+    background-color: transparent;
+  }
+  .vc_color-violet.vc_message_box-outline .vc_message_box-icon,
+  .vc_color-violet.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #8D6DC4;
+  }
+  .vc_color-violet.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #fff;
+    background-color: #8D6DC4;
+  }
+  .vc_color-violet.vc_message_box-3d {
+    box-shadow: 0 5px 0 #b8a3da;
+  }
+  .vc_color-peacoc.vc_message_box {
+    color: #366a79;
+    border-color: #c2e3ec;
+    background-color: #e9f5f8;
+  }
+  .vc_color-peacoc.vc_message_box .vc_message_box-icon {
+    color: #4CADC9;
+  }
+  .vc_color-peacoc.vc_message_box-solid {
+    color: #fff;
+    border-color: transparent;
+    background-color: #4CADC9;
+  }
+  .vc_color-peacoc.vc_message_box-solid .vc_message_box-icon {
+    color: #fff;
+  }
+  .vc_color-peacoc.vc_message_box-outline,
+  .vc_color-peacoc.vc_message_box-solid-icon {
+    color: #366a79;
+    border-color: #4CADC9;
+    background-color: transparent;
+  }
+  .vc_color-peacoc.vc_message_box-outline .vc_message_box-icon,
+  .vc_color-peacoc.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #4CADC9;
+  }
+  .vc_color-peacoc.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #fff;
+    background-color: #4CADC9;
+  }
+  .vc_color-peacoc.vc_message_box-3d {
+    box-shadow: 0 5px 0 #9ad1e1;
+  }
+  .vc_color-chino.vc_message_box {
+    color: #978258;
+    border-color: #e5ded2;
+    background-color: #f7f5f2;
+  }
+  .vc_color-chino.vc_message_box .vc_message_box-icon {
+    color: #CEC2AB;
+  }
+  .vc_color-chino.vc_message_box-solid {
+    color: #fff;
+    border-color: transparent;
+    background-color: #CEC2AB;
+  }
+  .vc_color-chino.vc_message_box-solid .vc_message_box-icon {
+    color: #fff;
+  }
+  .vc_color-chino.vc_message_box-outline,
+  .vc_color-chino.vc_message_box-solid-icon {
+    color: #978258;
+    border-color: #CEC2AB;
+    background-color: transparent;
+  }
+  .vc_color-chino.vc_message_box-outline .vc_message_box-icon,
+  .vc_color-chino.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #CEC2AB;
+  }
+  .vc_color-chino.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #fff;
+    background-color: #CEC2AB;
+  }
+  .vc_color-chino.vc_message_box-3d {
+    box-shadow: 0 5px 0 #d2c7b1;
+  }
+  .vc_color-mulled_wine.vc_message_box {
+    color: #1e1b22;
+    border-color: #d0ccd6;
+    background-color: #eae8ed;
+  }
+  .vc_color-mulled_wine.vc_message_box .vc_message_box-icon {
+    color: #50485B;
+  }
+  .vc_color-mulled_wine.vc_message_box-solid {
+    color: #fff;
+    border-color: transparent;
+    background-color: #50485B;
+  }
+  .vc_color-mulled_wine.vc_message_box-solid .vc_message_box-icon {
+    color: #fff;
+  }
+  .vc_color-mulled_wine.vc_message_box-outline,
+  .vc_color-mulled_wine.vc_message_box-solid-icon {
+    color: #1e1b22;
+    border-color: #50485B;
+    background-color: transparent;
+  }
+  .vc_color-mulled_wine.vc_message_box-outline .vc_message_box-icon,
+  .vc_color-mulled_wine.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #50485B;
+  }
+  .vc_color-mulled_wine.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #fff;
+    background-color: #50485B;
+  }
+  .vc_color-mulled_wine.vc_message_box-3d {
+    box-shadow: 0 5px 0 #b6afc0;
+  }
+  .vc_color-vista_blue.vc_message_box {
+    color: #3e8e5e;
+    border-color: #bcebcf;
+    background-color: #e3f7eb;
+  }
+  .vc_color-vista_blue.vc_message_box .vc_message_box-icon {
+    color: #75D69C;
+  }
+  .vc_color-vista_blue.vc_message_box-solid {
+    color: #fff;
+    border-color: transparent;
+    background-color: #75D69C;
+  }
+  .vc_color-vista_blue.vc_message_box-solid .vc_message_box-icon {
+    color: #fff;
+  }
+  .vc_color-vista_blue.vc_message_box-outline,
+  .vc_color-vista_blue.vc_message_box-solid-icon {
+    color: #3e8e5e;
+    border-color: #75D69C;
+    background-color: transparent;
+  }
+  .vc_color-vista_blue.vc_message_box-outline .vc_message_box-icon,
+  .vc_color-vista_blue.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #75D69C;
+  }
+  .vc_color-vista_blue.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #fff;
+    background-color: #75D69C;
+  }
+  .vc_color-vista_blue.vc_message_box-3d {
+    box-shadow: 0 5px 0 #94dfb3;
+  }
+  .vc_color-orange.vc_message_box {
+    color: #c3811c;
+    border-color: #fbe1ba;
+    background-color: #fef6eb;
+  }
+  .vc_color-orange.vc_message_box .vc_message_box-icon {
+    color: #F7BE68;
+  }
+  .vc_color-orange.vc_message_box-solid {
+    color: #fff;
+    border-color: transparent;
+    background-color: #F7BE68;
+  }
+  .vc_color-orange.vc_message_box-solid .vc_message_box-icon {
+    color: #fff;
+  }
+  .vc_color-orange.vc_message_box-outline,
+  .vc_color-orange.vc_message_box-solid-icon {
+    color: #c3811c;
+    border-color: #F7BE68;
+    background-color: transparent;
+  }
+  .vc_color-orange.vc_message_box-outline .vc_message_box-icon,
+  .vc_color-orange.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #F7BE68;
+  }
+  .vc_color-orange.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #fff;
+    background-color: #F7BE68;
+  }
+  .vc_color-orange.vc_message_box-3d {
+    box-shadow: 0 5px 0 #f9cd8a;
+  }
+  .vc_color-sky.vc_message_box {
+    color: #2a6194;
+    border-color: #bedaf4;
+    background-color: #eaf3fb;
+  }
+  .vc_color-sky.vc_message_box .vc_message_box-icon {
+    color: #5AA1E3;
+  }
+  .vc_color-sky.vc_message_box-solid {
+    color: #fff;
+    border-color: transparent;
+    background-color: #5AA1E3;
+  }
+  .vc_color-sky.vc_message_box-solid .vc_message_box-icon {
+    color: #fff;
+  }
+  .vc_color-sky.vc_message_box-outline,
+  .vc_color-sky.vc_message_box-solid-icon {
+    color: #2a6194;
+    border-color: #5AA1E3;
+    background-color: transparent;
+  }
+  .vc_color-sky.vc_message_box-outline .vc_message_box-icon,
+  .vc_color-sky.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #5AA1E3;
+  }
+  .vc_color-sky.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #fff;
+    background-color: #5AA1E3;
+  }
+  .vc_color-sky.vc_message_box-3d {
+    box-shadow: 0 5px 0 #93c1ed;
+  }
+  .vc_color-green.vc_message_box {
+    color: #3e562b;
+    border-color: #c2e1a9;
+    background-color: #eaf5e2;
+  }
+  .vc_color-green.vc_message_box .vc_message_box-icon {
+    color: #6DAB3C;
+  }
+  .vc_color-green.vc_message_box-solid {
+    color: #fff;
+    border-color: transparent;
+    background-color: #6DAB3C;
+  }
+  .vc_color-green.vc_message_box-solid .vc_message_box-icon {
+    color: #fff;
+  }
+  .vc_color-green.vc_message_box-outline,
+  .vc_color-green.vc_message_box-solid-icon {
+    color: #3e562b;
+    border-color: #6DAB3C;
+    background-color: transparent;
+  }
+  .vc_color-green.vc_message_box-outline .vc_message_box-icon,
+  .vc_color-green.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #6DAB3C;
+  }
+  .vc_color-green.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #fff;
+    background-color: #6DAB3C;
+  }
+  .vc_color-green.vc_message_box-3d {
+    box-shadow: 0 5px 0 #a7d484;
+  }
+  .vc_color-juicy_pink.vc_message_box {
+    color: #a3231f;
+    border-color: #fbc7c5;
+    background-color: #fef5f5;
+  }
+  .vc_color-juicy_pink.vc_message_box .vc_message_box-icon {
+    color: #F4524D;
+  }
+  .vc_color-juicy_pink.vc_message_box-solid {
+    color: #fff;
+    border-color: transparent;
+    background-color: #F4524D;
+  }
+  .vc_color-juicy_pink.vc_message_box-solid .vc_message_box-icon {
+    color: #fff;
+  }
+  .vc_color-juicy_pink.vc_message_box-outline,
+  .vc_color-juicy_pink.vc_message_box-solid-icon {
+    color: #a3231f;
+    border-color: #F4524D;
+    background-color: transparent;
+  }
+  .vc_color-juicy_pink.vc_message_box-outline .vc_message_box-icon,
+  .vc_color-juicy_pink.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #F4524D;
+  }
+  .vc_color-juicy_pink.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #fff;
+    background-color: #F4524D;
+  }
+  .vc_color-juicy_pink.vc_message_box-3d {
+    box-shadow: 0 5px 0 #f89895;
+  }
+  .vc_color-sandy_brown.vc_message_box {
+    color: #c3501c;
+    border-color: #fbceba;
+    background-color: #fef1eb;
+  }
+  .vc_color-sandy_brown.vc_message_box .vc_message_box-icon {
+    color: #F79468;
+  }
+  .vc_color-sandy_brown.vc_message_box-solid {
+    color: #fff;
+    border-color: transparent;
+    background-color: #F79468;
+  }
+  .vc_color-sandy_brown.vc_message_box-solid .vc_message_box-icon {
+    color: #fff;
+  }
+  .vc_color-sandy_brown.vc_message_box-outline,
+  .vc_color-sandy_brown.vc_message_box-solid-icon {
+    color: #c3501c;
+    border-color: #F79468;
+    background-color: transparent;
+  }
+  .vc_color-sandy_brown.vc_message_box-outline .vc_message_box-icon,
+  .vc_color-sandy_brown.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #F79468;
+  }
+  .vc_color-sandy_brown.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #fff;
+    background-color: #F79468;
+  }
+  .vc_color-sandy_brown.vc_message_box-3d {
+    box-shadow: 0 5px 0 #f9ac8a;
+  }
+  .vc_color-purple.vc_message_box {
+    color: #886389;
+    border-color: #e3cbe3;
+    background-color: #f5ecf5;
+  }
+  .vc_color-purple.vc_message_box .vc_message_box-icon {
+    color: #B97EBB;
+  }
+  .vc_color-purple.vc_message_box-solid {
+    color: #fff;
+    border-color: transparent;
+    background-color: #B97EBB;
+  }
+  .vc_color-purple.vc_message_box-solid .vc_message_box-icon {
+    color: #fff;
+  }
+  .vc_color-purple.vc_message_box-outline,
+  .vc_color-purple.vc_message_box-solid-icon {
+    color: #886389;
+    border-color: #B97EBB;
+    background-color: transparent;
+  }
+  .vc_color-purple.vc_message_box-outline .vc_message_box-icon,
+  .vc_color-purple.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #B97EBB;
+  }
+  .vc_color-purple.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #fff;
+    background-color: #B97EBB;
+  }
+  .vc_color-purple.vc_message_box-3d {
+    box-shadow: 0 5px 0 #d1a9d2;
+  }
+  .vc_color-black.vc_message_box {
+    color: #fff;
+    border-color: #2A2A2A;
+    background-color: #3c3c3c;
+  }
+  .vc_color-black.vc_message_box .vc_message_box-icon {
+    color: #2A2A2A;
+  }
+  .vc_color-black.vc_message_box-solid {
+    color: #fff;
+    border-color: transparent;
+    background-color: #2A2A2A;
+  }
+  .vc_color-black.vc_message_box-solid .vc_message_box-icon {
+    color: #fff;
+  }
+  .vc_color-black.vc_message_box-outline,
+  .vc_color-black.vc_message_box-solid-icon {
+    color: #fff;
+    border-color: #2A2A2A;
+    background-color: transparent;
+  }
+  .vc_color-black.vc_message_box-outline .vc_message_box-icon,
+  .vc_color-black.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #2A2A2A;
+  }
+  .vc_color-black.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #fff;
+    background-color: #2A2A2A;
+  }
+  .vc_color-black.vc_message_box-3d {
+    box-shadow: 0 5px 0 #101010;
+  }
+  .vc_color-grey.vc_message_box {
+    color: #858585;
+    border-color: #d2d2d2;
+    background-color: #EBEBEB;
+  }
+  .vc_color-grey.vc_message_box .vc_message_box-icon {
+    color: #EBEBEB;
+  }
+  .vc_color-grey.vc_message_box-solid {
+    color: #858585;
+    border-color: transparent;
+    background-color: #EBEBEB;
+  }
+  .vc_color-grey.vc_message_box-solid .vc_message_box-icon {
+    color: #858585;
+  }
+  .vc_color-grey.vc_message_box-outline,
+  .vc_color-grey.vc_message_box-solid-icon {
+    color: #858585;
+    border-color: #EBEBEB;
+    background-color: transparent;
+  }
+  .vc_color-grey.vc_message_box-outline .vc_message_box-icon,
+  .vc_color-grey.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #EBEBEB;
+  }
+  .vc_color-grey.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #858585;
+    background-color: #EBEBEB;
+  }
+  .vc_color-grey.vc_message_box-3d {
+    box-shadow: 0 5px 0 #b8b8b8;
+  }
+  .vc_color-white.vc_message_box {
+    color: #b3b3b3;
+    border-color: #e6e6e6;
+    background-color: #FFFFFF;
+  }
+  .vc_color-white.vc_message_box .vc_message_box-icon {
+    color: #FFFFFF;
+  }
+  .vc_color-white.vc_message_box-solid {
+    color: #b3b3b3;
+    border-color: transparent;
+    background-color: #FFFFFF;
+  }
+  .vc_color-white.vc_message_box-solid .vc_message_box-icon {
+    color: #b3b3b3;
+  }
+  .vc_color-white.vc_message_box-outline,
+  .vc_color-white.vc_message_box-solid-icon {
+    color: #b3b3b3;
+    border-color: #FFFFFF;
+    background-color: transparent;
+  }
+  .vc_color-white.vc_message_box-outline .vc_message_box-icon,
+  .vc_color-white.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #FFFFFF;
+  }
+  .vc_color-white.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #b3b3b3;
+    background-color: #FFFFFF;
+  }
+  .vc_color-white.vc_message_box-3d {
+    box-shadow: 0 5px 0 #cccccc;
+  }
+  .vc_color-info.vc_message_box {
+    color: #5e7f96;
+    border-color: #cfebfe;
+    background-color: #dff2fe;
+  }
+  .vc_color-info.vc_message_box .vc_message_box-icon {
+    color: #56b0ee;
+  }
+  .vc_color-info.vc_message_box-solid {
+    color: #fff;
+    border-color: transparent;
+    background-color: #56b0ee;
+  }
+  .vc_color-info.vc_message_box-solid .vc_message_box-icon {
+    color: #fff;
+  }
+  .vc_color-info.vc_message_box-outline,
+  .vc_color-info.vc_message_box-solid-icon {
+    color: #5e7f96;
+    border-color: #56b0ee;
+    background-color: transparent;
+  }
+  .vc_color-info.vc_message_box-outline .vc_message_box-icon,
+  .vc_color-info.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #56b0ee;
+  }
+  .vc_color-info.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #fff;
+    background-color: #56b0ee;
+  }
+  .vc_color-info.vc_message_box-3d {
+    box-shadow: 0 5px 0 #9dd6fd;
+  }
+  .vc_color-success.vc_message_box {
+    color: #5e7f96;
+    border-color: #cfebfe;
+    background-color: #e6fdf8;
+  }
+  .vc_color-success.vc_message_box .vc_message_box-icon {
+    color: #1bbc9b;
+  }
+  .vc_color-success.vc_message_box-solid {
+    color: #fff;
+    border-color: transparent;
+    background-color: #1bbc9b;
+  }
+  .vc_color-success.vc_message_box-solid .vc_message_box-icon {
+    color: #fff;
+  }
+  .vc_color-success.vc_message_box-outline,
+  .vc_color-success.vc_message_box-solid-icon {
+    color: #5e7f96;
+    border-color: #1bbc9b;
+    background-color: transparent;
+  }
+  .vc_color-success.vc_message_box-outline .vc_message_box-icon,
+  .vc_color-success.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #1bbc9b;
+  }
+  .vc_color-success.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #fff;
+    background-color: #1bbc9b;
+  }
+  .vc_color-success.vc_message_box-3d {
+    box-shadow: 0 5px 0 #9dd6fd;
+  }
+  .vc_color-warning.vc_message_box {
+    color: #9d8967;
+    border-color: #ffeccc;
+    background-color: #fff4e2;
+  }
+  .vc_color-warning.vc_message_box .vc_message_box-icon {
+    color: #fcb53f;
+  }
+  .vc_color-warning.vc_message_box-solid {
+    color: #fff;
+    border-color: transparent;
+    background-color: #fcb53f;
+  }
+  .vc_color-warning.vc_message_box-solid .vc_message_box-icon {
+    color: #fff;
+  }
+  .vc_color-warning.vc_message_box-outline,
+  .vc_color-warning.vc_message_box-solid-icon {
+    color: #9d8967;
+    border-color: #fcb53f;
+    background-color: transparent;
+  }
+  .vc_color-warning.vc_message_box-outline .vc_message_box-icon,
+  .vc_color-warning.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #fcb53f;
+  }
+  .vc_color-warning.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #fff;
+    background-color: #fcb53f;
+  }
+  .vc_color-warning.vc_message_box-3d {
+    box-shadow: 0 5px 0 #ffd999;
+  }
+  .vc_color-danger.vc_message_box {
+    color: #a85959;
+    border-color: #fedede;
+    background-color: #fdeaea;
+  }
+  .vc_color-danger.vc_message_box .vc_message_box-icon {
+    color: #ff7877;
+  }
+  .vc_color-danger.vc_message_box-solid {
+    color: #fff;
+    border-color: transparent;
+    background-color: #ff7877;
+  }
+  .vc_color-danger.vc_message_box-solid .vc_message_box-icon {
+    color: #fff;
+  }
+  .vc_color-danger.vc_message_box-outline,
+  .vc_color-danger.vc_message_box-solid-icon {
+    color: #a85959;
+    border-color: #ff7877;
+    background-color: transparent;
+  }
+  .vc_color-danger.vc_message_box-outline .vc_message_box-icon,
+  .vc_color-danger.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #ff7877;
+  }
+  .vc_color-danger.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #fff;
+    background-color: #ff7877;
+  }
+  .vc_color-danger.vc_message_box-3d {
+    box-shadow: 0 5px 0 #fdacac;
+  }
+  .vc_color-alert-info.vc_message_box {
+    color: #31708f;
+    border-color: #bce8f1;
+    background-color: #d9edf7;
+  }
+  .vc_color-alert-info.vc_message_box .vc_message_box-icon {
+    color: #67CCE0;
+  }
+  .vc_color-alert-info.vc_message_box-solid {
+    color: #fff;
+    border-color: transparent;
+    background-color: #67CCE0;
+  }
+  .vc_color-alert-info.vc_message_box-solid .vc_message_box-icon {
+    color: #fff;
+  }
+  .vc_color-alert-info.vc_message_box-outline,
+  .vc_color-alert-info.vc_message_box-solid-icon {
+    color: #31708f;
+    border-color: #67CCE0;
+    background-color: transparent;
+  }
+  .vc_color-alert-info.vc_message_box-outline .vc_message_box-icon,
+  .vc_color-alert-info.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #67CCE0;
+  }
+  .vc_color-alert-info.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #fff;
+    background-color: #67CCE0;
+  }
+  .vc_color-alert-info.vc_message_box-3d {
+    box-shadow: 0 5px 0 #91d9e8;
+  }
+  .vc_color-alert-success.vc_message_box {
+    color: #3c763d;
+    border-color: #d6e9c6;
+    background-color: #dff0d8;
+  }
+  .vc_color-alert-success.vc_message_box .vc_message_box-icon {
+    color: #9AD36A;
+  }
+  .vc_color-alert-success.vc_message_box-solid {
+    color: #fff;
+    border-color: transparent;
+    background-color: #9AD36A;
+  }
+  .vc_color-alert-success.vc_message_box-solid .vc_message_box-icon {
+    color: #fff;
+  }
+  .vc_color-alert-success.vc_message_box-outline,
+  .vc_color-alert-success.vc_message_box-solid-icon {
+    color: #3c763d;
+    border-color: #9AD36A;
+    background-color: transparent;
+  }
+  .vc_color-alert-success.vc_message_box-outline .vc_message_box-icon,
+  .vc_color-alert-success.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #9AD36A;
+  }
+  .vc_color-alert-success.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #fff;
+    background-color: #9AD36A;
+  }
+  .vc_color-alert-success.vc_message_box-3d {
+    box-shadow: 0 5px 0 #bbdba1;
+  }
+  .vc_color-alert-warning.vc_message_box {
+    color: #8a6d3b;
+    border-color: #faebcc;
+    background-color: #fcf8e3;
+  }
+  .vc_color-alert-warning.vc_message_box .vc_message_box-icon {
+    color: #F9CF79;
+  }
+  .vc_color-alert-warning.vc_message_box-solid {
+    color: #fff;
+    border-color: transparent;
+    background-color: #F9CF79;
+  }
+  .vc_color-alert-warning.vc_message_box-solid .vc_message_box-icon {
+    color: #fff;
+  }
+  .vc_color-alert-warning.vc_message_box-outline,
+  .vc_color-alert-warning.vc_message_box-solid-icon {
+    color: #8a6d3b;
+    border-color: #F9CF79;
+    background-color: transparent;
+  }
+  .vc_color-alert-warning.vc_message_box-outline .vc_message_box-icon,
+  .vc_color-alert-warning.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #F9CF79;
+  }
+  .vc_color-alert-warning.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #fff;
+    background-color: #F9CF79;
+  }
+  .vc_color-alert-warning.vc_message_box-3d {
+    box-shadow: 0 5px 0 #f5d89e;
+  }
+  .vc_color-alert-danger.vc_message_box {
+    color: #a94442;
+    border-color: #ebccd1;
+    background-color: #f2dede;
+  }
+  .vc_color-alert-danger.vc_message_box .vc_message_box-icon {
+    color: #EF8495;
+  }
+  .vc_color-alert-danger.vc_message_box-solid {
+    color: #fff;
+    border-color: transparent;
+    background-color: #EF8495;
+  }
+  .vc_color-alert-danger.vc_message_box-solid .vc_message_box-icon {
+    color: #fff;
+  }
+  .vc_color-alert-danger.vc_message_box-outline,
+  .vc_color-alert-danger.vc_message_box-solid-icon {
+    color: #a94442;
+    border-color: #EF8495;
+    background-color: transparent;
+  }
+  .vc_color-alert-danger.vc_message_box-outline .vc_message_box-icon,
+  .vc_color-alert-danger.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #EF8495;
+  }
+  .vc_color-alert-danger.vc_message_box-solid-icon .vc_message_box-icon {
+    color: #fff;
+    background-color: #EF8495;
+  }
+  .vc_color-alert-danger.vc_message_box-3d {
+    box-shadow: 0 5px 0 #dca7b0;
+  }
+  .vc_color-black.vc_message_box .vc_message_box-icon {
+    color: #fff;
+  }
+  .vc_color-black.vc_message_box-outline,
+  .vc_color-black.vc_message_box-outline .vc_message_box-icon {
+    color: #2A2A2A;
+  }
+  .vc_color-black.vc_message_box-solid-icon {
+    color: #2A2A2A;
+  }
+  .vc_color-grey.vc_message_box .vc_message_box-icon {
+    color: #858585;
+  }
+  .vc_color-white.vc_message_box .vc_message_box-icon {
+    color: #b3b3b3;
+  }
+  .vc_color-white.vc_message_box-outline,
+  .vc_color-white.vc_message_box-outline .vc_message_box-icon {
+    color: #FFFFFF;
+  }
+  .vc_color-white.vc_message_box-solid-icon {
+    color: #FFFFFF;
+  }
+  .vc_message_box-outline,
+  .vc_message_box-solid-icon {
+    border-width: 2px;
+  }
+  .vc_message_box-solid-icon .vc_message_box-icon {
+    width: 3.25em;
+  }
+  .vc_message_box-rounded {
+    border-radius: 5px;
+  }
+  .vc_message_box-round {
+    border-radius: 4em;
+  }

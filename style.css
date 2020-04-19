@@ -3519,9 +3519,6 @@ a:hover, a:active {
   clear: both;
 }
 
-/* Navbar */
-/* Modal box */
-/* Panel */
 @media (max-width: 767px) {
   .vc_hidden-xs {
     display: none !important;
@@ -8702,8 +8699,6 @@ option.wpb_video {
   border-radius: 4em;
 }
 
-/* 4. Separators
----------------------------------------------------------- */
 /***************** OLD CSS *****************/
 /* Content elements margins
 ---------------------------------------------------------- */
@@ -17564,6 +17559,35 @@ body ul.wpb_thumbnails-fluid li .entry-content *:last-child {
     margin-right: 0;
   }
 }
+.vc_images_carousel .vc_carousel-control {
+  border: none;
+}
+
+.vc_carousel .vc_carousel-control {
+  text-shadow: none;
+  border: none;
+  transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
+.vc_carousel .vc_carousel-control:active,
+.vc_carousel .vc_carousel-control:focus {
+  outline: none;
+}
+
+.vc_carousel .vc_carousel-indicators li {
+  width: 5px;
+  height: 5px;
+  margin: 0;
+  border-color: #f7f7f7;
+  transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+
 /* Image grid
 ---------------------------------------------------------- */
 .wpb_image_grid .wpb_image_grid_ul {
@@ -18395,35 +18419,6 @@ body .wpb_gallery_slides ul li,
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-.vc_images_carousel .vc_carousel-control {
-  border: none;
-}
-
-.vc_carousel .vc_carousel-control {
-  text-shadow: none;
-  border: none;
-  transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-}
-
-.vc_carousel .vc_carousel-control:active,
-.vc_carousel .vc_carousel-control:focus {
-  outline: none;
-}
-
-.vc_carousel .vc_carousel-indicators li {
-  width: 5px;
-  height: 5px;
-  margin: 0;
-  border-color: #f7f7f7;
-  transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
 }
 
 .vc_separator {
@@ -19400,6 +19395,18 @@ body .wpb_gallery_slides ul li,
   background-color: #FFFFFF;
 }
 
+.wpb_single_image .wpb_wrapper .vc_single_image-wrapper .zoomImg {
+  border-radius: 0;
+}
+
+.wpb_single_image [class*=_circle] .vc-zoom-wrapper {
+  border-radius: 50%;
+}
+
+.wpb_single_image [class*=_rounded] .vc-zoom-wrapper {
+  border-radius: 4px;
+}
+
 .vc_icon_element {
   line-height: 0;
   font-size: 14px;
@@ -19836,18 +19843,6 @@ body .wpb_gallery_slides ul li,
 
 .vc_line-chart .vc_chart-legend {
   width: 25%;
-}
-
-.wpb_single_image .wpb_wrapper .vc_single_image-wrapper .zoomImg {
-  border-radius: 0;
-}
-
-.wpb_single_image [class*=_circle] .vc-zoom-wrapper {
-  border-radius: 50%;
-}
-
-.wpb_single_image [class*=_rounded] .vc-zoom-wrapper {
-  border-radius: 4px;
 }
 
 .vc_general.vc_pagination {
