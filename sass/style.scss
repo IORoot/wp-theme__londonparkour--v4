@@ -116,8 +116,9 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # vendor
 --------------------------------------------------------------*/
+@import "vendor/js_composer"; 
 @import "vendor/anime_js"; 
-@import "vendor/tb_calendar";
+@import "vendor/tb_calendar"; 
 @import "vendor/stripe_products"; 
 @import "vendor/wpmi"; 
 @import "vendor/pearson_fx/fx_kenburns";
