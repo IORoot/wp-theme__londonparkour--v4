@@ -1,3 +1,12 @@
+// ┌─────────────────────────────────────────────────────────────────────────┐
+// │                                                                         │
+// │                               JS COMPOSER                               │
+// │                                                                         │
+// │               This has been separated (but kept in order).              │
+// │                 Each component can then be deactivated.                 │
+// │                                                                         │
+// └─────────────────────────────────────────────────────────────────────────┘
+
 @import "js_composer/first";
 @import "js_composer/hidden";
 @import "js_composer/non_responsive";
@@ -15,20 +24,20 @@
 @import "js_composer/row";
 @import "js_composer/section";
 @import "js_composer/row_styles";
-@import "js_composer/social_button";
+// @import "js_composer/social_button";
 @import "js_composer/toggle";
 @import "js_composer/widget_col";
 @import "js_composer/buttons2";
 // @import "js_composer/call_to_action";
 // @import "js_composer/gmaps";
-@import "js_composer/tabs_tour";
+// @import "js_composer/tabs_tour";
 // @import "js_composer/teaser_grid";
 @import "js_composer/carousel";
 @import "js_composer/image_grid";
 @import "js_composer/gallery";
 // @import "js_composer/flickr_stream";
 // @import "js_composer/video_widget";
-@import "js_composer/posts_slider";
+// @import "js_composer/posts_slider";
 // @import "js_composer/progress_bar";
 // @import "js_composer/pie_chart";
 @import "js_composer/separator";

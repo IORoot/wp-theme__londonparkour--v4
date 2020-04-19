@@ -40,8 +40,7 @@ function ldnpk_deregister_styles() {
     wp_deregister_style( 'js_composer_front' );       // WPBakery - frontend
 
     // This may have broken things - keep checking!
-    wp_deregister_style( 'semantic-style' );            // TeamBooking SemanticUI
-
+    wp_deregister_style( 'semantic-style' );            // Breaks calendar
 
     // Deregister JS Scripts
     wp_deregister_script( 'wp-embed' );
