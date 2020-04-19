@@ -3601,6 +3601,7 @@ div .wp-my-instagram .wpmi-list .wpmi-item {
   flex: 1 0 auto;
   overflow: hidden;
   max-height: 580px;
+  float: left;
 }
 div .wp-my-instagram .wpmi-list .wpmi-item a {
   text-decoration: none;

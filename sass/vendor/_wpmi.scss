@@ -17,10 +17,11 @@ div {
                 flex: 1 0 auto; 
                 overflow:hidden;    
                 max-height: 580px;
+                float: left;
 
                 a {
 
-                    text-decoration: none;
+                    text-decoration: none; 
 
                     &:hover * {
                         color: $night;

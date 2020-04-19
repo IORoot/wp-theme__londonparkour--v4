@@ -11,7 +11,7 @@ add_action( 'wp_enqueue_scripts', 'ldnpk_deregister_styles', 100 );
 
 function ldnpk_deregister_styles() {
 
-    // Deregister CSS Styles
+    // Dequeue CSS Styles
     wp_dequeue_style( 'font-awesome' );
     wp_dequeue_style( 'super-font-awesome' );   // Super Forms
     wp_dequeue_style( 'rs-icon-set-pe-7s-' );   // revslider Icon-7
@@ -34,6 +34,11 @@ function ldnpk_deregister_styles() {
     wp_deregister_style( 'js_composer_custom_css' );    // WPBakery - custom
     wp_deregister_style( 'teambooking_fonts' );         // TeamBooking Fonts
     wp_deregister_style( 'teambooking_fonts_arrows' );  // TeamBooking Fonts
+
+    // Other styles
+    wp_deregister_style( 'semantic-style' );              // TeamBooking SemanticUI
+    wp_deregister_style( 'wp-my-instagram' );             // Instagram plugin
+
 
     // Deregister JS Scripts
     wp_deregister_script( 'wp-embed' );
