@@ -39,8 +39,9 @@ function ldnpk_deregister_styles() {
     // can remove bits not needed.
     wp_deregister_style( 'js_composer_front' );       // WPBakery - frontend
 
-    // This may have broken things - keep checking!
-    wp_deregister_style( 'semantic-style' );            // Breaks calendar
+    // This breaks calendar
+    // Semantic_ui now put into SCSS and split up. See theme SASS/vendor/semantic_ui
+    wp_deregister_style( 'semantic-style' );            // Breaks calendar 
 
     // Deregister JS Scripts
     wp_deregister_script( 'wp-embed' );
