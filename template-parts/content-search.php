@@ -11,7 +11,10 @@
 	$link = $post->guid;
 	$title = $post->post_title;
 	$image = get_the_post_thumbnail_url($id);
-	$content = mb_strimwidth( strip_tags($post->post_content) , 0,200, '...');
+	// Category description
+	$desc = preg_replace('/\[(.*?)\]/', '', $post->post_content); // remove shortcodes
+	$desc = preg_replace('/\<(.*?)\>/', '', $desc); // remove tags
+	$content = mb_strimwidth( strip_tags($desc) , 0,200, '...');
 	$date = human_time_diff( get_the_time( 'U', $id ), current_time( 'timestamp' ) );
 ?>
 
