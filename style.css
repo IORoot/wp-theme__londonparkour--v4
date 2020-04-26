@@ -960,7 +960,8 @@ lite-youtube {
   display: block;
   contain: content;
   background-position: center center;
-  background-size: cover;
+  background-size: auto 130%;
+  background-repeat: no-repeat;
   cursor: pointer;
 }
 
