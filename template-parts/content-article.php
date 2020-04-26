@@ -27,7 +27,8 @@
 				if ($videoId == ''){
 					the_post_thumbnail(null, ['class' => 'article__hero--image']);
 				} else {
-					echo '<iframe class="article__hero--video" id="ytplayer" type="text/html" src="https://www.youtube.com/embed/'. $videoId .'" frameborder="0"></iframe>';
+					echo '<lite-youtube class="article__hero--video" id="ytplayer" videoid="'. $videoId .'"></lite-youtube>';
+					//echo '<iframe class="article__hero--video" id="ytplayer" type="text/html" src="https://www.youtube.com/embed/'. $videoId .'" frameborder="0"></iframe>';
 				}
 			?>
 		</div>
