@@ -71,6 +71,9 @@
                     &.subscriptions::before {
                         content: '\e064';
                     }
+                    &.leak_add::before {
+                        content: '\e3f8';
+                    }
                     &.play_circle_filled::before {
                         content: '\e038';
                         color: $youtube;
