@@ -23,7 +23,7 @@
                 // │                                                                         │
                 // └─────────────────────────────────────────────────────────────────────────┘
                 if ($wp_query->query['articlecategory'] == 'reference-library'){ 
-                    do_shortcode('[andyp_grid_posts slug="reference_library_popular" tax="articlecategory" term="'.$wp_query->query['articlecategory'].'"]');
+                    do_shortcode('[andyp_flickity slug="reference_library_popular" tax="articlecategory" term="'.$wp_query->query['articlecategory'].'"]');
                     do_shortcode('[andyp_isotope slug="reference_library_default" tax="articlecategory" term="'.$wp_query->query['articlecategory'].'"]'); 
 
                 // ┌─────────────────────────────────────────────────────────────────────────┐
@@ -40,8 +40,8 @@
                 // │                                                                         │
                 // └─────────────────────────────────────────────────────────────────────────┘
                 } else {
-                    do_shortcode('[andyp_grid_posts slug="taxonomy_latest" tax="articlecategory" term="'.$wp_query->query['articlecategory'].'"]');
-                    do_shortcode('[andyp_grid_posts slug="taxonomy_popular" tax="articlecategory" term="'.$wp_query->query['articlecategory'].'"]');
+                    do_shortcode('[andyp_flickity slug="taxonomy_latest" tax="articlecategory" term="'.$wp_query->query['articlecategory'].'"]');
+                    do_shortcode('[andyp_flickity slug="taxonomy_popular" tax="articlecategory" term="'.$wp_query->query['articlecategory'].'"]');
                     do_shortcode('[andyp_isotope slug="taxonomy_default" tax="articlecategory" term="'.$wp_query->query['articlecategory'].'" ]'); 
                 }
                 

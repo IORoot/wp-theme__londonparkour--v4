@@ -13,9 +13,9 @@ get_header();
     <!-- #content -->
     <div class="content-area">
         <div class="site-main">
-            <?php  do_shortcode('[andyp_grid_posts slug="featured_article"]'); ?>
-            <?php  do_shortcode('[andyp_grid_posts slug="essential_articles"]'); ?>
-            <?php  do_shortcode('[andyp_grid_posts slug="library_updates"]'); ?>
+            <?php  do_shortcode('[andyp_flickity slug="featured_article"]'); ?>
+            <?php  do_shortcode('[andyp_flickity slug="essential_articles"]'); ?>
+            <?php  do_shortcode('[andyp_flickity slug="library_updates"]'); ?>
             <?php  do_shortcode('[andyp_isotope slug="category_listing" tax="articlecategory"]');  ?>
         </div>
     </div>

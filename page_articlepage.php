@@ -8,7 +8,7 @@ Template Post Type: page
 get_header();
 ?>
 
-    <?php  do_shortcode('[andyp_grid_posts slug="pulse_header"]'); ?>
+    <?php  do_shortcode('[andyp_flickity slug="pulse_header"]'); ?>
 
     <!-- #content -->
     <div class="content-area">
@@ -24,7 +24,11 @@ get_header();
 
     <!-- #sidebar -->
     <aside id="secondary" class="widget-area">
-        <?php  do_shortcode('[andyp_responsive_menus menu="Tutorials" sidebar="sidebar-tutorials"]'); ?>
+        <?php  
+            // 'menu' is the mobile menu
+            // 'sidebar' is the widget sidebar. (see theme /inc/register_sidebars.php)
+            do_shortcode('[andyp_responsive_menus menu="141" sidebar="sidebar-pulse"]'); 
+        ?>
     </aside>
 
 <?php get_footer(); ?>

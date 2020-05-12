@@ -3377,6 +3377,105 @@ a:hover, a:active {
   height: 580px;
 }
 
+.pulse_header .andyp-grid__cell {
+  background: #000;
+}
+.pulse_header .andyp-grid__cell-link {
+  margin-bottom: 0px;
+}
+.pulse_header .andyp-grid__cell-sideblend {
+  display: block;
+  background: linear-gradient(to right, #000, #000 25%, rgba(0, 0, 0, 0) 60%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.pulse_header .andyp-grid__cell-image {
+  background-size: initial;
+  background-position: right;
+}
+.pulse_header .andyp-grid__cell-meta {
+  color: #f5f5f5;
+}
+.pulse_header .andyp-grid__cell-info {
+  position: absolute;
+  top: 0;
+  left: 8.33%;
+  width: 25%;
+  padding: 29px 0px;
+}
+.pulse_header .andyp-grid__cell-channeltitle {
+  margin-bottom: 29px;
+}
+.pulse_header .andyp-grid__cell-title {
+  height: initial;
+  padding: 0px;
+  line-height: 29px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-left: 0px;
+  border-radius: initial;
+  font-size: 29px;
+  white-space: initial;
+}
+.pulse_header .andyp-grid__cell-date {
+  left: 0px;
+  padding: 0px;
+  color: #D0C8B3;
+}
+
+.andyp-grid__cell-channel {
+  font-size: 2em;
+  position: absolute;
+  top: 29px;
+  left: 50%;
+  color: #ffffff;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+}
+.andyp-grid__cell-title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 29px 25% 0px 35px;
+}
+
+/**
+Circular subscriptions
+*/
+.pulse_yt_ldnpk_channel_subscriptions .andyp-grid__cell-title {
+  color: #fff;
+  height: 29px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 29px;
+  width: auto;
+  border-radius: 0px;
+  text-align: center;
+  line-height: 29px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0px 20px;
+  background: rgba(36, 36, 36, 0.5) !important;
+}
+.pulse_yt_ldnpk_channel_subscriptions .andyp-grid__cell-title .andyp-grid__cell-icon {
+  display: none;
+}
+.pulse_yt_ldnpk_channel_subscriptions .andyp-grid__cell-image {
+  border-radius: 50%;
+}
+.pulse_yt_ldnpk_channel_subscriptions .floorfade {
+  background: none;
+}
+.pulse_yt_ldnpk_channel_subscriptions .andyp-grid__cell-date {
+  display: none;
+}
+.pulse_yt_ldnpk_channel_subscriptions .andyp-grid__cell-overlay {
+  background: transparent;
+}
+
 .ig-news__container .ig-news {
   text-decoration: none;
   color: #242424;
