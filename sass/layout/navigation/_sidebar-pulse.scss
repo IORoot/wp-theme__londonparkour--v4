@@ -1,0 +1,119 @@
+.widget .pulse-sidebar-title {
+    color: #f5f5f5;
+    padding: 29px 20px 29px 20px;
+    font-size: 29px;
+
+    .material-icons {
+        color: #53A5E3;
+        font-size: 29px;
+        line-height: 23px;
+        vertical-align: text-top;
+        width: 29px;
+        padding-top: 4px;
+    }
+}
+
+.widget-area {
+
+    .widget_nav_menu {
+
+        .menu-pulse-container {
+
+            ul {
+        
+                padding: 0px 20px;
+                list-style: none;
+                
+                li {
+
+                    line-height: 29px;
+                    overflow: hidden;
+                    height: 29px;
+
+                    &.menu-item-current {
+                        background-color: #F5F5F5;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: #E0E0E0;
+
+                        &:hover {
+                            color: #53A5E3;
+                        }
+
+                        &:active {
+                            color: #E34F65; 
+                        }
+
+                        .menu-item-icon {
+                            font-size: 18px;
+                            padding-top: 2px;
+                            line-height: 16px;
+                            vertical-align: text-top;
+                            width: 16px;
+                            margin-right: 16px; 
+                        }
+                        
+                    }
+                    &.menu-item-icon::before {
+                        font-size: 18px;
+                        line-height: 23px;
+                        vertical-align: text-top;
+                        width: 16px;
+                        margin-right: 7px;
+                        margin-left: 4px;
+                        font-family: "Material Icons";
+                        color: #757575;
+                    }
+
+
+                    &.pulseheader::before {
+                        content: '\e3f8';
+                        color: #53A5E3;
+                    }
+                    &.important_devices::before {
+                        content: '\e912';
+                    }
+                    &.new_releases::before {
+                        content: '\e031';
+                    }
+                    &.wifi_tethering::before { 
+                        content: '\e1e2';
+                    }
+                    &.playlists::before {
+                        content: '\e04a';
+                    }
+                    &.account::before {
+                        content: '\e853';
+                    }
+                    &.top4::before {
+                        content: '\e87d';
+                    }
+                    &.bookmark::before {
+                        content: '\e865';
+                    }
+                    &.live::before {
+                        content: '\e639';
+                    }
+                    &.upcoming::before {
+                        content: '\e87c';
+                    }
+                    &.learn::before {
+                        content: '\e80c';
+                    }
+                    &.continents::before {
+                        content: '\e894';
+                    }
+                    &.beyondparkour::before {
+                        content: '\e066';
+                    }
+                    &.fit::before {
+                        content: '\eb43'; 
+                    }
+
+                }
+                
+            }
+        } 
+    }
+}

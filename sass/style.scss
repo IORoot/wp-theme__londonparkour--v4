@@ -83,6 +83,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 @import "layout/navigation/sidebar-wiki";
 @import "layout/navigation/sidebar-dashboard";
+@import "layout/navigation/sidebar-pulse";
 @import "layout/navigation/menus";
 @import "layout/navigation/footer";
 @import "layout/responsive_desktop";
@@ -101,7 +102,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "pages/posts-and-pages";
 @import "pages/contact/contact_form";
 @import "pages/articles/articles";
-@import "pages/articles/articleblank";
+@import "pages/articles/articleblank"; 
 @import "pages/articles/articlepage";
 @import "pages/articles/articlearchive";
 @import "pages/articles/articlecategories";
@@ -109,6 +110,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "pages/classes/classes";   
 @import "pages/pt/pt";  
 @import "pages/pulse/pulse";      
+@import "pages/pulse/pulse_header";      
 @import "pages/ig_news/ig_news";  
 @import "pages/youtube_cover/youtube_cover";  
 @import "pages/privatetuition/private";  
