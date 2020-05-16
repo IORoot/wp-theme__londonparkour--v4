@@ -1,3 +1,48 @@
+
+
+// ┌─────────────────────────────────────────────────────────────────────────┐ 
+// │                                                                         │░
+// │                                                                         │░
+// │                            BASE - ALL CELLS                             │░
+// │                                                                         │░
+// │                                                                         │░
+// └─────────────────────────────────────────────────────────────────────────┘░
+//  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+.andyp-grid {
+
+    &__cell{
+
+        &-channel {
+            font-size: 2em;
+            position: absolute; 
+            top:29px;
+            left: 50%;
+            color: $white;
+            transform: translateX(-50%);
+            width: 100%;
+            text-align: center;
+        }
+
+        &-title {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            padding: 29px 25% 0px 35px;
+        }
+
+    }
+}
+
+
+// ┌─────────────────────────────────────────────────────────────────────────┐ 
+// │                                                                         │░
+// │                                                                         │░
+// │                              PULSE HEADER                               │░
+// │                                                                         │░
+// │                                                                         │░
+// └─────────────────────────────────────────────────────────────────────────┘░
+//  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
 .pulse_header {
     .andyp-grid {
         &__cell {
@@ -19,19 +64,9 @@
                 background-size: initial;
                 background-position: right;
             }
-            
 
             &-meta {
                 color: #f5f5f5;
-            }
-            &-overlay {
-
-            }
-            &-icon {
-
-            }
-            &-channel {
-
             }
 
             &-info {
@@ -59,9 +94,6 @@
                 white-space: initial;
             }
 
-            &-excerpt {
-
-            }
             &-date {
                 left: 0px;
                 padding: 0px;
@@ -74,41 +106,79 @@
 
 
 
-.andyp-grid {
 
-    &__cell{
+// ┌─────────────────────────────────────────────────────────────────────────┐ 
+// │                                                                         │░
+// │                                                                         │░
+// │                          FULL-WIDTH PLAYLISTS                           │░
+// │                                                                         │░
+// │                                                                         │░
+// └─────────────────────────────────────────────────────────────────────────┘░
+//  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+.pulse_yt_parkourpulse_playlists {
 
-        &-channel {
-            font-size: 2em;
-            position: absolute; 
-            top:29px;
-            left: 50%;
-            color: $white;
-            transform: translateX(-50%);
-            width: 100%;
-            text-align: center;
+    padding: 116px;
+    background: #000;
+    margin-top:116px;
+    margin-left: -20%;
+
+    .andyp-grid {
+        &__cell {
+
+            &-image {
+                background-size: 100%;
+            }
+            &-overlay {
+                background-color: initial;
+            }
+            &-title {
+                padding: 0px;
+                height: initial;
+                border-radius: 0px;
+                position: relative;
+                line-height: 58px;
+            }
+            &-icon {
+                line-height: initial;
+                left: 0px;
+
+            }
+            &-description {
+                color: #757575;
+                
+            }
+            &-date {
+                position: relative;
+                right: initial;
+                padding: initial;
+            }
         }
+    }
 
-        &-title {
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            padding: 29px 25% 0px 35px;
+    .flickity-page-dots {
+        bottom: -58px;
+        .dot {
+            background: #757575;
         }
-
     }
 }
 
 
 
+// ┌─────────────────────────────────────────────────────────────────────────┐ 
+// │                                                                         │░
+// │                                                                         │░
+// │                         CIRCULAR SUBSCRIPTIONS                          │░
+// │                                                                         │░
+// │                                                                         │░
+// └─────────────────────────────────────────────────────────────────────────┘░
+//  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
-
-/**
-Circular subscriptions
-*/
-.pulse_yt_ldnpk_channel_subscriptions {
+.pulse_yt_parkourpulse_subscriptions {
     .andyp-grid__cell-title {
         color: #fff;
         height: 29px;
+        max-width: 100%;
         overflow: hidden;
         position: absolute;
         bottom: 29px;

@@ -545,6 +545,7 @@ code {
   font-display: swap;
   src: local("Material Icons"), local("MaterialIcons-Regular"), url("/wp-content/themes/londonparkour.com_v4/inc/fonts/MaterialIcons-Regular.woff2") format("woff2"), url("/wp-content/themes/londonparkour.com_v4/inc/fonts/MaterialIcons-Regular.ttf") format("truetype");
 }
+
 .material-icons {
   font-family: "Material Icons";
   font-weight: normal;
@@ -3475,6 +3476,22 @@ a:hover, a:active {
   height: 580px;
 }
 
+.andyp-grid__cell-channel {
+  font-size: 2em;
+  position: absolute;
+  top: 29px;
+  left: 50%;
+  color: #ffffff;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+}
+.andyp-grid__cell-title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 29px 25% 0px 35px;
+}
+
 .pulse_header .andyp-grid__cell {
   background: #000;
 }
@@ -3524,28 +3541,48 @@ a:hover, a:active {
   color: #D0C8B3;
 }
 
-.andyp-grid__cell-channel {
-  font-size: 2em;
-  position: absolute;
-  top: 29px;
-  left: 50%;
-  color: #ffffff;
-  transform: translateX(-50%);
-  width: 100%;
-  text-align: center;
+.pulse_yt_parkourpulse_playlists {
+  padding: 116px;
+  background: #000;
+  margin-top: 116px;
+  margin-left: -20%;
 }
-.andyp-grid__cell-title {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  padding: 29px 25% 0px 35px;
+.pulse_yt_parkourpulse_playlists .andyp-grid__cell-image {
+  background-size: 100%;
+}
+.pulse_yt_parkourpulse_playlists .andyp-grid__cell-overlay {
+  background-color: initial;
+}
+.pulse_yt_parkourpulse_playlists .andyp-grid__cell-title {
+  padding: 0px;
+  height: initial;
+  border-radius: 0px;
+  position: relative;
+  line-height: 58px;
+}
+.pulse_yt_parkourpulse_playlists .andyp-grid__cell-icon {
+  line-height: initial;
+  left: 0px;
+}
+.pulse_yt_parkourpulse_playlists .andyp-grid__cell-description {
+  color: #757575;
+}
+.pulse_yt_parkourpulse_playlists .andyp-grid__cell-date {
+  position: relative;
+  right: initial;
+  padding: initial;
+}
+.pulse_yt_parkourpulse_playlists .flickity-page-dots {
+  bottom: -58px;
+}
+.pulse_yt_parkourpulse_playlists .flickity-page-dots .dot {
+  background: #757575;
 }
 
-/**
-Circular subscriptions
-*/
-.pulse_yt_ldnpk_channel_subscriptions .andyp-grid__cell-title {
+.pulse_yt_parkourpulse_subscriptions .andyp-grid__cell-title {
   color: #fff;
   height: 29px;
+  max-width: 100%;
   overflow: hidden;
   position: absolute;
   bottom: 29px;
@@ -3558,19 +3595,19 @@ Circular subscriptions
   padding: 0px 20px;
   background: rgba(36, 36, 36, 0.5) !important;
 }
-.pulse_yt_ldnpk_channel_subscriptions .andyp-grid__cell-title .andyp-grid__cell-icon {
+.pulse_yt_parkourpulse_subscriptions .andyp-grid__cell-title .andyp-grid__cell-icon {
   display: none;
 }
-.pulse_yt_ldnpk_channel_subscriptions .andyp-grid__cell-image {
+.pulse_yt_parkourpulse_subscriptions .andyp-grid__cell-image {
   border-radius: 50%;
 }
-.pulse_yt_ldnpk_channel_subscriptions .floorfade {
+.pulse_yt_parkourpulse_subscriptions .floorfade {
   background: none;
 }
-.pulse_yt_ldnpk_channel_subscriptions .andyp-grid__cell-date {
+.pulse_yt_parkourpulse_subscriptions .andyp-grid__cell-date {
   display: none;
 }
-.pulse_yt_ldnpk_channel_subscriptions .andyp-grid__cell-overlay {
+.pulse_yt_parkourpulse_subscriptions .andyp-grid__cell-overlay {
   background: transparent;
 }
 
