@@ -1,17 +1,33 @@
 // List of UNICODES
 //https://github.com/google/material-design-icons/blob/master/iconfont/codepoints
 
-@font-face {
-    font-family: 'Material Icons';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: local('Material Icons'),
-          local('MaterialIcons-Regular'),
-          url('/wp-content/themes/londonparkour.com_v4/inc/fonts/MaterialIcons-Regular.woff2') format('woff2'),
-          url('/wp-content/themes/londonparkour.com_v4/inc/fonts/MaterialIcons-Regular.ttf') format('truetype');
-  }
-  
+
+// Version 5
+// Google are being shit and don't update the repo with latest icons.
+// Go here instead:
+//
+// https://cdn.materialdesignicons.com/5.2.45/
+// https://dev.materialdesignicons.com/getting-started
+// https://materialdesignicons.com/
+
+@import "material-design-icons-v5/materialdesignicons";  
+
+
+
+//
+// version 3 - ORIGINAL on LondonParkour.
+//
+@font-face { 
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Material Icons'),
+        local('MaterialIcons-Regular'),
+        url('/wp-content/themes/londonparkour.com_v4/inc/fonts/MaterialIcons-Regular.woff2') format('woff2'),
+        url('/wp-content/themes/londonparkour.com_v4/inc/fonts/MaterialIcons-Regular.ttf') format('truetype');
+}
+
   .material-icons {
     font-family: 'Material Icons';
     font-weight: normal;
@@ -21,18 +37,14 @@
     line-height: 1;
     text-transform: none;
     letter-spacing: normal; 
+    -ms-word-wrap: normal;
     word-wrap: normal;
     white-space: nowrap;
     direction: ltr; 
-  
-    /* Support for all WebKit browsers. */
     -webkit-font-smoothing: antialiased;
-    /* Support for Safari and Chrome. */
     text-rendering: optimizeLegibility;
-  
-    /* Support for Firefox. */
     -moz-osx-font-smoothing: grayscale;
-  
-    /* Support for IE. */
     font-feature-settings: 'liga';
   }
+
+  
