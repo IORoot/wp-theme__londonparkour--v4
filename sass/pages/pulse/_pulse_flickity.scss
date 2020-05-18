@@ -117,7 +117,7 @@
 //  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 .pulse_yt_parkourpulse_playlists {
 
-    padding: 116px;
+    padding: 116px 0px 116px 116px; 
     background: #000;
     margin-top:116px;
     margin-left: -20%;
@@ -206,5 +206,164 @@
     }
     .andyp-grid__cell-overlay {
         background: transparent;
+    }
+}
+
+
+// ┌─────────────────────────────────────────────────────────────────────────┐ 
+// │                                                                         │░
+// │                                                                         │░
+// │                       BEYONDPARKOUR SUBSCRIPTIONS                       │░
+// │                                                                         │░
+// │                                                                         │░
+// └─────────────────────────────────────────────────────────────────────────┘░
+//  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+.yt_pulse_beyondparkour {
+    .andyp-grid__cell {
+        &-title {
+            color: #fff;
+            height: 29px;
+            padding: 0px 0px 0px 24px;
+            line-height: 29px;
+            overflow: hidden;
+            position: absolute;
+            bottom: -29px;
+            width: 100%;
+            border-radius: 0px;
+        }
+        &-icon {
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            line-height: 27px;
+            font-size: 18px;
+            color: #fff;
+        }
+        &-date {
+            display: none;
+        }
+        &-overlay {
+            background: transparent;
+        }
+    }
+    
+    .floorfade {
+        background: none;
+    }
+}
+
+
+// ┌─────────────────────────────────────────────────────────────────────────┐ 
+// │                                                                         │░
+// │                                                                         │░
+// │              FULL-WIDTH BEYONDPARKOUR RELATED TOPICS                    │░
+// │                                                                         │░
+// │                                                                         │░
+// └─────────────────────────────────────────────────────────────────────────┘░
+//  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+.yt_pulse_beyondparkour_related {
+
+    padding: 116px 0px 116px 116px; 
+    background: #F5F5F5;
+    margin-top:116px;
+    margin-left: -20%;
+
+    .andyp-grid {
+        &__cell {
+
+            &-overlay .andyp-grid__cell-icon
+            {
+                color: #38EF7D;
+            }
+            &-image {
+                background-size: 100%;
+            }
+            &-overlay { 
+                background-color: initial;
+            }
+            &-title { 
+                padding: 0px;
+                height: initial;
+                border-radius: 0px;
+                position: relative;
+                line-height: 58px;
+                color: #242424;
+            }
+            &-icon {
+                line-height: initial;
+                left: 0px;
+
+            }
+            &-description {
+                color: #757575;
+                
+            }
+            &-date {
+                position: relative;
+                right: initial;
+                padding: initial;
+            }
+        }
+    }
+
+    .flickity-page-dots {
+        bottom: -58px;
+        .dot {
+            background: #757575;
+        }
+    }
+}
+
+
+// ┌─────────────────────────────────────────────────────────────────────────┐ 
+// │                                                                         │░
+// │                                                                         │░
+// │              FULL-WIDTH LONDONPARKOUR (LEARN) PLAYLISTS                 │░
+// │                                                                         │░
+// │                                                                         │░
+// └─────────────────────────────────────────────────────────────────────────┘░
+//  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+.yt_pulse_learn {
+
+    .andyp-grid {
+        &__cell {
+
+            &-image {
+                background-size: 100%;
+            }
+            &-overlay {
+                background-color: initial;
+            }
+            &-title {
+                padding: 0px;
+                height: initial;
+                border-radius: 0px;
+                position: relative;
+                line-height: 58px;
+            }
+            &-icon {
+                line-height: initial;
+                left: 0px;
+
+            }
+            &-description {
+                color: #757575;
+                
+            }
+            &-date {
+                position: relative;
+                right: initial;
+                padding: initial; 
+            }
+        }
+    }
+
+    .flickity-page-dots {
+        bottom: -58px;
+        .dot {
+            background: #757575;
+        }
     }
 }
