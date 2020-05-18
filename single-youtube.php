@@ -6,9 +6,6 @@
  *
  * @package londonparkour.com_v4
  */
-
-get_header();
-
 ?>
 
 <style>
@@ -30,7 +27,3 @@ get_header();
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
-<?php
-// get_sidebar();
-get_footer();
