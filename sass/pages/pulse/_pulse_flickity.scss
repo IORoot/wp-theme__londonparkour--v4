@@ -1,369 +1,511 @@
+.pulse { 
+
+    // ┌─────────────────────────────────────────────────────────────────────────┐ 
+    // │                                                                         │░
+    // │                                                                         │░
+    // │                            BASE - ALL CELLS                             │░
+    // │                                                                         │░
+    // │                                                                         │░
+    // └─────────────────────────────────────────────────────────────────────────┘░
+    //  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
 
-// ┌─────────────────────────────────────────────────────────────────────────┐ 
-// │                                                                         │░
-// │                                                                         │░
-// │                            BASE - ALL CELLS                             │░
-// │                                                                         │░
-// │                                                                         │░
-// └─────────────────────────────────────────────────────────────────────────┘░
-//  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-
-.andyp-grid {
-
-    &__cell{
-
-        &-channel {
-            font-size: 2em;
-            position: absolute; 
-            top:29px;
-            left: 50%;
-            color: $white;
-            transform: translateX(-50%);
-            width: 100%;
-            text-align: center;
-        }
-
-        &-title {
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            padding: 29px 25% 0px 35px;
-        }
-
-    }
-}
-
-
-// ┌─────────────────────────────────────────────────────────────────────────┐ 
-// │                                                                         │░
-// │                                                                         │░
-// │                              PULSE HEADER                               │░
-// │                                                                         │░
-// │                                                                         │░
-// └─────────────────────────────────────────────────────────────────────────┘░
-//  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-
-.pulse_header {
     .andyp-grid {
-        &__cell {
 
-            background: #000;
+        &__cell{
 
-            &-link {
+            &-channel {
+                font-size: 2em;
+                position: absolute; 
+                top:29px;
+                left: 50%;
+                color: $white;
+                transform: translateX(-50%);
+                width: 100%;
+                text-align: center;
+            }
+
+            &-title {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                padding: 29px 25% 0px 35px;
+            }
+        }
+    }
+
+    @media (max-width: $tablet){
+
+        .andyp-grid {
+
+            padding-left: 20px;
+
+            // Don't move the time and dates.
+            &__cell-date {
                 margin-bottom: 0px;
-            }
-            &-sideblend {
-                display: block;
-                background: linear-gradient(to right, #000, #000 25%, rgba(0,0,0,0) 60%);
-                height: 100%;
-                width: 100%;
-                position: absolute;
                 top: 0;
+                background-color: rgba(0,0,0,0.6);
             }
-            &-image {
-                background-size: initial;
-                background-position: right;
-            }
-
-            &-meta {
-                color: #f5f5f5;
+            &__cell-title {
+                padding: 29px 10px 0px 35px;
             }
 
-            &-info {
-                position: absolute;
-                top: 0;
-                left: 8.33%;
-                width: 25%;
-                padding: 29px 0px;
-            }
-
-            &-channeltitle {
-                margin-bottom: 29px;
-            }
-
-            &-title {
-                height: initial;
-                padding: 0px;
-                line-height: 29px;
-                overflow: hidden;
-                position: relative;
-                width: 100%;
-                padding-left: 0px;
-                border-radius: initial;
-                font-size: 29px;
-                white-space: initial;
-            }
-
-            &-date {
-                left: 0px;
-                padding: 0px;
-                color: #D0C8B3;
-            }
         }
-    }
-}
 
-
-
-
-
-// ┌─────────────────────────────────────────────────────────────────────────┐ 
-// │                                                                         │░
-// │                                                                         │░
-// │                          FULL-WIDTH PLAYLISTS                           │░
-// │                                                                         │░
-// │                                                                         │░
-// └─────────────────────────────────────────────────────────────────────────┘░
-//  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-.pulse_yt_parkourpulse_playlists {
-
-    padding: 116px 0px 116px 116px; 
-    background: #000;
-    margin-top:116px;
-    margin-left: -20%;
-
-    .andyp-grid {
-        &__cell {
-
-            &-image {
-                background-size: 100%;
-            }
-            &-overlay {
-                background-color: initial;
-            }
-            &-title {
-                padding: 0px;
-                height: initial;
-                border-radius: 0px;
-                position: relative;
-                line-height: 58px;
-            }
-            &-icon {
-                line-height: initial;
-                left: 0px;
-
-            }
-            &-description {
-                color: #757575;
-                
-            }
-            &-date {
-                position: relative;
-                right: initial;
-                padding: initial;
-            }
+        // Push curated down for the mobile menu.
+        #pulse_yt_curated {
+            margin-top: 116px;
         }
-    }
 
-    .flickity-page-dots {
-        bottom: -58px;
-        .dot {
-            background: #757575;
+        // orange logo.
+        .site-header .main-navigation ul.nav-menu li.logo__londonparkour a {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='none'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' stroke='%23E86546' stroke-width='8'/%3E%3C/g%3E%3C/svg%3E");
         }
-    }
-}
 
-
-
-// ┌─────────────────────────────────────────────────────────────────────────┐ 
-// │                                                                         │░
-// │                                                                         │░
-// │                         CIRCULAR SUBSCRIPTIONS                          │░
-// │                                                                         │░
-// │                                                                         │░
-// └─────────────────────────────────────────────────────────────────────────┘░
-//  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-
-.pulse_yt_parkourpulse_subscriptions {
-    .andyp-grid__cell-title {
-        color: #fff;
-        height: 29px;
-        max-width: 100%;
-        overflow: hidden;
-        position: absolute;
-        bottom: 29px;
-        width: auto;
-        border-radius: 0px;
-        text-align: center;
-        line-height: 29px;
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 0px 20px;
-        background: rgba(36, 36, 36,0.5) !important;
-
-        .andyp-grid__cell-icon {
-            display: none;
-        }
-    }
-    .andyp-grid__cell-image {
-        border-radius: 50%;
-    }
-    .floorfade {
-        background: none;
-    }
-    .andyp-grid__cell-date {
-        display: none;
-    }
-    .andyp-grid__cell-overlay {
-        background: transparent;
-    }
-}
-
-
-// ┌─────────────────────────────────────────────────────────────────────────┐ 
-// │                                                                         │░
-// │                                                                         │░
-// │                       BEYONDPARKOUR SUBSCRIPTIONS                       │░
-// │                                                                         │░
-// │                                                                         │░
-// └─────────────────────────────────────────────────────────────────────────┘░
-//  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-
-.yt_pulse_beyondparkour {
-    .andyp-grid__cell {
-        &-title {
-            color: #fff;
-            height: 29px;
-            padding: 0px 0px 0px 24px;
-            line-height: 29px;
-            overflow: hidden;
-            position: absolute;
-            bottom: -29px;
+        .site-content .content-area {
+            float: none;
+            margin: 0px;
+            padding: 0px 0px 0px 0px;
             width: 100%;
-            border-radius: 0px;
         }
-        &-icon {
-            position: absolute;
-            bottom: 0px;
-            left: 0px;
-            line-height: 27px;
-            font-size: 18px;
-            color: #fff;
+    }
+
+    @media (max-width: $mobile){
+        .andyp-grid {
+
+            // Don't move the time and dates.
+            &__cell-icon {
+                display: none;
+            }
+            &__cell-title {
+                padding: 5px;
+            }
+
+            .flickity-prev-next-button {
+                top: -58px;
+            }
         }
-        &-date {
-            display: none;
+
+    }
+
+
+
+    // ┌─────────────────────────────────────────────────────────────────────────┐ 
+    // │                                                                         │░
+    // │                                                                         │░
+    // │                              PULSE HEADER                               │░
+    // │                                                                         │░
+    // │                                                                         │░
+    // └─────────────────────────────────────────────────────────────────────────┘░
+    //  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+    .pulse_header {
+        .andyp-grid {
+            &__cell {
+
+                background: #000;
+
+                &-link {
+                    margin-bottom: 0px;
+                }
+                &-sideblend {
+                    display: block;
+                    background: linear-gradient(to right, #000, #000 25%, rgba(0,0,0,0) 60%);
+                    height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                }
+                &-image {
+                    background-size: initial;
+                    background-position: right;
+                }
+
+                &-meta {
+                    color: #f5f5f5;
+                }
+
+                &-info {
+                    position: absolute;
+                    top: 0;
+                    left: 8.33%;
+                    width: 25%;
+                    padding: 29px 0px;
+                }
+
+                &-channeltitle {
+                    margin-bottom: 29px;
+                }
+
+                &-title {
+                    height: initial;
+                    padding: 0px;
+                    line-height: 29px;
+                    overflow: hidden;
+                    position: relative;
+                    width: 100%;
+                    padding-left: 0px;
+                    border-radius: initial;
+                    font-size: 29px;
+                    white-space: initial;
+                }
+
+                &-date {
+                    left: 0px;
+                    padding: 0px;
+                    color: #D0C8B3;
+                }
+            }
         }
-        &-overlay {
-            background: transparent;
+
+        @media (max-width: $tablet)
+        {
+            margin-bottom:29px;
+            top: initial;
+            bottom: initial;
+            background: initial;
+            padding-left: 0px;
+
+            .andyp-grid__cell-date {
+                top: initial;
+            }
+        }
+
+        @media (max-width: $mobile)
+        {
+            .andyp-grid {
+                &__cell-info {
+                    top: initial;
+                    bottom: 0;
+                    left: 0;
+                    padding: 20px;
+                    width: 100%;    
+
+                    h2 {
+                        font-size: 29px;
+
+                    }
+                }
+                &__cell-title {
+                    background-color: transparent;
+                }
+                &__cell-date {
+                    display: none;
+                }
+                &__cell-sideblend {
+                    background: linear-gradient(to top, #242424 10%, rgba(0, 0, 0, 0) 40%);
+                }
+
+            }
+        }
+
+    }
+
+
+
+
+
+    // ┌─────────────────────────────────────────────────────────────────────────┐ 
+    // │                                                                         │░
+    // │                                                                         │░
+    // │                          FULL-WIDTH PLAYLISTS                           │░
+    // │                                                                         │░
+    // │                                                                         │░
+    // └─────────────────────────────────────────────────────────────────────────┘░
+    //  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+    .pulse_yt_parkourpulse_playlists {
+
+        padding: 116px 0px 116px 116px; 
+        background: #000;
+        margin-top:116px;
+        margin-left: -20%;
+
+        .andyp-grid {
+            &__cell {
+
+                &-image {
+                    background-size: 100%;
+                }
+                &-overlay {
+                    background-color: initial;
+                }
+                &-title {
+                    padding: 0px;
+                    height: initial;
+                    border-radius: 0px;
+                    position: relative;
+                    line-height: 58px;
+                }
+                &-icon {
+                    line-height: initial;
+                    left: 0px;
+
+                }
+                &-description {
+                    color: #757575;
+                    
+                }
+                &-date {
+                    position: relative;
+                    right: initial;
+                    padding: initial;
+                }
+            }
+        }
+
+        .flickity-page-dots {
+            bottom: -58px;
+            .dot {
+                background: #757575;
+            }
+        }
+
+        @media (max-width: $tablet){
+    
+            padding: 116px 0px 116px 20px;
+            margin-top: 116px;
+            margin-left: 0px;
+
+            .andyp-grid__cell-date {
+                background-color: transparent;
+            }
+            .andyp-grid__cell-title {
+                background-color: transparent;
+            }
+            
         }
     }
     
-    .floorfade {
-        background: none;
+
+
+    // ┌─────────────────────────────────────────────────────────────────────────┐ 
+    // │                                                                         │░
+    // │                                                                         │░
+    // │                         CIRCULAR SUBSCRIPTIONS                          │░
+    // │                                                                         │░
+    // │                                                                         │░
+    // └─────────────────────────────────────────────────────────────────────────┘░
+    //  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+    .pulse_yt_parkourpulse_subscriptions {
+        .andyp-grid__cell-title {
+            color: #fff;
+            height: 29px;
+            max-width: 100%;
+            overflow: hidden;
+            position: absolute;
+            bottom: 29px;
+            width: auto;
+            border-radius: 0px;
+            text-align: center;
+            line-height: 29px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 0px 20px;
+            background: rgba(36, 36, 36,0.5) !important;
+
+            .andyp-grid__cell-icon {
+                display: none;
+            }
+        }
+        .andyp-grid__cell-image {
+            border-radius: 50%;
+        }
+        .floorfade {
+            background: none;
+        }
+        .andyp-grid__cell-date {
+            display: none;
+        }
+        .andyp-grid__cell-overlay {
+            background: transparent;
+        }
     }
-}
 
 
-// ┌─────────────────────────────────────────────────────────────────────────┐ 
-// │                                                                         │░
-// │                                                                         │░
-// │              FULL-WIDTH BEYONDPARKOUR RELATED TOPICS                    │░
-// │                                                                         │░
-// │                                                                         │░
-// └─────────────────────────────────────────────────────────────────────────┘░
-//  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+    // ┌─────────────────────────────────────────────────────────────────────────┐ 
+    // │                                                                         │░
+    // │                                                                         │░
+    // │                       BEYONDPARKOUR SUBSCRIPTIONS                       │░
+    // │                                                                         │░
+    // │                                                                         │░
+    // └─────────────────────────────────────────────────────────────────────────┘░
+    //  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
-.yt_pulse_beyondparkour_related {
-
-    padding: 116px 0px 116px 116px; 
-    background: #F5F5F5;
-    margin-top:116px;
-    margin-left: -20%;
-
-    .andyp-grid {
-        &__cell {
-
-            &-overlay .andyp-grid__cell-icon
-            {
-                color: #38EF7D;
-            }
-            &-image {
-                background-size: 100%;
-            }
-            &-overlay { 
-                background-color: initial;
-            }
-            &-title { 
-                padding: 0px;
-                height: initial;
+    .yt_pulse_beyondparkour {
+        .andyp-grid__cell {
+            &-title {
+                color: #fff;
+                height: 29px;
+                padding: 0px 0px 0px 24px;
+                line-height: 29px;
+                overflow: hidden;
+                position: absolute;
+                bottom: -29px;
+                width: 100%;
                 border-radius: 0px;
-                position: relative;
-                line-height: 58px;
-                color: #242424;
             }
             &-icon {
-                line-height: initial;
+                position: absolute;
+                bottom: 0px;
                 left: 0px;
-
-            }
-            &-description {
-                color: #757575;
-                
+                line-height: 27px;
+                font-size: 18px;
+                color: #fff;
             }
             &-date {
-                position: relative;
-                right: initial;
-                padding: initial;
-            }
-        }
-    }
-
-    .flickity-page-dots {
-        bottom: -58px;
-        .dot {
-            background: #757575;
-        }
-    }
-}
-
-
-// ┌─────────────────────────────────────────────────────────────────────────┐ 
-// │                                                                         │░
-// │                                                                         │░
-// │              FULL-WIDTH LONDONPARKOUR (LEARN) PLAYLISTS                 │░
-// │                                                                         │░
-// │                                                                         │░
-// └─────────────────────────────────────────────────────────────────────────┘░
-//  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
-.yt_pulse_learn {
-
-    .andyp-grid {
-        &__cell {
-
-            &-image {
-                background-size: 100%;
+                display: none;
             }
             &-overlay {
-                background-color: initial;
+                background: transparent;
             }
-            &-title {
-                padding: 0px;
-                height: initial;
-                border-radius: 0px;
-                position: relative;
-                line-height: 58px;
-            }
-            &-icon {
-                line-height: initial;
-                left: 0px;
-
-            }
-            &-description {
-                color: #757575;
-                
-            }
-            &-date {
-                position: relative;
-                right: initial;
-                padding: initial; 
-            }
+        }
+        
+        .floorfade {
+            background: none;
         }
     }
 
-    .flickity-page-dots {
-        bottom: -58px;
-        .dot {
-            background: #757575;
+
+    // ┌─────────────────────────────────────────────────────────────────────────┐ 
+    // │                                                                         │░
+    // │                                                                         │░
+    // │              FULL-WIDTH BEYONDPARKOUR RELATED TOPICS                    │░
+    // │                                                                         │░
+    // │                                                                         │░
+    // └─────────────────────────────────────────────────────────────────────────┘░
+    //  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+    .yt_pulse_beyondparkour_related {
+
+        padding: 116px 0px 116px 116px; 
+        background: #F5F5F5;
+        margin-top:116px;
+        margin-left: -20%;
+
+        .andyp-grid {
+            &__cell {
+
+                &-overlay .andyp-grid__cell-icon
+                {
+                    color: #38EF7D;
+                }
+                &-image {
+                    background-size: 100%;
+                }
+                &-overlay { 
+                    background-color: initial;
+                }
+                &-title { 
+                    padding: 0px;
+                    height: initial;
+                    border-radius: 0px;
+                    position: relative;
+                    line-height: 58px;
+                    color: #242424;
+                }
+                &-icon {
+                    line-height: initial;
+                    left: 0px;
+
+                }
+                &-description {
+                    color: #757575;
+                    
+                }
+                &-date {
+                    position: relative;
+                    right: initial;
+                    padding: initial;
+                }
+            }
+        }
+
+        .flickity-page-dots {
+            bottom: -58px;
+            .dot {
+                background: #757575;
+            }
+        }
+
+        @media (max-width: $tablet){
+
+            padding: 116px 0px 116px 20px;
+            margin-top: 116px;
+            margin-left: 0px;
+
+            .andyp-grid__cell-date {
+                background-color: transparent;
+            }
+            .andyp-grid__cell-title {
+                background-color: transparent;
+            }
+            
+        }
+    }
+    
+
+
+    // ┌─────────────────────────────────────────────────────────────────────────┐ 
+    // │                                                                         │░
+    // │                                                                         │░
+    // │              FULL-WIDTH LONDONPARKOUR (LEARN) PLAYLISTS                 │░
+    // │                                                                         │░
+    // │                                                                         │░
+    // └─────────────────────────────────────────────────────────────────────────┘░
+    //  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+    .yt_pulse_learn {
+
+        .andyp-grid {
+            &__cell {
+
+                &-image {
+                    background-size: 100%;
+                }
+                &-overlay {
+                    background-color: initial;
+                }
+                &-title {
+                    padding: 0px;
+                    height: initial;
+                    border-radius: 0px;
+                    position: relative;
+                    line-height: 58px;
+                }
+                &-icon {
+                    line-height: initial;
+                    left: 0px;
+
+                }
+                &-description {
+                    color: #757575;
+                    
+                }
+                &-date {
+                    position: relative;
+                    right: initial;
+                    padding: initial; 
+                }
+            }
+        }
+
+        .flickity-page-dots {
+            bottom: -58px;
+            .dot {
+                background: #757575;
+            }
+        }
+
+        @media (max-width: $tablet){
+    
+            .andyp-grid{
+                &__cell-date {
+                    background-color: transparent;
+                }
+                &__cell-title {
+                    background-color: transparent;
+                }
+            }
+        
         }
     }
 }

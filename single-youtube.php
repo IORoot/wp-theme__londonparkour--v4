@@ -9,8 +9,14 @@
 ?>
 
 <style>
-	.site-content {margin:58px 8.33%;}
+
+	.entry-content { margin:58px 8.33%; }
 	#masthead, footer {display:none;}
+	* { 
+		font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+		font-weight: 400;
+		line-height: 29px;
+	}
 </style>
 
 	<div id="primary" class="content-area">
