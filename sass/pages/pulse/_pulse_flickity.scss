@@ -116,7 +116,7 @@
                     top: 0;
                 }
                 &-image {
-                    background-size: initial;
+                    background-size: auto 700px;
                     background-position: right;
                 }
 
@@ -124,9 +124,9 @@
                     color: #f5f5f5;
                 }
 
-                &-info {
+                &-info {    
                     position: absolute;
-                    top: 0;
+                    top: 29px;
                     left: 8.33%;
                     width: 25%;
                     padding: 29px 0px;
@@ -237,8 +237,7 @@
                 }
                 &-icon {
                     line-height: initial;
-                    left: 0px;
-
+                    top:116px;
                 }
                 &-description {
                     color: #757575;
@@ -405,8 +404,7 @@
                 }
                 &-icon {
                     line-height: initial;
-                    left: 0px;
-
+                    top:116px;
                 }
                 &-description {
                     color: #757575;
@@ -473,8 +471,7 @@
                 }
                 &-icon {
                     line-height: initial;
-                    left: 0px;
-
+                    top:116px;
                 }
                 &-description {
                     color: #757575;

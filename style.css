@@ -24782,7 +24782,7 @@ a:hover, a:active {
   top: 0;
 }
 .pulse .pulse_header .andyp-grid__cell-image {
-  background-size: initial;
+  background-size: auto 700px;
   background-position: right;
 }
 .pulse .pulse_header .andyp-grid__cell-meta {
@@ -24790,7 +24790,7 @@ a:hover, a:active {
 }
 .pulse .pulse_header .andyp-grid__cell-info {
   position: absolute;
-  top: 0;
+  top: 29px;
   left: 8.33%;
   width: 25%;
   padding: 29px 0px;
@@ -24869,7 +24869,7 @@ a:hover, a:active {
 }
 .pulse .pulse_yt_parkourpulse_playlists .andyp-grid__cell-icon {
   line-height: initial;
-  left: 0px;
+  top: 116px;
 }
 .pulse .pulse_yt_parkourpulse_playlists .andyp-grid__cell-description {
   color: #757575;
@@ -24982,7 +24982,7 @@ a:hover, a:active {
 }
 .pulse .yt_pulse_beyondparkour_related .andyp-grid__cell-icon {
   line-height: initial;
-  left: 0px;
+  top: 116px;
 }
 .pulse .yt_pulse_beyondparkour_related .andyp-grid__cell-description {
   color: #757575;
@@ -25026,7 +25026,7 @@ a:hover, a:active {
 }
 .pulse .yt_pulse_learn .andyp-grid__cell-icon {
   line-height: initial;
-  left: 0px;
+  top: 116px;
 }
 .pulse .yt_pulse_learn .andyp-grid__cell-description {
   color: #757575;
