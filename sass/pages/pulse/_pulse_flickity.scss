@@ -165,9 +165,19 @@
             background: initial;
             padding-left: 0px;
 
-            .andyp-grid__cell-date {
-                top: initial;
+            .andyp-grid__cell {
+                &-date {
+                    top: initial;
+                }
+                &-image {
+                    background-size: contain; 
+                    background-position: center -40px;
+                }
+                &-link {
+                    background-image: none;
+                }
             }
+
         }
 
         @media (max-width: $mobile)

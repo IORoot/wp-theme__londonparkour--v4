@@ -24825,6 +24825,13 @@ a:hover, a:active {
   .pulse .pulse_header .andyp-grid__cell-date {
     top: initial;
   }
+  .pulse .pulse_header .andyp-grid__cell-image {
+    background-size: contain;
+    background-position: center -40px;
+  }
+  .pulse .pulse_header .andyp-grid__cell-link {
+    background-image: none;
+  }
 }
 @media (max-width: 767px) {
   .pulse .pulse_header .andyp-grid__cell-info {
