@@ -53,6 +53,18 @@
                             width: 16px;
                             margin-right: 16px; 
                         }
+
+                        // NEW MATERIAL ICON LIBRARY 
+                        span.mdi {
+                            font-size: 18px;
+                            padding-top: 0px;
+                            line-height: 16px;
+                            vertical-align: initial;
+                            width: 16px;
+                            margin-right: 5px; 
+                            margin: 0px 7px 0px 4px;
+                            color: #757575;
+                        }
                         
                     }
                     &.menu-item-icon::before {
@@ -66,7 +78,7 @@
                         color: #757575;
                     }
 
-
+                    // OLD MATERIAL ICON LIBRARY
                     &.pulseheader::before {
                         content: '\e3f8';
                         color: #53A5E3;
@@ -113,7 +125,9 @@
                     &.graphic_eq::before {
                         content: '\e1b8'; 
                     }
-
+                    &.graphic_eq::before {
+                        content: '\e1b8'; 
+                    }
                 }
                 
             }

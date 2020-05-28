@@ -22887,6 +22887,16 @@ a:hover, a:active {
   width: 16px;
   margin-right: 16px;
 }
+.widget-area .widget_nav_menu .menu-pulse-container ul li a span.mdi {
+  font-size: 18px;
+  padding-top: 0px;
+  line-height: 16px;
+  vertical-align: initial;
+  width: 16px;
+  margin-right: 5px;
+  margin: 0px 7px 0px 4px;
+  color: #757575;
+}
 .widget-area .widget_nav_menu .menu-pulse-container ul li.menu-item-icon::before {
   font-size: 18px;
   line-height: 23px;
@@ -22939,6 +22949,9 @@ a:hover, a:active {
 }
 .widget-area .widget_nav_menu .menu-pulse-container ul li.fit::before {
   content: "";
+}
+.widget-area .widget_nav_menu .menu-pulse-container ul li.graphic_eq::before {
+  content: "";
 }
 .widget-area .widget_nav_menu .menu-pulse-container ul li.graphic_eq::before {
   content: "";
