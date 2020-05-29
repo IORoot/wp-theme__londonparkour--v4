@@ -1,10 +1,10 @@
 .widget .pulse-sidebar-title {
-    color: #f5f5f5;
+    color: $ghost;
     padding: 29px 20px 29px 20px;
     font-size: 29px;
 
     .mdi {
-        color: #53A5E3;
+        color: $sky;
         font-size: 29px;
         line-height: 23px;
         // vertical-align: text-top;
@@ -31,18 +31,18 @@
                     height: 29px;
 
                     &.menu-item-current {
-                        background-color: #F5F5F5;
+                        background-color: $ghost;
                     }
                     a {
                         text-decoration: none;
-                        color: #E0E0E0;
+                        color: $mist;
 
                         &:hover {
-                            color: #53A5E3;
+                            color: $sky;
                         }
 
                         &:active {
-                            color: #E34F65; 
+                            color: $rose; 
                         }
 
                         .menu-item-icon {
@@ -63,74 +63,24 @@
                             width: 16px;
                             margin-right: 5px; 
                             margin: 0px 7px 0px 4px;
-                            color: #757575;
+                            color: $smoke;
                         }
                         
                     }
-                    &.menu-item-icon::before {
-                        font-size: 18px;
-                        line-height: 23px;
-                        vertical-align: text-top;
-                        width: 16px;
-                        margin-right: 7px;
-                        margin-left: 4px;
-                        font-family: "Material Icons";
-                        color: #757575;
-                    }
-
-                    // OLD MATERIAL ICON LIBRARY
-                    &.pulseheader::before {
-                        content: '\e3f8';
-                        color: #53A5E3;
-                    }
-                    &.important_devices::before {
-                        content: '\e912';
-                    }
-                    &.new_releases::before {
-                        content: '\e031';
-                    }
-                    &.wifi_tethering::before { 
-                        content: '\e1e2';
-                    }
-                    &.playlists::before {
-                        content: '\e04a';
-                    }
-                    &.account::before {
-                        content: '\e853';
-                    }
-                    &.top4::before {
-                        content: '\e87d';
-                    }
-                    &.bookmark::before {
-                        content: '\e865';
-                    }
-                    &.live::before {
-                        content: '\e639';
-                    }
-                    &.upcoming::before {
-                        content: '\e87c';
-                    }
-                    &.learn::before {
-                        content: '\e80c';
-                    }
-                    &.continents::before {
-                        content: '\e894';
-                    }
-                    &.beyondparkour::before {
-                        content: '\e066';
-                    }
-                    &.fit::before {
-                        content: '\eb43'; 
-                    }
-                    &.graphic_eq::before {
-                        content: '\e1b8'; 
-                    }
-                    &.graphic_eq::before {
-                        content: '\e1b8'; 
-                    }
                 }
-                
             }
         } 
+    }
+
+    .widget {
+        .menu-pulse__global-update {
+            color: $yellow;
+            font-size: 12px;
+            margin: 29px 20px;
+
+            .mdi {
+                margin-right: 5px;
+            }
+        }
     }
 }

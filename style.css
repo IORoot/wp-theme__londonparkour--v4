@@ -22850,7 +22850,7 @@ a:hover, a:active {
   font-size: 29px;
 }
 .widget .pulse-sidebar-title .mdi {
-  color: #53A5E3;
+  color: #53a5e3;
   font-size: 29px;
   line-height: 23px;
   width: 29px;
@@ -22867,17 +22867,17 @@ a:hover, a:active {
   height: 29px;
 }
 .widget-area .widget_nav_menu .menu-pulse-container ul li.menu-item-current {
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 .widget-area .widget_nav_menu .menu-pulse-container ul li a {
   text-decoration: none;
-  color: #E0E0E0;
+  color: #e0e0e0;
 }
 .widget-area .widget_nav_menu .menu-pulse-container ul li a:hover {
-  color: #53A5E3;
+  color: #53a5e3;
 }
 .widget-area .widget_nav_menu .menu-pulse-container ul li a:active {
-  color: #E34F65;
+  color: #e34f65;
 }
 .widget-area .widget_nav_menu .menu-pulse-container ul li a .menu-item-icon {
   font-size: 18px;
@@ -22897,64 +22897,13 @@ a:hover, a:active {
   margin: 0px 7px 0px 4px;
   color: #757575;
 }
-.widget-area .widget_nav_menu .menu-pulse-container ul li.menu-item-icon::before {
-  font-size: 18px;
-  line-height: 23px;
-  vertical-align: text-top;
-  width: 16px;
-  margin-right: 7px;
-  margin-left: 4px;
-  font-family: "Material Icons";
-  color: #757575;
+.widget-area .widget .menu-pulse__global-update {
+  color: #FCC53B;
+  font-size: 12px;
+  margin: 29px 20px;
 }
-.widget-area .widget_nav_menu .menu-pulse-container ul li.pulseheader::before {
-  content: "";
-  color: #53A5E3;
-}
-.widget-area .widget_nav_menu .menu-pulse-container ul li.important_devices::before {
-  content: "";
-}
-.widget-area .widget_nav_menu .menu-pulse-container ul li.new_releases::before {
-  content: "";
-}
-.widget-area .widget_nav_menu .menu-pulse-container ul li.wifi_tethering::before {
-  content: "";
-}
-.widget-area .widget_nav_menu .menu-pulse-container ul li.playlists::before {
-  content: "";
-}
-.widget-area .widget_nav_menu .menu-pulse-container ul li.account::before {
-  content: "";
-}
-.widget-area .widget_nav_menu .menu-pulse-container ul li.top4::before {
-  content: "";
-}
-.widget-area .widget_nav_menu .menu-pulse-container ul li.bookmark::before {
-  content: "";
-}
-.widget-area .widget_nav_menu .menu-pulse-container ul li.live::before {
-  content: "";
-}
-.widget-area .widget_nav_menu .menu-pulse-container ul li.upcoming::before {
-  content: "";
-}
-.widget-area .widget_nav_menu .menu-pulse-container ul li.learn::before {
-  content: "";
-}
-.widget-area .widget_nav_menu .menu-pulse-container ul li.continents::before {
-  content: "";
-}
-.widget-area .widget_nav_menu .menu-pulse-container ul li.beyondparkour::before {
-  content: "";
-}
-.widget-area .widget_nav_menu .menu-pulse-container ul li.fit::before {
-  content: "";
-}
-.widget-area .widget_nav_menu .menu-pulse-container ul li.graphic_eq::before {
-  content: "";
-}
-.widget-area .widget_nav_menu .menu-pulse-container ul li.graphic_eq::before {
-  content: "";
+.widget-area .widget .menu-pulse__global-update .mdi {
+  margin-right: 5px;
 }
 
 .menu-toggle {
