@@ -532,6 +532,36 @@ sub {
 .colour--white {
   color: #ffffff;
 }
+.colour--yellow {
+  color: #FCC53B;
+}
+.colour--trustpilot {
+  color: #00b67a;
+}
+.colour--stripe {
+  color: #5433FF;
+}
+.colour--github {
+  color: #4078c0;
+}
+.colour--letsencrypt {
+  color: #2C3C69;
+}
+.colour--digitalocean {
+  color: #1572FE;
+}
+.colour--youtube {
+  color: #ff0000;
+}
+.colour--instagram {
+  color: #F56040;
+}
+.colour--apple {
+  color: #757575;
+}
+.colour--android {
+  color: #a4c639;
+}
 
 code {
   background: #424242;
@@ -23050,6 +23080,46 @@ a:hover, a:active {
 .main-navigation ul.nav-menu > li.menu-item:hover > a .icon--white {
   color: #ffffff;
 }
+.main-navigation ul.menu > li.menu-item:hover > a .icon--yellow,
+.main-navigation ul.nav-menu > li.menu-item:hover > a .icon--yellow {
+  color: #FCC53B;
+}
+.main-navigation ul.menu > li.menu-item:hover > a .icon--trustpilot,
+.main-navigation ul.nav-menu > li.menu-item:hover > a .icon--trustpilot {
+  color: #00b67a;
+}
+.main-navigation ul.menu > li.menu-item:hover > a .icon--stripe,
+.main-navigation ul.nav-menu > li.menu-item:hover > a .icon--stripe {
+  color: #5433FF;
+}
+.main-navigation ul.menu > li.menu-item:hover > a .icon--github,
+.main-navigation ul.nav-menu > li.menu-item:hover > a .icon--github {
+  color: #4078c0;
+}
+.main-navigation ul.menu > li.menu-item:hover > a .icon--letsencrypt,
+.main-navigation ul.nav-menu > li.menu-item:hover > a .icon--letsencrypt {
+  color: #2C3C69;
+}
+.main-navigation ul.menu > li.menu-item:hover > a .icon--digitalocean,
+.main-navigation ul.nav-menu > li.menu-item:hover > a .icon--digitalocean {
+  color: #1572FE;
+}
+.main-navigation ul.menu > li.menu-item:hover > a .icon--youtube,
+.main-navigation ul.nav-menu > li.menu-item:hover > a .icon--youtube {
+  color: #ff0000;
+}
+.main-navigation ul.menu > li.menu-item:hover > a .icon--instagram,
+.main-navigation ul.nav-menu > li.menu-item:hover > a .icon--instagram {
+  color: #F56040;
+}
+.main-navigation ul.menu > li.menu-item:hover > a .icon--apple,
+.main-navigation ul.nav-menu > li.menu-item:hover > a .icon--apple {
+  color: #757575;
+}
+.main-navigation ul.menu > li.menu-item:hover > a .icon--android,
+.main-navigation ul.nav-menu > li.menu-item:hover > a .icon--android {
+  color: #a4c639;
+}
 .main-navigation ul.menu > li.menu-item:hover ul.sub-menu,
 .main-navigation ul.nav-menu > li.menu-item:hover ul.sub-menu {
   visibility: visible;
@@ -23155,6 +23225,46 @@ a:hover, a:active {
 .main-navigation ul.menu > li.menu-item ul.sub-menu .menu-item a:hover .icon--white,
 .main-navigation ul.nav-menu > li.menu-item ul.sub-menu .menu-item a:hover .icon--white {
   color: #ffffff;
+}
+.main-navigation ul.menu > li.menu-item ul.sub-menu .menu-item a:hover .icon--yellow,
+.main-navigation ul.nav-menu > li.menu-item ul.sub-menu .menu-item a:hover .icon--yellow {
+  color: #FCC53B;
+}
+.main-navigation ul.menu > li.menu-item ul.sub-menu .menu-item a:hover .icon--trustpilot,
+.main-navigation ul.nav-menu > li.menu-item ul.sub-menu .menu-item a:hover .icon--trustpilot {
+  color: #00b67a;
+}
+.main-navigation ul.menu > li.menu-item ul.sub-menu .menu-item a:hover .icon--stripe,
+.main-navigation ul.nav-menu > li.menu-item ul.sub-menu .menu-item a:hover .icon--stripe {
+  color: #5433FF;
+}
+.main-navigation ul.menu > li.menu-item ul.sub-menu .menu-item a:hover .icon--github,
+.main-navigation ul.nav-menu > li.menu-item ul.sub-menu .menu-item a:hover .icon--github {
+  color: #4078c0;
+}
+.main-navigation ul.menu > li.menu-item ul.sub-menu .menu-item a:hover .icon--letsencrypt,
+.main-navigation ul.nav-menu > li.menu-item ul.sub-menu .menu-item a:hover .icon--letsencrypt {
+  color: #2C3C69;
+}
+.main-navigation ul.menu > li.menu-item ul.sub-menu .menu-item a:hover .icon--digitalocean,
+.main-navigation ul.nav-menu > li.menu-item ul.sub-menu .menu-item a:hover .icon--digitalocean {
+  color: #1572FE;
+}
+.main-navigation ul.menu > li.menu-item ul.sub-menu .menu-item a:hover .icon--youtube,
+.main-navigation ul.nav-menu > li.menu-item ul.sub-menu .menu-item a:hover .icon--youtube {
+  color: #ff0000;
+}
+.main-navigation ul.menu > li.menu-item ul.sub-menu .menu-item a:hover .icon--instagram,
+.main-navigation ul.nav-menu > li.menu-item ul.sub-menu .menu-item a:hover .icon--instagram {
+  color: #F56040;
+}
+.main-navigation ul.menu > li.menu-item ul.sub-menu .menu-item a:hover .icon--apple,
+.main-navigation ul.nav-menu > li.menu-item ul.sub-menu .menu-item a:hover .icon--apple {
+  color: #757575;
+}
+.main-navigation ul.menu > li.menu-item ul.sub-menu .menu-item a:hover .icon--android,
+.main-navigation ul.nav-menu > li.menu-item ul.sub-menu .menu-item a:hover .icon--android {
+  color: #a4c639;
 }
 .main-navigation ul.menu > li.menu-item ul.sub-menu .menu-item__separator,
 .main-navigation ul.nav-menu > li.menu-item ul.sub-menu .menu-item__separator {

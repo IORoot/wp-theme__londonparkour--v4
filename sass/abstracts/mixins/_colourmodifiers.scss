@@ -15,7 +15,7 @@
     &--goo { #{$parameter}: $goo; }
     &--crayon { #{$parameter}: $crayon; }
     &--rose { #{$parameter}: $rose; }
-    &--black { #{$parameter}: $black; } 
+    &--black { #{$parameter}: $black; }  
     &--night { #{$parameter}: $night; }
     &--fog { #{$parameter}: $fog; }
     &--smoke { #{$parameter}: $smoke; }
@@ -24,4 +24,17 @@
     &--ghost { #{$parameter}: $ghost; }
     &--halo { #{$parameter}: $halo; }
     &--white { #{$parameter}: $white; }
+    &--yellow { #{$parameter}: $yellow; }
+
+    &--trustpilot { #{$parameter}: $trustpilot; }
+    &--stripe { #{$parameter}: $stripe; }
+    &--github { #{$parameter}: $github; }
+    &--letsencrypt { #{$parameter}: $letsencrypt; }
+    &--digitalocean { #{$parameter}: $digitalocean; }
+
+    &--youtube { #{$parameter}: $youtube; }
+    &--instagram { #{$parameter}: $instagram; }
+    &--apple { #{$parameter}: $apple; }
+    &--android { #{$parameter}: $android; }
+
 }
