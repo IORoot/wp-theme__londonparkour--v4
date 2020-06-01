@@ -3,7 +3,7 @@
     .pulse { 
         
         .flickity-page-dots {
-            bottom: 0px;
+            display: none !important;
         }
 
         // ┌─────────────────────────────────────────────────────────────────────────┐ 
@@ -87,10 +87,7 @@
         .yt_pulse_learn {
             .andyp-grid__cell-title {
                 color: $white;
-            }
-            .flickity-page-dots {
-                bottom: 29px !important;
-            }
+            } 
         }
     }
 }

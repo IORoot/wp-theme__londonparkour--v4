@@ -25229,7 +25229,7 @@ a:hover, a:active {
 
 @media (max-width: 767px) {
   .pulse .flickity-page-dots {
-    bottom: 0px;
+    display: none !important;
   }
   .pulse .andyp-grid {
     border-radius: 4px;
@@ -25272,9 +25272,6 @@ a:hover, a:active {
   }
   .pulse .yt_pulse_learn .andyp-grid__cell-title {
     color: #ffffff;
-  }
-  .pulse .yt_pulse_learn .flickity-page-dots {
-    bottom: 29px !important;
   }
 }
 .pulse .andyp-grid__cell-channel {
