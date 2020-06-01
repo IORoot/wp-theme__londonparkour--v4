@@ -10,7 +10,7 @@
 
 @media (max-width: $mobile) {
     
-	.main-navigation {
+	.site-header .main-navigation {
         
         position: absolute;
         top: 0;
@@ -107,11 +107,12 @@
                     width: 100%;
                     height: 116px;
                     font-size: 18px; 
+                    font-weight: 400;
                     white-space: nowrap;
                     color: $halo;
-                    background-color: $fog;
+                    background-color: $fog; 
                     margin: 2px 2px 0px;
-                    line-height: 145px;
+                    line-height: 116px;
                     text-align: center;
 
                     .icon {
@@ -150,21 +151,7 @@
                     }
 
                     &__londonparkour { 
-                        width: 100%;
-                        a {
-                            margin: 2px 2px 0px;
-                            padding-left: 0px;
-                            width: 100%;
-                            height: 116px;
-                            background-size: initial;
-                            overflow: initial; 
-                            float: none; 
-                            text-align: center;
-
-                            @include logo-ldnpk($halo);
-                            background-position-y: 20px;
-                            background-size: 58px;
-                        }
+                        display: none;
                     }
                     &__apple a {
                         @include logo-apple($halo);
@@ -227,14 +214,20 @@
                             text-align: center !important;
                             color: $halo;
                             margin: 2px 2px 0px;
-                            line-height: 145px !important;
+                            line-height: 116px !important;
 
-                            .icon {
+                            .mdi {
                                 position: absolute;
                                 left: 50%;
                                 top: 29px;
                                 transform: translateX(-50%);
                                 margin: 0px;
+                            }
+
+                            .menu-item-description, 
+                            .menu-item-image {
+                                display: none;
+
                             }
                         }  
 

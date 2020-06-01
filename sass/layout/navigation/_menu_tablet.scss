@@ -28,6 +28,20 @@
 							@include logo-ldnpk($sky);
 						}
 					}
+
+					//  ┌──────────────────────────────────────┐
+					//  │         		 Submenus   	       │
+					//  └──────────────────────────────────────┘
+					.sub-menu {
+						left:0;
+						width: 100%;
+						min-width: 100% !important;
+						transform: translateX(0%) !important;
+
+						.menu-item {
+							margin: 10px;
+						}
+					}
 				}
 			}	
 		}

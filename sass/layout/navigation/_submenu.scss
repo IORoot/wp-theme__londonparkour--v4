@@ -5,13 +5,17 @@
 				display: block;
 				position: absolute;
 				top:58px;
+				left: 0;
 				z-index:3;
-				min-width: 240px;
-				padding:18px;
+
+				width: 100%;
+				padding: 20px;
 
 				background: $white;
 				list-style: none;
-				box-shadow: 0 5px 15px rgba(0,0,0,.1);
+				box-shadow: 0 10px 15px 0px rgba(0, 0, 0, 0.05);
+
+				@include goldenGrid(#999, 2);
 
 				//  ┌──────────────────────────────────────┐
 				//  │        Animation Transitions         │
@@ -26,60 +30,64 @@
 					opacity: 1;
 				}
 
-				.icon {
-					width: 29px;
-					font-size: 29px;
-				}
+				
 
 				//  ┌──────────────────────────────────────┐
 				//  │             Submenu item             │
 				//  └──────────────────────────────────────┘
 				.menu-item {
 
+					display: inline-block;
+					width: 180px;
+					margin: 20px 40px 20px 20px;
+
 					a {
 						display: block;
-                        line-height: 58px;
-                        text-align: left;
+                        line-height: 29px;
+						text-align: left;
+						font-weight: 600;
 
+						.mdi {
+							width: 29px;
+							font-size: 18px;
+							padding-right: 5px;
+							@include colourmodifier(); 
+						}
+
+						
 						&:hover {
 							color: $smoke;
-							//text-decoration: underline;
 
 							.icon {
 								@include colourmodifier();
 							}
+
 						}
+
+
+						//  ┌──────────────────────────────────────┐
+						//  │             Description              │
+						//  └──────────────────────────────────────┘
+						.menu-item-description {
+							font-size: 14px;
+							font-weight: 400;
+						}
+
+						//  ┌──────────────────────────────────────┐
+						//  │               Image                  │
+						//  └──────────────────────────────────────┘
+						.menu-item-image {
+							width: 180px;
+							height: 101px;
+							background-position: left center;
+							background-repeat: no-repeat;
+							background-size: cover; 
+							margin-bottom: 15px;
+							border-radius: 4px;
+						}
+
 					}
 
-					&__separator {
-						border-top: 1px solid $ghost;
-						padding-top: 14px;
-						margin-top: 14px;
-					}
-
-
-					&__highlight--bluepink {
-
-							margin: 14px -18px -18px -18px;
-							background: #53A5E3;
-							background: $bluepink; 
-
-							a {
-								padding-left: 18px;
-								color: $white;
-
-								&:hover {
-									color: $white;
-									text-decoration: underline;
-
-									.icon {
-										color: $white;
-									}
-								}
-
-							}
-						
-					}
 				}
 				
 			}

@@ -78,20 +78,24 @@ $background_color: transparent;
 				color: $night;
 				text-decoration: none;
                 line-height: 58px;
-                
-                //  ┌──────────────────────────────────────┐
-                //  │         Icons next to items          │
-                //  └──────────────────────────────────────┘
-                .icon {
-                    margin:0px 10px;
-                    font-size: 18px;
-                    padding-top: 1px;
-                    line-height: 18px;
-                    vertical-align: text-top;
-                    width: 16px;
-                }
+                font-weight: 600;
                 
             }
+
+            //  ┌──────────────────────────────────────┐
+            //  │         Icons next to items          │
+            //  └──────────────────────────────────────┘
+            
+            > a > .mdi {
+                margin:0px 10px;
+                font-size: 18px;
+                padding-top: 1px;
+                line-height: 20px;
+                vertical-align: text-top;
+                width: 16px;
+                color: #757575;
+            }
+            
 
             // ┌─────────────────────────────────────┐ 
 			// │                                     │░
@@ -106,7 +110,7 @@ $background_color: transparent;
 				> a {
 					text-decoration-color: $mist;
 
-					.icon {
+					.mdi {
 						@include colourmodifier();
 					}
 				}
