@@ -1,0 +1,96 @@
+@media (max-width: $mobile){
+    
+    .pulse { 
+        
+        .flickity-page-dots {
+            bottom: 0px;
+        }
+
+        // ┌─────────────────────────────────────────────────────────────────────────┐ 
+        // │                                                                         │░
+        // │                                                                         │░
+        // │                            BASE - ALL CELLS                             │░
+        // │                                                                         │░
+        // │                                                                         │░
+        // └─────────────────────────────────────────────────────────────────────────┘░
+        //  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+        .andyp-grid {
+
+            border-radius: 4px;
+            margin-top: 29px;
+
+            &__cell{
+
+                &-date {
+                    display: none;
+                }
+                &-icon {
+                    display: none;
+                } 
+                &-title {
+                    padding: 10px !important;
+                    background: $white;
+                    color: $night;
+                }
+                &-image {
+                    background-position: 50% 100%;
+                }
+            }
+
+            .flickity-prev-next-button {
+                display: none;
+            }
+
+        }
+        
+        // ┌─────────────────────────────────────────────────────────────────────────┐ 
+        // │                                                                         │░
+        // │                                                                         │░
+        // │                              PULSE HEADER                               │░
+        // │                                                                         │░
+        // │                                                                         │░
+        // └─────────────────────────────────────────────────────────────────────────┘░
+        //  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+        aside.widget-area,
+        .andyp-grid.pulse_header {
+
+            display: none;
+        }
+
+        .pulse_yt_parkourpulse_playlists {
+            .andyp-grid {
+                &__cell {
+                    &-title {
+                        padding: 0px !important;
+                        color: $white;
+                    }
+                }
+            }
+        }
+
+        .pulse_yt_parkourpulse_subscriptions {
+            .floorfade {
+                padding: 0px 10px !important;
+            }
+        }
+
+        .yt_pulse_beyondparkour {
+            .floorfade {
+                padding: 0px 10px !important;
+                background: $white !important;
+                color: $night !important;
+                bottom: 0px !important;
+                border-radius: 0px 0px 4px 4px !important;
+            }
+        }
+
+        .yt_pulse_learn {
+            .andyp-grid__cell-title {
+                color: $white;
+            }
+            .flickity-page-dots {
+                bottom: 29px !important;
+            }
+        }
+    }
+}

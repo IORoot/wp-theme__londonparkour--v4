@@ -24928,42 +24928,6 @@ a:hover, a:active {
   white-space: nowrap;
   padding: 29px 25% 0px 35px;
 }
-@media (max-width: 1023px) {
-  .pulse .andyp-grid {
-    padding-left: 20px;
-  }
-  .pulse .andyp-grid__cell-date {
-    margin-bottom: 0px;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.6);
-  }
-  .pulse .andyp-grid__cell-title {
-    padding: 29px 10px 0px 35px;
-  }
-  .pulse #pulse_yt_curated {
-    margin-top: 116px;
-  }
-  .pulse .site-header .main-navigation ul.nav-menu li.logo__londonparkour a {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='none'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' stroke='%23E86546' stroke-width='8'/%3E%3C/g%3E%3C/svg%3E");
-  }
-  .pulse .site-content .content-area {
-    float: none;
-    margin: 0px;
-    padding: 0px 0px 0px 0px;
-    width: 100%;
-  }
-}
-@media (max-width: 767px) {
-  .pulse .andyp-grid__cell-icon {
-    display: none;
-  }
-  .pulse .andyp-grid__cell-title {
-    padding: 5px;
-  }
-  .pulse .andyp-grid .flickity-prev-next-button {
-    top: -58px;
-  }
-}
 .pulse .pulse_header .andyp-grid__cell {
   background: #000;
 }
@@ -25012,46 +24976,6 @@ a:hover, a:active {
   padding: 0px;
   color: #D0C8B3;
 }
-@media (max-width: 1023px) {
-  .pulse .pulse_header {
-    margin-bottom: 29px;
-    top: initial;
-    bottom: initial;
-    background: initial;
-    padding-left: 0px;
-  }
-  .pulse .pulse_header .andyp-grid__cell-date {
-    top: initial;
-  }
-  .pulse .pulse_header .andyp-grid__cell-image {
-    background-size: contain;
-    background-position: center -40px;
-  }
-  .pulse .pulse_header .andyp-grid__cell-link {
-    background-image: none;
-  }
-}
-@media (max-width: 767px) {
-  .pulse .pulse_header .andyp-grid__cell-info {
-    top: initial;
-    bottom: 0;
-    left: 0;
-    padding: 20px;
-    width: 100%;
-  }
-  .pulse .pulse_header .andyp-grid__cell-info h2 {
-    font-size: 29px;
-  }
-  .pulse .pulse_header .andyp-grid__cell-title {
-    background-color: transparent;
-  }
-  .pulse .pulse_header .andyp-grid__cell-date {
-    display: none;
-  }
-  .pulse .pulse_header .andyp-grid__cell-sideblend {
-    background: linear-gradient(to top, #242424 10%, rgba(0, 0, 0, 0) 40%);
-  }
-}
 .pulse .pulse_yt_parkourpulse_playlists {
   padding: 116px 0px 116px 116px;
   background: #000;
@@ -25088,19 +25012,6 @@ a:hover, a:active {
 }
 .pulse .pulse_yt_parkourpulse_playlists .flickity-page-dots .dot {
   background: #757575;
-}
-@media (max-width: 1023px) {
-  .pulse .pulse_yt_parkourpulse_playlists {
-    padding: 116px 0px 116px 20px;
-    margin-top: 116px;
-    margin-left: 0px;
-  }
-  .pulse .pulse_yt_parkourpulse_playlists .andyp-grid__cell-date {
-    background-color: transparent;
-  }
-  .pulse .pulse_yt_parkourpulse_playlists .andyp-grid__cell-title {
-    background-color: transparent;
-  }
 }
 .pulse .pulse_yt_parkourpulse_subscriptions .andyp-grid__cell-title {
   color: #fff;
@@ -25202,19 +25113,6 @@ a:hover, a:active {
 .pulse .yt_pulse_beyondparkour_related .flickity-page-dots .dot {
   background: #757575;
 }
-@media (max-width: 1023px) {
-  .pulse .yt_pulse_beyondparkour_related {
-    padding: 116px 0px 116px 20px;
-    margin-top: 116px;
-    margin-left: 0px;
-  }
-  .pulse .yt_pulse_beyondparkour_related .andyp-grid__cell-date {
-    background-color: transparent;
-  }
-  .pulse .yt_pulse_beyondparkour_related .andyp-grid__cell-title {
-    background-color: transparent;
-  }
-}
 .pulse .yt_pulse_learn .andyp-grid__cell-image {
   background-size: 100%;
 }
@@ -25246,6 +25144,80 @@ a:hover, a:active {
 .pulse .yt_pulse_learn .flickity-page-dots .dot {
   background: #757575;
 }
+
+@media (max-width: 1023px) {
+  .pulse .andyp-grid {
+    padding-left: 20px;
+  }
+  .pulse .andyp-grid__cell-date {
+    margin-bottom: 0px;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  .pulse .andyp-grid__cell-title {
+    padding: 29px 10px 0px 35px;
+  }
+  .pulse #pulse_yt_curated {
+    margin-top: 58px;
+  }
+  .pulse .site-header .main-navigation ul.nav-menu li.logo__londonparkour a {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='none'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' stroke='%23E86546' stroke-width='8'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  .pulse .site-content .content-area {
+    float: none;
+    margin: 0px;
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+  }
+}
+@media (max-width: 1023px) {
+  .pulse .pulse_header {
+    margin-bottom: 29px;
+    top: initial;
+    bottom: initial;
+    background: initial;
+    padding-left: 0px;
+  }
+  .pulse .pulse_header .andyp-grid__cell-date {
+    top: initial;
+  }
+  .pulse .pulse_header .andyp-grid__cell-image {
+    background-size: contain;
+    background-position: center -40px;
+  }
+  .pulse .pulse_header .andyp-grid__cell-link {
+    background-image: none;
+  }
+  .pulse .pulse_header .andyp-grid__cell-channeltitle {
+    font-size: 29px;
+  }
+}
+@media (max-width: 1023px) {
+  .pulse .pulse_yt_parkourpulse_playlists {
+    padding: 116px 0px 116px 20px;
+    margin-top: 116px;
+    margin-left: 0px;
+  }
+  .pulse .pulse_yt_parkourpulse_playlists .andyp-grid__cell-date {
+    background-color: transparent;
+  }
+  .pulse .pulse_yt_parkourpulse_playlists .andyp-grid__cell-title {
+    background-color: transparent;
+  }
+}
+@media (max-width: 1023px) {
+  .pulse .yt_pulse_beyondparkour_related {
+    padding: 116px 0px 116px 20px;
+    margin-top: 116px;
+    margin-left: 0px;
+  }
+  .pulse .yt_pulse_beyondparkour_related .andyp-grid__cell-date {
+    background-color: transparent;
+  }
+  .pulse .yt_pulse_beyondparkour_related .andyp-grid__cell-title {
+    background-color: transparent;
+  }
+}
 @media (max-width: 1023px) {
   .pulse .yt_pulse_learn .andyp-grid__cell-date {
     background-color: transparent;
@@ -25253,6 +25225,288 @@ a:hover, a:active {
   .pulse .yt_pulse_learn .andyp-grid__cell-title {
     background-color: transparent;
   }
+}
+
+@media (max-width: 767px) {
+  .pulse .flickity-page-dots {
+    bottom: 0px;
+  }
+  .pulse .andyp-grid {
+    border-radius: 4px;
+    margin-top: 29px;
+  }
+  .pulse .andyp-grid__cell-date {
+    display: none;
+  }
+  .pulse .andyp-grid__cell-icon {
+    display: none;
+  }
+  .pulse .andyp-grid__cell-title {
+    padding: 10px !important;
+    background: #ffffff;
+    color: #242424;
+  }
+  .pulse .andyp-grid__cell-image {
+    background-position: 50% 100%;
+  }
+  .pulse .andyp-grid .flickity-prev-next-button {
+    display: none;
+  }
+  .pulse aside.widget-area,
+.pulse .andyp-grid.pulse_header {
+    display: none;
+  }
+  .pulse .pulse_yt_parkourpulse_playlists .andyp-grid__cell-title {
+    padding: 0px !important;
+    color: #ffffff;
+  }
+  .pulse .pulse_yt_parkourpulse_subscriptions .floorfade {
+    padding: 0px 10px !important;
+  }
+  .pulse .yt_pulse_beyondparkour .floorfade {
+    padding: 0px 10px !important;
+    background: #ffffff !important;
+    color: #242424 !important;
+    bottom: 0px !important;
+    border-radius: 0px 0px 4px 4px !important;
+  }
+  .pulse .yt_pulse_learn .andyp-grid__cell-title {
+    color: #ffffff;
+  }
+  .pulse .yt_pulse_learn .flickity-page-dots {
+    bottom: 29px !important;
+  }
+}
+.pulse .andyp-grid__cell-channel {
+  font-size: 2em;
+  position: absolute;
+  top: 29px;
+  left: 50%;
+  color: #ffffff;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+}
+.pulse .andyp-grid__cell-title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 29px 25% 0px 35px;
+}
+.pulse .pulse_header .andyp-grid__cell {
+  background: #000;
+}
+.pulse .pulse_header .andyp-grid__cell-link {
+  margin-bottom: 0px;
+}
+.pulse .pulse_header .andyp-grid__cell-sideblend {
+  display: block;
+  background: linear-gradient(to right, #000, #000 25%, rgba(0, 0, 0, 0) 60%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.pulse .pulse_header .andyp-grid__cell-image {
+  background-size: auto 700px;
+  background-position: right;
+}
+.pulse .pulse_header .andyp-grid__cell-meta {
+  color: #f5f5f5;
+}
+.pulse .pulse_header .andyp-grid__cell-info {
+  position: absolute;
+  top: 29px;
+  left: 8.33%;
+  width: 25%;
+  padding: 29px 0px;
+}
+.pulse .pulse_header .andyp-grid__cell-channeltitle {
+  margin-bottom: 29px;
+}
+.pulse .pulse_header .andyp-grid__cell-title {
+  height: initial;
+  padding: 0px;
+  line-height: 29px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-left: 0px;
+  border-radius: initial;
+  font-size: 29px;
+  white-space: initial;
+}
+.pulse .pulse_header .andyp-grid__cell-date {
+  left: 0px;
+  padding: 0px;
+  color: #D0C8B3;
+}
+.pulse .pulse_yt_parkourpulse_playlists {
+  padding: 116px 0px 116px 116px;
+  background: #000;
+  margin-top: 116px;
+  margin-left: -20%;
+}
+.pulse .pulse_yt_parkourpulse_playlists .andyp-grid__cell-image {
+  background-size: 100%;
+}
+.pulse .pulse_yt_parkourpulse_playlists .andyp-grid__cell-overlay {
+  background-color: initial;
+}
+.pulse .pulse_yt_parkourpulse_playlists .andyp-grid__cell-title {
+  padding: 0px;
+  height: initial;
+  border-radius: 0px;
+  position: relative;
+  line-height: 58px;
+}
+.pulse .pulse_yt_parkourpulse_playlists .andyp-grid__cell-icon {
+  line-height: initial;
+  top: 116px;
+}
+.pulse .pulse_yt_parkourpulse_playlists .andyp-grid__cell-description {
+  color: #757575;
+}
+.pulse .pulse_yt_parkourpulse_playlists .andyp-grid__cell-date {
+  position: relative;
+  right: initial;
+  padding: initial;
+}
+.pulse .pulse_yt_parkourpulse_playlists .flickity-page-dots {
+  bottom: -58px;
+}
+.pulse .pulse_yt_parkourpulse_playlists .flickity-page-dots .dot {
+  background: #757575;
+}
+.pulse .pulse_yt_parkourpulse_subscriptions .andyp-grid__cell-title {
+  color: #fff;
+  height: 29px;
+  max-width: 100%;
+  overflow: hidden;
+  position: absolute;
+  bottom: 29px;
+  width: auto;
+  border-radius: 0px;
+  text-align: center;
+  line-height: 29px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0px 20px;
+  background: rgba(36, 36, 36, 0.5) !important;
+}
+.pulse .pulse_yt_parkourpulse_subscriptions .andyp-grid__cell-title .andyp-grid__cell-icon {
+  display: none;
+}
+.pulse .pulse_yt_parkourpulse_subscriptions .andyp-grid__cell-image {
+  border-radius: 50%;
+}
+.pulse .pulse_yt_parkourpulse_subscriptions .floorfade {
+  background: none;
+}
+.pulse .pulse_yt_parkourpulse_subscriptions .andyp-grid__cell-date {
+  display: none;
+}
+.pulse .pulse_yt_parkourpulse_subscriptions .andyp-grid__cell-overlay {
+  background: transparent;
+}
+.pulse .yt_pulse_beyondparkour .andyp-grid__cell-title {
+  color: #fff;
+  height: 29px;
+  padding: 0px 0px 0px 24px;
+  line-height: 29px;
+  overflow: hidden;
+  position: absolute;
+  bottom: -29px;
+  width: 100%;
+  border-radius: 0px;
+}
+.pulse .yt_pulse_beyondparkour .andyp-grid__cell-icon {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  line-height: 27px;
+  font-size: 18px;
+  color: #fff;
+}
+.pulse .yt_pulse_beyondparkour .andyp-grid__cell-date {
+  display: none;
+}
+.pulse .yt_pulse_beyondparkour .andyp-grid__cell-overlay {
+  background: transparent;
+}
+.pulse .yt_pulse_beyondparkour .floorfade {
+  background: none;
+}
+.pulse .yt_pulse_beyondparkour_related {
+  padding: 116px 0px 116px 116px;
+  background: #F5F5F5;
+  margin-top: 116px;
+  margin-left: -20%;
+}
+.pulse .yt_pulse_beyondparkour_related .andyp-grid__cell-overlay .andyp-grid__cell-icon {
+  color: #38EF7D;
+}
+.pulse .yt_pulse_beyondparkour_related .andyp-grid__cell-image {
+  background-size: 100%;
+}
+.pulse .yt_pulse_beyondparkour_related .andyp-grid__cell-overlay {
+  background-color: initial;
+}
+.pulse .yt_pulse_beyondparkour_related .andyp-grid__cell-title {
+  padding: 0px;
+  height: initial;
+  border-radius: 0px;
+  position: relative;
+  line-height: 58px;
+  color: #242424;
+}
+.pulse .yt_pulse_beyondparkour_related .andyp-grid__cell-icon {
+  line-height: initial;
+  top: 116px;
+}
+.pulse .yt_pulse_beyondparkour_related .andyp-grid__cell-description {
+  color: #757575;
+}
+.pulse .yt_pulse_beyondparkour_related .andyp-grid__cell-date {
+  position: relative;
+  right: initial;
+  padding: initial;
+}
+.pulse .yt_pulse_beyondparkour_related .flickity-page-dots {
+  bottom: -58px;
+}
+.pulse .yt_pulse_beyondparkour_related .flickity-page-dots .dot {
+  background: #757575;
+}
+.pulse .yt_pulse_learn .andyp-grid__cell-image {
+  background-size: 100%;
+}
+.pulse .yt_pulse_learn .andyp-grid__cell-overlay {
+  background-color: initial;
+}
+.pulse .yt_pulse_learn .andyp-grid__cell-title {
+  padding: 0px;
+  height: initial;
+  border-radius: 0px;
+  position: relative;
+  line-height: 58px;
+}
+.pulse .yt_pulse_learn .andyp-grid__cell-icon {
+  line-height: initial;
+  top: 116px;
+}
+.pulse .yt_pulse_learn .andyp-grid__cell-description {
+  color: #757575;
+}
+.pulse .yt_pulse_learn .andyp-grid__cell-date {
+  position: relative;
+  right: initial;
+  padding: initial;
+}
+.pulse .yt_pulse_learn .flickity-page-dots {
+  bottom: -58px;
+}
+.pulse .yt_pulse_learn .flickity-page-dots .dot {
+  background: #757575;
 }
 
 .ig-news__container .ig-news {

@@ -33,62 +33,6 @@
         }
     }
 
-    @media (max-width: $tablet){
-
-        .andyp-grid {
-
-            padding-left: 20px;
-
-            // Don't move the time and dates.
-            &__cell-date {
-                margin-bottom: 0px;
-                top: 0;
-                background-color: rgba(0,0,0,0.6);
-            }
-            &__cell-title {
-                padding: 29px 10px 0px 35px;
-            }
-
-        }
-
-        // Push curated down for the mobile menu.
-        #pulse_yt_curated {
-            margin-top: 116px;
-        }
-
-        // orange logo.
-        .site-header .main-navigation ul.nav-menu li.logo__londonparkour a {
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='none'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' stroke='%23E86546' stroke-width='8'/%3E%3C/g%3E%3C/svg%3E");
-        }
-
-        .site-content .content-area {
-            float: none;
-            margin: 0px;
-            padding: 0px 0px 0px 0px;
-            width: 100%;
-        }
-    }
-
-    @media (max-width: $mobile){
-        .andyp-grid {
-
-            // Don't move the time and dates.
-            &__cell-icon {
-                display: none;
-            }
-            &__cell-title {
-                padding: 5px;
-            }
-
-            .flickity-prev-next-button {
-                top: -58px;
-            }
-        }
-
-    }
-
-
-
     // ┌─────────────────────────────────────────────────────────────────────────┐ 
     // │                                                                         │░
     // │                                                                         │░
@@ -157,57 +101,6 @@
             }
         }
 
-        @media (max-width: $tablet)
-        {
-            margin-bottom:29px;
-            top: initial;
-            bottom: initial;
-            background: initial;
-            padding-left: 0px;
-
-            .andyp-grid__cell {
-                &-date {
-                    top: initial;
-                }
-                &-image {
-                    background-size: contain; 
-                    background-position: center -40px;
-                }
-                &-link {
-                    background-image: none;
-                }
-            }
-
-        }
-
-        @media (max-width: $mobile)
-        {
-            .andyp-grid {
-                &__cell-info {
-                    top: initial;
-                    bottom: 0;
-                    left: 0;
-                    padding: 20px;
-                    width: 100%;    
-
-                    h2 {
-                        font-size: 29px;
-
-                    }
-                }
-                &__cell-title {
-                    background-color: transparent;
-                }
-                &__cell-date {
-                    display: none;
-                }
-                &__cell-sideblend {
-                    background: linear-gradient(to top, #242424 10%, rgba(0, 0, 0, 0) 40%);
-                }
-
-            }
-        }
-
     }
 
 
@@ -268,20 +161,6 @@
             }
         }
 
-        @media (max-width: $tablet){
-    
-            padding: 116px 0px 116px 20px;
-            margin-top: 116px;
-            margin-left: 0px;
-
-            .andyp-grid__cell-date {
-                background-color: transparent;
-            }
-            .andyp-grid__cell-title {
-                background-color: transparent;
-            }
-            
-        }
     }
     
 
@@ -434,21 +313,6 @@
                 background: #757575;
             }
         }
-
-        @media (max-width: $tablet){
-
-            padding: 116px 0px 116px 20px;
-            margin-top: 116px;
-            margin-left: 0px;
-
-            .andyp-grid__cell-date {
-                background-color: transparent;
-            }
-            .andyp-grid__cell-title {
-                background-color: transparent;
-            }
-            
-        }
     }
     
 
@@ -500,19 +364,6 @@
             .dot {
                 background: #757575;
             }
-        }
-
-        @media (max-width: $tablet){
-    
-            .andyp-grid{
-                &__cell-date {
-                    background-color: transparent;
-                }
-                &__cell-title {
-                    background-color: transparent;
-                }
-            }
-        
         }
     }
 }
