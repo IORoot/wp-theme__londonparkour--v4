@@ -50,7 +50,7 @@ function update_main_menu_pulse_image($scrape)
 
     if ($image_id){
         // Update the postmeta ID for the menu image.
-        update_metadata_by_mid('post', 177153, $image_id);
+        update_metadata_by_mid('post', 115599, $image_id);
     }
 
     return;
