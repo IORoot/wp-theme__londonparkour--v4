@@ -111,3 +111,8 @@ require get_template_directory() . '/inc/article_grid_filters.php';
  * Turn off notifications for ACF and Forms Pro
  */
 require get_template_directory() . '/inc/turn_off_plugin_updates.php';
+
+/**
+ * ACTIONS
+ */
+require get_template_directory() . '/actions/yt_action_post_process.php';
