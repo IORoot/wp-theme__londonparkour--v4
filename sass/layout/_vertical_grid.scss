@@ -50,6 +50,7 @@
         }
     }
 
+    // bottom
     &b {
         @for $i from 0 to 8 { 
             &__#{$i+1} { padding-bottom: lh($i+1)}

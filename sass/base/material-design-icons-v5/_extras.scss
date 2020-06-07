@@ -33,22 +33,6 @@ $mdi-degrees: 45 90 135 180 225 270 315;
             -ms-transform: rotate(#{$mdi-degree}deg);
             transform: rotate(#{$mdi-degree}deg);
         }
-        /*
-        // Not included in production
-        &.#{$mdi-css-prefix}-flip-h:before {
-            -webkit-transform: scaleX(-1) rotate(#{$mdi-degree}deg);
-            transform: scaleX(-1) rotate(#{$mdi-degree}deg);
-            filter: FlipH;
-            -ms-filter: "FlipH";
-        }
-        &.#{$mdi-css-prefix}-flip-v:before {
-            -webkit-transform: scaleY(-1) rotate(#{$mdi-degree}deg);
-            -ms-transform: rotate(#{$mdi-degree}deg);
-            transform: scaleY(-1) rotate(#{$mdi-degree}deg);
-            filter: FlipV;
-            -ms-filter: "FlipV";
-        }
-        */
     }
 }
 .#{$mdi-css-prefix}-flip-h:before {

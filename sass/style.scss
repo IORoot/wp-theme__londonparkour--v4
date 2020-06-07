@@ -38,6 +38,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	@import "abstracts/mixins/fx";
 	@import "abstracts/mixins/background_images";
 
+@import "abstracts/colors_utility";
+
 /*--------------------------------------------------------------
 # Base
 --------------------------------------------------------------*/
@@ -47,6 +49,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "base/fonts";
 @import "base/accessibility";
 @import "base/clearings"; 
+@import "base/visibility"; 
 
 /*--------------------------------------------------------------
 # Components
@@ -124,11 +127,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # vendor
 --------------------------------------------------------------*/
 @import "vendor/js_composer"; 
-@import "vendor/semantic_ui"; 
+// @import "vendor/semantic_ui"; 
 @import "vendor/anime_js"; 
 @import "vendor/tb_calendar"; 
 @import "vendor/stripe_products"; 
 @import "vendor/wpmi"; 
-@import "vendor/pearson_fx/fx_kenburns";
+@import "vendor/pearson_fx/fx_kenburns"; 
 @import "vendor/pearson_fx/fx_liftup"; 
 @import "vendor/pearson_fx/fx_floorfade"; 
