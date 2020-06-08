@@ -54,6 +54,14 @@
         }
     }
 
+    h2 .mdi {
+        filter: url(#night);
+        height: 29px;
+        width: 29px;
+        vertical-align: baseline;
+        margin-right: 10px;
+    }
+
     // Mobile view
     @media (max-width: $tablet) {
 

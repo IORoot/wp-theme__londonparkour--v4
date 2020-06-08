@@ -1,0 +1,48 @@
+.button {
+
+    display: block;
+    text-align: center;
+    line-height: 58px;
+    padding: 0px 29px;
+    text-decoration: none;
+    transition:.25s ease-in-out;
+
+    &:hover {
+        span {
+            border-bottom: 1px solid;
+        }
+    }
+
+    &__arrow {
+
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        vertical-align: sub;
+        background-position: center;
+        display: inline-block;
+
+        &--up::after {
+            @extend .button__arrow;
+            background-image: get-icon( 'chevron-up', #FFFFFF );
+        }
+
+        &--right::after {
+            @extend .button__arrow;
+            background-image: get-icon( 'chevron-right', #FFFFFF );
+        }
+
+        &--down::after {
+            @extend .button__arrow;
+            background-image: get-icon( 'chevron-down', #FFFFFF );
+        }
+
+        &--left::before {
+            @extend .button__arrow;
+            background-image: get-icon( 'chevron-left', #FFFFFF );
+        }
+
+    }
+
+}

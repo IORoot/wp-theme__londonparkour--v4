@@ -39,6 +39,13 @@
                                     background-color: #F5F5F5;
                                 }
                                 a {
+
+                                    .mdi {
+                                        filter: url(#night);
+                                        height: 19px;
+                                        margin-right: 5px;
+                                    }
+
                                     &.menu-item-link {
                                         text-decoration: none;
                                         color: #242424;

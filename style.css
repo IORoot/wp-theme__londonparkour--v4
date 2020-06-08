@@ -568,12 +568,174 @@ code {
   filter: url(#android);
 }
 
+.mdi__pseudo--sky::after {
+  filter: url(#sky);
+}
+.mdi__pseudo--lavender::after {
+  filter: url(#lavender);
+}
+.mdi__pseudo--pink::after {
+  filter: url(#pink);
+}
+.mdi__pseudo--aqua::after {
+  filter: url(#aqua);
+}
+.mdi__pseudo--goo::after {
+  filter: url(#goo);
+}
+.mdi__pseudo--crayon::after {
+  filter: url(#crayon);
+}
+.mdi__pseudo--rose::after {
+  filter: url(#rose);
+}
+.mdi__pseudo--black::after {
+  filter: url(#black);
+}
+.mdi__pseudo--night::after {
+  filter: url(#night);
+}
+.mdi__pseudo--fog::after {
+  filter: url(#fog);
+}
+.mdi__pseudo--smoke::after {
+  filter: url(#smoke);
+}
+.mdi__pseudo--commando::after {
+  filter: url(#commando);
+}
+.mdi__pseudo--mist::after {
+  filter: url(#mist);
+}
+.mdi__pseudo--ghost::after {
+  filter: url(#ghost);
+}
+.mdi__pseudo--halo::after {
+  filter: url(#halo);
+}
+.mdi__pseudo--white::after {
+  filter: url(#white);
+}
+.mdi__pseudo--yellow::after {
+  filter: url(#yellow);
+}
+.mdi__pseudo--trustpilot::after {
+  filter: url(#trustpilot);
+}
+.mdi__pseudo--stripe::after {
+  filter: url(#stripe);
+}
+.mdi__pseudo--github::after {
+  filter: url(#github);
+}
+.mdi__pseudo--letsencrypt::after {
+  filter: url(#letsencrypt);
+}
+.mdi__pseudo--digitalocean::after {
+  filter: url(#digitalocean);
+}
+.mdi__pseudo--youtube::after {
+  filter: url(#youtube);
+}
+.mdi__pseudo--instagram::after {
+  filter: url(#instagram);
+}
+.mdi__pseudo--apple::after {
+  filter: url(#apple);
+}
+.mdi__pseudo--android::after {
+  filter: url(#android);
+}
+
+.mdi__pseudo--sky::before {
+  filter: url(#sky);
+}
+.mdi__pseudo--lavender::before {
+  filter: url(#lavender);
+}
+.mdi__pseudo--pink::before {
+  filter: url(#pink);
+}
+.mdi__pseudo--aqua::before {
+  filter: url(#aqua);
+}
+.mdi__pseudo--goo::before {
+  filter: url(#goo);
+}
+.mdi__pseudo--crayon::before {
+  filter: url(#crayon);
+}
+.mdi__pseudo--rose::before {
+  filter: url(#rose);
+}
+.mdi__pseudo--black::before {
+  filter: url(#black);
+}
+.mdi__pseudo--night::before {
+  filter: url(#night);
+}
+.mdi__pseudo--fog::before {
+  filter: url(#fog);
+}
+.mdi__pseudo--smoke::before {
+  filter: url(#smoke);
+}
+.mdi__pseudo--commando::before {
+  filter: url(#commando);
+}
+.mdi__pseudo--mist::before {
+  filter: url(#mist);
+}
+.mdi__pseudo--ghost::before {
+  filter: url(#ghost);
+}
+.mdi__pseudo--halo::before {
+  filter: url(#halo);
+}
+.mdi__pseudo--white::before {
+  filter: url(#white);
+}
+.mdi__pseudo--yellow::before {
+  filter: url(#yellow);
+}
+.mdi__pseudo--trustpilot::before {
+  filter: url(#trustpilot);
+}
+.mdi__pseudo--stripe::before {
+  filter: url(#stripe);
+}
+.mdi__pseudo--github::before {
+  filter: url(#github);
+}
+.mdi__pseudo--letsencrypt::before {
+  filter: url(#letsencrypt);
+}
+.mdi__pseudo--digitalocean::before {
+  filter: url(#digitalocean);
+}
+.mdi__pseudo--youtube::before {
+  filter: url(#youtube);
+}
+.mdi__pseudo--instagram::before {
+  filter: url(#instagram);
+}
+.mdi__pseudo--apple::before {
+  filter: url(#apple);
+}
+.mdi__pseudo--android::before {
+  filter: url(#android);
+}
+
 .mdi-chevron-left {
   background-image: url('data:image/svg+xml;utf-8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%23FFFFFF" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"/></svg>');
 }
 
 .mdi-chevron-right {
   background-image: url('data:image/svg+xml;utf-8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%23FFFFFF" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>');
+}
+
+.mdi-chevron-up {
+  background-image: url('data:image/svg+xml;utf-8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%23FFFFFF" d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z"/></svg>');
 }
 
 .mdi-help-circle-outline {
@@ -1170,6 +1332,39 @@ textarea {
 .article__breadcrumbs * {
   font-size: 12px;
   color: #fff !important;
+}
+
+.button {
+  display: block;
+  text-align: center;
+  line-height: 58px;
+  padding: 0px 29px;
+  text-decoration: none;
+  transition: 0.25s ease-in-out;
+}
+.button:hover span {
+  border-bottom: 1px solid;
+}
+.button__arrow, .button__arrow--left::before, .button__arrow--down::after, .button__arrow--right::after, .button__arrow--up::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  vertical-align: sub;
+  background-position: center;
+  display: inline-block;
+}
+.button__arrow--up::after {
+  background-image: url('data:image/svg+xml;utf-8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%23FFFFFF" d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z"/></svg>');
+}
+.button__arrow--right::after {
+  background-image: url('data:image/svg+xml;utf-8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%23FFFFFF" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>');
+}
+.button__arrow--down::after {
+  background-image: url('data:image/svg+xml;utf-8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%23FFFFFF" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>');
+}
+.button__arrow--left::before {
+  background-image: url('data:image/svg+xml;utf-8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%23FFFFFF" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"/></svg>');
 }
 
 .wp-caption {
@@ -1772,6 +1967,11 @@ a:hover, a:active {
 .widget-area .widget_nav_menu .menu-wiki-container ul.menu li.menu-item-level-1 ul.sub-menu li.menu-item-level-2.menu-item-current {
   background-color: #F5F5F5;
 }
+.widget-area .widget_nav_menu .menu-wiki-container ul.menu li.menu-item-level-1 ul.sub-menu li.menu-item-level-2 a .mdi {
+  filter: url(#night);
+  height: 19px;
+  margin-right: 5px;
+}
 .widget-area .widget_nav_menu .menu-wiki-container ul.menu li.menu-item-level-1 ul.sub-menu li.menu-item-level-2 a.menu-item-link {
   text-decoration: none;
   color: #242424;
@@ -2149,9 +2349,8 @@ a:hover, a:active {
 }
 .main-navigation ul.menu > li.menu-item ul.sub-menu .menu-item a .mdi,
 .main-navigation ul.nav-menu > li.menu-item ul.sub-menu .menu-item a .mdi {
-  width: 29px;
-  font-size: 18px;
-  padding-right: 5px;
+  width: 24px;
+  height: 18px;
   filter: url(#night);
 }
 .main-navigation ul.menu > li.menu-item ul.sub-menu .menu-item a:hover,
@@ -4602,6 +4801,13 @@ a:hover, a:active {
   border: 0px;
   width: 100%;
   margin-right: 29px;
+}
+.single-post h2 .mdi {
+  filter: url(#night);
+  height: 29px;
+  width: 29px;
+  vertical-align: baseline;
+  margin-right: 10px;
 }
 @media (max-width: 1024px) {
   .single-post .sidemenu__desktop {

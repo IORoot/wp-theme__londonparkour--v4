@@ -26,6 +26,7 @@ $icons: (
     // Base
     'chevron-left': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"/></svg>',
     'chevron-right': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>',
+    'chevron-up': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z"/></svg>',
     'help-circle-outline': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M11,18H13V16H11V18M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,6A4,4 0 0,0 8,10H10A2,2 0 0,1 12,8A2,2 0 0,1 14,10C14,12 11,11.75 11,15H13C13,12.75 16,12.5 16,10A4,4 0 0,0 12,6Z"/></svg>',
     'plus-circle-outline': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z"/></svg>',
     'close': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"/></svg>',
@@ -103,12 +104,18 @@ $icons: (
     
 );
 
-.mdi {
-    @include svgmodifier();
-}
+// Allow for colour filter modifications.
+.mdi {  @include svgmodifier(); }
+// target icons in ::after
+// allows you to color .mdi__pseudo--aqua
+.mdi__pseudo {  @include svgmodifier('::after'); }
+// target icons in ::before and colour them.
+// allows you to color .mdi__pseudo--sky
+.mdi__pseudo {  @include svgmodifier('::before'); } 
 
 .mdi-chevron-left { background-image: get-icon( 'chevron-left', #FFFFFF ); }
 .mdi-chevron-right { background-image: get-icon( 'chevron-right', #FFFFFF ); }
+.mdi-chevron-up { background-image: get-icon( 'chevron-up', #FFFFFF ); }
 .mdi-help-circle-outline { background-image: get-icon( 'help-circle-outline', #FFFFFF ); }
 .mdi-plus-circle-outline { background-image: get-icon( 'plus-circle-outline', #FFFFFF ); }
 .mdi-close { background-image: get-icon( 'close', #FFFFFF ); }
