@@ -1,0 +1,180 @@
+//  ┌─────────────────────────────────────────────────────────────────────────┐
+//  │                                                                         │░
+//  │                                                                         │░
+//  │                          MATERIAL SVG ICONS                             │░
+//  │                                                                         │░
+//  │                                                                         │░
+//  └─────────────────────────────────────────────────────────────────────────┘░
+//   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+//
+// Version 5
+// Google are being shit and don't update the repo with latest icons.
+// Go here instead:
+//
+// https://petershaggynoble.github.io/MDI-Sandbox/
+
+.mdi { 
+    display: inline-block; 
+    white-space: nowrap; 
+    background-repeat: no-repeat;
+    vertical-align: sub;
+    width: 16px;
+    height: 16px;
+}
+
+$icons: (
+    // Base
+    'chevron-left': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"/></svg>',
+    'chevron-right': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>',
+    'help-circle-outline': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M11,18H13V16H11V18M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,6A4,4 0 0,0 8,10H10A2,2 0 0,1 12,8A2,2 0 0,1 14,10C14,12 11,11.75 11,15H13C13,12.75 16,12.5 16,10A4,4 0 0,0 12,6Z"/></svg>',
+    'plus-circle-outline': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z"/></svg>',
+    'close': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"/></svg>',
+    'youtube-subscriptions': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M20,8H4V6H20V8M18,2H6V4H18V2M22,12V20A2,2 0 0,1 20,22H4A2,2 0 0,1 2,20V12A2,2 0 0,1 4,10H20A2,2 0 0,1 22,12M16,16L10,12.73V19.26L16,16Z"/></svg>',
+    'hand-pointing-up': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M14,3V13L17.2,11.31L17.42,11.28C17.71,11.28 17.97,11.4 18.16,11.6L18.9,12.37L14,16.57C13.74,16.84 13.39,17 13,17H6.5C5.73,17 5,16.3 5,15.5V11.14C5,10.53 5.35,10 5.85,9.8L10.79,7.6L12,7.47V3A1,1 0 0,1 13,2A1,1 0 0,1 14,3M5,19H13V22H5V19Z"/></svg>',
+    'star': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"/></svg>',
+    
+    // Classes
+    'plus-one': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M10,8V12H14V14H10V18H8V14H4V12H8V8H10M14.5,6.08L19,5V18H17V7.4L14.5,7.9V6.08Z"/></svg>',
+    'police-badge': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M22 4L20 2C18.85 2.64 17.4 3 16 3C14.6 3 13.14 2.63 12 2C10.86 2.63 9.4 3 8 3C6.6 3 5.15 2.64 4 2L2 4C2 4 4 6 4 8S2 14 2 16C2 20 12 22 12 22S22 20 22 16C22 14 20 10 20 8S22 4 22 4M15.05 16.45L11.97 14.59L8.9 16.45L9.72 12.95L7 10.61L10.58 10.3L11.97 7L13.37 10.29L16.95 10.6L14.23 12.94L15.05 16.45Z"/></svg>',
+    'shield-half-full': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M21,11C21,16.55 17.16,21.74 12,23C6.84,21.74 3,16.55 3,11V5L12,1L21,5V11M12,21C15.75,20 19,15.54 19,11.22V6.3L12,3.18V21Z"/></svg>',
+    'wrench': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M22.7,19L13.6,9.9C14.5,7.6 14,4.9 12.1,3C10.1,1 7.1,0.6 4.7,1.7L9,6L6,9L1.6,4.7C0.4,7.1 0.9,10.1 2.9,12.1C4.8,14 7.5,14.5 9.8,13.6L18.9,22.7C19.3,23.1 19.9,23.1 20.3,22.7L22.6,20.4C23.1,20 23.1,19.3 22.7,19Z"/></svg>',
+    'map': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M15,19L9,16.89V5L15,7.11M20.5,3C20.44,3 20.39,3 20.34,3L15,5.1L9,3L3.36,4.9C3.15,4.97 3,5.15 3,5.38V20.5A0.5,0.5 0 0,0 3.5,21C3.55,21 3.61,21 3.66,20.97L9,18.9L15,21L20.64,19.1C20.85,19 21,18.85 21,18.62V3.5A0.5,0.5 0 0,0 20.5,3Z"/></svg>',
+    'email': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/></svg>',
+    'instagram': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"/></svg>',
+    
+    // Articles
+    'view-quilt': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M10,5V11H21V5M16,18H21V12H16M4,18H9V5H4M10,18H15V12H10V18Z"/></svg>',
+    'filmstrip': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M18,9H16V7H18M18,13H16V11H18M18,17H16V15H18M8,9H6V7H8M8,13H6V11H8M8,17H6V15H8M18,3V5H16V3H8V5H6V3H4V21H6V19H8V21H16V19H18V21H20V3H18Z"/></svg>',
+    'play-circle-outline': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M10,16.5L16,12L10,7.5V16.5Z"/></svg>',
+    'widgets': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M3,3H11V7.34L16.66,1.69L22.31,7.34L16.66,13H21V21H13V13H16.66L11,7.34V11H3V3M3,13H11V21H3V13Z"/></svg>',
+    'eye': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z"/></svg>',
+    'apps': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M16,20H20V16H16M16,14H20V10H16M10,8H14V4H10M16,8H20V4H16M10,14H14V10H10M4,14H8V10H4M4,20H8V16H4M10,20H14V16H10M4,8H8V4H4V8Z"/></svg>',
+    
+    // Main menu
+    'menu': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"/></svg>',
+    'chevron-down': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>',
+    'fingerprint': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M17.81,4.47C17.73,4.47 17.65,4.45 17.58,4.41C15.66,3.42 14,3 12,3C10.03,3 8.15,3.47 6.44,4.41C6.2,4.54 5.9,4.45 5.76,4.21C5.63,3.97 5.72,3.66 5.96,3.53C7.82,2.5 9.86,2 12,2C14.14,2 16,2.47 18.04,3.5C18.29,3.65 18.38,3.95 18.25,4.19C18.16,4.37 18,4.47 17.81,4.47M3.5,9.72C3.4,9.72 3.3,9.69 3.21,9.63C3,9.47 2.93,9.16 3.09,8.93C4.08,7.53 5.34,6.43 6.84,5.66C10,4.04 14,4.03 17.15,5.65C18.65,6.42 19.91,7.5 20.9,8.9C21.06,9.12 21,9.44 20.78,9.6C20.55,9.76 20.24,9.71 20.08,9.5C19.18,8.22 18.04,7.23 16.69,6.54C13.82,5.07 10.15,5.07 7.29,6.55C5.93,7.25 4.79,8.25 3.89,9.5C3.81,9.65 3.66,9.72 3.5,9.72M9.75,21.79C9.62,21.79 9.5,21.74 9.4,21.64C8.53,20.77 8.06,20.21 7.39,19C6.7,17.77 6.34,16.27 6.34,14.66C6.34,11.69 8.88,9.27 12,9.27C15.12,9.27 17.66,11.69 17.66,14.66A0.5,0.5 0 0,1 17.16,15.16A0.5,0.5 0 0,1 16.66,14.66C16.66,12.24 14.57,10.27 12,10.27C9.43,10.27 7.34,12.24 7.34,14.66C7.34,16.1 7.66,17.43 8.27,18.5C8.91,19.66 9.35,20.15 10.12,20.93C10.31,21.13 10.31,21.44 10.12,21.64C10,21.74 9.88,21.79 9.75,21.79M16.92,19.94C15.73,19.94 14.68,19.64 13.82,19.05C12.33,18.04 11.44,16.4 11.44,14.66A0.5,0.5 0 0,1 11.94,14.16A0.5,0.5 0 0,1 12.44,14.66C12.44,16.07 13.16,17.4 14.38,18.22C15.09,18.7 15.92,18.93 16.92,18.93C17.16,18.93 17.56,18.9 17.96,18.83C18.23,18.78 18.5,18.96 18.54,19.24C18.59,19.5 18.41,19.77 18.13,19.82C17.56,19.93 17.06,19.94 16.92,19.94M14.91,22C14.87,22 14.82,22 14.78,22C13.19,21.54 12.15,20.95 11.06,19.88C9.66,18.5 8.89,16.64 8.89,14.66C8.89,13.04 10.27,11.72 11.97,11.72C13.67,11.72 15.05,13.04 15.05,14.66C15.05,15.73 16,16.6 17.13,16.6C18.28,16.6 19.21,15.73 19.21,14.66C19.21,10.89 15.96,7.83 11.96,7.83C9.12,7.83 6.5,9.41 5.35,11.86C4.96,12.67 4.76,13.62 4.76,14.66C4.76,15.44 4.83,16.67 5.43,18.27C5.53,18.53 5.4,18.82 5.14,18.91C4.88,19 4.59,18.87 4.5,18.62C4,17.31 3.77,16 3.77,14.66C3.77,13.46 4,12.37 4.45,11.42C5.78,8.63 8.73,6.82 11.96,6.82C16.5,6.82 20.21,10.33 20.21,14.65C20.21,16.27 18.83,17.59 17.13,17.59C15.43,17.59 14.05,16.27 14.05,14.65C14.05,13.58 13.12,12.71 11.97,12.71C10.82,12.71 9.89,13.58 9.89,14.65C9.89,16.36 10.55,17.96 11.76,19.16C12.71,20.1 13.62,20.62 15.03,21C15.3,21.08 15.45,21.36 15.38,21.62C15.33,21.85 15.12,22 14.91,22Z"/></svg>',
+    'ticket': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M15.58,16.8L12,14.5L8.42,16.8L9.5,12.68L6.21,10L10.46,9.74L12,5.8L13.54,9.74L17.79,10L14.5,12.68M20,12C20,10.89 20.9,10 22,10V6C22,4.89 21.1,4 20,4H4A2,2 0 0,0 2,6V10C3.11,10 4,10.9 4,12A2,2 0 0,1 2,14V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V14A2,2 0 0,1 20,12Z"/></svg>',
+    'account-group': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20Z"/></svg>',
+    'shield-star': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1M15.08 16L12 14.15L8.93 16L9.74 12.5L7.03 10.16L10.61 9.85L12 6.55L13.39 9.84L16.97 10.15L14.26 12.5L15.08 16Z"/></svg>',
+    'pulse': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M3,13H5.79L10.1,4.79L11.28,13.75L14.5,9.66L17.83,13H21V15H17L14.67,12.67L9.92,18.73L8.94,11.31L7,15H3V13Z"/></svg>',
+    'new-box': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M20,4C21.11,4 22,4.89 22,6V18C22,19.11 21.11,20 20,20H4C2.89,20 2,19.11 2,18V6C2,4.89 2.89,4 4,4H20M8.5,15V9H7.25V12.5L4.75,9H3.5V15H4.75V11.5L7.3,15H8.5M13.5,10.26V9H9.5V15H13.5V13.75H11V12.64H13.5V11.38H11V10.26H13.5M20.5,14V9H19.25V13.5H18.13V10H16.88V13.5H15.75V9H14.5V14A1,1 0 0,0 15.5,15H19.5A1,1 0 0,0 20.5,14Z"/></svg>',
+    'book-open': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M13,12H20V13.5H13M13,9.5H20V11H13M13,14.5H20V16H13M21,4H3A2,2 0 0,0 1,6V19A2,2 0 0,0 3,21H21A2,2 0 0,0 23,19V6A2,2 0 0,0 21,4M21,19H12V6H21"/></svg>',
+    'play-circle': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M10,16.5V7.5L16,12M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/></svg>',
+    'email-plus': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M3,4C1.89,4 1,4.89 1,6V18A2,2 0 0,0 3,20H14.09C14.03,19.67 14,19.34 14,19A6,6 0 0,1 20,13C20.34,13 20.67,13.03 21,13.09V6C21,4.89 20.1,4 19,4H3M3,6L11,11L19,6V8L11,13L3,8V6M19,15V18H16V20H19V23H21V20H24V18H21V15H19Z"/></svg>',
+    'book-information-variant': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M18 2H12V9L9.5 7.5L7 9V2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V4C20 2.89 19.1 2 18 2M17.68 18.41C17.57 18.5 16.47 19.25 16.05 19.5C15.63 19.79 14 20.72 14.26 18.92C14.89 15.28 16.11 13.12 14.65 14.06C14.27 14.29 14.05 14.43 13.91 14.5C13.78 14.61 13.79 14.6 13.68 14.41S13.53 14.23 13.67 14.13C13.67 14.13 15.9 12.34 16.72 12.28C17.5 12.21 17.31 13.17 17.24 13.61C16.78 15.46 15.94 18.15 16.07 18.54C16.18 18.93 17 18.31 17.44 18C17.44 18 17.5 17.93 17.61 18.05C17.72 18.22 17.83 18.3 17.68 18.41M16.97 11.06C16.4 11.06 15.94 10.6 15.94 10.03C15.94 9.46 16.4 9 16.97 9C17.54 9 18 9.46 18 10.03C18 10.6 17.54 11.06 16.97 11.06Z"/></svg>',
+
+    // Wiki
+    'marker-check': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M10,16L5,11L6.41,9.58L10,13.17L17.59,5.58L19,7M19,1H5C3.89,1 3,1.89 3,3V15.93C3,16.62 3.35,17.23 3.88,17.59L12,23L20.11,17.59C20.64,17.23 21,16.62 21,15.93V3C21,1.89 20.1,1 19,1Z"/></svg>',
+    'face': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M9,11.75A1.25,1.25 0 0,0 7.75,13A1.25,1.25 0 0,0 9,14.25A1.25,1.25 0 0,0 10.25,13A1.25,1.25 0 0,0 9,11.75M15,11.75A1.25,1.25 0 0,0 13.75,13A1.25,1.25 0 0,0 15,14.25A1.25,1.25 0 0,0 16.25,13A1.25,1.25 0 0,0 15,11.75M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,20C7.59,20 4,16.41 4,12C4,11.71 4,11.42 4.05,11.14C6.41,10.09 8.28,8.16 9.26,5.77C11.07,8.33 14.05,10 17.42,10C18.2,10 18.95,9.91 19.67,9.74C19.88,10.45 20,11.21 20,12C20,16.41 16.41,20 12,20Z"/></svg>',
+    'star-circle': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M16.23,18L12,15.45L7.77,18L8.89,13.19L5.16,9.96L10.08,9.54L12,5L13.92,9.53L18.84,9.95L15.11,13.18L16.23,18M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/></svg>',
+    'map-marker': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/></svg>',
+    'credit-card': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M20 4H4A2 2 0 0 0 2 6V18A2 2 0 0 0 4 20H20A2 2 0 0 0 22 18V6A2 2 0 0 0 20 4M20 11H4V8H20Z"/></svg>',
+    'wallet-giftcard': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M20,14H4V8H9.08L7,10.83L8.62,12L11,8.76L12,7.4L13,8.76L15.38,12L17,10.83L14.92,8H20M20,19H4V17H20M9,4A1,1 0 0,1 10,5A1,1 0 0,1 9,6A1,1 0 0,1 8,5A1,1 0 0,1 9,4M15,4A1,1 0 0,1 16,5A1,1 0 0,1 15,6A1,1 0 0,1 14,5A1,1 0 0,1 15,4M20,6H17.82C17.93,5.69 18,5.35 18,5A3,3 0 0,0 15,2C13.95,2 13.04,2.54 12.5,3.35L12,4L11.5,3.34C10.96,2.54 10.05,2 9,2A3,3 0 0,0 6,5C6,5.35 6.07,5.69 6.18,6H4C2.89,6 2,6.89 2,8V19C2,20.11 2.89,21 4,21H20C21.11,21 22,20.11 22,19V8C22,6.89 21.11,6 20,6Z"/></svg>',
+    'cash-register': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M2,17H22V21H2V17M6.25,7H9V6H6V3H14V6H11V7H17.8C18.8,7 19.8,8 20,9L20.5,16H3.5L4.05,9C4.05,8 5.05,7 6.25,7M13,9V11H18V9H13M6,9V10H8V9H6M9,9V10H11V9H9M6,11V12H8V11H6M9,11V12H11V11H9M6,13V14H8V13H6M9,13V14H11V13H9M7,4V5H13V4H7Z"/></svg>',
+    'account-supervisor': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M16.5,12A2.5,2.5 0 0,0 19,9.5A2.5,2.5 0 0,0 16.5,7A2.5,2.5 0 0,0 14,9.5A2.5,2.5 0 0,0 16.5,12M9,11A3,3 0 0,0 12,8A3,3 0 0,0 9,5A3,3 0 0,0 6,8A3,3 0 0,0 9,11M16.5,14C14.67,14 11,14.92 11,16.75V19H22V16.75C22,14.92 18.33,14 16.5,14M9,13C6.67,13 2,14.17 2,16.5V19H9V16.75C9,15.9 9.33,14.41 11.37,13.28C10.5,13.1 9.66,13 9,13Z"/></svg>',
+    'file-document': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M15,18V16H6V18H15M18,14V12H6V14H18Z"/></svg>',
+    'card-account-mail': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M21,8V7L18,9L15,7V8L18,10M22,3H2A2,2 0 0,0 0,5V19A2,2 0 0,0 2,21H22A2,2 0 0,0 24,19V5A2,2 0 0,0 22,3M8,6A3,3 0 0,1 11,9A3,3 0 0,1 8,12A3,3 0 0,1 5,9A3,3 0 0,1 8,6M14,18H2V17C2,15 6,13.9 8,13.9C10,13.9 14,15 14,17M22,12H14V6H22"/></svg>',
+    'camera': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M4,4H7L9,2H15L17,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20H4A2,2 0 0,1 2,18V6A2,2 0 0,1 4,4M12,7A5,5 0 0,0 7,12A5,5 0 0,0 12,17A5,5 0 0,0 17,12A5,5 0 0,0 12,7M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9Z"/></svg>',
+    'human': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M21,9H15V22H13V16H11V22H9V9H3V7H21M12,2A2,2 0 0,1 14,4A2,2 0 0,1 12,6C10.89,6 10,5.1 10,4C10,2.89 10.89,2 12,2Z"/></svg>',
+    'bank': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M11.5,1L2,6V8H21V6M16,10V17H19V10M2,22H21V19H2M10,10V17H13V10M4,10V17H7V10H4Z"/></svg>',
+    'information': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M13,9H11V7H13M13,17H11V11H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/></svg>',
+    'cloud-download': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M17,13L12,18L7,13H10V9H14V13M19.35,10.03C18.67,6.59 15.64,4 12,4C9.11,4 6.6,5.64 5.35,8.03C2.34,8.36 0,10.9 0,14A6,6 0 0,0 6,20H19A5,5 0 0,0 24,15C24,12.36 21.95,10.22 19.35,10.03Z"/></svg>',
+    'library': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M12,8A3,3 0 0,0 15,5A3,3 0 0,0 12,2A3,3 0 0,0 9,5A3,3 0 0,0 12,8M12,11.54C9.64,9.35 6.5,8 3,8V19C6.5,19 9.64,20.35 12,22.54C14.36,20.35 17.5,19 21,19V8C17.5,8 14.36,9.35 12,11.54Z"/></svg>',
+    'copyright': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M10.08,10.86C10.13,10.53 10.24,10.24 10.38,10C10.5,9.74 10.72,9.53 10.97,9.37C11.21,9.22 11.5,9.15 11.88,9.14C12.11,9.15 12.32,9.19 12.5,9.27C12.71,9.36 12.89,9.5 13.03,9.63C13.17,9.78 13.28,9.96 13.37,10.16C13.46,10.36 13.5,10.58 13.5,10.8H15.3C15.28,10.33 15.19,9.9 15,9.5C14.85,9.12 14.62,8.78 14.32,8.5C14,8.22 13.66,8 13.24,7.84C12.82,7.68 12.36,7.61 11.85,7.61C11.2,7.61 10.63,7.72 10.15,7.95C9.67,8.18 9.27,8.5 8.95,8.87C8.63,9.26 8.39,9.71 8.24,10.23C8.09,10.75 8,11.29 8,11.87V12.14C8,12.72 8.08,13.26 8.23,13.78C8.38,14.3 8.62,14.75 8.94,15.13C9.26,15.5 9.66,15.82 10.14,16.04C10.62,16.26 11.19,16.38 11.84,16.38C12.31,16.38 12.75,16.3 13.16,16.15C13.57,16 13.93,15.79 14.24,15.5C14.55,15.25 14.8,14.94 15,14.58C15.16,14.22 15.27,13.84 15.28,13.43H13.5C13.5,13.64 13.43,13.83 13.34,14C13.25,14.19 13.13,14.34 13,14.47C12.83,14.6 12.66,14.7 12.46,14.77C12.27,14.84 12.07,14.86 11.86,14.87C11.5,14.86 11.2,14.79 10.97,14.64C10.72,14.5 10.5,14.27 10.38,14C10.24,13.77 10.13,13.47 10.08,13.14C10.03,12.81 10,12.47 10,12.14V11.87C10,11.5 10.03,11.19 10.08,10.86M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20Z"/></svg>',
+
+    // Pulse
+    'account-box': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M6,17C6,15 10,13.9 12,13.9C14,13.9 18,15 18,17V18H6M15,9A3,3 0 0,1 12,12A3,3 0 0,1 9,9A3,3 0 0,1 12,6A3,3 0 0,1 15,9M3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3H5C3.89,3 3,3.9 3,5Z"/></svg>',
+    'account-circle': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z"/></svg>',
+    'monitor-cellphone-star': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M23,11H18A1,1 0 0,0 17,12V21A1,1 0 0,0 18,22H23A1,1 0 0,0 24,21V12A1,1 0 0,0 23,11M23,20H18V13H23V20M20,2H2C0.89,2 0,2.89 0,4V16A2,2 0 0,0 2,18H9V20H7V22H15V20H13V18H15V16H2V4H20V9H22V4C22,2.89 21.1,2 20,2M11.97,9L11,6L10.03,9H7L9.47,10.76L8.53,13.67L11,11.87L13.47,13.67L12.53,10.76L15,9H11.97Z"/></svg>',
+    'pencil': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z"/></svg>',
+    'delete': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"/></svg>',
+    'alert-decagram': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M13,17H11V15H13V17M13,13H11V7H13V13Z"/></svg>',
+    'heart': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"/></svg>',
+    'pound-box': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M3,5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5M7,18H9L9.35,16H13.35L13,18H15L15.35,16H17.35L17.71,14H15.71L16.41,10H18.41L18.76,8H16.76L17.12,6H15.12L14.76,8H10.76L11.12,6H9.12L8.76,8H6.76L6.41,10H8.41L7.71,14H5.71L5.35,16H7.35L7,18M10.41,10H14.41L13.71,14H9.71L10.41,10Z"/></svg>',
+    'movie': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M18,4L20,8H17L15,4H13L15,8H12L10,4H8L10,8H7L5,4H4A2,2 0 0,0 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V4H18Z"/></svg>',
+    'youtube-tv': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M2.5,4.5H21.5C22.34,4.5 23,5.15 23,6V17.5C23,18.35 22.34,19 21.5,19H2.5C1.65,19 1,18.35 1,17.5V6C1,5.15 1.65,4.5 2.5,4.5M9.71,8.5V15L15.42,11.7L9.71,8.5M17.25,21H6.65C6.35,21 6.15,20.8 6.15,20.5C6.15,20.2 6.35,20 6.65,20H17.35C17.65,20 17.85,20.2 17.85,20.5C17.85,20.8 17.55,21 17.25,21Z"/></svg>',
+    'dumbbell': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M20.57,14.86L22,13.43L20.57,12L17,15.57L8.43,7L12,3.43L10.57,2L9.14,3.43L7.71,2L5.57,4.14L4.14,2.71L2.71,4.14L4.14,5.57L2,7.71L3.43,9.14L2,10.57L3.43,12L7,8.43L15.57,17L12,20.57L13.43,22L14.86,20.57L16.29,22L18.43,19.86L19.86,21.29L21.29,19.86L19.86,18.43L22,16.29L20.57,14.86Z"/></svg>',
+    'school': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/></svg>',
+    'google-podcast': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M17.68,7.22V8.62C17.68,9.3 17.13,9.86 16.43,9.86C15.74,9.86 15.18,9.3 15.18,8.62V7.22A1.25,1.25 0 0,1 16.43,5.97C17.13,5.97 17.68,6.53 17.68,7.22M13.25,8.36V15.63C13.25,16.32 12.69,16.88 12,16.88C11.31,16.88 10.75,16.32 10.75,15.63V8.36C10.75,7.68 11.31,7.11 12,7.11C12.69,7.11 13.25,7.68 13.25,8.36M22,11.3V12.7C22,13.38 21.44,13.94 20.75,13.94C20.06,13.94 19.5,13.38 19.5,12.7V11.3C19.5,10.61 20.06,10.06 20.75,10.06C21.44,10.06 22,10.61 22,11.3M4.5,11.3V12.7C4.5,13.38 3.94,13.94 3.25,13.94C2.55,13.94 2,13.38 2,12.7V11.3C2,10.61 2.55,10.06 3.25,10.06C3.94,10.06 4.5,10.61 4.5,11.3M8.82,15.38V16.77C8.82,17.45 8.26,18 7.57,18C6.88,18 6.32,17.45 6.32,16.77V15.38C6.32,14.68 6.88,14.13 7.57,14.13A1.25,1.25 0 0,1 8.82,15.38M13.25,19.36V20.75A1.25,1.25 0 0,1 12,22A1.25,1.25 0 0,1 10.75,20.75V19.36A1.25,1.25 0 0,1 12,18.11A1.25,1.25 0 0,1 13.25,19.36M13.25,3.25V4.64A1.25,1.25 0 0,1 12,5.89A1.25,1.25 0 0,1 10.75,4.64V3.25C10.75,2.55 11.31,2 12,2A1.25,1.25 0 0,1 13.25,3.25M17.68,12.34V16.77C17.68,17.46 17.13,18 16.43,18C15.74,18 15.18,17.46 15.18,16.77V12.34C15.18,11.64 15.74,11.09 16.43,11.09C17.13,11.09 17.68,11.64 17.68,12.34M8.82,7.22V11.65C8.82,12.35 8.26,12.9 7.57,12.9A1.25,1.25 0 0,1 6.32,11.65V7.22A1.25,1.25 0 0,1 7.57,5.97A1.25,1.25 0 0,1 8.82,7.22Z"/></svg>',
+    'medal': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M20,2H4V4L9.81,8.36C6.14,9.57 4.14,13.53 5.35,17.2C6.56,20.87 10.5,22.87 14.19,21.66C17.86,20.45 19.86,16.5 18.65,12.82C17.95,10.71 16.3,9.05 14.19,8.36L20,4V2M14.94,19.5L12,17.78L9.06,19.5L9.84,16.17L7.25,13.93L10.66,13.64L12,10.5L13.34,13.64L16.75,13.93L14.16,16.17L14.94,19.5Z"/></svg>',
+    'alpha': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M18.08,17.8C17.62,17.93 17.21,18 16.85,18C15.65,18 14.84,17.12 14.43,15.35H14.38C13.39,17.26 12,18.21 10.25,18.21C8.94,18.21 7.89,17.72 7.1,16.73C6.31,15.74 5.92,14.5 5.92,13C5.92,11.25 6.37,9.85 7.26,8.76C8.15,7.67 9.36,7.12 10.89,7.12C11.71,7.12 12.45,7.35 13.09,7.8C13.73,8.26 14.22,8.9 14.56,9.73H14.6L15.31,7.33H17.87L15.73,12.65C15.97,13.89 16.22,14.74 16.5,15.19C16.74,15.64 17.08,15.87 17.5,15.87C17.74,15.87 17.93,15.83 18.1,15.76L18.08,17.8M13.82,12.56C13.61,11.43 13.27,10.55 12.81,9.95C12.36,9.34 11.81,9.04 11.18,9.04C10.36,9.04 9.7,9.41 9.21,10.14C8.72,10.88 8.5,11.79 8.5,12.86C8.5,13.84 8.69,14.65 9.12,15.31C9.54,15.97 10.11,16.29 10.82,16.29C11.42,16.29 11.97,16 12.46,15.45C12.96,14.88 13.37,14.05 13.7,12.96L13.82,12.56Z"/></svg>',
+    'update': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M21,10.12H14.22L16.96,7.3C14.23,4.6 9.81,4.5 7.08,7.2C4.35,9.91 4.35,14.28 7.08,17C9.81,19.7 14.23,19.7 16.96,17C18.32,15.65 19,14.08 19,12.1H21C21,14.08 20.12,16.65 18.36,18.39C14.85,21.87 9.15,21.87 5.64,18.39C2.14,14.92 2.11,9.28 5.62,5.81C9.13,2.34 14.76,2.34 18.27,5.81L21,3V10.12M12.5,8V12.25L16,14.33L15.28,15.54L11,13V8H12.5Z"/></svg>',
+    
+);
+
+.mdi {
+    @include svgmodifier();
+}
+
+.mdi-chevron-left { background-image: get-icon( 'chevron-left', #FFFFFF ); }
+.mdi-chevron-right { background-image: get-icon( 'chevron-right', #FFFFFF ); }
+.mdi-help-circle-outline { background-image: get-icon( 'help-circle-outline', #FFFFFF ); }
+.mdi-plus-circle-outline { background-image: get-icon( 'plus-circle-outline', #FFFFFF ); }
+.mdi-close { background-image: get-icon( 'close', #FFFFFF ); }
+.mdi-youtube-subscriptions { background-image: get-icon( 'youtube-subscriptions', #FFFFFF ); }
+.mdi-hand-pointing-up { background-image: get-icon( 'hand-pointing-up', #FFFFFF ); }
+.mdi-star { background-image: get-icon( 'star', #FFFFFF ); }
+
+.mdi-plus-one { background-image: get-icon( 'plus-one', #FFFFFF ); }
+.mdi-police-badge { background-image: get-icon( 'police-badge', #FFFFFF ); }
+.mdi-shield-half-full { background-image: get-icon( 'shield-half-full', #FFFFFF ); }
+.mdi-wrench { background-image: get-icon( 'wrench', #FFFFFF ); }
+.mdi-map { background-image: get-icon( 'map', #FFFFFF ); }
+.mdi-email { background-image: get-icon( 'email', #FFFFFF ); }
+.mdi-instagram { background-image: get-icon( 'instagram', #FFFFFF ); }
+
+.mdi-view-quilt { background-image: get-icon( 'view-quilt', #FFFFFF ); }
+.mdi-filmstrip { background-image: get-icon( 'filmstrip', #FFFFFF ); }
+.mdi-play-circle-outline { background-image: get-icon( 'play-circle-outline', #FFFFFF ); }
+.mdi-widgets { background-image: get-icon( 'widgets', #FFFFFF ); }
+.mdi-eye { background-image: get-icon( 'eye', #FFFFFF ); }
+.mdi-apps { background-image: get-icon( 'apps', #FFFFFF ); }
+
+.mdi-menu { background-image: get-icon( 'menu', #FFFFFF ); }
+.mdi-chevron-down { background-image: get-icon( 'chevron-down', #FFFFFF ); }
+.mdi-fingerprint { background-image: get-icon( 'fingerprint', #FFFFFF ); }
+.mdi-ticket { background-image: get-icon( 'ticket', #FFFFFF ); }
+.mdi-account-group { background-image: get-icon( 'account-group', #FFFFFF ); }
+.mdi-shield-star { background-image: get-icon( 'shield-star', #FFFFFF ); }
+.mdi-pulse { background-image: get-icon( 'pulse', #FFFFFF ); }
+.mdi-new-box { background-image: get-icon( 'new-box', #FFFFFF ); }
+.mdi-book-open { background-image: get-icon( 'book-open', #FFFFFF ); }
+.mdi-play-circle { background-image: get-icon( 'play-circle', #FFFFFF ); }
+.mdi-email-plus { background-image: get-icon( 'email-plus', #FFFFFF ); }
+.mdi-book-information-variant { background-image: get-icon( 'book-information-variant', #FFFFFF ); }
+
+.mdi-marker-check { background-image: get-icon( 'marker-check', #FFFFFF ); }
+.mdi-face { background-image: get-icon( 'face', #FFFFFF ); }
+.mdi-star-circle { background-image: get-icon( 'star-circle', #FFFFFF ); }
+.mdi-map-marker { background-image: get-icon( 'map-marker', #FFFFFF ); }
+.mdi-credit-card { background-image: get-icon( 'credit-card', #FFFFFF ); }
+.mdi-wallet-giftcard { background-image: get-icon( 'wallet-giftcard', #FFFFFF ); }
+.mdi-cash-register { background-image: get-icon( 'cash-register', #FFFFFF ); }
+.mdi-account-supervisor { background-image: get-icon( 'account-supervisor', #FFFFFF ); }
+.mdi-file-document { background-image: get-icon( 'file-document', #FFFFFF ); }
+.mdi-card-account-mail { background-image: get-icon( 'card-account-mail', #FFFFFF ); }
+.mdi-camera { background-image: get-icon( 'camera', #FFFFFF ); }
+.mdi-human { background-image: get-icon( 'human', #FFFFFF ); }
+.mdi-bank { background-image: get-icon( 'bank', #FFFFFF ); }
+.mdi-information { background-image: get-icon( 'information', #FFFFFF ); }
+.mdi-cloud-download { background-image: get-icon( 'cloud-download', #FFFFFF ); }
+.mdi-library { background-image: get-icon( 'library', #FFFFFF ); }
+.mdi-copyright { background-image: get-icon( 'copyright', #FFFFFF ); }
+
+.mdi-account-box { background-image: get-icon( 'account-box', #FFFFFF ); }
+.mdi-account-circle { background-image: get-icon( 'account-circle', #FFFFFF ); }
+.mdi-monitor-cellphone-star { background-image: get-icon( 'monitor-cellphone-star', #FFFFFF ); }
+.mdi-pencil { background-image: get-icon( 'pencil', #FFFFFF ); }
+.mdi-delete { background-image: get-icon( 'delete', #FFFFFF ); }
+.mdi-alert-decagram { background-image: get-icon( 'alert-decagram', #FFFFFF ); }
+.mdi-heart { background-image: get-icon( 'heart', #FFFFFF ); }
+.mdi-pound-box { background-image: get-icon( 'pound-box', #FFFFFF ); }
+.mdi-movie { background-image: get-icon( 'movie', #FFFFFF ); }
+.mdi-youtube-tv { background-image: get-icon( 'youtube-tv', #FFFFFF ); }
+.mdi-dumbbell { background-image: get-icon( 'dumbbell', #FFFFFF ); }
+.mdi-school { background-image: get-icon( 'school', #FFFFFF ); }
+.mdi-google-podcast { background-image: get-icon( 'google-podcast', #FFFFFF ); }
+.mdi-medal { background-image: get-icon( 'medal', #FFFFFF ); }
+.mdi-alpha { background-image: get-icon( 'alpha', #FFFFFF ); }
+.mdi-update { background-image: get-icon( 'update', #FFFFFF ); }

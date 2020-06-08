@@ -32,6 +32,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	@import "abstracts/mixins/underscores";
 	@import "abstracts/mixins/colourmodifiers";
 	@import "abstracts/mixins/gradientmodifiers";
+	@import "abstracts/mixins/icon_svgs";
 	@import "abstracts/mixins/lineheights";
 	@import "abstracts/mixins/colour_encode";
 	@import "abstracts/mixins/logos";
@@ -46,7 +47,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "base/normalize";
 @import "base/typography";
 @import "base/code";
-@import "base/fonts";
+@import "base/icon-svgs";
 @import "base/accessibility";
 @import "base/clearings"; 
 @import "base/visibility"; 

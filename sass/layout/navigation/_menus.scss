@@ -87,13 +87,10 @@ $background_color: transparent;
             //  └──────────────────────────────────────┘
             
             > a > .mdi {
-                margin:0px 10px;
-                font-size: 18px;
-                padding-top: 1px;
-                line-height: 20px;
-                vertical-align: text-top;
+                margin: 0px 10px;
                 width: 16px;
-                color: #757575;
+                height: 16px;
+                filter: url(#smoke);
             }
             
 
@@ -110,9 +107,9 @@ $background_color: transparent;
 				> a {
 					text-decoration-color: $mist;
 
-					.mdi {
-						@include colourmodifier();
-					}
+                    .mdi {
+                        @include svgmodifier();
+                    }
 				}
 
 				//  ┌──────────────────────────────────────┐

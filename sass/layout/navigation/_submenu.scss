@@ -51,15 +51,15 @@
 							width: 29px;
 							font-size: 18px;
 							padding-right: 5px;
-							@include colourmodifier(); 
+							filter: url(#night);
 						}
 
 						
 						&:hover {
 							color: $smoke;
 
-							.icon {
-								@include colourmodifier();
+							.mdi {
+								@include svgmodifier();
 							}
 
 						}

@@ -1,0 +1,77 @@
+// ┌─────────────────────────────────────────────────────────────────────────┐
+// │                                                                         │
+// │                        String replace function                          │
+// │                                                                         │
+// └─────────────────────────────────────────────────────────────────────────┘
+// https://css-tricks.com/creating-a-maintainable-icon-system-with-sass/
+@function str-replace( $string, $search, $replace: '' ) {
+
+    $index: str-index( $string, $search );
+
+    @if $index {
+        @return str-slice( $string, 1, $index - 1 ) + $replace + str-replace( str-slice( $string, $index + str-length( $search ) ), $search, $replace);
+    }
+
+    @return $string;
+}
+
+
+// ┌─────────────────────────────────────────────────────────────────────────┐
+// │                                                                         │
+// │               Function for getting icon from map above.                 │
+// │                                                                         │
+// └─────────────────────────────────────────────────────────────────────────┘
+$data-svg-prefix: 'data:image/svg+xml;utf-8,';
+@function get-icon( $icon, $color: #fff ) {
+
+    @if 'color' != type-of( $color ) {
+
+        @warn 'The requested color - "' + $color + '" - was not recognized as a Sass color value.';
+        @return null;
+    }
+
+    @if map-has-key( $icons, $icon ) {
+
+        $icon:        map-get( $icons, $icon );
+        $placeholder: '%%COLOR%%';
+        $data-uri:    str-replace( url( $data-svg-prefix + $icon ), $placeholder, $color );
+
+        @return str-replace( $data-uri, '#', '%23' );
+    }
+
+    @warn 'The requested icon - "' + $icon + '" - is not defined in the $icons map.';
+    @return null;
+}
+
+// All Filters are defined in the svg_filters.html file.
+// use https://css-tricks.com/the-many-ways-to-change-an-svg-fill-on-hover-and-when-to-use-them/
+@mixin svgmodifier() {
+    &--sky {  filter: url(#sky); }
+    &--lavender { filter: url(#lavender); }
+    &--pink { filter: url(#pink); }
+    &--aqua { filter: url(#aqua); }
+    &--goo { filter: url(#goo); }
+    &--crayon { filter: url(#crayon); }
+    &--rose { filter: url(#rose); }
+    &--black { filter: url(#black); }
+    &--night { filter: url(#night); }
+    &--fog { filter: url(#fog); }
+    &--smoke { filter: url(#smoke); }
+    &--commando { filter: url(#commando); }
+    &--mist { filter: url(#mist); }
+    &--ghost { filter: url(#ghost); }
+    &--halo { filter: url(#halo); }
+    &--white { filter: url(#white); }
+    &--yellow { filter: url(#yellow); }
+
+    &--trustpilot { filter: url(#trustpilot); }
+    &--stripe { filter: url(#stripe); }
+    &--github { filter: url(#github); }
+    &--letsencrypt { filter: url(#letsencrypt); }
+    &--digitalocean { filter: url(#digitalocean); }
+
+    &--youtube { filter: url(#youtube); }
+    &--instagram { filter: url(#instagram); }
+    &--apple { filter: url(#apple); }
+    &--android { filter: url(#android); }
+}

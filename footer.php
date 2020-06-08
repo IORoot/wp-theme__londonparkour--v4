@@ -54,6 +54,9 @@ function vc_custom_css($id) {
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 
+<!-- svg filters -->
+<?php echo file_get_contents(__DIR__.'/svg_filters.html') ?>
+
 <?php wp_footer(); ?>
 
 </body>
