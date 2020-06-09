@@ -2615,9 +2615,11 @@ a:hover, a:active {
     background-color: #242424;
     color: #ffffff;
   }
-  .site-header .main-navigation .main-navigation__mobile-toggle-button > .icon {
-    line-height: 58px;
-    margin-left: 29px;
+  .site-header .main-navigation .main-navigation__mobile-toggle-button > .mdi {
+    height: 58px;
+    width: 58px;
+    background-size: 29px;
+    background-position: center;
   }
   .site-header .main-navigation .menu-main-menu-container {
     display: none;
@@ -2674,27 +2676,13 @@ a:hover, a:active {
     line-height: 116px;
     text-align: center;
   }
-  .site-header .main-navigation ul.nav-menu > li.menu-item a .icon {
+  .site-header .main-navigation ul.nav-menu > li.menu-item a .mdi {
     position: absolute;
     left: 50%;
-    top: 29px;
+    bottom: 29px;
     transform: translateX(-50%);
     margin: 0px;
-  }
-  .site-header .main-navigation ul.nav-menu > li.menu-item a .icon.icon--crayon {
-    color: #e86546;
-  }
-  .site-header .main-navigation ul.nav-menu > li.menu-item a .icon.icon--aqua {
-    color: #11998e;
-  }
-  .site-header .main-navigation ul.nav-menu > li.menu-item a .icon.icon--sky {
-    color: #53a5e3;
-  }
-  .site-header .main-navigation ul.nav-menu > li.menu-item a .icon.icon--lavender {
-    color: #70579f;
-  }
-  .site-header .main-navigation ul.nav-menu > li.menu-item a .icon.icon--rose {
-    color: #e34f65;
+    filter: url(#smoke);
   }
   .site-header .main-navigation ul.nav-menu > li.menu-item__right {
     float: right;
@@ -2764,6 +2752,7 @@ a:hover, a:active {
     top: 29px;
     transform: translateX(-50%);
     margin: 0px;
+    filter: url(#white);
   }
   .site-header .main-navigation ul.nav-menu > li.menu-item ul.sub-menu li a .menu-item-description,
 .site-header .main-navigation ul.nav-menu > li.menu-item ul.sub-menu li a .menu-item-image {

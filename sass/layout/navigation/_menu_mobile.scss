@@ -28,9 +28,11 @@
             background-color: #242424;
             color: #ffffff;
 
-            > .icon {
-                line-height: 58px;
-                margin-left: 29px; 
+            > .mdi {
+                height: 58px;
+                width: 58px;
+                background-size: 29px;
+                background-position: center;
             } 
         }
 
@@ -115,19 +117,13 @@
                     line-height: 116px;
                     text-align: center;
 
-                    .icon {
+                    .mdi {
                         position: absolute;
                         left: 50%;
-                        top: 29px;
+                        bottom: 29px;
                         transform: translateX(-50%);
                         margin: 0px;
-
-                        &.icon--crayon { color: $crayon; }
-                        &.icon--aqua { color: $aqua; }
-                        &.icon--sky { color: $sky; }
-                        &.icon--lavender { color: $lavender; }
-                        &.icon--rose { color: $rose; }
-
+                        filter: url(#smoke);
                     }
                 }
 
@@ -222,6 +218,7 @@
                                 top: 29px;
                                 transform: translateX(-50%);
                                 margin: 0px;
+                                filter: url(#white);
                             }
 
                             .menu-item-description, 
