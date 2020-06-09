@@ -39,7 +39,9 @@ class LiteYTEmbed extends HTMLElement {
         this.providedStyle = this.hasAttribute("style");
 
         // Warm the connection for the poster image
-        LiteYTEmbed.addPrefetch('preload', this.posterUrl, 'image');
+        if (this.providedStyle == false){
+            LiteYTEmbed.addPrefetch('preload', this.posterUrl, 'image');
+        }
         // TODO: support dynamically setting the attribute via attributeChangedCallback
     }
 
