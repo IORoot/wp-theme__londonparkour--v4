@@ -45,7 +45,6 @@ class LiteYTEmbed extends HTMLElement {
 
     connectedCallback() {
 
-        console.log (this);
         if (this.providedStyle == false){
             this.style.backgroundImage = `url("${this.posterUrl}")`;
         }
