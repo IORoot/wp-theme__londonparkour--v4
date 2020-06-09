@@ -4119,9 +4119,9 @@ a:hover, a:active {
   position: absolute;
   bottom: 0px;
   left: 0px;
-  line-height: 27px;
-  font-size: 18px;
   color: #fff;
+  width: 19px;
+  height: 23px;
 }
 .pulse .yt_pulse_beyondparkour .andyp-grid__cell-date {
   display: none;
@@ -4480,9 +4480,9 @@ a:hover, a:active {
   position: absolute;
   bottom: 0px;
   left: 0px;
-  line-height: 27px;
-  font-size: 18px;
   color: #fff;
+  width: 19px;
+  height: 23px;
 }
 .pulse .yt_pulse_beyondparkour .andyp-grid__cell-date {
   display: none;
