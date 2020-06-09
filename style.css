@@ -2066,7 +2066,7 @@ a:hover, a:active {
 .widget-area .widget_nav_menu .menu-articles-dashboard-container ul li a .mdi {
   width: 24px;
   height: 24px;
-  filter: url(#smoke);
+  filter: url("#smoke");
   margin-right: 6px;
   background-position: 0px 2px;
 }
@@ -2206,7 +2206,7 @@ a:hover, a:active {
   margin: 0px 10px;
   width: 16px;
   height: 16px;
-  filter: url(#smoke);
+  filter: url("#smoke");
 }
 .main-navigation ul.menu > li.menu-item:hover > a,
 .main-navigation ul.nav-menu > li.menu-item:hover > a {
@@ -2693,7 +2693,7 @@ a:hover, a:active {
     bottom: 29px;
     transform: translateX(-50%);
     margin: 0px;
-    filter: url(#smoke);
+    filter: url("#smoke");
   }
   .site-header .main-navigation ul.nav-menu > li.menu-item__right {
     float: right;
