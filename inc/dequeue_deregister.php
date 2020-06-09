@@ -49,10 +49,10 @@ function ldnpk_deregister_styles() {
     wp_deregister_script( 'wpb_composer_front_js' );
 
     // Remove jQuery
-    if ( !is_admin() ) {
-        wp_dequeue_script('jquery');
-        wp_deregister_script('jquery');
-    }
+    // if ( !is_admin() ) {
+    //     wp_dequeue_script('jquery');
+    //     wp_deregister_script('jquery');
+    // }
 }
 
 
