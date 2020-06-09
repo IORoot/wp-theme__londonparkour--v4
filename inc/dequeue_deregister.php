@@ -47,6 +47,10 @@ function ldnpk_deregister_styles() {
     wp_deregister_script( 'wp-embed' );
     wp_deregister_script( 'thickbox' );
     wp_deregister_script( 'wpb_composer_front_js' );
+
+    // Remove jQuery
+    wp_dequeue_script('jquery');
+    wp_deregister_script('jquery');
 }
 
 
