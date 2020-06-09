@@ -35,13 +35,20 @@ class LiteYTEmbed extends HTMLElement {
          * TODO: Consider using webp if supported, falling back to jpg
          */
         this.posterUrl = `https://i.ytimg.com/vi/${this.videoId}/sddefault.jpg`;
+
+        this.providedStyle = this.hasAttribute("style");
+
         // Warm the connection for the poster image
         LiteYTEmbed.addPrefetch('preload', this.posterUrl, 'image');
         // TODO: support dynamically setting the attribute via attributeChangedCallback
     }
 
     connectedCallback() {
-        this.style.backgroundImage = `url("${this.posterUrl}")`;
+
+        console.log (this);
+        if (this.providedStyle == false){
+            this.style.backgroundImage = `url("${this.posterUrl}")`;
+        }
 
         const playBtn = document.createElement('div');
         playBtn.classList.add('lty-playbtn');

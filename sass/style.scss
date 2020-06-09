@@ -71,8 +71,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "components/links";
 @import "components/alignments";
 @import "components/widgets";
-@import "components/vertical_rhythm";
-@import "components/infinite-scroll";  
+// @import "components/vertical_rhythm";
+// @import "components/infinite-scroll";  
 @import "components/yt-button";
 @import "components/cta";
 @import "components/progress_indicator";
@@ -119,8 +119,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "pages/pulse/pulse_flickity-tablet";      
 @import "pages/pulse/pulse_flickity-mobile";      
 @import "pages/pulse/pulse_flickity";      
-@import "pages/ig_news/ig_news";  
-@import "pages/youtube_cover/youtube_cover";  
 @import "pages/privatetuition/private";  
 @import "pages/homepage/homepage"; 
 @import "pages/wiki/wiki";  

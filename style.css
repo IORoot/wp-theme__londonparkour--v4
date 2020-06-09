@@ -1585,20 +1585,6 @@ a:hover, a:active {
   max-width: 100%;
 }
 
-.vertical-rhythm-lined {
-  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.1) 1px, transparent 1px), linear-gradient(to right, transparent 10px, rgba(255, 0, 0, 0.1) 10px, transparent 11px), linear-gradient(to left, transparent 10px, rgba(255, 0, 0, 0.1) 10px, transparent 11px), linear-gradient(rgba(0, 0, 255, 0.05) 1px, transparent 0);
-  background-size: 8.3333333333% 29px;
-}
-
-.infinite-scroll .posts-navigation,
-.infinite-scroll.neverending .site-footer {
-  display: none;
-}
-
-.infinity-end.neverending .site-footer {
-  display: block;
-}
-
 .c-button__youtube {
   margin-top: 58px;
   color: #ffffff !important;
@@ -4536,179 +4522,13 @@ a:hover, a:active {
   background: #757575;
 }
 
-.ig-news__container .ig-news {
-  text-decoration: none;
-  color: #242424;
-  transition: all 0.3s linear;
-  width: calc(50% - 10px);
-  float: left;
-  background: #ffffff;
-  padding: 58px 4.16%;
-  margin-right: 10px;
-}
-.ig-news__container .ig-news:hover {
-  transform: translate(0px, -5px);
-  box-shadow: rgba(62, 57, 107, 0.18) 0px 16px 32px 0px, transparent 0px 0px 0px;
-}
-.ig-news__container .ig-news:visited, .ig-news__container .ig-news:active {
-  color: #242424;
-}
-.ig-news__container .ig-news__meta {
-  min-height: 174px;
-}
-.ig-news__container .ig-news__title {
-  color: #53A5E3;
-}
-.ig-news__container .ig-news__image {
-  width: 100%;
-  height: 522px;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-}
-.ig-news__container .ig-news:last-child {
-  margin-left: 10px;
-  margin-right: 0px;
-}
-
-@media (max-width: 1024px) {
-  .ig-news__container .ig-news {
-    width: 100%;
-    margin: 0px 0px 29px 0px !important;
-  }
-  .ig-news__container .ig-news__image {
-    background-size: auto 100%;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-  }
-}
-.youtube-cover {
-  border-top: 6px solid;
-  margin: 0 auto 29px;
-  color: #FFF;
-  position: relative;
-  width: 1280px;
-  height: 720px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-}
-.youtube-cover__logo {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='%23242424'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' /%3E%3C/g%3E%3C/svg%3E");
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: 50% 87px;
-  background-size: auto 116px;
-  z-index: 2;
-}
-.youtube-cover__logo--FCC53B {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='%23FCC53B'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' /%3E%3C/g%3E%3C/svg%3E");
-}
-.youtube-cover__logo--E86546 {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='%23E86546'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' /%3E%3C/g%3E%3C/svg%3E");
-}
-.youtube-cover__logo--53A5E3 {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='%2353A5E3'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' /%3E%3C/g%3E%3C/svg%3E");
-}
-.youtube-cover__logo--sky {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='%2353A5E3'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' /%3E%3C/g%3E%3C/svg%3E");
-}
-.youtube-cover__logo--yellow {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='%23FCC53B'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' /%3E%3C/g%3E%3C/svg%3E");
-}
-.youtube-cover__logo--lavender {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='%2370579F'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' /%3E%3C/g%3E%3C/svg%3E");
-}
-.youtube-cover__logo--pink {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='%23ED64AF'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' /%3E%3C/g%3E%3C/svg%3E");
-}
-.youtube-cover__logo--aqua {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='%2311998E'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' /%3E%3C/g%3E%3C/svg%3E");
-}
-.youtube-cover__logo--goo {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='%2338EF7D'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' /%3E%3C/g%3E%3C/svg%3E");
-}
-.youtube-cover__logo--crayon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='%23E86546'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' /%3E%3C/g%3E%3C/svg%3E");
-}
-.youtube-cover__logo--rose {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='%23E34F65'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' /%3E%3C/g%3E%3C/svg%3E");
-}
-.youtube-cover__logo--black {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='%23000000'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' /%3E%3C/g%3E%3C/svg%3E");
-}
-.youtube-cover__logo--night {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='%23242424'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' /%3E%3C/g%3E%3C/svg%3E");
-}
-.youtube-cover__logo--fog {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='%23424242'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' /%3E%3C/g%3E%3C/svg%3E");
-}
-.youtube-cover__logo--smoke {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='%23757575'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' /%3E%3C/g%3E%3C/svg%3E");
-}
-.youtube-cover__logo--commando {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='%23D0C8B3'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' /%3E%3C/g%3E%3C/svg%3E");
-}
-.youtube-cover__logo--mist {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='%23E0E0E0'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' /%3E%3C/g%3E%3C/svg%3E");
-}
-.youtube-cover__logo--ghost {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='%23F5F5F5'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' /%3E%3C/g%3E%3C/svg%3E");
-}
-.youtube-cover__logo--halo {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='%23FAFAFA'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' /%3E%3C/g%3E%3C/svg%3E");
-}
-.youtube-cover__logo--white {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='%23FFFFFF'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' /%3E%3C/g%3E%3C/svg%3E");
-}
-.youtube-cover__logo--youtube {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='%23FF0000'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' /%3E%3C/g%3E%3C/svg%3E");
-}
-.youtube-cover__logo--instagram {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='%23F56040'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' /%3E%3C/g%3E%3C/svg%3E");
-}
-.youtube-cover__logo--apple {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='%23757575'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' /%3E%3C/g%3E%3C/svg%3E");
-}
-.youtube-cover__logo--android {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 185 120'%3E%3Cg id='ldnpk' fill='%23A4C639'%3E%3Cpath d='M24,24 L24,96 L106.639907,96 L59.9640453,24 L24,24 Z M78.3600926,24 L125.035955,96 L161,96 L161,24 L78.3600926,24 Z' id='ldnpk' /%3E%3C/g%3E%3C/svg%3E");
-}
-.youtube-cover__grain {
-  z-index: 1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(24, 24, 24, 0.7);
-  background-image: url("/wp-content/uploads/2018/03/noisy-texture-200x200_10pc.png");
-  top: 0;
-  left: 0;
-}
-.youtube-cover__text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-}
-.youtube-cover__header {
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-}
-.youtube-cover__subheader {
-  text-align: center;
-  font-weight: 100;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .private h1 {
     font-size: 8vw;
     line-height: 12vw;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .home .c-title h1 {
     font-size: 8vw;
     line-height: 12vw;
@@ -4763,7 +4583,7 @@ a:hover, a:active {
   vertical-align: baseline;
   margin-right: 10px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .single-post .sidemenu__desktop {
     display: none;
   }
@@ -6589,12 +6409,12 @@ div .wp-my-instagram .wpmi-me a {
   background-color: transparent;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   div .wp-my-instagram .wpmi-list .wpmi-item {
     width: calc(50% - 15px);
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   div .wp-my-instagram .wpmi-list .wpmi-item {
     width: calc(100% - 15px);
   }
