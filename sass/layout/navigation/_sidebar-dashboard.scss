@@ -39,7 +39,7 @@
                             color: #E34F65; 
                         }
 
-                        .menu-item-icon {
+                        .mdi {
                             font-size: 24px;
                             padding-top: 2px;
                             line-height: 16px;
@@ -48,35 +48,6 @@
                             margin-right: 16px; 
                         }
                         
-                    }
-                    &.menu-item-icon::before {
-                        font-size: 24px;
-                        line-height: 23px;
-                        vertical-align: text-top;
-                        width: 16px;
-                        margin-right: 7px;
-                        margin-left: 4px;
-                        font-family: "Material Icons";
-                        color: #757575;
-                    }
-                    &.view_quilt::before {
-                        content: '\e8f1';
-                    }
-                    &.chrome_reader_mode::before {
-                        content: '\e86d';
-                    }
-                    &.theaters::before {
-                        content: '\e8da';
-                    }
-                    &.subscriptions::before {
-                        content: '\e064';
-                    }
-                    &.leak_add::before {
-                        content: '\e3f8';
-                    }
-                    &.play_circle_filled::before {
-                        content: '\e038';
-                        color: $youtube;
                     }
                     
                 }
