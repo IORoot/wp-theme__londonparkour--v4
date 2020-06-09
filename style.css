@@ -1345,7 +1345,7 @@ textarea {
 .button:hover span {
   border-bottom: 1px solid;
 }
-.button__arrow, .button__arrow--left::before, .button__arrow--down::after, .button__arrow--right::after, .button__arrow--up::after {
+.button__arrow, .link__arrow--left::before, .link__arrow--down::after, .link__arrow--right::after, .link__arrow--up::after, .button__arrow--left::before, .button__arrow--down::after, .button__arrow--right::after, .button__arrow--up::after {
   content: "";
   width: 20px;
   height: 20px;
@@ -1516,6 +1516,35 @@ a:focus {
 }
 a:hover, a:active {
   outline: 0;
+}
+
+.link {
+  text-decoration: none;
+  transition: 0.25s ease-in-out;
+}
+.link:hover span {
+  border-bottom: 1px solid;
+}
+.link__arrow {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: sub;
+  display: inline-block;
+}
+.link__arrow--up::after {
+  background-image: url('data:image/svg+xml;utf-8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%23FFFFFF" d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z"/></svg>');
+}
+.link__arrow--right::after {
+  background-image: url('data:image/svg+xml;utf-8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%23FFFFFF" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>');
+}
+.link__arrow--down::after {
+  background-image: url('data:image/svg+xml;utf-8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%23FFFFFF" d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/></svg>');
+}
+.link__arrow--left::before {
+  background-image: url('data:image/svg+xml;utf-8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%23FFFFFF" d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"/></svg>');
 }
 
 .alignleft {
@@ -2799,16 +2828,6 @@ a:hover, a:active {
 .site-footer .footer__trustpilot:hover {
   text-decoration: none;
   color: #00b67a;
-}
-.site-footer .footer__trustpilot:before {
-  font-family: "Material Icons";
-  content: "";
-  line-height: 29px;
-  font-size: 24px;
-  vertical-align: bottom;
-  padding-right: 10px;
-  color: #00b67a;
-  text-decoration: none;
 }
 .site-footer .footer__appstore {
   margin: 29px 0px;

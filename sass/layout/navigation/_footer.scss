@@ -50,17 +50,6 @@
                 text-decoration: none;
                 color: $trustpilot;
             }
-
-            &:before {
-                font-family: "Material Icons";
-                content: '\e838\e838\e838\e838\e838';
-                line-height:29px;
-                font-size: 24px;
-                vertical-align: bottom;
-                padding-right: 10px;
-                color: $trustpilot;
-                text-decoration: none;
-            }
         }
 
         &__appstore {
