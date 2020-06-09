@@ -2829,6 +2829,9 @@ a:hover, a:active {
   text-decoration: none;
   color: #00b67a;
 }
+.site-footer .footer__trustpilot .mdi {
+  height: 19px;
+}
 .site-footer .footer__appstore {
   margin: 29px 0px;
   display: block;
