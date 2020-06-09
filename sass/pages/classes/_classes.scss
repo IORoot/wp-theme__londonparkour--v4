@@ -33,24 +33,6 @@
         min-height: 87px;
     }
 
-    &__link {
-
-        color: #E34F65;
-
-        &wrapper {
-            text-align: right;
-        }
-
-        &:visited,
-        &:active {
-            color: #E34F65;
-        }
-
-        &:hover {
-            color: #242424;
-        }
-
-    }
 }
 
 .navigation {
