@@ -74,4 +74,5 @@ $data-svg-prefix: 'data:image/svg+xml;utf-8,';
     &--instagram#{$pseudo} { filter: url(#instagram); }
     &--apple#{$pseudo} { filter: url(#apple); }
     &--android#{$pseudo} { filter: url(#android); }
+
 }
