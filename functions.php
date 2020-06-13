@@ -35,7 +35,7 @@ require get_template_directory() . '/inc/enqueue_scripts.php';
 /**
  * DEqueue jQUery
  */
-require get_template_directory() . '/inc/jQuery_specific_pages_only.php';
+require get_template_directory() . '/inc/dequeue_jQuery.php';
 
 /**
  * DEqueue MEC

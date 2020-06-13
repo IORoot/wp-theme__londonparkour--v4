@@ -14,6 +14,9 @@ function ldnpk_deregister_jQuery() {
     if ( is_page( 'booking-2' ) ) {
         return;   
     }
+    if ( is_page( 'classes' ) ) {
+        return;   
+    }
 
     // If this is the frontend, dequeue it.
     if ( !is_admin() ) {
