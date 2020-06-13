@@ -38,6 +38,11 @@ require get_template_directory() . '/inc/enqueue_scripts.php';
 require get_template_directory() . '/inc/dequeue_jQuery.php';
 
 /**
+ * DEqueue jQUery
+ */
+require get_template_directory() . '/inc/dequeue_stripe.php';
+
+/**
  * DEqueue MEC
  */
 require get_template_directory() . '/inc/deregister_MEC.php';
