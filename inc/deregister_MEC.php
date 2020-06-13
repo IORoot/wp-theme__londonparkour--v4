@@ -17,7 +17,6 @@ function ldnpk_deregister_MEC() {
 
     // If this is the frontend, dequeue it.
     if ( !is_admin() ) {
-        wp_dequeue_script('jquery');  wp_deregister_script('jquery');
         wp_dequeue_script('jquery-ui-datepicker');
         wp_dequeue_script('mec-typekit-script');
         wp_dequeue_script('mec-featherlight-script');
