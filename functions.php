@@ -33,6 +33,16 @@ add_action( 'after_setup_theme', 'londonparkourv4_setup' );
 require get_template_directory() . '/inc/enqueue_scripts.php';
 
 /**
+ * DEqueue jQUery
+ */
+require get_template_directory() . '/inc/jQuery_specific_pages_only.php';
+
+/**
+ * DEqueue MEC
+ */
+require get_template_directory() . '/inc/deregister_MEC.php';
+
+/**
  * Register Sidebars and Widgets.
  */
 require get_template_directory() . '/inc/defer_all_js.php';
