@@ -11,6 +11,10 @@ add_action( 'wp_enqueue_scripts', 'ldnpk_deregister_styles', 100 );
 
 function ldnpk_deregister_styles() {
 
+    // Admin Bar needs this:
+    // wp_deregister_style( 'dashicons' );                 // Wordpress dashicons / adminbar
+
+
     // Dequeue CSS Styles
     wp_dequeue_style( 'font-awesome' );
     wp_dequeue_style( 'super-font-awesome' );   // Super Forms
@@ -19,29 +23,21 @@ function ldnpk_deregister_styles() {
     wp_dequeue_style( 'smile_fonts' );          // Ultimate_VC_Addons
     wp_dequeue_style( 'dashicons' );            // Wordpress dashicons
     wp_dequeue_style( 'wp-block-library' );     // Guttenburg blocks
-    //wp_dequeue_style( 'js_composer_front' );      // WPBakery - frontend
     wp_dequeue_style( 'js_composer_custom_css' );   // WPBakery - custom
 
     // Deregister CSS Styles
     wp_deregister_style( 'font-awesome' );
-    wp_deregister_style( 'super-font-awesome' ); // Super Forms
-    wp_deregister_style( 'rs-icon-set-pe-7s-' ); // revslider Icon-7
-    wp_deregister_style( 'font-awesome-fa' );    // real-media-library
-    wp_deregister_style( 'smile_fonts' );        // Ultimate_VC_Addons
-    wp_deregister_style( 'dashicons' );          // Wordpress dashicons
-    wp_deregister_style( 'wp-block-library' );   // Guttenburg blocks
+    wp_deregister_style( 'super-font-awesome' );        // Super Forms
+    wp_deregister_style( 'rs-icon-set-pe-7s-' );        // revslider Icon-7
+    wp_deregister_style( 'font-awesome-fa' );           // real-media-library
+    wp_deregister_style( 'smile_fonts' );               // Ultimate_VC_Addons\
+    wp_deregister_style( 'wp-block-library' );          // Guttenburg blocks
     wp_deregister_style( 'js_composer_custom_css' );    // WPBakery - custom
-    wp_deregister_style( 'teambooking_fonts' );         // TeamBooking Fonts
-    wp_deregister_style( 'teambooking_fonts_arrows' );  // TeamBooking Fonts
     wp_deregister_style( 'wp-my-instagram' );           // Instagram plugin
 
     // This is replaced in the sass/vendor/js_composer.sass file so we
     // can remove bits not needed.
     wp_deregister_style( 'js_composer_front' );       // WPBakery - frontend
-
-    // This breaks calendar
-    // Semantic_ui now put into SCSS and split up. See theme SASS/vendor/semantic_ui
-    wp_deregister_style( 'semantic-style' );            // Breaks calendar 
 
     // Deregister JS Scripts
     wp_deregister_script( 'wp-embed' );

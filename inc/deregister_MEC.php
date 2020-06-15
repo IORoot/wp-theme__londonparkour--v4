@@ -11,7 +11,15 @@ add_action( 'wp_enqueue_scripts', 'ldnpk_deregister_MEC', 101 );
 
 function ldnpk_deregister_MEC() {
 
-    if ( is_page( 'booking-2' ) ) {
+    if ( 
+        is_page( 'mec' )  ||
+        is_singular( 'class' ) ||
+        is_singular( 'classes' ) ||
+        is_singular( 'mec-events' ) ||
+        is_page( 'classes' ) ||
+        is_page( 'mec-events' ) ||
+        is_archive( 'mec-events' )
+    ) {
         return;   
     }
 

@@ -33,21 +33,6 @@ add_action( 'after_setup_theme', 'londonparkourv4_setup' );
 require get_template_directory() . '/inc/enqueue_scripts.php';
 
 /**
- * DEqueue jQUery
- */
-require get_template_directory() . '/inc/dequeue_jQuery.php';
-
-/**
- * DEqueue jQUery
- */
-require get_template_directory() . '/inc/dequeue_stripe.php';
-
-/**
- * DEqueue MEC
- */
-require get_template_directory() . '/inc/deregister_MEC.php';
-
-/**
  * Register Sidebars and Widgets.
  */
 require get_template_directory() . '/inc/defer_all_js.php';
@@ -76,6 +61,21 @@ require get_template_directory() . '/inc/customizer.php';
  * Remove Gutenberg bullshit
  */
 require get_template_directory() . '/inc/disable_gutenberg.php';
+
+/**
+ * DEqueue jQuery
+ */
+require get_template_directory() . '/inc/dequeue_jQuery.php';
+
+/**
+ * DEqueue jQUery
+ */
+require get_template_directory() . '/inc/dequeue_stripe.php';
+
+/**
+ * DEqueue MEC
+ */
+require get_template_directory() . '/inc/deregister_MEC.php';
 
 /**
  * Remove Frontend Styles & Scripts
