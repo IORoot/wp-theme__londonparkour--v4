@@ -38,6 +38,20 @@
         }
     }
 
+    // left
+    &l {
+        @for $i from 0 to 8 { 
+            &__#{$i} { margin-left: lh($i)} 
+        }
+    }
+
+    // right
+    &r {
+        @for $i from 0 to 8 { 
+            &__#{$i} { margin-right: lh($i)} 
+        }
+    }
+
 }
 
 // Padding
@@ -54,6 +68,20 @@
     &b {
         @for $i from 0 to 8 { 
             &__#{$i+1} { padding-bottom: lh($i+1)}
+        }
+    }
+
+    // left
+    &l {
+        @for $i from 0 to 8 { 
+            &__#{$i} { padding-left: lh($i)} 
+        }
+    }
+
+    // right
+    &r {
+        @for $i from 0 to 8 { 
+            &__#{$i} { padding-right: lh($i)}
         }
     }
     

@@ -3139,6 +3139,54 @@ a:hover, a:active {
 .mb__8 {
   margin-bottom: 232px;
 }
+.ml__0 {
+  margin-left: 0px;
+}
+.ml__1 {
+  margin-left: 29px;
+}
+.ml__2 {
+  margin-left: 58px;
+}
+.ml__3 {
+  margin-left: 87px;
+}
+.ml__4 {
+  margin-left: 116px;
+}
+.ml__5 {
+  margin-left: 145px;
+}
+.ml__6 {
+  margin-left: 174px;
+}
+.ml__7 {
+  margin-left: 203px;
+}
+.mr__0 {
+  margin-right: 0px;
+}
+.mr__1 {
+  margin-right: 29px;
+}
+.mr__2 {
+  margin-right: 58px;
+}
+.mr__3 {
+  margin-right: 87px;
+}
+.mr__4 {
+  margin-right: 116px;
+}
+.mr__5 {
+  margin-right: 145px;
+}
+.mr__6 {
+  margin-right: 174px;
+}
+.mr__7 {
+  margin-right: 203px;
+}
 
 .pt__1 {
   padding-top: 29px;
@@ -3187,6 +3235,54 @@ a:hover, a:active {
 }
 .pb__8 {
   padding-bottom: 232px;
+}
+.pl__0 {
+  padding-left: 0px;
+}
+.pl__1 {
+  padding-left: 29px;
+}
+.pl__2 {
+  padding-left: 58px;
+}
+.pl__3 {
+  padding-left: 87px;
+}
+.pl__4 {
+  padding-left: 116px;
+}
+.pl__5 {
+  padding-left: 145px;
+}
+.pl__6 {
+  padding-left: 174px;
+}
+.pl__7 {
+  padding-left: 203px;
+}
+.pr__0 {
+  padding-right: 0px;
+}
+.pr__1 {
+  padding-right: 29px;
+}
+.pr__2 {
+  padding-right: 58px;
+}
+.pr__3 {
+  padding-right: 87px;
+}
+.pr__4 {
+  padding-right: 116px;
+}
+.pr__5 {
+  padding-right: 145px;
+}
+.pr__6 {
+  padding-right: 174px;
+}
+.pr__7 {
+  padding-right: 203px;
 }
 
 .no-sidebar .content-area {
@@ -3879,6 +3975,39 @@ a:hover, a:active {
   background-position: center;
 }
 
+span.dayOfWeek {
+  position: absolute;
+  top: -18px;
+  lefT: 0px;
+  height: 18px;
+  width: 100%;
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+ul.mec-daily-view-dates-events {
+  padding: 0px;
+}
+ul.mec-daily-view-dates-events li.mec-daily-view-date-events .events {
+  display: flex;
+  flex-flow: row wrap;
+}
+ul.mec-daily-view-dates-events li.mec-daily-view-date-events .events .event {
+  width: 50%;
+}
+ul.mec-daily-view-dates-events li.mec-daily-view-date-events .events .event .mec-event-image {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  ul.mec-daily-view-dates-events li.mec-daily-view-date-events .events {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  ul.mec-daily-view-dates-events li.mec-daily-view-date-events .events .event {
+    width: 100%;
+  }
+}
 .ptcontact__icon {
   height: 58px;
   margin-bottom: 29px;

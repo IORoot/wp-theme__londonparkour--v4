@@ -1,0 +1,53 @@
+span.dayOfWeek {
+    position: absolute;
+    top: -18px;
+    lefT: 0px;
+    height: 18px;
+    width: 100%;
+    opacity: 0.5;
+    font-size: 12px;
+}
+
+
+ul.mec-daily-view-dates-events {
+
+    padding: 0px;
+
+    li.mec-daily-view-date-events{
+
+        .events {
+
+            display: flex;
+            flex-flow: row wrap;
+
+            .event {
+                width: 50%;   
+                
+                .mec-event-image {
+                    width: 100%;
+                }
+            }
+        }    
+    }
+}
+
+
+
+@media (max-width: $mobile) {
+
+    ul.mec-daily-view-dates-events {
+
+        li.mec-daily-view-date-events{
+    
+            .events {
+    
+                display: flex;
+                flex-flow: row wrap;
+    
+                .event {
+                    width: 100%;    
+                }
+            }    
+        }
+    }
+}
