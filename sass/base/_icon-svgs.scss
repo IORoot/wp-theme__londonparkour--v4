@@ -42,7 +42,8 @@ $icons: (
     'map': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M15,19L9,16.89V5L15,7.11M20.5,3C20.44,3 20.39,3 20.34,3L15,5.1L9,3L3.36,4.9C3.15,4.97 3,5.15 3,5.38V20.5A0.5,0.5 0 0,0 3.5,21C3.55,21 3.61,21 3.66,20.97L9,18.9L15,21L20.64,19.1C20.85,19 21,18.85 21,18.62V3.5A0.5,0.5 0 0,0 20.5,3Z"/></svg>',
     'email': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/></svg>',
     'instagram': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"/></svg>',
-    
+    'clock': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"/></svg>',    
+
     // Articles
     'view-quilt': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M10,5V11H21V5M16,18H21V12H16M4,18H9V5H4M10,18H15V12H10V18Z"/></svg>',
     'filmstrip': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M18,9H16V7H18M18,13H16V11H18M18,17H16V15H18M8,9H6V7H8M8,13H6V11H8M8,17H6V15H8M18,3V5H16V3H8V5H6V3H4V21H6V19H8V21H16V19H18V21H20V3H18Z"/></svg>',
@@ -135,6 +136,7 @@ $icons: (
 .mdi-map { background-image: get-icon( 'map', #FFFFFF ); }
 .mdi-email { background-image: get-icon( 'email', #FFFFFF ); }
 .mdi-instagram { background-image: get-icon( 'instagram', #FFFFFF ); }
+.mdi-clock { background-image: get-icon( 'clock', #FFFFFF ); }
 
 .mdi-view-quilt { background-image: get-icon( 'view-quilt', #FFFFFF ); }
 .mdi-filmstrip { background-image: get-icon( 'filmstrip', #FFFFFF ); }

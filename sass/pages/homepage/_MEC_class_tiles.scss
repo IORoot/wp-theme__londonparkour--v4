@@ -1,0 +1,41 @@
+.home {
+
+    .mec-event-tile-view {
+
+        .events {
+
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+
+            .event {
+
+                flex: 1 0 auto;
+
+                display: block;
+                width: 33%;  
+                padding: 10px;
+            
+                a {
+                    line-height: 29px;
+                    text-decoration: none;
+                    color: #242424;
+
+                    article {
+                        min-height: 290px;
+                        padding: 29px;   
+                        background-size: cover;
+                        background-position: center right;
+    
+                        .event-tile-view-head {
+                            margin-top: 145px;
+                        }
+                        
+                    }
+                }
+                
+            }
+
+        }
+    }
+}

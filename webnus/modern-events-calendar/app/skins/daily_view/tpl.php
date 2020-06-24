@@ -29,7 +29,15 @@ foreach($this->events as $date=>$events)
         data-day-weekday="'.$this->main->date_i18n('l', $time).'" 
         data-day-monthday="'.date('j', $time).'">';
     $labels .= $this->main->date_i18n('j', $time);
-    $labels .= '<span class="dayOfWeek">' . date('D',$time) .'</span>';
+
+    $day = '<span class="dayOfWeek">' . date('D',$time) .'</span>';
+
+    if (date('Y-m-d',$time) == '2020-06-23')
+    {
+        $day = '<span class="today_marker">Today</span>';
+    }
+
+    $labels .= $day;
     $labels .= '</div>';
 }
 
@@ -66,11 +74,6 @@ if($this->next_previous_button)
         $navigator_html .= '<div class="mec-color mec-next-month mec-load-month" data-mec-year="'.date('Y', $_1month_after).'" data-mec-month="'.date('m', $_1month_after).'"><i class="mec-sl-angle-right"></i></div>';
     }
 }
-
-// $month_html = '<div class="mec-today-container mec-calendar-d-top" id="mec_today_container'.$this->id.'_'.date('Ym', $current_month_time).'"></div>
-// <div class="mec-date-labels-container mec-calendar-d-table"><a href="#" class="mec-table-d-prev mec-color"><i class="mec-sl-angle-left"></i></a><a href="#" class="mec-table-d-next mec-color"><i class="mec-sl-angle-right"></i></a>'.$date_labels.'</div>
-// <div class="mec-date-labels-container mec-calendar-day-events mec-clear">'.$date_events.'</div>';
-
 $month_html = '<div class="mec-today-container mec-calendar-d-top" id="mec_today_container'.$this->id.'_'.date('Ym', $current_month_time).'"></div>';
 
 $month_html .= '<div class="mec-date-labels-container mec-calendar-d-table">';

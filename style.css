@@ -790,6 +790,10 @@ code {
   background-image: url('data:image/svg+xml;utf-8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%23FFFFFF" d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"/></svg>');
 }
 
+.mdi-clock {
+  background-image: url('data:image/svg+xml;utf-8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%23FFFFFF" d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"/></svg>');
+}
+
 .mdi-view-quilt {
   background-image: url('data:image/svg+xml;utf-8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%23FFFFFF" d="M10,5V11H21V5M16,18H21V12H16M4,18H9V5H4M10,18H15V12H10V18Z"/></svg>');
 }
@@ -3975,39 +3979,140 @@ a:hover, a:active {
   background-position: center;
 }
 
-span.dayOfWeek {
+.classes .mec-search-form {
+  position: absolute;
+  right: 0px;
+  top: 58px;
+  padding: 20px 5px;
+}
+.classes .mec-search-form .mec-dropdown-search select {
+  margin-bottom: 0px !important;
+}
+@media (max-width: 1023px) {
+  .classes .mec-search-form {
+    position: relative;
+  }
+}
+.classes .mec-calendar-daily span.dayOfWeek {
   position: absolute;
   top: -18px;
-  lefT: 0px;
+  left: 0px;
   height: 18px;
   width: 100%;
   opacity: 0.5;
   font-size: 12px;
 }
-
-ul.mec-daily-view-dates-events {
+.classes .mec-calendar-daily span.today_marker {
+  position: absolute;
+  top: -18px;
+  left: 0px;
+  height: 18px;
+  width: 100%;
+  font-size: 12px;
+  color: #53a5e3;
+  font-weight: 600;
+}
+.classes .mec-calendar-daily .mec-has-event:after {
+  bottom: 8px;
+}
+.classes .mec-calendar-daily .mec-calendar-d-table a.mec-table-d-next,
+.classes .mec-calendar-daily .mec-calendar-d-table a.mec-table-d-prev {
+  text-decoration: none;
+}
+.classes .mec-calendar-daily .mec-calendar-d-top {
+  display: none;
+}
+.classes .mec-calendar-daily .mec-calendar-day-events {
+  background-color: #fff;
+}
+.classes .mec-calendar-daily ul.mec-daily-view-dates-events {
   padding: 0px;
 }
-ul.mec-daily-view-dates-events li.mec-daily-view-date-events .events {
+.classes .mec-calendar-daily ul.mec-daily-view-dates-events li.mec-daily-view-date-events .events {
   display: flex;
   flex-flow: row wrap;
+  padding: 10px;
 }
-ul.mec-daily-view-dates-events li.mec-daily-view-date-events .events .event {
+.classes .mec-calendar-daily ul.mec-daily-view-dates-events li.mec-daily-view-date-events .events .event {
   width: 50%;
+  padding: 10px 10px 10px 10px;
 }
-ul.mec-daily-view-dates-events li.mec-daily-view-date-events .events .event .mec-event-image {
-  width: 100%;
+.classes .mec-calendar-daily ul.mec-daily-view-dates-events li.mec-daily-view-date-events .events .event a article {
+  min-height: 348px;
+  background-size: cover;
+  background-position: center right;
+  border-radius: 0.6vw;
+  position: relative;
 }
-
+.classes .mec-calendar-daily ul.mec-daily-view-dates-events li.mec-daily-view-date-events .events .event a article .card-meta {
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  padding: 20px 40px;
+  min-width: 232px;
+  opacity: 0.95;
+}
+.classes .mec-calendar-daily ul.mec-daily-view-dates-events li.mec-daily-view-date-events .events .event a article .card-meta .highlight-today {
+  color: #242424;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.classes .mec-calendar-daily ul.mec-daily-view-dates-events li.mec-daily-view-date-events .events .event a article .card-meta .highlight-today i {
+  filter: url(#yellow);
+  margin-right: 2px;
+  width: 24px;
+  height: 24px;
+}
+.classes .mec-calendar-daily ul.mec-daily-view-dates-events li.mec-daily-view-date-events .events .event a article .card-meta * {
+  color: #fff;
+}
+.classes .mec-calendar-daily ul.mec-daily-view-dates-events li.mec-daily-view-date-events .events .event a article .card-meta .mec-event-time {
+  font-size: 13px;
+  font-weight: 600;
+}
+.classes .mec-calendar-daily ul.mec-daily-view-dates-events li.mec-daily-view-date-events .events .event a article .card-meta .mec-event-time i {
+  margin: 0px 5px;
+}
+.classes .mec-calendar-daily ul.mec-daily-view-dates-events li.mec-daily-view-date-events .events .event a article .card-meta .link {
+  font-size: 18px;
+  line-height: 29px;
+  margin-top: 5px;
+  font-weight: 700;
+}
+.classes .mec-calendar-daily ul.mec-daily-view-dates-events li.mec-daily-view-date-events .events .event a:hover .card-meta {
+  background-color: #fff !important;
+}
+.classes .mec-calendar-daily ul.mec-daily-view-dates-events li.mec-daily-view-date-events .events .event a:hover .card-meta * {
+  color: #242424 !important;
+}
+.classes .mec-calendar-daily ul.mec-daily-view-dates-events li.mec-daily-view-date-events .events .event a:hover .card-meta i {
+  filter: url(#night);
+}
+.classes .mec-calendar-daily .mec-event-footer a {
+  color: #e34f65;
+  margin-right: 20px;
+  display: inline-block;
+  line-height: 29px;
+}
+.classes .mec-calendar-daily .mec-event-footer a:hover {
+  color: #242424;
+}
+.classes .mec-calendar-daily .mec-event-footer a::after {
+  width: 16px;
+  height: 16px;
+  filter: url(#rose);
+}
 @media (max-width: 767px) {
-  ul.mec-daily-view-dates-events li.mec-daily-view-date-events .events {
+  .classes .mec-calendar-daily ul.mec-daily-view-dates-events li.mec-daily-view-date-events .events {
     display: flex;
     flex-flow: row wrap;
   }
-  ul.mec-daily-view-dates-events li.mec-daily-view-date-events .events .event {
+  .classes .mec-calendar-daily ul.mec-daily-view-dates-events li.mec-daily-view-date-events .events .event {
     width: 100%;
   }
 }
+
 .ptcontact__icon {
   height: 58px;
   margin-bottom: 29px;
@@ -4663,6 +4768,32 @@ ul.mec-daily-view-dates-events li.mec-daily-view-date-events .events .event .mec
     line-height: 12vw;
   }
 }
+.home .mec-event-tile-view .events {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.home .mec-event-tile-view .events .event {
+  flex: 1 0 auto;
+  display: block;
+  width: 33%;
+  padding: 10px;
+}
+.home .mec-event-tile-view .events .event a {
+  line-height: 29px;
+  text-decoration: none;
+  color: #242424;
+}
+.home .mec-event-tile-view .events .event a article {
+  min-height: 290px;
+  padding: 29px;
+  background-size: cover;
+  background-position: center right;
+}
+.home .mec-event-tile-view .events .event a article .event-tile-view-head {
+  margin-top: 145px;
+}
+
 .single-post .site-content .content-area {
   float: right;
   margin: 87px 0 87px -25%;
