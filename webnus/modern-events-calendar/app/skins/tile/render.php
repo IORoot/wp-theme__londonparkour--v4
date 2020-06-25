@@ -59,28 +59,38 @@ $map_events = array();
                         <article 
                             <?php echo 'style="background-color:' . $event_color.'; background-image:' . $background_image. '"'; ?> 
                             data-style="<?php echo $label_style; ?>" 
-                            class="liftup <?php echo ((isset($event->data->meta['event_past']) and trim($event->data->meta['event_past'])) ? 'mec-past-event' : ''); ?> mec-event-article mec-tile-item <?php echo $me_class; ?> mec-clear <?php echo $this->get_event_classes($event); ?>">
+                            class="<?php echo ((isset($event->data->meta['event_past']) and trim($event->data->meta['event_past'])) ? 'mec-past-event' : ''); ?> mec-event-article mec-tile-item <?php echo $me_class; ?> mec-clear <?php echo $this->get_event_classes($event); ?>">
                             
                             <?php do_action('mec_skin_tile_view', $event); ?>
-
-                            <div class="event-tile-view-head clearfix">
-                                
-                                <?php if(isset($settings['multiple_day_show_method']) && $settings['multiple_day_show_method'] == 'all_days') : ?>
-                                    <div class="mec-event-date"><?php echo $this->main->date_i18n($this->date_format_clean_1, strtotime($event->date['start']['date'])); ?></div>
-                                    <div class="mec-event-month"><?php echo $this->main->date_i18n($this->date_format_clean_2, strtotime($event->date['start']['date'])); ?></div>
-                                <?php else: ?>
-                                    <div class="mec-event-month"><?php echo $this->main->dateify($event, $this->date_format_clean_1 .' '. $this->date_format_clean_2); ?></div>
-                                <?php endif; ?>
-                                <div class="mec-event-time"><i class="mec-sl-clock"></i><?php echo $start_time; ?></div>
-                            </div>
-
-                            <div class="mec-event-content">
-                                <div class="mec-event-detail"><?php echo (isset($location['name']) ? '<i class="mec-sl-location-pin"></i>' . $location['name'] : ''); ?></div>
-                                <?php echo $this->main->get_normal_labels($event, $display_label).$this->main->display_cancellation_reason($event->data->ID, $reason_for_cancellation); ?>
-                                <!-- <h4 class="mec-event-title"><?php echo $this->main->get_flags($event->data->ID, $event_start_date); ?></h4> -->
-                            </div>
                         </article>
+                        
+                        <div class="class-overlay">
+                            <div class="button button__arrow--right mdi__pseudo--sky">
+                                <span>Booking Page</span>
+                            </div>
+                        </div>
                     </a>
+
+                    <div class="class-meta" <?php echo 'style="background-color:' . $event_color.';"'; ?>    >
+
+                        <div class="event-tile-view-head clearfix">
+                            <i class="mdi mdi-calendar mdi--mist"></i>
+                            <?php if(isset($settings['multiple_day_show_method']) && $settings['multiple_day_show_method'] == 'all_days') : ?>
+                                <div class="mec-event-date"><?php echo $this->main->date_i18n($this->date_format_clean_1, strtotime($event->date['start']['date'])); ?></div>
+                                <div class="mec-event-month"><?php echo $this->main->date_i18n($this->date_format_clean_2, strtotime($event->date['start']['date'])); ?></div>
+                            <?php else: ?>
+                                <div class="mec-event-month"><?php echo $this->main->dateify($event, $this->date_format_clean_1 .' '. $this->date_format_clean_2); ?></div>
+                            <?php endif; ?>
+                            <div class="mec-event-time"><i class="mdi mdi-clock mdi--mist"></i><?php echo $start_time; ?></div>
+                        </div>
+
+                        <div class="mec-event-content">
+                            <div class="mec-event-detail"><?php echo (isset($location['name']) ? '<i class="mdi mdi-map-marker mdi--mist"></i>' . $location['name'] : ''); ?></div>
+                            <?php echo $this->main->get_normal_labels($event, $display_label).$this->main->display_cancellation_reason($event->data->ID, $reason_for_cancellation); ?>
+                            <!-- <h4 class="mec-event-title"><?php echo $this->main->get_flags($event->data->ID, $event_start_date); ?></h4> -->
+                        </div>
+
+                    </div>
 
                     <?php
                     echo '</div>';

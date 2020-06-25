@@ -33,7 +33,8 @@ $icons: (
     'youtube-subscriptions': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M20,8H4V6H20V8M18,2H6V4H18V2M22,12V20A2,2 0 0,1 20,22H4A2,2 0 0,1 2,20V12A2,2 0 0,1 4,10H20A2,2 0 0,1 22,12M16,16L10,12.73V19.26L16,16Z"/></svg>',
     'hand-pointing-up': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M14,3V13L17.2,11.31L17.42,11.28C17.71,11.28 17.97,11.4 18.16,11.6L18.9,12.37L14,16.57C13.74,16.84 13.39,17 13,17H6.5C5.73,17 5,16.3 5,15.5V11.14C5,10.53 5.35,10 5.85,9.8L10.79,7.6L12,7.47V3A1,1 0 0,1 13,2A1,1 0 0,1 14,3M5,19H13V22H5V19Z"/></svg>',
     'star': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z"/></svg>',
-    
+    'calendar': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M9,10V12H7V10H9M13,10V12H11V10H13M17,10V12H15V10H17M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5A2,2 0 0,1 5,3H6V1H8V3H16V1H18V3H19M19,19V8H5V19H19M9,14V16H7V14H9M13,14V16H11V14H13M17,14V16H15V14H17Z"/></svg>',
+
     // Classes
     'plus-one': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M10,8V12H14V14H10V18H8V14H4V12H8V8H10M14.5,6.08L19,5V18H17V7.4L14.5,7.9V6.08Z"/></svg>',
     'police-badge': '<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%%COLOR%%" d="M22 4L20 2C18.85 2.64 17.4 3 16 3C14.6 3 13.14 2.63 12 2C10.86 2.63 9.4 3 8 3C6.6 3 5.15 2.64 4 2L2 4C2 4 4 6 4 8S2 14 2 16C2 20 12 22 12 22S22 20 22 16C22 14 20 10 20 8S22 4 22 4M15.05 16.45L11.97 14.59L8.9 16.45L9.72 12.95L7 10.61L10.58 10.3L11.97 7L13.37 10.29L16.95 10.6L14.23 12.94L15.05 16.45Z"/></svg>',
@@ -128,6 +129,7 @@ $icons: (
 .mdi-youtube-subscriptions { background-image: get-icon( 'youtube-subscriptions', #FFFFFF ); }
 .mdi-hand-pointing-up { background-image: get-icon( 'hand-pointing-up', #FFFFFF ); }
 .mdi-star { background-image: get-icon( 'star', #FFFFFF ); }
+.mdi-calendar { background-image: get-icon( 'calendar', #FFFFFF ); }
 
 .mdi-plus-one { background-image: get-icon( 'plus-one', #FFFFFF ); }
 .mdi-police-badge { background-image: get-icon( 'police-badge', #FFFFFF ); }

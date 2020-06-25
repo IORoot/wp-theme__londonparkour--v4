@@ -131,3 +131,4 @@ require get_template_directory() . '/inc/turn_off_plugin_updates.php';
  * ACTIONS
  */
 require get_template_directory() . '/actions/yt_action_post_process.php';
+require get_template_directory() . '/actions/admin_css.php';
