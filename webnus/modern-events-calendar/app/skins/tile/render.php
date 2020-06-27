@@ -2,6 +2,7 @@
 /** no direct access **/
 defined('MECEXEC') or die();
 
+
 $styling = $this->main->get_styling();
 $event_colorskin = (isset($styling['mec_colorskin'] ) || isset($styling['color'])) ? 'colorskin-custom' : '';
 $display_label = isset($this->skin_options['display_label']) ? $this->skin_options['display_label'] : false;
@@ -12,23 +13,17 @@ $map_events = array();
 ?>
 <div class="mec-wrap <?php echo $event_colorskin; ?>">
     <div class="mec-event-tile-view">
-        <div class="events">
+        <div class="events main-carousel" data-flickity=' { "groupCells": true, "contain": true, "pageDots": false, "prevNextButtons": true } '>
             <?php
-            $count = $this->count;
-
-            if($count == 0 or $count == 5) $col = 4;
-            else $col = 12 / $count;
-
+            $count = 8;
             $rcount = 1 ;
             foreach($this->events as $date):
 
                 foreach($date as $event):
 
-                    if ($rcount > $this->count){ break; }
-
                     $map_events[] = $event;
                     
-                    echo '<div class="event">';
+                    echo '<div class="event carousel-cell">';
 
 
                     $location = isset($event->data->locations[$event->data->meta['mec_location_id']])? $event->data->locations[$event->data->meta['mec_location_id']] : array();
@@ -94,8 +89,6 @@ $map_events = array();
 
                     <?php
                     echo '</div>';
-
-                    $rcount++;
                     
                     ?>
                 <?php endforeach; ?>

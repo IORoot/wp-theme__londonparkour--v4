@@ -2,6 +2,13 @@
 /** no direct access **/
 defined('MECEXEC') or die();
 
+
+wp_register_style( 'flickity_css_hp', 'https://unpkg.com/flickity@2/dist/flickity.min.css' );
+wp_register_script( 'flickity_js_hp', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js' );
+wp_enqueue_style( 'flickity_css_hp' );
+wp_enqueue_script( 'flickity_js_hp' );
+
+
 // Get layout path
 $render_path = $this->get_render_path();
 
@@ -19,7 +26,13 @@ $month_html = ob_get_clean();
 
 if(isset($this->atts['return_only_items']) and $this->atts['return_only_items'])
 {
-    echo json_encode(array('html'=>$month_html, 'end_date'=>$this->end_date, 'offset'=>$this->next_offset, 'count'=>$this->found));
+    echo json_encode(
+            array(
+                'html'=>$month_html, 
+                'end_date'=>$this->end_date, 
+                'offset'=>$this->next_offset, 
+                'count'=>$this->found)
+            );
     exit;
 }
 
@@ -28,10 +41,6 @@ $navigator_html = '';
 $styling = $this->main->get_styling();
 
 $event_colorskin = (isset($styling['mec_colorskin'] ) || isset($styling['color'])) ? 'colorskin-custom' : '';
-// $dark_mode = (isset($styling['dark_mode'])) ? $styling['dark_mode'] : '';
-
-// if($dark_mode == 1) $set_dark = 'mec-dark-mode';
-// else $set_dark ='';
 
 do_action('mec_start_skin' , $this->id);
 do_action('mec_tile_head');

@@ -4773,14 +4773,12 @@ a:hover, a:active {
   }
 }
 .home .mec-event-tile-view .events {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px;
+  padding: 10px 40px;
+  width: 100%;
 }
 .home .mec-event-tile-view .events .event {
-  flex: 1 0 auto;
   display: block;
-  width: 33%;
+  width: 33.333%;
   padding: 10px;
 }
 .home .mec-event-tile-view .events .event a {
@@ -4850,6 +4848,21 @@ a:hover, a:active {
 }
 .home .mec-event-tile-view .events .event .class-meta .mec-event-content {
   display: inline-block;
+}
+.home .mec-event-tile-view .events .flickity-button {
+  top: 50%;
+  width: 30px;
+  height: 100%;
+  border-radius: 0px;
+  transform: translateY(-50%);
+  background: #f1f1f1;
+  padding: 0px;
+}
+.home .mec-event-tile-view .events .flickity-prev-next-button.previous {
+  left: 0px;
+}
+.home .mec-event-tile-view .events .flickity-prev-next-button.next {
+  right: 0px;
 }
 @media (max-width: 1023px) {
   .home .mec-event-tile-view .events .event {
