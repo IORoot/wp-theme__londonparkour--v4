@@ -3983,6 +3983,20 @@ a:hover, a:active {
   background-position: center;
 }
 
+.mec-container .mec-wrap .mec-single-event .mec-event-meta {
+  padding: 0px;
+  border: none;
+}
+
+.mec-single-event .mec-events-meta-group-countdown,
+.mec-single-event .mec-frontbox {
+  border: none;
+  box-shadow: 0px;
+}
+.mec-single-event .mec-frontbox-title {
+  display: none;
+}
+
 .classes .mec-search-form {
   position: absolute;
   right: 0px;

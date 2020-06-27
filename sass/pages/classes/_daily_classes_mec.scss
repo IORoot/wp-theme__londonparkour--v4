@@ -1,3 +1,6 @@
+@import "mec_daily_classes/meta_boxes";
+@import "mec_daily_classes/widgets";
+
 .classes {
 
     @import "mec_daily_classes/filter_bar";
@@ -12,7 +15,7 @@
             opacity: 0.5;
             font-size: 12px;
         }
-        span.today_marker {
+        span.today_marker { 
             position: absolute;
             top: -18px;
             left: 0px;
