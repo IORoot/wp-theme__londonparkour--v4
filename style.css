@@ -6661,7 +6661,8 @@ a:hover, a:active {
   width: 13%;
 }
 
-.classes .asp_product_item {
+.asp_product_buy_button,
+.asp_product_item {
   border: 0px;
   box-shadow: none;
   padding: 29px;
@@ -6670,29 +6671,35 @@ a:hover, a:active {
   color: #ffffff;
   height: 290px;
 }
-.classes .asp_product_item .asp_product_item_thumbnail {
+.asp_product_buy_button .asp_product_item_thumbnail,
+.asp_product_item .asp_product_item_thumbnail {
   display: none;
 }
-.classes .asp_product_item .asp_product_name {
+.asp_product_buy_button .asp_product_name,
+.asp_product_item .asp_product_name {
   font-size: 18px;
   line-height: 29px;
   color: #e34f65;
   font-weight: 400;
 }
-.classes .asp_product_item .asp_product_description {
+.asp_product_buy_button .asp_product_description,
+.asp_product_item .asp_product_description {
   margin: 0px;
   border: 0px;
 }
-.classes .asp_product_item .asp_price_container {
+.asp_product_buy_button .asp_price_container,
+.asp_product_item .asp_price_container {
   margin: 0px;
 }
-.classes .asp_product_item .asp_price_container .asp_price_amount {
+.asp_product_buy_button .asp_price_container .asp_price_amount,
+.asp_product_item .asp_price_container .asp_price_amount {
   font-size: 18px;
   line-height: 29px;
   color: #e34f65;
   font-weight: 400;
 }
-.classes .asp_product_item .asp_product_buy_btn_container button {
+.asp_product_buy_button .asp_product_buy_btn_container button,
+.asp_product_item .asp_product_buy_btn_container button {
   position: absolute;
   right: 29px;
   bottom: 29px;
@@ -6707,7 +6714,8 @@ a:hover, a:active {
   text-align: center;
   cursor: pointer;
 }
-.classes .asp_product_item .asp_product_buy_btn_container button:hover {
+.asp_product_buy_button .asp_product_buy_btn_container button:hover,
+.asp_product_item .asp_product_buy_btn_container button:hover {
   background-color: #ffffff;
   color: #e34f65;
 }

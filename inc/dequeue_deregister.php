@@ -13,6 +13,7 @@ function ldnpk_deregister_styles() {
 
     // Admin Bar needs this:
     // wp_deregister_style( 'dashicons' );                 // Wordpress dashicons / adminbar
+    wp_dequeue_style( 'dashicons' );            // Wordpress dashicons
 
 
     // Dequeue CSS Styles
@@ -21,7 +22,6 @@ function ldnpk_deregister_styles() {
     wp_dequeue_style( 'rs-icon-set-pe-7s-' );   // revslider Icon-7
     wp_dequeue_style( 'font-awesome-fa' );      // real-media-library
     wp_dequeue_style( 'smile_fonts' );          // Ultimate_VC_Addons
-    wp_dequeue_style( 'dashicons' );            // Wordpress dashicons
     wp_dequeue_style( 'wp-block-library' );     // Guttenburg blocks
     wp_dequeue_style( 'js_composer_custom_css' );   // WPBakery - custom
 

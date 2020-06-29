@@ -23,7 +23,10 @@
 
 // The $scripts parameter is an array of all the scripts that need to be loaded for Simple Pay
 function simpay_custom_remove_scripts( $scripts ) {
-	if ( ! is_page( array( 'classes' ) ) ) {
+
+	$one = 1;
+
+	if ( ! is_page( array( 'classes', 'bookings' ) ) ) {
 		// If we don't want to load any scripts then we can just return an empty array.
 		return array();
 	}
@@ -34,9 +37,11 @@ function simpay_custom_remove_scripts( $scripts ) {
 
 add_filter( 'simpay_before_register_public_scripts', 'simpay_custom_remove_scripts', 20 );
 
+
+
 // The $style parameter is an array of all the styles that need to be loaded for Simple Pay
 function simpay_custom_remove_styles( $styles ) {
-	if ( ! is_page( array( 'classes' ) ) ) {
+	if ( ! is_page( array( 'classes', 'bookings' ) ) ) {
 		// If we don't want to load any styles then we can just return an empty array.
 		return array();
 	}
@@ -46,6 +51,8 @@ function simpay_custom_remove_styles( $styles ) {
 }
 
 add_filter( 'simpay_before_register_public_styles', 'simpay_custom_remove_styles', 20 );
+
+
 
 //  ┌──────────────────────────────────────┐ 
 //  │                                      │░
@@ -58,7 +65,10 @@ add_action( 'wp_enqueue_scripts', 'ldnpk_deregister_stripe', 102 );
 
 function ldnpk_deregister_stripe() {
 
-    if ( is_page( 'classes' ) ) {
+    if ( is_page('classes') ) {
+        return;   
+    }
+    if ( is_page('bookings') ) {
         return;   
     }
 
