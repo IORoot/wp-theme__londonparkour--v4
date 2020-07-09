@@ -2147,6 +2147,47 @@ a:hover, a:active {
   margin-right: 5px;
 }
 
+.widget-area .widget_nav_menu .menu-pulse-ig-container ul {
+  padding: 0px 20px;
+  list-style: none;
+}
+.widget-area .widget_nav_menu .menu-pulse-ig-container ul li {
+  line-height: 29px;
+  overflow: hidden;
+  height: 29px;
+}
+.widget-area .widget_nav_menu .menu-pulse-ig-container ul li.menu-item-current {
+  background-color: #f5f5f5;
+}
+.widget-area .widget_nav_menu .menu-pulse-ig-container ul li a {
+  text-decoration: none;
+  color: #e0e0e0;
+}
+.widget-area .widget_nav_menu .menu-pulse-ig-container ul li a:hover {
+  color: #53a5e3;
+}
+.widget-area .widget_nav_menu .menu-pulse-ig-container ul li a:active {
+  color: #e34f65;
+}
+.widget-area .widget_nav_menu .menu-pulse-ig-container ul li a .menu-item-icon {
+  font-size: 18px;
+  padding-top: 2px;
+  line-height: 16px;
+  vertical-align: text-top;
+  width: 16px;
+  margin-right: 16px;
+}
+.widget-area .widget_nav_menu .menu-pulse-ig-container ul li a span.mdi {
+  font-size: 18px;
+  padding-top: 0px;
+  line-height: 16px;
+  vertical-align: initial;
+  width: 16px;
+  margin-right: 5px;
+  margin: 0px 7px 0px 4px;
+  color: #757575;
+}
+
 .menu-toggle {
   display: none;
 }
@@ -4196,6 +4237,13 @@ a:hover, a:active {
   white-space: nowrap;
   padding: 29px 25% 0px 35px;
 }
+.pulse .andyp-grid__cell-profile_pic {
+  height: 18px;
+  padding-right: 5px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
 .pulse .pulse_header .andyp-grid__cell {
   background: #000;
 }
@@ -4542,6 +4590,63 @@ a:hover, a:active {
     color: #ffffff;
   }
 }
+.pulse .pulse_ig_header .andyp-grid__cell {
+  background: #000;
+}
+.pulse .pulse_ig_header .andyp-grid__cell-link {
+  margin-bottom: 0px;
+}
+.pulse .pulse_ig_header .andyp-grid__cell-sideblend {
+  display: block;
+  background: linear-gradient(to right, #000, #000 25%, rgba(0, 0, 0, 0) 60%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.pulse .pulse_ig_header .andyp-grid__cell-image {
+  background-size: auto 700px;
+  background-position: center;
+}
+.pulse .pulse_ig_header .andyp-grid__cell-meta {
+  color: #f5f5f5;
+}
+.pulse .pulse_ig_header .andyp-grid__cell-info {
+  position: absolute;
+  top: 29px;
+  left: 8.33%;
+  width: 25%;
+  padding: 29px 0px;
+}
+.pulse .pulse_ig_header .andyp-grid__cell-channeltitle {
+  margin-bottom: 29px;
+  display: inline-block;
+}
+.pulse .pulse_ig_header .andyp-grid__cell-profile_pic {
+  height: 29px;
+  margin-right: 10px;
+  position: relative;
+  display: inline-block;
+  left: 0px;
+  top: 0px;
+}
+.pulse .pulse_ig_header .andyp-grid__cell-title {
+  height: initial;
+  padding: 0px;
+  line-height: 29px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-left: 0px;
+  border-radius: initial;
+  font-size: 29px;
+  white-space: initial;
+}
+.pulse .pulse_ig_header .andyp-grid__cell-date {
+  left: 0px;
+  padding: 0px;
+  color: #D0C8B3;
+}
 .pulse .pulse_ig_curated .andyp-grid__cell-icon {
   top: 29px;
 }
@@ -4550,6 +4655,23 @@ a:hover, a:active {
 }
 .pulse .pulse_ig_curated .andyp-grid__cell-text {
   top: 145px;
+  position: absolute;
+}
+.pulse .pulse_ig_londonparkour .andyp-grid__cell-icon {
+  top: 29px;
+}
+.pulse .pulse_ig_londonparkour .andyp-grid__cell-channel {
+  top: 87px;
+}
+.pulse .pulse_ig_londonparkour .andyp-grid__cell-text {
+  top: 145px;
+  position: absolute;
+}
+.pulse .pulse_ig_hashtag_parkour .andyp-grid__cell-icon {
+  top: 29px;
+}
+.pulse .pulse_ig_hashtag_parkour .andyp-grid__cell-text {
+  top: 87px;
   position: absolute;
 }
 
