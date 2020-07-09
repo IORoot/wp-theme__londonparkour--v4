@@ -4674,6 +4674,13 @@ a:hover, a:active {
   top: 87px;
   position: absolute;
 }
+.pulse .pulse_ig_trending_hashtags .andyp-grid__cell-icon {
+  top: 29px;
+}
+.pulse .pulse_ig_trending_hashtags .andyp-grid__cell-text {
+  top: 87px;
+  position: absolute;
+}
 
 @media (max-width: 767px) {
   .private h1 {
