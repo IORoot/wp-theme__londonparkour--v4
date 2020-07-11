@@ -88,7 +88,6 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "layout/navigation/sidebar-wiki";
 @import "layout/navigation/sidebar-dashboard";
 @import "layout/navigation/sidebar-pulse";
-@import "layout/navigation/sidebar-pulse-ig";
 @import "layout/navigation/menus";
 @import "layout/navigation/footer";
 @import "layout/responsive_desktop";
@@ -115,11 +114,12 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 @import "pages/classes/classes";    
 @import "pages/classes/daily_classes_mec";    
 @import "pages/pt/pt";  
-@import "pages/pulse/pulse";      
+@import "pages/pulse/pulse";     
+@import "pages/pulse/pulsepage"; 
 @import "pages/pulse/pulse_flickity";      
 @import "pages/pulse/pulse_flickity-tablet";      
 @import "pages/pulse/pulse_flickity-mobile"; 
-@import "pages/pulse/pulse_instagram";      
+@import "pages/pulse/pulse_instagram";       
 @import "pages/privatetuition/private";  
 @import "pages/homepage/homepage";  
 @import "pages/homepage/MEC_class_tiles"; 

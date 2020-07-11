@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying MODALS for the YouTube CPT on the scraper.
+ * Template part for displaying MODALS for the Pulse CPT on the scraper.
  */
 ?>
 
