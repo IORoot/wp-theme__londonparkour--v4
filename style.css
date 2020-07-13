@@ -4652,6 +4652,65 @@ a:hover, a:active {
     color: #ffffff;
   }
 }
+.pulse .pulse_it_header .andyp-grid__cell {
+  background: #000;
+}
+.pulse .pulse_it_header .andyp-grid__cell-link {
+  margin-bottom: 0px;
+}
+.pulse .pulse_it_header .andyp-grid__cell-sideblend {
+  display: block;
+  background: linear-gradient(to right, #000, #000 25%, rgba(0, 0, 0, 0) 60%);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.pulse .pulse_it_header .andyp-grid__cell-image {
+  background-size: auto 700px;
+  background-position: center;
+}
+.pulse .pulse_it_header .andyp-grid__cell-meta {
+  color: #f5f5f5;
+}
+.pulse .pulse_it_header .andyp-grid__cell-info {
+  position: absolute;
+  top: 29px;
+  left: 8.33%;
+  width: 25%;
+  padding: 29px 0px;
+}
+.pulse .pulse_it_header .andyp-grid__cell-channeltitle {
+  margin-bottom: 29px;
+  line-height: 58px;
+  display: inline-block;
+}
+.pulse .pulse_it_header .andyp-grid__cell-profile_pic {
+  height: 29px;
+  margin-right: 10px;
+  position: relative;
+  display: inline-block;
+  left: 0px;
+  top: 0px;
+}
+.pulse .pulse_it_header .andyp-grid__cell-title {
+  height: initial;
+  padding: 0px;
+  line-height: 29px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-left: 0px;
+  border-radius: initial;
+  font-size: 29px;
+  white-space: initial;
+}
+.pulse .pulse_it_header .andyp-grid__cell-date {
+  left: 0px;
+  padding: 0px;
+  color: #D0C8B3;
+}
+
 .pulse .pulse_ig_header .andyp-grid__cell {
   background: #000;
 }
@@ -4709,39 +4768,59 @@ a:hover, a:active {
   padding: 0px;
   color: #D0C8B3;
 }
+.pulse .pulse_ig_daily_trending .andyp-grid__cell-icon,
+.pulse .pulse_ig_parkourpulse .andyp-grid__cell-icon,
+.pulse .pulse_ig_londonparkour .andyp-grid__cell-icon,
+.pulse .pulse_ig_hashtag_parkour .andyp-grid__cell-icon,
 .pulse .pulse_ig_curated .andyp-grid__cell-icon {
   top: 29px;
 }
+.pulse .pulse_ig_daily_trending .andyp-grid__cell-channel,
+.pulse .pulse_ig_parkourpulse .andyp-grid__cell-channel,
+.pulse .pulse_ig_londonparkour .andyp-grid__cell-channel,
+.pulse .pulse_ig_hashtag_parkour .andyp-grid__cell-channel,
 .pulse .pulse_ig_curated .andyp-grid__cell-channel {
   top: 87px;
 }
+.pulse .pulse_ig_daily_trending .andyp-grid__cell-text,
+.pulse .pulse_ig_parkourpulse .andyp-grid__cell-text,
+.pulse .pulse_ig_londonparkour .andyp-grid__cell-text,
+.pulse .pulse_ig_hashtag_parkour .andyp-grid__cell-text,
 .pulse .pulse_ig_curated .andyp-grid__cell-text {
   top: 145px;
   position: absolute;
 }
-.pulse .pulse_ig_londonparkour .andyp-grid__cell-icon {
+
+.pulse .pulse_mixed_weekly_highlights .andyp-grid__cell-icon,
+.pulse .pulse_mixed_parkourpulse .andyp-grid__cell-icon,
+.pulse .pulse_mixed_highlighted .andyp-grid__cell-icon,
+.pulse .pulse_mixed_trending_today .andyp-grid__cell-icon,
+.pulse .pulse_mixed_curated .andyp-grid__cell-icon {
   top: 29px;
 }
-.pulse .pulse_ig_londonparkour .andyp-grid__cell-channel {
+.pulse .pulse_mixed_weekly_highlights .andyp-grid__cell-channel,
+.pulse .pulse_mixed_parkourpulse .andyp-grid__cell-channel,
+.pulse .pulse_mixed_highlighted .andyp-grid__cell-channel,
+.pulse .pulse_mixed_trending_today .andyp-grid__cell-channel,
+.pulse .pulse_mixed_curated .andyp-grid__cell-channel {
   top: 87px;
 }
-.pulse .pulse_ig_londonparkour .andyp-grid__cell-text {
+.pulse .pulse_mixed_weekly_highlights .andyp-grid__cell-text,
+.pulse .pulse_mixed_parkourpulse .andyp-grid__cell-text,
+.pulse .pulse_mixed_highlighted .andyp-grid__cell-text,
+.pulse .pulse_mixed_trending_today .andyp-grid__cell-text,
+.pulse .pulse_mixed_curated .andyp-grid__cell-text {
   top: 145px;
   position: absolute;
 }
-.pulse .pulse_ig_hashtag_parkour .andyp-grid__cell-icon {
-  top: 29px;
-}
-.pulse .pulse_ig_hashtag_parkour .andyp-grid__cell-text {
-  top: 87px;
-  position: absolute;
-}
-.pulse .pulse_ig_trending_hashtags .andyp-grid__cell-icon {
-  top: 29px;
-}
-.pulse .pulse_ig_trending_hashtags .andyp-grid__cell-text {
-  top: 87px;
-  position: absolute;
+.pulse .pulse_mixed_weekly_highlights .andyp-grid__cell-icon--likes,
+.pulse .pulse_mixed_parkourpulse .andyp-grid__cell-icon--likes,
+.pulse .pulse_mixed_highlighted .andyp-grid__cell-icon--likes,
+.pulse .pulse_mixed_trending_today .andyp-grid__cell-icon--likes,
+.pulse .pulse_mixed_curated .andyp-grid__cell-icon--likes {
+  margin-right: 5px;
+  height: 17px;
+  filter: url(#rose);
 }
 
 @media (max-width: 767px) {

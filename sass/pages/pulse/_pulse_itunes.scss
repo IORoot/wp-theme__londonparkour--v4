@@ -10,7 +10,7 @@
     // └─────────────────────────────────────────────────────────────────────────┘░
     //  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
 
-    .pulse_ig_header {
+    .pulse_it_header {
         .andyp-grid {
             &__cell {
 
@@ -46,6 +46,7 @@
 
                 &-channeltitle {
                     margin-bottom: 29px;
+                    line-height: 58px;
                     display: inline-block;
                 }
                 &-profile_pic {
@@ -78,28 +79,4 @@
         }
 
     }
-
-    .pulse_ig_daily_trending,
-    .pulse_ig_parkourpulse,
-    .pulse_ig_londonparkour,
-    .pulse_ig_hashtag_parkour, 
-    .pulse_ig_curated {
-        .andyp-grid {
-
-            &__cell{
-    
-                &-icon {
-                    top: 29px;
-                }
-                &-channel {
-                    top: 87px;
-                }
-                &-text {
-                    top: 145px;
-                    position: absolute;
-                }
-            }
-        }
-    }
-
 }
