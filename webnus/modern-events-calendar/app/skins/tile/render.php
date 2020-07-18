@@ -69,6 +69,7 @@ $map_events = array();
                     <div class="class-meta" <?php echo 'style="background-color:' . $event_color.';"'; ?>    >
 
                         <div class="event-tile-view-head clearfix">
+                            <span class="mec-event-day"><?php echo $this->main->date_i18n('l', strtotime($event->date['start']['date'])); ?> </span>
                             <i class="mdi mdi-calendar mdi--mist"></i>
                             <?php if(isset($settings['multiple_day_show_method']) && $settings['multiple_day_show_method'] == 'all_days') : ?>
                                 <div class="mec-event-date"><?php echo $this->main->date_i18n($this->date_format_clean_1, strtotime($event->date['start']['date'])); ?></div>
