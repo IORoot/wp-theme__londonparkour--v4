@@ -22,7 +22,7 @@ function update_main_menu_pulse_image($scrape)
     if (!$scrape){
         return;
     }
-    if ($scrape['yt_scrape_group']['yt_scrape_id'] != "YouTube - 🔮Curated")
+    if ($scrape['yt_scrape_group']['yt_scrape_id'] != "YouTube - Curated")
     {
         return;
     }
