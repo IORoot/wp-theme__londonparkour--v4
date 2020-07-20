@@ -27,7 +27,7 @@ function update_main_menu_pulse_image($scrape)
         return;
     }
 
-    $wp_query = "[
+    $wp_query = [
         'post_type' => 'youtube',
         'post_status' => 'publish',
         'order' => 'DESC',
@@ -39,10 +39,8 @@ function update_main_menu_pulse_image($scrape)
                 'terms' => 'youtube-curated'
             ],
         ],
-    ]";
+    ];
 
-    $wp_query = preg_replace( "/\r|\n/", "", $wp_query );
-    $wp_query = eval("return $wp_query;");
     $latest_post = get_posts($wp_query);
 
     // Get the latest curated post image.
