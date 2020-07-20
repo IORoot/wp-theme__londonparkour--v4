@@ -44,6 +44,7 @@ $event_colorskin = (isset($styling['mec_colorskin'] ) || isset($styling['color']
 
 do_action('mec_start_skin' , $this->id);
 do_action('mec_tile_head');
+$set_dark = '';
 ?>
 <div id="mec_skin_<?php echo $this->id; ?>" class="mec-wrap <?php echo $event_colorskin . ' ' . $this->html_class . ' ' . $set_dark; ?>">
     
