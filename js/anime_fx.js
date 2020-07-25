@@ -343,3 +343,74 @@ function anime__animateborders(target) {
   });
 
 }
+
+
+
+
+
+//  ┌───────────────────────────────────────────┐ 
+//  │                                           │░
+//  │                                           │░
+//  │              Animate Stacks               │░
+//  │                HOMEPAGE                   │░
+//  │                                           │░
+//  └───────────────────────────────────────────┘░
+//   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+function anime__poppins(target){
+
+  var stackItemTimeline = anime.timeline({
+    duration: 4000,
+    easing: 'easeOutElastic(1, .8)',
+    loop: true,
+    delay: 1000,
+  });
+
+  var stackItemKeyFrame = [
+    {scaleX: 1.1 , scaleY: 1.1 },
+    {scaleX: 1 , scaleY: 1 },
+  ];
+
+  stackItemTimeline
+    .add({
+      targets: target + ' .stack__item-1',
+      keyframes: stackItemKeyFrame,
+    })
+    .add({
+      targets: target + ' .stack__item-2',
+      keyframes: stackItemKeyFrame,
+    })
+    .add({
+      targets: target + ' .stack__item-3',
+      keyframes: stackItemKeyFrame,
+    })
+    .add({
+      targets: target + ' .stack__item-4',
+      keyframes: stackItemKeyFrame,
+    })
+    .add({
+      targets: target + ' .stack__item-0',
+      keyframes: stackItemKeyFrame,
+    });
+
+
+      anime({
+        targets: target,
+        easing: 'easeInOutSine',
+
+        loop: true,
+
+        keyframes: [
+          {translateX: 'calc(40px - (20% - 20px))' },
+          {translateX: 'calc(40px - (40% - 20px))', delay: 4000 },
+          {translateX: 'calc(40px - (60% - 20px))', delay: 4000 },
+          {translateX: 'calc(40px - (80% - 20px))', delay: 4000 },
+          {translateX: 'calc(40px - (0% - 20px))', delay: 4000 },
+          {translateX: '40px', delay: 5000},
+        ],
+
+        duration: 4000,
+      });
+
+  
+}

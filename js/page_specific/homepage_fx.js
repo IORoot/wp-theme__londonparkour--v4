@@ -19,3 +19,5 @@ anime__punchin('.heropanel__fly .heropanel__eyebrow', 200, 'L');
 
 // PULSE
 anime__isometricScroll('.heropanel__pulse > .heropanel__overlay');
+
+anime__poppins('.animated-stack');
