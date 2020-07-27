@@ -17,6 +17,7 @@ class LiteYTEmbed extends HTMLElement {
         // Gotta encode the untrusted value
         // https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html#rule-2---attribute-escape-before-inserting-untrusted-data-into-html-common-attributes
         this.videoId = encodeURIComponent(this.getAttribute('videoid'));
+        this.autoplay = encodeURIComponent(this.getAttribute('autoplay'));
 
         /**
          * Lo, the youtube placeholder image!  (aka the thumbnail, poster image, etc)
@@ -61,10 +62,17 @@ class LiteYTEmbed extends HTMLElement {
         // Once the user clicks, add the real iframe and drop our play button
         // TODO: In the future we could be like amp-youtube and silently swap in the iframe during idle time
         //   We'd want to only do this for in-viewport or near-viewport ones: https://github.com/ampproject/amphtml/pull/5003
-        this.addEventListener('click', e => this.addIframe());
+        this.addIframe();
+        if (this.autoplay === '1')
+        {
+            this.addIframe();
+        } else {
+            this.addEventListener('click', e => this.addIframe());
+        }
+        
     }
 
-    // // TODO: Support the the user changing the [videoid] attribute
+    // TODO: Support the the user changing the [videoid] attribute
     // attributeChangedCallback() {
     // }
 
@@ -107,10 +115,14 @@ class LiteYTEmbed extends HTMLElement {
     }
 
     addIframe(){
+
+        const params = new URLSearchParams(this.getAttribute('params'));
+        params.append('autoplay', this.autoplay);
+
         const iframeHTML = `
 <iframe width="560" height="315" frameborder="0"
   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-  src="https://www.youtube-nocookie.com/embed/${this.videoId}?autoplay=1"
+  src="https://www.youtube-nocookie.com/embed/${this.videoId}?${params.toString()}"
 ></iframe>`;
         this.insertAdjacentHTML('beforeend', iframeHTML);
         this.classList.add('lyt-activated');

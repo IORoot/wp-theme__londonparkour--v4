@@ -18,6 +18,6 @@ anime__punchin('.heropanel__fly .heropanel__eyebrow', 200, 'L');
 // anime__blockoutText('.heropanel__pt .heropanel__content p', 500);
 
 // PULSE
-anime__isometricScroll('.heropanel__pulse > .heropanel__overlay');
+// anime__isometricScroll('.heropanel__pulse > .heropanel__overlay');
 
 anime__poppins('.animated-stack');
