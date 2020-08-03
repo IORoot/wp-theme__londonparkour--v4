@@ -2814,6 +2814,7 @@ a:hover, a:active {
 }
 .site-footer .menu__mainmenu ul li a {
   text-decoration: none;
+  line-height: 29px;
 }
 .site-footer .menu__mainmenu ul li i {
   display: none;
