@@ -8,6 +8,7 @@ Template Post Type: page
 get_header();
 ?>
 
+    <?php do_shortcode('[andyp_spinner]'); ?>
     <?php do_shortcode('[andyp_flickity slug="'.get_field('header_flickity_slug').'"]'); ?>
 
     <!-- #sidebar -->
