@@ -65,12 +65,12 @@ add_action( 'wp_enqueue_scripts', 'ldnpk_deregister_stripe', 102 );
 
 function ldnpk_deregister_stripe() {
 
-    if ( is_page('classes') ) {
-        return;   
+    // match '/classes/' and '/class/adult'    
+    if (preg_match('/\/class/', $_SERVER['REQUEST_URI']) )
+    {
+        return;
     }
-    if ( is_page('classes') && $post->post_parent ) {
-        return;   
-    }
+
     if ( is_page('bookings') ) {
         return;   
     }
@@ -80,7 +80,7 @@ function ldnpk_deregister_stripe() {
         wp_dequeue_script('stripe-handler-ng');
         wp_dequeue_script('stripe-script');
         wp_dequeue_script('stripe-handler');
-        // wp_dequeue_script('mec-stripe');    // modern-events-calendar
+        wp_dequeue_script('mec-stripe');    // modern-events-calendar
 
         wp_dequeue_style('stripe-handler-ng-style');
     }
