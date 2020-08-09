@@ -77,6 +77,7 @@ function ldnpk_deregister_stripe() {
         wp_dequeue_script('stripe-handler-ng');
         wp_dequeue_script('stripe-script');
         wp_dequeue_script('stripe-handler');
+        wp_dequeue_script('mec-stripe');    // modern-events-calendar
 
         wp_dequeue_style('stripe-handler-ng-style');
     }
