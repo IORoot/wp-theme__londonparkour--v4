@@ -7,10 +7,14 @@
     color: $white;
 
     &::after { 
-        font-family:"Material Icons";
-        content: '\e5cc';    
-        vertical-align: text-top;
-        line-height: 24px;
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        vertical-align: sub;
+        background-position: center;
+        display: inline-block;
+        background-image: url('data:image/svg+xml;utf-8,<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="%23FFFFFF" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>');
     }
 
     &:hover {
