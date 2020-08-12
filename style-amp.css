@@ -501,15 +501,16 @@ amp-img.contain img {
 }
 
 .amp-background-library {
-  background-image: url("/wp-content/uploads/2020/08/AngledLibrary.jpg") !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
+  background-image: url("/wp-content/uploads/2020/08/AngledLibrary.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
+
 .amp-background-starfield {
-  background-image: url("/wp-content/uploads/2019/07/starfield_minipanel.jpg") !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
+  background-image: url("/wp-content/uploads/2019/07/starfield_minipanel.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
@@ -587,9 +588,9 @@ amp-img.contain img {
   }
 }
 .amp .site-footer .vc_row {
-  background-position: center 100% !important;
-  background-repeat: no-repeat !important;
-  background-size: 100% auto !important;
+  background-position: center 100%;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 .amp .site-footer .vc_row > .wpb_column {
   background: #242424;
