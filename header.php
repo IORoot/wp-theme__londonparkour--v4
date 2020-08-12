@@ -26,7 +26,13 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<link rel="amphtml" href="<?php echo $amp_link; ?>">
+	<?php
+		if ($amp_link != '')
+		{
+			echo '<link rel="amphtml" href="' . $amp_link . '">';
+		}
+	?>
+	
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class('londonparkour ' . $body_classes ); ?>>
