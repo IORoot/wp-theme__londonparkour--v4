@@ -128,7 +128,6 @@ Template Post Type: mobilepages, page
             }
 
         ?>
-        
     </footer>
 
 </body>

@@ -465,7 +465,6 @@ amp-img.contain img {
 }
 
 .amp-panel {
-  max-height: 696px;
   background-color: #f5f5f5;
   padding: 29px;
   overflow: hidden;

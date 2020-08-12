@@ -26,5 +26,5 @@
 
 	the_content();
 	?>
-
+	<div style="clear:both;"></div>
 </article>
