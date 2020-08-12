@@ -1,0 +1,20 @@
+.amp {
+
+    .site-footer {
+
+        .vc_row {
+            background-position: center 100% !important;
+            background-repeat: no-repeat !important;
+            background-size: 100% auto !important;
+
+            > .wpb_column {
+                background: $night;
+                padding: 29px;
+            }
+        }
+    
+        p {
+            color: $white;
+        }
+    } 
+}

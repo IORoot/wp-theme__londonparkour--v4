@@ -5,6 +5,8 @@ Description: London Parkour V4 AMP-Theme
 */
 
 // Abstracts
+@import "abstracts//mixins/background_images";
+
 @import "abstracts/responsive";
 @import "abstracts/colors";
 @import "abstracts/typography";
@@ -16,13 +18,21 @@ Description: London Parkour V4 AMP-Theme
 
 // Base
 @import "base/normalize";
-@import "base/typography";  
+@import "base/AMP/typography";  
 
 // Components
 @import "components/elements";
 @import "components/vertical_rhythm";
+@import "components/AMP/AMP_links";
+@import "components/AMP/AMP_images";
+@import "components/AMP/AMP_panels";
+@import "components/AMP/AMP_carousel";
+
+@import "components/AMP/AMP_backgrounds";
 
 // Layout 
+@import "layout/AMP/horizontal_grid";
+@import "layout/AMP/AMP_footer";
 @import "layout/vertical_grid";
 @import "layout/navigation/AMP_menu";
 @import "layout/navigation/AMP_footer";

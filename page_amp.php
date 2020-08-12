@@ -16,6 +16,22 @@ Template Post Type: mobilepages, page
     $json_schema = get_field('json_schema');
     $amp_css = get_field('amp_css');
     $amp_css_file = get_field('amp_css_file');
+
+    class amp_walker extends Walker_Nav_Menu {
+
+        // Displays start of an element. E.g '<li> Item Name'
+        // @see Walker::start_el()
+        function start_el(&$output, $item, $depth=0, $args=array(), $id = 0) {
+            
+            $output .= '<li class="menu-item">';
+                $output .= '<a href="'. $item->url .'">';
+                    $output .= $item->title;
+                $output .= '</a>';
+            $output .= '</li>';
+
+        }
+    }
+
 ?>
 <!doctype html>
 <html ⚡>
@@ -24,6 +40,14 @@ Template Post Type: mobilepages, page
 
     <script async src="https://cdn.ampproject.org/v0.js"></script>
     <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+
+    <?php
+        $amp_js = get_option('amp_js');
+        foreach ($amp_js as $key => $script)
+        {
+            echo $script;
+        }
+    ?>
 
     <link rel="canonical" href="<?php echo $canonical_link; ?>">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -42,43 +66,59 @@ Template Post Type: mobilepages, page
             }
 
             // Echo any extra CSS.
-            echo $amp_css;
+            echo $amp_css;  
         ?>
     </style>
 </head>
 
 <body class="amp londonparkour <?php echo get_field('body_classes'); ?>">
 
-    <!-- AMP Main Menu -->
+    <?php
+    // ┌──────────────────────────────────────────────────────────┐
+    // │                         Sidemenu                         │
+    // └──────────────────────────────────────────────────────────┘ 
+    ?>
+    <amp-sidebar id="sidebar1" layout="nodisplay" side="left" class="ampsidebar">  
+        <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="close-sidebar">✕</div>
+        <?php
+        wp_nav_menu( array(
+            'theme_location' => 'menu-1',   
+            'menu_class'     => 'menu-AMP',
+            'menu_id'        => 'menu-AMP',
+            'walker'         => new amp_walker,
+        ) );
+        ?>
+    </amp-sidebar>
+    
+    <?php 
+    // ┌──────────────────────────────────────────────────────────┐
+    // │                         Header                           │
+    // └──────────────────────────────────────────────────────────┘ 
+    ?>
     <nav class="main-navigation">
-
         <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
         <a href="https://londonparkour.com" class="main-navigation__mobile-logo"></a>  
-
-        <amp-sidebar id="sidebar1" layout="nodisplay" side="left" class="ampsidebar">  
-            <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="close-sidebar">✕</div>
-            <?php
-            wp_nav_menu( array(
-                'theme_location' => 'menu-1',   
-                'menu_id'        => 'primary-menu',
-            ) );
-            ?>
-        </amp-sidebar>
     </nav>
     
-    <!-- Article -->
     <?php
+    // ┌──────────────────────────────────────────────────────────┐
+    // │                         Article                          │
+    // └──────────────────────────────────────────────────────────┘
         while ( have_posts() ) :
             the_post();
             get_template_part( 'template-parts/content', 'amp' );
         endwhile;
     ?>
 
-    <!-- AMP Footer -->
+    <?php
+    // ┌──────────────────────────────────────────────────────────┐
+    // │                         Footer                           │
+    // └──────────────────────────────────────────────────────────┘ 
+    ?>
     <footer class="site-footer">
         <?php
             
-            $id = get_field('footer_page', 'option');
+            $id = get_field('amp_footer_page', 'option');
 
             if ($id  != ''){
                 echo do_shortcode( get_post_field('post_content', $id) );
@@ -88,6 +128,7 @@ Template Post Type: mobilepages, page
             }
 
         ?>
+        
     </footer>
 
 </body>

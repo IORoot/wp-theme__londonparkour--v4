@@ -1,0 +1,11 @@
+.amp-background {
+
+    &-library {
+        @include background_image("/wp-content/uploads/2020/08/AngledLibrary.jpg");
+    }
+
+    &-starfield {
+        @include background_image("/wp-content/uploads/2019/07/starfield_minipanel.jpg");
+    }
+
+}
