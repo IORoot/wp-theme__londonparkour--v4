@@ -26,6 +26,12 @@ get_header();
     <!-- #sidebar -->
     <aside id="secondary" class="pulse-sidebar">
         <?php do_shortcode('[andyp_pulse_sidemenus menu="'.get_field('pulse_sidemenu_id').'"]'); ?>
+
+        <?php
+            if (current_user_can('edit_posts')) {
+                echo '<iframe width="90%" height="100px" src="https://datastudio.google.com/embed/reporting/2efc6de3-d05f-4a12-9152-183511b97d4f/page/d4qbB" frameborder="0" style="border:0" allowfullscreen></iframe>';
+            }
+        ?>
     </aside>
 
     <!-- #content -->
@@ -47,5 +53,7 @@ get_header();
         }
 
     ?>
+
+
 
 <?php get_footer(); ?>
