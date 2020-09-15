@@ -26,7 +26,7 @@ function simpay_custom_remove_scripts( $scripts ) {
 
 	$one = 1;
 
-	if ( ! is_page( array( 'classes', 'bookings' ) ) ) {
+	if ( ! is_page( array( 'classes', 'bookings', 'youth' ) ) ) {
 		// If we don't want to load any scripts then we can just return an empty array.
 		return array();
 	}
@@ -41,7 +41,7 @@ add_filter( 'simpay_before_register_public_scripts', 'simpay_custom_remove_scrip
 
 // The $style parameter is an array of all the styles that need to be loaded for Simple Pay
 function simpay_custom_remove_styles( $styles ) {
-	if ( ! is_page( array( 'classes', 'bookings' ) ) ) {
+	if ( ! is_page( array( 'classes', 'bookings', 'youth' ) ) ) {
 		// If we don't want to load any styles then we can just return an empty array.
 		return array();
 	}
@@ -72,6 +72,10 @@ function ldnpk_deregister_stripe() {
     }
 
     if ( is_page('bookings') ) {
+        return;   
+    }
+    
+    if ( is_page('youth') ) {
         return;   
     }
 
