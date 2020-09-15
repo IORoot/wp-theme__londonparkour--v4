@@ -15,6 +15,7 @@ function ldnpk_deregister_jQuery() {
         is_page( 'classes' ) ||
         is_page( 'mec' ) ||
         is_page( 'bookings' ) ||
+        is_page( 'youth-bookings' ) ||
         
         is_singular( 'mec-events' ) ||
         is_page( 'mec-events' ) ||
