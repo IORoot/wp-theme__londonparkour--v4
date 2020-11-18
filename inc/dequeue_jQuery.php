@@ -14,6 +14,7 @@ function ldnpk_deregister_jQuery() {
     if ( 
         is_page( 'classes' ) ||
         is_page( 'mec' ) ||
+        is_page( 'custom' ) ||
         is_page( 'bookings' ) ||
         is_page( 'youth' ) ||
         
