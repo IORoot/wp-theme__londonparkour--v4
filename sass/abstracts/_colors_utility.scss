@@ -11,3 +11,7 @@
 .c{
     @include colourmodifier();
 }
+
+.b{
+    @include colourmodifier('background-color');
+}

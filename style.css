@@ -102,6 +102,85 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
   color: #a4c639;
 }
 
+.b--sky {
+  background-color: #53a5e3;
+}
+.b--lavender {
+  background-color: #70579f;
+}
+.b--pink {
+  background-color: #ed64af;
+}
+.b--aqua {
+  background-color: #11998e;
+}
+.b--goo {
+  background-color: #38ef7d;
+}
+.b--crayon {
+  background-color: #e86546;
+}
+.b--rose {
+  background-color: #e34f65;
+}
+.b--black {
+  background-color: #000000;
+}
+.b--night {
+  background-color: #242424;
+}
+.b--fog {
+  background-color: #424242;
+}
+.b--smoke {
+  background-color: #757575;
+}
+.b--commando {
+  background-color: #D0C8B3;
+}
+.b--mist {
+  background-color: #e0e0e0;
+}
+.b--ghost {
+  background-color: #f5f5f5;
+}
+.b--halo {
+  background-color: #fafafa;
+}
+.b--white {
+  background-color: #ffffff;
+}
+.b--yellow {
+  background-color: #FCC53B;
+}
+.b--trustpilot {
+  background-color: #00b67a;
+}
+.b--stripe {
+  background-color: #5433FF;
+}
+.b--github {
+  background-color: #4078c0;
+}
+.b--letsencrypt {
+  background-color: #2C3C69;
+}
+.b--digitalocean {
+  background-color: #1572FE;
+}
+.b--youtube {
+  background-color: #ff0000;
+}
+.b--instagram {
+  background-color: #F56040;
+}
+.b--apple {
+  background-color: #757575;
+}
+.b--android {
+  background-color: #a4c639;
+}
+
 /*--------------------------------------------------------------
 # Base
 --------------------------------------------------------------*/
@@ -1591,6 +1670,11 @@ a:hover, a:active {
 }
 .widget select {
   max-width: 100%;
+}
+
+.vertical-rhythm-lined {
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.1) 1px, transparent 1px), linear-gradient(to right, transparent 10px, rgba(255, 0, 0, 0.1) 10px, transparent 11px), linear-gradient(to left, transparent 10px, rgba(255, 0, 0, 0.1) 10px, transparent 11px), linear-gradient(rgba(0, 0, 255, 0.05) 1px, transparent 0);
+  background-size: 8.3333333333% 29px;
 }
 
 .c-button__youtube {
