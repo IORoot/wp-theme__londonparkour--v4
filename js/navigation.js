@@ -5,6 +5,32 @@
  * navigation support for dropdown menus.
  */
 ( function() {
+
+
+	// IE9 supported way of toggling classes.
+	var ldnpkbutton = document.querySelector('.main-navigation__mobile-toggle-button');
+	var ldnpkmenu = document.querySelector('.menu-main-menu-container');
+
+	if (ldnpkbutton !== null) {
+
+		ldnpkbutton.onclick = function() {
+			var x = ldnpkmenu;
+			var classes = x.className.split(" ");
+			var i = classes.indexOf("menu-visible");
+		
+			if (i >= 0) 
+				classes.splice(i, 1);
+			else 
+				classes.push("menu-visible");
+				x.className = classes.join(" "); 	
+		}
+	}
+
+
+
+	// EVERYTHING BELOW HERE IS UNDERSCORES DEFAULT.
+
+
 	var container, button, menu, links, i, len;
 
 	container = document.getElementById( 'site-navigation' );
