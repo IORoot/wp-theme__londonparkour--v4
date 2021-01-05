@@ -1,0 +1,239 @@
+// ┌─────────────────────────────────────┐ 
+// │                                     │░
+// │                                     │░
+// │             Mobile Menu             │░
+// │                                     │░
+// │                                     │░
+// └─────────────────────────────────────┘░
+//  ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+
+@media (max-width: $mobile) {
+    
+	.site-header .main-navigation {
+        
+        position: absolute;
+        top: 0;
+        //  ┌───────────────────────────────────────────┐ 
+        //  │                                           │░
+        //  │             Show mobile menu              │░
+        //  │                                           │░
+        //  └───────────────────────────────────────────┘░
+        //   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+        .main-navigation__mobile-toggle-button {
+            position: relative;
+            display: block;
+            height: 58px;
+            width: 100%;
+            background-color: #242424;
+            color: #ffffff;
+
+            > .mdi {
+                height: 58px;
+                width: 58px;
+                background-size: 29px;
+                background-position: center;
+            } 
+        }
+
+
+        //  ┌────────────────────────────────────────────────┐
+        //  │            Hide the menu by default            │
+        //  └────────────────────────────────────────────────┘
+        .menu-main-menu-container {
+            display: none;
+        }
+
+        //  ┌────────────────────────────────────────────────┐
+        //  │                 Show the menu                  │
+        //  └────────────────────────────────────────────────┘
+        .menu-visible {
+            display: block;
+        }
+
+        //  ┌────────────────────────────────────────────────┐
+        //  │       Show the mobile londonparkour logo       │
+        //  └────────────────────────────────────────────────┘
+        .main-navigation__mobile-logo {
+            display: block;
+            position: absolute;
+            top: 0px;
+            right: 0;
+            left: 0;
+            margin-left: auto;
+            margin-right: auto;
+                
+            @include logo-ldnpktext($white);
+            background-size: 196px 58px;
+            background-repeat: no-repeat;
+            height:58px; 
+            width:196px;
+
+            &:hover {
+                @include logo-ldnpktext($goo);
+            }
+        }
+        
+
+        //  ┌───────────────────────────────────────────┐ 
+        //  │                                           │░
+        //  │               The Main Menu               │░
+        //  │                                           │░
+        //  └───────────────────────────────────────────┘░
+        //   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+        ul.nav-menu {
+
+            display: block;
+            text-align: left;
+            background-color: $night;
+            padding: 0px 29px 58px;
+            overflow: hidden;
+
+            > li.menu-item {
+
+                float: left;
+                width: 50%;
+                display: block;
+                max-height: none;
+                padding: 0px;
+                line-height: 116px;
+                contain: content;
+
+                &.menu-item-has-children {
+                    width:100%; 
+                }
+
+                a { 
+                    float: left;
+                    width: 100%;
+                    height: 116px;
+                    font-size: 18px; 
+                    font-weight: 400;
+                    white-space: nowrap;
+                    color: $halo;
+                    background-color: $fog; 
+                    margin: 2px 2px 0px;
+                    line-height: 116px;
+                    text-align: center;
+
+                    .mdi {
+                        position: absolute;
+                        left: 50%;
+                        bottom: 29px;
+                        transform: translateX(-50%);
+                        margin: 0px;
+                        filter: url("#smoke");
+                    }
+                }
+
+                &__right {
+                    float: right;
+                    display: inline;
+                    width: 58px;
+                }
+
+                &.logo {
+                    
+                    a {
+                        margin: 20px 0px 0px;
+                        padding-left: 58px;
+                        width: 58px;
+                        height: 58px;
+                        background-size: 29px 29px;
+                        overflow: hidden; 
+                        float: left; 
+                        background-color: transparent;
+                    }
+
+                    &__londonparkour { 
+                        display: none;
+                    }
+                    &__apple a {
+                        @include logo-apple($halo);
+                    }
+                    &__android a {
+                        @include logo-android($halo);
+                    }
+                    &__instagram a {
+                        @include logo-instagram($halo);
+                    }
+                    &__youtube a {
+                        @include logo-youtube($halo);
+                    }
+                }
+
+                //  ┌───────────────────────────────────────────┐ 
+                //  │                                           │░
+                //  │       Hide the 'classes' dropdown         │░
+                //  │                                           │░
+                //  └───────────────────────────────────────────┘░
+                //   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+                &#menu-item-2351 > a {
+                    display:none;
+                }
+
+
+                //  ┌───────────────────────────────────────────┐ 
+                //  │                                           │░
+                //  │              The submenus                 │░
+                //  │                                           │░
+                //  └───────────────────────────────────────────┘░
+                //   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+                ul.sub-menu {
+                    
+                    display: block;
+                    position: relative;
+                    visibility: visible;
+                    opacity: 1; 
+                    padding: 0px;
+
+                    background: $fog;
+                    box-shadow: none;
+                    top: auto;
+                    min-width: initial;
+
+                    li {
+                        display: block;
+                        margin: 0px;
+                        background: none;
+                        float: left;
+                        width: 50%;
+                        line-height: 116px;
+                        contain: content;
+
+                        a {
+                            float: left;
+                            width: 100%;
+                            height: 116px;
+                            text-align: center !important;
+                            color: $halo;
+                            margin: 2px 2px 0px;
+                            line-height: 116px !important;
+
+                            .mdi {
+                                position: absolute;
+                                left: 50%;
+                                top: 29px;
+                                transform: translateX(-50%);
+                                margin: 0px;
+                                filter: url(#white);
+                            }
+
+                            .menu-item-description, 
+                            .menu-item-image {
+                                display: none;
+
+                            }
+                        }  
+
+                        &__highlight--bluepink a {
+                            padding-left: 0px;
+                        }
+                    } 
+                }
+            }
+        }
+	}
+}

@@ -1,0 +1,165 @@
+//   ┌──────────────────────────────────────┐ 
+//   │                                      │░
+//   │              Typography              │░
+//   │                                      │░
+//   └──────────────────────────────────────┘░
+//    ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+
+    //  ┌──────────────────────────────────────┐
+    //  │        Turn on font-smoothing        │
+    //  └──────────────────────────────────────┘
+    * {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    //  ┌──────────────────────────────────────┐
+    //  │            HTML BASE SIZE            │
+    //  └──────────────────────────────────────┘
+    html,.root{
+        font-size: 18px;
+        line-height: 29px;
+        font-family: $font__main;
+        font-weight: $font__weight;
+    }
+
+    //  ┌──────────────────────────────────────┐
+    //  │             Default body             │
+    //  └──────────────────────────────────────┘  
+    body {
+        font-size: 18px;
+        line-height: 29px;
+        margin: auto;
+    }
+
+    //  ┌──────────────────────────────────────┐
+    //  │      Heading 1 - 76px / 87pxlh       │
+    //  └──────────────────────────────────────┘
+    h1{
+        font-size: 76px;
+        line-height: 87px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-weight: $font__weight;
+    }
+    h1::first-letter {
+        margin-left:-5px;
+    }
+    
+    //  ┌──────────────────────────────────────┐
+    //  │      Heading 2 - 47px / 58pxlh       │
+    //  └──────────────────────────────────────┘
+    h2{
+        font-size: 47px;
+        line-height: 58px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-weight: $font__weight;
+    }
+    h2::first-letter {
+        margin-left:-3px;
+    }
+    
+    //  ┌──────────────────────────────────────┐
+    //  │      Heading 3 - 29px / 58pxlh       │
+    //  └──────────────────────────────────────┘
+    h3{
+        font-size: 29px;
+        line-height: 58px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-weight: $font__weight;
+    }
+    h3::first-letter {
+        margin-left:-1px;
+    }
+    
+    //  ┌──────────────────────────────────────┐
+    //  │      Heading 4 - 29px / 29pxlh       │
+    //  └──────────────────────────────────────┘
+    h4{
+        font-size: 29px;
+        line-height: 29px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-weight: $font__weight;
+    }
+    h4::first-letter {
+        margin-left:-1px;
+    }
+
+    //  ┌──────────────────────────────────────┐
+    //  │      Heading 5 : 12px / 29pxlh       │
+    //  └──────────────────────────────────────┘
+    h5{
+        font-size: 12px;
+        line-height: 29px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-weight: $font__weight;
+    }
+
+    //  ┌──────────────────────────────────────┐
+    //  │      Paragraph : 18px / 29pxlh       │
+    //  └──────────────────────────────────────┘
+    p{
+        font-size: 18px;
+        line-height: 29px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    //  ┌──────────────────────────────────────┐
+    //  │               Parents                │
+    //  └──────────────────────────────────────┘
+    ul, ol, pre, table, blockquote {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+        //  ┌──────────────────────────────────────┐
+        //  │               Children               │
+        //  └──────────────────────────────────────┘
+        ul ul, ol ol, ul ol, ol ul {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    
+    //  ┌──────────────────────────────────────┐
+    //  │ These should always be in paragraphs │
+    //  │   anyway. Hence the 0 line-height.   │
+    //  └──────────────────────────────────────┘
+    a, b, i, strong, em, small, code {
+        line-height: 0;
+    }
+
+    //  ┌──────────────────────────────────────┐
+    //  │             Half-height.             │
+    //  │              sup (top)               │
+    //  │             sub (bottom)             │
+    //  └──────────────────────────────────────┘
+    sub, sup {
+        line-height: 0;
+        position: relative;
+        vertical-align: baseline;
+    }
+    sup {
+        top: -0.5em;
+    }
+    sub {
+        bottom: -0.25em;
+    }
+
+//  ┌──────────────────────────────────────┐ 
+//  │                                      │░
+//  │                                      │░
+//  │    Create all of the .colour--sky    │░
+//  │           utility classes            │░
+//  │                                      │░
+//  │                                      │░
+//  └──────────────────────────────────────┘░
+//   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░  
+    .colour{
+        @include colourmodifier();
+    }

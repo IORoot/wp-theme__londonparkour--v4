@@ -1,0 +1,33 @@
+.pulse { 
+
+    .pulse_mixed_weekly_highlights,
+    .pulse_mixed_parkourpulse,
+    .pulse_mixed_highlighted,
+    .pulse_mixed_trending_today,
+    .pulse_mixed_curated {
+        .andyp-grid {
+
+            &__cell{
+    
+                &-icon {
+                    top: 29px;
+                }
+                &-channel {
+                    top: 87px;
+                }
+                &-text {
+                    top: 145px;
+                    position: absolute;
+                }
+                &-icon {
+                    &--likes {
+                        margin-right: 5px;
+                        height: 17px;
+                        filter: url(#rose);
+                    }
+                }
+            }
+        }
+    }
+
+}

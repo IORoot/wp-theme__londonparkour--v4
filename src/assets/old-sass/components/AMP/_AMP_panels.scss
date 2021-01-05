@@ -1,0 +1,27 @@
+.amp-panel {
+    background-color: $ghost;
+    padding: 29px;
+    overflow: hidden;
+    margin-bottom: 29px;
+
+    &--rose {
+        background:$rose;
+    }
+    &--white {
+        background:$white;
+    }
+    &--dark {
+        background:$night;
+        color: $white;
+    }
+    &__third {
+        display: inline-block;
+        width: 33%;
+        min-width:425px;
+    }
+
+    &--100 {
+        height: 100%;
+    } 
+    
+}

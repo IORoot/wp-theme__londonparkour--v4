@@ -1,0 +1,101 @@
+//  ┌──────────────────────────────────────┐ 
+//  │                                      │░
+//  │        Modifier - White Menu         │░
+//  │                                      │░
+//  └──────────────────────────────────────┘░
+//   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+.page__dark {
+    ul.nav-menu {
+        > li.menu-item {
+            
+            > a {
+                color: $white;
+            }
+            &.logo {
+                
+                //  ┌──────────────────────────────────────┐
+                //  │     LondonParkour logo + text        │
+                //  └──────────────────────────────────────┘
+                &__londonparkour a {
+                    @include logo-ldnpktext($white);
+                }
+
+                //  ┌──────────────────────────────────────┐
+                //  │              Apple logo              │
+                //  └──────────────────────────────────────┘
+                &__apple a {
+                    @include logo-apple($white);
+                }
+
+                //  ┌──────────────────────────────────────┐
+                //  │            Android logo              │
+                //  └──────────────────────────────────────┘
+                &__android a {
+                    @include logo-android($white);
+                }
+
+                //  ┌──────────────────────────────────────┐
+                //  │           Instagram logo             │
+                //  └──────────────────────────────────────┘
+                &__instagram a {
+                    @include logo-instagram($white);
+                }
+
+                //  ┌──────────────────────────────────────┐
+                //  │            YouTube logo              │
+                //  └──────────────────────────────────────┘
+                &__youtube a {
+                    @include logo-youtube($white);
+                }
+                
+            }
+        }
+    }
+}
+
+
+
+
+
+
+//  ┌──────────────────────────────────────┐ 
+//  │                                      │░
+//  │         Modifier - Homepage          │░
+//  │                                      │░
+//  └──────────────────────────────────────┘░
+//   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+@media (min-width: $mobile) {
+    .home {
+        .main-navigation {
+            ul.nav-menu {
+                // Change to white logo & text
+                li.menu-item {
+
+                    a {
+                        color: $white;
+                    }
+                    
+                    &.logo__londonparkour {
+                        a {
+                            @include logo-ldnpktext($white);
+                        }
+                    }
+
+                    .sub-menu {
+                        .menu-item {
+                            a{
+                                color: $night;
+                            }
+
+                            &__highlight--bluepink {
+                                a {
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}

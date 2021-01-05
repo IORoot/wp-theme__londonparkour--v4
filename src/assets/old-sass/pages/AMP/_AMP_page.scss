@@ -1,0 +1,11 @@
+.amp-page--ghost {
+    background-color: $ghost;
+}
+
+.amp_padded {
+    padding: 0px 8.33%;
+
+    &--20 {
+        padding: 0px 20px;
+    }
+}

@@ -1,0 +1,28 @@
+.c-pagination {
+
+    margin-bottom: 29px;
+
+    .pagination {
+        text-align: center;
+
+        // Spacing enough for mobile.
+        .page-numbers {
+            padding: 0px 1.5%;
+        }
+
+        .current {
+            background: $ghost;
+        }
+
+        a {
+            text-decoration: none;
+
+            .next_text,
+            .prev_text {
+                line-height: 23px;
+            }
+        }
+
+
+    }
+}

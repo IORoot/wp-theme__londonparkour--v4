@@ -1,0 +1,101 @@
+.single-post {
+
+    .site-content {
+
+        .content-area {
+            float: right;
+            margin: 87px 0 87px -25%;
+            padding: 0px 8.33%;
+            width: 100%;
+
+            .site-main {
+                margin: 0;
+                float: right;
+                width: 75%;
+            }
+        }
+
+        .widget-area {
+            margin: 87px 0px;
+            padding: 0px 0px 0px 8.33%;
+            float: left;
+            overflow: hidden;
+            width: 25%;
+        }
+
+    }
+    
+    .no-sidebar .content-area {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .no-sidebar .site-main {
+        margin-right: 0;
+    }
+
+
+
+    // DEFAULT (desktop) view
+    .sidemenu__desktop { display: initial; }
+    .sidemenu__mobile { 
+        display: none; 
+
+        width: 83.3%;
+        height: 58px;
+        position: absolute;
+        left: 8.33%;
+
+        select {
+            height: 29px;
+            border: 0px;
+            width: 100%;
+            margin-right: 29px;
+        }
+    }
+
+    h2 .mdi {
+        filter: url(#night);
+        height: 29px;
+        width: 29px;
+        vertical-align: baseline;
+        margin-right: 10px;
+    }
+
+    // Mobile view
+    @media (max-width: $tablet) {
+
+        // Switch menus
+        .sidemenu__desktop { display: none; }
+        .sidemenu__mobile { display: initial; }
+
+        .site-content {
+            .content-area {
+
+                float: none;
+                margin: 87px 8.33% 0 0;
+                padding: 0px 8.33%;
+                width: 87.3%;
+                
+
+                .site-main {
+                    width: 100%;
+                    margin-top: 58px;
+                    overflow: hidden;
+
+                    // Resize titles
+                    h1 {  font-size: 29px; padding-left: 5px; }
+                    h2 {  font-size: 29px; padding-left: 5px;}
+                }
+            }
+
+            .widget-area {
+                width: 100%;
+                overflow: initial  !important;
+                float: none !important;
+            }
+            
+        }
+    }
+        
+}

@@ -1,0 +1,13 @@
+//  ┌──────────────────────────────────────────────────────────────────┐
+//  │                                                                  │
+//  │                              Mixin                               │
+//  │                                                                  │
+//  │                          Add like this:                          │
+//  │  @include gradientmodifier('background', 'bluepink', $bluepink)  │
+//  │                                                                  │
+//  │                                                                  │
+//  └──────────────────────────────────────────────────────────────────┘
+
+@mixin gradientmodifier($parameter: background, $name, $gradient) {
+    &--#{$name} { #{$parameter}: $gradient; }
+}

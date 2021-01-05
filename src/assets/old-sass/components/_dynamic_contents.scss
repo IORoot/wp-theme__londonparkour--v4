@@ -1,0 +1,42 @@
+.dynamic_contents {
+    position: absolute;
+    left: -229px;
+    width: 200px;
+    display: inline-block;
+
+    &__header {
+        font-weight:600;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0px;
+
+        li {
+            a {
+                font-size: 16px;
+                line-height: 29px;
+                text-decoration: none;
+
+                &:hover {
+                    color: $crayon;
+                }
+            }
+        }
+    }
+}
+
+// Change widths on tablet.
+@media (max-width: $tablet) {
+    .dynamic_contents { 
+        display: none;
+    }
+}
+
+// dynamic sticky menu. 
+@media (min-height: 300px) {
+    .sticky {
+        position: sticky; 
+        top: 29px;
+    }
+}

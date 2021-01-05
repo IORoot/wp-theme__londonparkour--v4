@@ -1,0 +1,46 @@
+.classes {
+
+    &__gradient {
+
+        &--red {
+            background: rgb(232,101,70);
+            background: -moz-linear-gradient(180deg, rgba(232,101,70,1) 0%, rgba(227,79,101,1) 100%);
+            background: -webkit-linear-gradient(180deg, rgba(232,101,70,1) 0%, rgba(227,79,101,1) 100%);
+            background: linear-gradient(180deg, rgba(232,101,70,1) 0%, rgba(227,79,101,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e86546",endColorstr="#e34f65",GradientType=1);
+        }
+    }
+    
+}  
+
+.details {
+    &__icon {
+
+        width: 58px;
+        height: 58px;
+        margin-bottom: 29px;
+
+        background-repeat: no-repeat;
+        background-size: 58px auto;
+
+        &--stripe {
+            @include logo-stripe($stripe);
+        }
+
+    }
+
+    &__text {
+        min-height: 87px;
+    }
+
+}
+
+.navigation {
+    &__icon {
+        height: 58px;
+        width: 100%;
+        margin-bottom: 29px;
+        display: inline-block;
+        background-position: center;
+    }
+}

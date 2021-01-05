@@ -1,0 +1,133 @@
+//  ┌─────────────────────────────────────────────────────────────────────────┐ 
+//  │                                                                         │░
+//  │                    Contact Form - Advanced Forms Pro                    │░
+//  │                                                                         │░
+//  └─────────────────────────────────────────────────────────────────────────┘░
+//   ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
+
+#form_5db3ed683ca8f {
+
+    .acf-field {
+
+        border: 0px;
+
+        //  ┌──────────────────────────────────────────────────────────┐
+        //  │                          Labels                          │
+        //  └──────────────────────────────────────────────────────────┘
+        .acf-label label {
+            font-weight: 400;
+        }
+
+        //  ┌──────────────────────────────────────────────────────────┐
+        //  │                       Text Inputs                        │
+        //  └──────────────────────────────────────────────────────────┘
+        .acf-input {
+                
+            input[type=email],
+            input[type=text]{
+                font-size: 18px;
+                height: 58px;
+                border: 0px;
+                padding: 0px 29px;
+                border-radius: 0px;
+
+                &::placeholder {
+                    color: $mist;
+                }
+            }
+
+            textarea{
+                font-size: 18px;
+                line-height: 29px;
+                height: 232px;
+                border: 0px;
+                padding: 29px;
+                border-radius: 0px;
+
+                &::placeholder {
+                    color: $mist;
+                }
+            }
+
+            //  ┌──────────────────────────────────────────────────────────┐
+            //  │                   Select List Bullets                    │
+            //  └──────────────────────────────────────────────────────────┘
+            ul.acf-radio-list {
+                li {
+                    font-size: 18px;
+                    line-height: 29px;
+                    margin-right: 29px;
+
+                    label {
+                        padding: 13px 29px 12px 0px;
+
+                        input {
+                            margin: 3px 10px 0px 0px;
+                            vertical-align: text-top;
+
+                            &:after {
+                                width: 17px;
+                                height: 17px;
+                                border-radius: 17px;
+                                left: -1px;
+                                position: relative;
+                                background-color: $ghost;
+                                content: '';
+                                display: inline-block;
+                                visibility: visible;
+                                border: 2px solid $sky;
+                            }
+
+                            &:checked:after {
+                                width: 17px;
+                                height: 17px;
+                                border-radius: 17px;
+                                left: -1px;
+                                position: relative;
+                                background-color: $sky;
+                                content: '';
+                                display: inline-block;
+                                visibility: visible;
+                                border: 0px solid white;
+                            }
+                        }
+                    }             
+                }
+            }
+        }
+    }
+
+    //  ┌──────────────────────────────────────────────────────────┐
+    //  │                      Submit Button                       │
+    //  └──────────────────────────────────────────────────────────┘ 
+
+    button[type=submit] {
+        border: 0px;
+        width: 100%;
+        height: 58px;
+        border-radius: 0px;
+        font-size: 18px;
+        cursor: pointer;
+        -webkit-transition: all 0.15s ease-in-out;
+        -moz-transition: all 0.15s ease-in-out;
+        -ms-transition: all 0.15s ease-in-out;
+        -o-transition: all 0.15s ease-in-out;
+        transition: all 0.15s ease-in-out;
+        
+        &:hover {
+            background-color: $sky;
+            color: $white;
+
+        }
+    }
+
+    //  ┌──────────────────────────────────────────────────────────┐
+    //  │                   Style Customisations                   │
+    //  └──────────────────────────────────────────────────────────┘
+    .af-field-contact-topic .af-label {
+        display: none;
+    }
+    .acf-required {
+        display: none;
+    }
+}

@@ -1,0 +1,80 @@
+.widget-area {
+
+    .widget_nav_menu {
+
+        // convert h2 to h3 size.
+        h2.widget-title {
+            font-size: 29px;
+            line-height: 58px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            font-weight: 400;
+        }
+
+        .menu-wiki-container {
+
+            ul {
+        
+                list-style: none;
+                
+        
+                &.menu {
+        
+                    padding-left: 0px;
+        
+                    li.menu-item-level-1 {
+        
+                        margin-top: 29px;
+                        color: #53A5E3;
+        
+                        ul.sub-menu {
+
+                            padding-left: 0px;
+        
+                            li.menu-item-level-2 {
+                                        
+                                padding-left: 29px; 
+
+                                &.menu-item-current {
+                                    background-color: #F5F5F5;
+                                }
+                                a {
+
+                                    .mdi {
+                                        filter: url(#night);
+                                        height: 19px;
+                                        margin-right: 5px;
+                                    }
+
+                                    &.menu-item-link {
+                                        text-decoration: none;
+                                        color: #242424;
+            
+                                        &:hover {
+                                            text-decoration: underline;
+                                            color: #53A5E3;
+                                        }
+            
+                                        &:active {
+                                            text-decoration: underline;
+                                            color: #E34F65;
+                                        }
+
+                                        .menu-item-icon {
+                                            font-size: 18px;
+                                            padding-top: 2px;
+                                            line-height: 18px;
+                                            vertical-align: text-top;
+                                            width: 16px;
+                                            margin-right: 8px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        } 
+    }
+}
