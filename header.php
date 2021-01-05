@@ -19,7 +19,7 @@
 		include( __DIR__.'/src/template-parts/header-progress-bar.php' ); 
 		?>
 
-		<div >
+		<div>
 
 
 			<?php include( __DIR__.'/src/template-parts/header-skip-link.php' ); ?>
@@ -27,6 +27,3 @@
 			<header>
 				<?php include( __DIR__.'/src/template-parts/header-navigation.php' ); ?>
 			</header>
-
-
-			<div>

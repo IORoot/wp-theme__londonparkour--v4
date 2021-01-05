@@ -17,8 +17,6 @@ function vc_custom_css($id) {
 
 ?>
 
-</div>
-
 	<footer>
 
 		<?php
