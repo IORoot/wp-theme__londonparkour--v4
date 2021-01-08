@@ -1,0 +1,11 @@
+header nav div #main-menu {
+
+    & > li:hover > div {
+        display: block;
+    }
+
+    & > li:hover > ul {
+        display: block; 
+    }
+
+}

@@ -15,15 +15,18 @@
 	<body <?php body_class('labs ' . $body_classes ); ?>>
 
 		<?php 
-		include( __DIR__.'/src/template-parts/header-tagmanager.php' );
-		include( __DIR__.'/src/template-parts/header-progress-bar.php' ); 
+		include( __DIR__.'/src/components/tagmanger/tagmanager.php' );
 		?>
 
-		<div>
+		<header>
+			<?php include( __DIR__.'/src/components/progress-bar/progress-bar.php' );  ?>
 
+			<nav class="h-16 bg-night flex">
 
-			<?php include( __DIR__.'/src/template-parts/header-skip-link.php' ); ?>
+				<?php include( __DIR__.'/src/components/main-menu-logo/main-menu-logo.php' );  ?>
+				<?php include( __DIR__.'/src/components/main-menu/main-menu.php' );  ?>
+				<?php include( __DIR__.'/src/components/main-menu-right/main-menu-right.php' );  ?>
 
-			<header>
-				<?php include( __DIR__.'/src/template-parts/header-navigation.php' ); ?>
-			</header>
+			</nav>
+
+		</header>

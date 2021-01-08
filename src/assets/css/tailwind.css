@@ -1,16 +1,21 @@
-/* ./your-css-folder/styles.css */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Tailwind (need to be @imports) */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 
+/* Load all Component CSS */
+@import "../../components/**/*.css";
+
+
+/* Add a new BASE layer to set default typography */
 @layer base {
     h1 {
-        @apply text-2xl;
+        @apply text-6xl;
         @apply pb-2;
     }
     h2 {
-        @apply text-xl;
+        @apply text-4xl;
     }
     p {
         @apply text-base;

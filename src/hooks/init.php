@@ -56,7 +56,7 @@ require get_template_directory() . '/src/hooks/svg_enable.php';
 require get_template_directory() . '/src/hooks/turn_off_plugin_updates.php';
 
 /**
- * Turn off notifications for ACF and Forms Pro
+ * Add custom menu locations
  */
-require get_template_directory() . '/src/hooks/navigation_walker.php';
+require get_template_directory() . '/src/hooks/menu_locations.php';
 
