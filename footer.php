@@ -1,5 +1,4 @@
 
-
 		<footer>Copyright 2020, LondonParkour.com
 
 			<div class="js">

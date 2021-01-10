@@ -15,7 +15,7 @@
 	<body <?php body_class('labs ' . $body_classes ); ?>>
 
 		<?php 
-		include( __DIR__.'/src/components/tagmanger/tagmanager.php' );
+		include( __DIR__.'/src/components/tagmanager/tagmanager.php' );
 		?>
 
 		<header>

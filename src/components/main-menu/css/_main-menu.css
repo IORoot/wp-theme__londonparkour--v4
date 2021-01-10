@@ -1,11 +1,12 @@
 header nav div #main-menu {
 
+    /* For hovering */
     & > li:hover > div {
         display: block;
     }
 
     & > li:hover > ul {
         display: block; 
-    }
-
+    } 
+  
 }
