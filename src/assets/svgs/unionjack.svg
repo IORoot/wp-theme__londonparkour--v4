@@ -1,0 +1,33 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:0;height:0;display:block;">
+    <symbol viewBox="0 0 1100 700" id="unionjack">
+    <defs>
+        <polygon id="path-1" points="0 0 0 700 1100 700 1100 0"></polygon>
+        <path d="M550,350 L1100,350 L1100,700 L550,350 Z M550,350 L550,700 L0,700 L550,350 Z M550,350 L0,350 L0,0 L550,350 Z M550,350 L550,0 L1100,0 L550,350 Z" id="path-3"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UnionJack">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="path-1"></g>
+            <g id="Group" mask="url(#mask-2)">
+                <g id="BLUE-BACKGROUND" fill-rule="nonzero">
+                    <polygon id="BLUE" fill="#242424" points="0 0 0 700 1100 700 1100 0"></polygon>
+                    <path d="M0,0 L1100,700 M1100,0 L0,700" id="Shape" stroke="#FFFFFF" stroke-width="120" fill="#000000"></path>
+                </g>
+                <g id="RED-DIAGONAL">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="path-3"></g>
+                    <path d="M0,0 L1100,700 M1100,0 L0,700" id="RED" stroke="#242424" stroke-width="80" fill="#000000" fill-rule="nonzero" mask="url(#mask-4)"></path>
+                </g>
+                <g id="RED-CROSS" fill="#000000" fill-rule="nonzero">
+                    <path d="M550,0 L550,700 M0,350 L1100,350" id="Shape" stroke="#FFFFFF" stroke-width="200"></path>
+                    <path d="M550,0 L550,700 M0,350 L1100,350" id="RED" stroke="#242424" stroke-width="120"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+    </symbol>
+</svg>

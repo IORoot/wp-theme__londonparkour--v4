@@ -50,6 +50,11 @@ module.exports = {
         'night': theme('colors.night'),
         'white': theme('colors.white'),
         'goo': theme('colors.goo'),
+        'aqua': theme('colors.aqua'),
+        'sky': theme('colors.sky'),
+        'trustpilot': theme('colors.trustpilot'),
+        'crayon': theme('colors.crayon'),
+        'rose': theme('colors.rose'),
       })
 
 
@@ -58,6 +63,7 @@ module.exports = {
   variants: {
     extend: {
       display: ['hover'],
+      fill:    ['hover', 'focus'],
     },
   },
   plugins: [],

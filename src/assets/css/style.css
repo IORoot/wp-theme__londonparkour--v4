@@ -15764,6 +15764,98 @@ p {
   fill: #38ef7d;
 }
 
+.fill-aqua {
+  fill: #11998e;
+}
+
+.fill-sky {
+  fill: #53a5e3;
+}
+
+.fill-trustpilot {
+  fill: #00b67a;
+}
+
+.fill-crayon {
+  fill: #e86546;
+}
+
+.fill-rose {
+  fill: #e34f65;
+}
+
+.hover\:fill-current:hover {
+  fill: currentColor;
+}
+
+.hover\:fill-night:hover {
+  fill: #242424;
+}
+
+.hover\:fill-white:hover {
+  fill: #ffffff;
+}
+
+.hover\:fill-goo:hover {
+  fill: #38ef7d;
+}
+
+.hover\:fill-aqua:hover {
+  fill: #11998e;
+}
+
+.hover\:fill-sky:hover {
+  fill: #53a5e3;
+}
+
+.hover\:fill-trustpilot:hover {
+  fill: #00b67a;
+}
+
+.hover\:fill-crayon:hover {
+  fill: #e86546;
+}
+
+.hover\:fill-rose:hover {
+  fill: #e34f65;
+}
+
+.focus\:fill-current:focus {
+  fill: currentColor;
+}
+
+.focus\:fill-night:focus {
+  fill: #242424;
+}
+
+.focus\:fill-white:focus {
+  fill: #ffffff;
+}
+
+.focus\:fill-goo:focus {
+  fill: #38ef7d;
+}
+
+.focus\:fill-aqua:focus {
+  fill: #11998e;
+}
+
+.focus\:fill-sky:focus {
+  fill: #53a5e3;
+}
+
+.focus\:fill-trustpilot:focus {
+  fill: #00b67a;
+}
+
+.focus\:fill-crayon:focus {
+  fill: #e86546;
+}
+
+.focus\:fill-rose:focus {
+  fill: #e34f65;
+}
+
 .stroke-current {
   stroke: currentColor;
 }
@@ -36615,6 +36707,98 @@ header nav div #main-menu > li:hover > ul {
     fill: #38ef7d;
   }
 
+  .sm\:fill-aqua {
+    fill: #11998e;
+  }
+
+  .sm\:fill-sky {
+    fill: #53a5e3;
+  }
+
+  .sm\:fill-trustpilot {
+    fill: #00b67a;
+  }
+
+  .sm\:fill-crayon {
+    fill: #e86546;
+  }
+
+  .sm\:fill-rose {
+    fill: #e34f65;
+  }
+
+  .sm\:hover\:fill-current:hover {
+    fill: currentColor;
+  }
+
+  .sm\:hover\:fill-night:hover {
+    fill: #242424;
+  }
+
+  .sm\:hover\:fill-white:hover {
+    fill: #ffffff;
+  }
+
+  .sm\:hover\:fill-goo:hover {
+    fill: #38ef7d;
+  }
+
+  .sm\:hover\:fill-aqua:hover {
+    fill: #11998e;
+  }
+
+  .sm\:hover\:fill-sky:hover {
+    fill: #53a5e3;
+  }
+
+  .sm\:hover\:fill-trustpilot:hover {
+    fill: #00b67a;
+  }
+
+  .sm\:hover\:fill-crayon:hover {
+    fill: #e86546;
+  }
+
+  .sm\:hover\:fill-rose:hover {
+    fill: #e34f65;
+  }
+
+  .sm\:focus\:fill-current:focus {
+    fill: currentColor;
+  }
+
+  .sm\:focus\:fill-night:focus {
+    fill: #242424;
+  }
+
+  .sm\:focus\:fill-white:focus {
+    fill: #ffffff;
+  }
+
+  .sm\:focus\:fill-goo:focus {
+    fill: #38ef7d;
+  }
+
+  .sm\:focus\:fill-aqua:focus {
+    fill: #11998e;
+  }
+
+  .sm\:focus\:fill-sky:focus {
+    fill: #53a5e3;
+  }
+
+  .sm\:focus\:fill-trustpilot:focus {
+    fill: #00b67a;
+  }
+
+  .sm\:focus\:fill-crayon:focus {
+    fill: #e86546;
+  }
+
+  .sm\:focus\:fill-rose:focus {
+    fill: #e34f65;
+  }
+
   .sm\:stroke-current {
     stroke: currentColor;
   }
@@ -57385,6 +57569,98 @@ header nav div #main-menu > li:hover > ul {
 
   .md\:fill-goo {
     fill: #38ef7d;
+  }
+
+  .md\:fill-aqua {
+    fill: #11998e;
+  }
+
+  .md\:fill-sky {
+    fill: #53a5e3;
+  }
+
+  .md\:fill-trustpilot {
+    fill: #00b67a;
+  }
+
+  .md\:fill-crayon {
+    fill: #e86546;
+  }
+
+  .md\:fill-rose {
+    fill: #e34f65;
+  }
+
+  .md\:hover\:fill-current:hover {
+    fill: currentColor;
+  }
+
+  .md\:hover\:fill-night:hover {
+    fill: #242424;
+  }
+
+  .md\:hover\:fill-white:hover {
+    fill: #ffffff;
+  }
+
+  .md\:hover\:fill-goo:hover {
+    fill: #38ef7d;
+  }
+
+  .md\:hover\:fill-aqua:hover {
+    fill: #11998e;
+  }
+
+  .md\:hover\:fill-sky:hover {
+    fill: #53a5e3;
+  }
+
+  .md\:hover\:fill-trustpilot:hover {
+    fill: #00b67a;
+  }
+
+  .md\:hover\:fill-crayon:hover {
+    fill: #e86546;
+  }
+
+  .md\:hover\:fill-rose:hover {
+    fill: #e34f65;
+  }
+
+  .md\:focus\:fill-current:focus {
+    fill: currentColor;
+  }
+
+  .md\:focus\:fill-night:focus {
+    fill: #242424;
+  }
+
+  .md\:focus\:fill-white:focus {
+    fill: #ffffff;
+  }
+
+  .md\:focus\:fill-goo:focus {
+    fill: #38ef7d;
+  }
+
+  .md\:focus\:fill-aqua:focus {
+    fill: #11998e;
+  }
+
+  .md\:focus\:fill-sky:focus {
+    fill: #53a5e3;
+  }
+
+  .md\:focus\:fill-trustpilot:focus {
+    fill: #00b67a;
+  }
+
+  .md\:focus\:fill-crayon:focus {
+    fill: #e86546;
+  }
+
+  .md\:focus\:fill-rose:focus {
+    fill: #e34f65;
   }
 
   .md\:stroke-current {
@@ -78159,6 +78435,98 @@ header nav div #main-menu > li:hover > ul {
     fill: #38ef7d;
   }
 
+  .lg\:fill-aqua {
+    fill: #11998e;
+  }
+
+  .lg\:fill-sky {
+    fill: #53a5e3;
+  }
+
+  .lg\:fill-trustpilot {
+    fill: #00b67a;
+  }
+
+  .lg\:fill-crayon {
+    fill: #e86546;
+  }
+
+  .lg\:fill-rose {
+    fill: #e34f65;
+  }
+
+  .lg\:hover\:fill-current:hover {
+    fill: currentColor;
+  }
+
+  .lg\:hover\:fill-night:hover {
+    fill: #242424;
+  }
+
+  .lg\:hover\:fill-white:hover {
+    fill: #ffffff;
+  }
+
+  .lg\:hover\:fill-goo:hover {
+    fill: #38ef7d;
+  }
+
+  .lg\:hover\:fill-aqua:hover {
+    fill: #11998e;
+  }
+
+  .lg\:hover\:fill-sky:hover {
+    fill: #53a5e3;
+  }
+
+  .lg\:hover\:fill-trustpilot:hover {
+    fill: #00b67a;
+  }
+
+  .lg\:hover\:fill-crayon:hover {
+    fill: #e86546;
+  }
+
+  .lg\:hover\:fill-rose:hover {
+    fill: #e34f65;
+  }
+
+  .lg\:focus\:fill-current:focus {
+    fill: currentColor;
+  }
+
+  .lg\:focus\:fill-night:focus {
+    fill: #242424;
+  }
+
+  .lg\:focus\:fill-white:focus {
+    fill: #ffffff;
+  }
+
+  .lg\:focus\:fill-goo:focus {
+    fill: #38ef7d;
+  }
+
+  .lg\:focus\:fill-aqua:focus {
+    fill: #11998e;
+  }
+
+  .lg\:focus\:fill-sky:focus {
+    fill: #53a5e3;
+  }
+
+  .lg\:focus\:fill-trustpilot:focus {
+    fill: #00b67a;
+  }
+
+  .lg\:focus\:fill-crayon:focus {
+    fill: #e86546;
+  }
+
+  .lg\:focus\:fill-rose:focus {
+    fill: #e34f65;
+  }
+
   .lg\:stroke-current {
     stroke: currentColor;
   }
@@ -98931,6 +99299,98 @@ header nav div #main-menu > li:hover > ul {
     fill: #38ef7d;
   }
 
+  .xl\:fill-aqua {
+    fill: #11998e;
+  }
+
+  .xl\:fill-sky {
+    fill: #53a5e3;
+  }
+
+  .xl\:fill-trustpilot {
+    fill: #00b67a;
+  }
+
+  .xl\:fill-crayon {
+    fill: #e86546;
+  }
+
+  .xl\:fill-rose {
+    fill: #e34f65;
+  }
+
+  .xl\:hover\:fill-current:hover {
+    fill: currentColor;
+  }
+
+  .xl\:hover\:fill-night:hover {
+    fill: #242424;
+  }
+
+  .xl\:hover\:fill-white:hover {
+    fill: #ffffff;
+  }
+
+  .xl\:hover\:fill-goo:hover {
+    fill: #38ef7d;
+  }
+
+  .xl\:hover\:fill-aqua:hover {
+    fill: #11998e;
+  }
+
+  .xl\:hover\:fill-sky:hover {
+    fill: #53a5e3;
+  }
+
+  .xl\:hover\:fill-trustpilot:hover {
+    fill: #00b67a;
+  }
+
+  .xl\:hover\:fill-crayon:hover {
+    fill: #e86546;
+  }
+
+  .xl\:hover\:fill-rose:hover {
+    fill: #e34f65;
+  }
+
+  .xl\:focus\:fill-current:focus {
+    fill: currentColor;
+  }
+
+  .xl\:focus\:fill-night:focus {
+    fill: #242424;
+  }
+
+  .xl\:focus\:fill-white:focus {
+    fill: #ffffff;
+  }
+
+  .xl\:focus\:fill-goo:focus {
+    fill: #38ef7d;
+  }
+
+  .xl\:focus\:fill-aqua:focus {
+    fill: #11998e;
+  }
+
+  .xl\:focus\:fill-sky:focus {
+    fill: #53a5e3;
+  }
+
+  .xl\:focus\:fill-trustpilot:focus {
+    fill: #00b67a;
+  }
+
+  .xl\:focus\:fill-crayon:focus {
+    fill: #e86546;
+  }
+
+  .xl\:focus\:fill-rose:focus {
+    fill: #e34f65;
+  }
+
   .xl\:stroke-current {
     stroke: currentColor;
   }
@@ -119701,6 +120161,98 @@ header nav div #main-menu > li:hover > ul {
 
   .\32xl\:fill-goo {
     fill: #38ef7d;
+  }
+
+  .\32xl\:fill-aqua {
+    fill: #11998e;
+  }
+
+  .\32xl\:fill-sky {
+    fill: #53a5e3;
+  }
+
+  .\32xl\:fill-trustpilot {
+    fill: #00b67a;
+  }
+
+  .\32xl\:fill-crayon {
+    fill: #e86546;
+  }
+
+  .\32xl\:fill-rose {
+    fill: #e34f65;
+  }
+
+  .\32xl\:hover\:fill-current:hover {
+    fill: currentColor;
+  }
+
+  .\32xl\:hover\:fill-night:hover {
+    fill: #242424;
+  }
+
+  .\32xl\:hover\:fill-white:hover {
+    fill: #ffffff;
+  }
+
+  .\32xl\:hover\:fill-goo:hover {
+    fill: #38ef7d;
+  }
+
+  .\32xl\:hover\:fill-aqua:hover {
+    fill: #11998e;
+  }
+
+  .\32xl\:hover\:fill-sky:hover {
+    fill: #53a5e3;
+  }
+
+  .\32xl\:hover\:fill-trustpilot:hover {
+    fill: #00b67a;
+  }
+
+  .\32xl\:hover\:fill-crayon:hover {
+    fill: #e86546;
+  }
+
+  .\32xl\:hover\:fill-rose:hover {
+    fill: #e34f65;
+  }
+
+  .\32xl\:focus\:fill-current:focus {
+    fill: currentColor;
+  }
+
+  .\32xl\:focus\:fill-night:focus {
+    fill: #242424;
+  }
+
+  .\32xl\:focus\:fill-white:focus {
+    fill: #ffffff;
+  }
+
+  .\32xl\:focus\:fill-goo:focus {
+    fill: #38ef7d;
+  }
+
+  .\32xl\:focus\:fill-aqua:focus {
+    fill: #11998e;
+  }
+
+  .\32xl\:focus\:fill-sky:focus {
+    fill: #53a5e3;
+  }
+
+  .\32xl\:focus\:fill-trustpilot:focus {
+    fill: #00b67a;
+  }
+
+  .\32xl\:focus\:fill-crayon:focus {
+    fill: #e86546;
+  }
+
+  .\32xl\:focus\:fill-rose:focus {
+    fill: #e34f65;
   }
 
   .\32xl\:stroke-current {
