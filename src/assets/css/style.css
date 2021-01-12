@@ -21517,6 +21517,20 @@ header nav div #main-menu > li:hover > ul {
     display: block;
   }
 
+#progress {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: #fafafa;
+}
+
+#progress-bar {
+    width: 0%;
+    height: 100%;
+  }
+
 /* Add a new BASE layer to set default typography */
 
 @media (min-width: 640px) {

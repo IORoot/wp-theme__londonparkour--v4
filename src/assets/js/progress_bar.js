@@ -7,6 +7,9 @@
 */
 
 window.onscroll = function () {
-    let de = document.documentElement;
-    document.getElementById('progress__bar').style.width = (de.scrollTop / (de.scrollHeight - de.clientHeight)) * 100 + '%';
+    
+    const de = document.documentElement;                        // <HTML> tag is the documentElement
+    const pb = document.getElementById('progress-bar'); // progress-bar
+    
+    pb.style.width = (de.scrollTop / (de.scrollHeight - de.clientHeight)) * 100 + '%';
 };

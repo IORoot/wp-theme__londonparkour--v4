@@ -1,1 +1,1 @@
-<div id="progress"><div id="progress__bar"></div></div>
+<div id="progress" class="h-1" ><div id="progress-bar" class="bg-goo"></div></div>
