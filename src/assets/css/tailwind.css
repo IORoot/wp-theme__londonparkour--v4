@@ -20,4 +20,7 @@
     p {
         @apply text-base;
     }
+    button:focus {
+        outline: 0px;
+    }
 }

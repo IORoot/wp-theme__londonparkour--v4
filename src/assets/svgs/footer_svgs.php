@@ -5,8 +5,17 @@
      * 
      */
     function footer_svgs() {
-        
+
         echo '<div class="svgs">';
+
+            if (have_rows('svg_instances')) {
+                while (have_rows('svg_instances')){
+                    the_row();
+                    $svg = get_sub_field('svg');
+                    echo $svg;
+                } 
+            }
+
             include( __DIR__.'/logo.svg' );
             include( __DIR__.'/h-logo-text.svg' );
             include( __DIR__.'/star.svg' );

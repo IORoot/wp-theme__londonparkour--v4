@@ -1,9 +1,12 @@
 <?php
+$page_classes = get_field('page_classes');
+
 get_header();
+
 ?>
 
 
-	<main>
+	<main class="<?php echo $page_classes; ?>">
 
 		<?php
         if (have_posts()) {

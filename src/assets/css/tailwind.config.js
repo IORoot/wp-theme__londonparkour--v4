@@ -64,6 +64,7 @@ module.exports = {
     extend: {
       display: ['hover'],
       fill:    ['hover', 'focus'],
+      backgroundColor: ['checked'], 
     },
   },
   plugins: [],

@@ -1,3 +1,9 @@
+<?php
+
+	$body_classes = get_field('body_classes'); 
+	
+?>
+
 <!doctype html>
 <html <?php language_attributes(); ?>>
 

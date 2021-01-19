@@ -564,6 +564,10 @@ p {
   line-height: 1.5rem;
 }
 
+button:focus {
+  outline: 0px;
+}
+
 .container {
   width: 100%;
 }
@@ -1970,6 +1974,144 @@ p {
 }
 
 .bg-android {
+  --tw-bg-opacity: 1;
+  background-color: rgba(164, 198, 57, var(--tw-bg-opacity));
+}
+
+.checked\:bg-transparent:checked {
+  background-color: transparent;
+}
+
+.checked\:bg-current:checked {
+  background-color: currentColor;
+}
+
+.checked\:bg-sky:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgba(83, 165, 227, var(--tw-bg-opacity));
+}
+
+.checked\:bg-lavender:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgba(112, 87, 159, var(--tw-bg-opacity));
+}
+
+.checked\:bg-pink:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgba(237, 100, 175, var(--tw-bg-opacity));
+}
+
+.checked\:bg-aqua:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgba(17, 153, 142, var(--tw-bg-opacity));
+}
+
+.checked\:bg-goo:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgba(56, 239, 125, var(--tw-bg-opacity));
+}
+
+.checked\:bg-crayon:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgba(232, 101, 70, var(--tw-bg-opacity));
+}
+
+.checked\:bg-rose:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgba(227, 79, 101, var(--tw-bg-opacity));
+}
+
+.checked\:bg-black:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+}
+
+.checked\:bg-night:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgba(36, 36, 36, var(--tw-bg-opacity));
+}
+
+.checked\:bg-fog:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgba(66, 66, 66, var(--tw-bg-opacity));
+}
+
+.checked\:bg-smoke:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgba(117, 117, 117, var(--tw-bg-opacity));
+}
+
+.checked\:bg-commando:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgba(208, 200, 179, var(--tw-bg-opacity));
+}
+
+.checked\:bg-mist:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgba(224, 224, 224, var(--tw-bg-opacity));
+}
+
+.checked\:bg-ghost:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgba(245, 245, 245, var(--tw-bg-opacity));
+}
+
+.checked\:bg-halo:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgba(250, 250, 250, var(--tw-bg-opacity));
+}
+
+.checked\:bg-white:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+
+.checked\:bg-yellow:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgba(252, 197, 59, var(--tw-bg-opacity));
+}
+
+.checked\:bg-trustpilot:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 182, 122, var(--tw-bg-opacity));
+}
+
+.checked\:bg-stripe:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgba(84, 51, 255, var(--tw-bg-opacity));
+}
+
+.checked\:bg-github:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgba(64, 120, 192, var(--tw-bg-opacity));
+}
+
+.checked\:bg-letsencrypt:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgba(44, 60, 105, var(--tw-bg-opacity));
+}
+
+.checked\:bg-digitalocean:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgba(21, 114, 254, var(--tw-bg-opacity));
+}
+
+.checked\:bg-youtube:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 0, 0, var(--tw-bg-opacity));
+}
+
+.checked\:bg-instagram:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgba(245, 96, 64, var(--tw-bg-opacity));
+}
+
+.checked\:bg-apple:checked {
+  --tw-bg-opacity: 1;
+  background-color: rgba(117, 117, 117, var(--tw-bg-opacity));
+}
+
+.checked\:bg-android:checked {
   --tw-bg-opacity: 1;
   background-color: rgba(164, 198, 57, var(--tw-bg-opacity));
 }
@@ -22944,6 +23086,144 @@ header nav div #main-menu > li:hover > ul {
     background-color: rgba(164, 198, 57, var(--tw-bg-opacity));
   }
 
+  .sm\:checked\:bg-transparent:checked {
+    background-color: transparent;
+  }
+
+  .sm\:checked\:bg-current:checked {
+    background-color: currentColor;
+  }
+
+  .sm\:checked\:bg-sky:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(83, 165, 227, var(--tw-bg-opacity));
+  }
+
+  .sm\:checked\:bg-lavender:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(112, 87, 159, var(--tw-bg-opacity));
+  }
+
+  .sm\:checked\:bg-pink:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(237, 100, 175, var(--tw-bg-opacity));
+  }
+
+  .sm\:checked\:bg-aqua:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(17, 153, 142, var(--tw-bg-opacity));
+  }
+
+  .sm\:checked\:bg-goo:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(56, 239, 125, var(--tw-bg-opacity));
+  }
+
+  .sm\:checked\:bg-crayon:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(232, 101, 70, var(--tw-bg-opacity));
+  }
+
+  .sm\:checked\:bg-rose:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(227, 79, 101, var(--tw-bg-opacity));
+  }
+
+  .sm\:checked\:bg-black:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+  }
+
+  .sm\:checked\:bg-night:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(36, 36, 36, var(--tw-bg-opacity));
+  }
+
+  .sm\:checked\:bg-fog:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(66, 66, 66, var(--tw-bg-opacity));
+  }
+
+  .sm\:checked\:bg-smoke:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(117, 117, 117, var(--tw-bg-opacity));
+  }
+
+  .sm\:checked\:bg-commando:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(208, 200, 179, var(--tw-bg-opacity));
+  }
+
+  .sm\:checked\:bg-mist:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(224, 224, 224, var(--tw-bg-opacity));
+  }
+
+  .sm\:checked\:bg-ghost:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(245, 245, 245, var(--tw-bg-opacity));
+  }
+
+  .sm\:checked\:bg-halo:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(250, 250, 250, var(--tw-bg-opacity));
+  }
+
+  .sm\:checked\:bg-white:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  }
+
+  .sm\:checked\:bg-yellow:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(252, 197, 59, var(--tw-bg-opacity));
+  }
+
+  .sm\:checked\:bg-trustpilot:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(0, 182, 122, var(--tw-bg-opacity));
+  }
+
+  .sm\:checked\:bg-stripe:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(84, 51, 255, var(--tw-bg-opacity));
+  }
+
+  .sm\:checked\:bg-github:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(64, 120, 192, var(--tw-bg-opacity));
+  }
+
+  .sm\:checked\:bg-letsencrypt:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(44, 60, 105, var(--tw-bg-opacity));
+  }
+
+  .sm\:checked\:bg-digitalocean:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(21, 114, 254, var(--tw-bg-opacity));
+  }
+
+  .sm\:checked\:bg-youtube:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 0, 0, var(--tw-bg-opacity));
+  }
+
+  .sm\:checked\:bg-instagram:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(245, 96, 64, var(--tw-bg-opacity));
+  }
+
+  .sm\:checked\:bg-apple:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(117, 117, 117, var(--tw-bg-opacity));
+  }
+
+  .sm\:checked\:bg-android:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(164, 198, 57, var(--tw-bg-opacity));
+  }
+
   .group:hover .sm\:group-hover\:bg-transparent {
     background-color: transparent;
   }
@@ -43804,6 +44084,144 @@ header nav div #main-menu > li:hover > ul {
   }
 
   .md\:bg-android {
+    --tw-bg-opacity: 1;
+    background-color: rgba(164, 198, 57, var(--tw-bg-opacity));
+  }
+
+  .md\:checked\:bg-transparent:checked {
+    background-color: transparent;
+  }
+
+  .md\:checked\:bg-current:checked {
+    background-color: currentColor;
+  }
+
+  .md\:checked\:bg-sky:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(83, 165, 227, var(--tw-bg-opacity));
+  }
+
+  .md\:checked\:bg-lavender:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(112, 87, 159, var(--tw-bg-opacity));
+  }
+
+  .md\:checked\:bg-pink:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(237, 100, 175, var(--tw-bg-opacity));
+  }
+
+  .md\:checked\:bg-aqua:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(17, 153, 142, var(--tw-bg-opacity));
+  }
+
+  .md\:checked\:bg-goo:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(56, 239, 125, var(--tw-bg-opacity));
+  }
+
+  .md\:checked\:bg-crayon:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(232, 101, 70, var(--tw-bg-opacity));
+  }
+
+  .md\:checked\:bg-rose:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(227, 79, 101, var(--tw-bg-opacity));
+  }
+
+  .md\:checked\:bg-black:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+  }
+
+  .md\:checked\:bg-night:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(36, 36, 36, var(--tw-bg-opacity));
+  }
+
+  .md\:checked\:bg-fog:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(66, 66, 66, var(--tw-bg-opacity));
+  }
+
+  .md\:checked\:bg-smoke:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(117, 117, 117, var(--tw-bg-opacity));
+  }
+
+  .md\:checked\:bg-commando:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(208, 200, 179, var(--tw-bg-opacity));
+  }
+
+  .md\:checked\:bg-mist:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(224, 224, 224, var(--tw-bg-opacity));
+  }
+
+  .md\:checked\:bg-ghost:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(245, 245, 245, var(--tw-bg-opacity));
+  }
+
+  .md\:checked\:bg-halo:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(250, 250, 250, var(--tw-bg-opacity));
+  }
+
+  .md\:checked\:bg-white:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  }
+
+  .md\:checked\:bg-yellow:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(252, 197, 59, var(--tw-bg-opacity));
+  }
+
+  .md\:checked\:bg-trustpilot:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(0, 182, 122, var(--tw-bg-opacity));
+  }
+
+  .md\:checked\:bg-stripe:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(84, 51, 255, var(--tw-bg-opacity));
+  }
+
+  .md\:checked\:bg-github:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(64, 120, 192, var(--tw-bg-opacity));
+  }
+
+  .md\:checked\:bg-letsencrypt:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(44, 60, 105, var(--tw-bg-opacity));
+  }
+
+  .md\:checked\:bg-digitalocean:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(21, 114, 254, var(--tw-bg-opacity));
+  }
+
+  .md\:checked\:bg-youtube:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 0, 0, var(--tw-bg-opacity));
+  }
+
+  .md\:checked\:bg-instagram:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(245, 96, 64, var(--tw-bg-opacity));
+  }
+
+  .md\:checked\:bg-apple:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(117, 117, 117, var(--tw-bg-opacity));
+  }
+
+  .md\:checked\:bg-android:checked {
     --tw-bg-opacity: 1;
     background-color: rgba(164, 198, 57, var(--tw-bg-opacity));
   }
@@ -64672,6 +65090,144 @@ header nav div #main-menu > li:hover > ul {
     background-color: rgba(164, 198, 57, var(--tw-bg-opacity));
   }
 
+  .lg\:checked\:bg-transparent:checked {
+    background-color: transparent;
+  }
+
+  .lg\:checked\:bg-current:checked {
+    background-color: currentColor;
+  }
+
+  .lg\:checked\:bg-sky:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(83, 165, 227, var(--tw-bg-opacity));
+  }
+
+  .lg\:checked\:bg-lavender:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(112, 87, 159, var(--tw-bg-opacity));
+  }
+
+  .lg\:checked\:bg-pink:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(237, 100, 175, var(--tw-bg-opacity));
+  }
+
+  .lg\:checked\:bg-aqua:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(17, 153, 142, var(--tw-bg-opacity));
+  }
+
+  .lg\:checked\:bg-goo:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(56, 239, 125, var(--tw-bg-opacity));
+  }
+
+  .lg\:checked\:bg-crayon:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(232, 101, 70, var(--tw-bg-opacity));
+  }
+
+  .lg\:checked\:bg-rose:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(227, 79, 101, var(--tw-bg-opacity));
+  }
+
+  .lg\:checked\:bg-black:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+  }
+
+  .lg\:checked\:bg-night:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(36, 36, 36, var(--tw-bg-opacity));
+  }
+
+  .lg\:checked\:bg-fog:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(66, 66, 66, var(--tw-bg-opacity));
+  }
+
+  .lg\:checked\:bg-smoke:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(117, 117, 117, var(--tw-bg-opacity));
+  }
+
+  .lg\:checked\:bg-commando:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(208, 200, 179, var(--tw-bg-opacity));
+  }
+
+  .lg\:checked\:bg-mist:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(224, 224, 224, var(--tw-bg-opacity));
+  }
+
+  .lg\:checked\:bg-ghost:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(245, 245, 245, var(--tw-bg-opacity));
+  }
+
+  .lg\:checked\:bg-halo:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(250, 250, 250, var(--tw-bg-opacity));
+  }
+
+  .lg\:checked\:bg-white:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  }
+
+  .lg\:checked\:bg-yellow:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(252, 197, 59, var(--tw-bg-opacity));
+  }
+
+  .lg\:checked\:bg-trustpilot:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(0, 182, 122, var(--tw-bg-opacity));
+  }
+
+  .lg\:checked\:bg-stripe:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(84, 51, 255, var(--tw-bg-opacity));
+  }
+
+  .lg\:checked\:bg-github:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(64, 120, 192, var(--tw-bg-opacity));
+  }
+
+  .lg\:checked\:bg-letsencrypt:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(44, 60, 105, var(--tw-bg-opacity));
+  }
+
+  .lg\:checked\:bg-digitalocean:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(21, 114, 254, var(--tw-bg-opacity));
+  }
+
+  .lg\:checked\:bg-youtube:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 0, 0, var(--tw-bg-opacity));
+  }
+
+  .lg\:checked\:bg-instagram:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(245, 96, 64, var(--tw-bg-opacity));
+  }
+
+  .lg\:checked\:bg-apple:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(117, 117, 117, var(--tw-bg-opacity));
+  }
+
+  .lg\:checked\:bg-android:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(164, 198, 57, var(--tw-bg-opacity));
+  }
+
   .group:hover .lg\:group-hover\:bg-transparent {
     background-color: transparent;
   }
@@ -85536,6 +86092,144 @@ header nav div #main-menu > li:hover > ul {
     background-color: rgba(164, 198, 57, var(--tw-bg-opacity));
   }
 
+  .xl\:checked\:bg-transparent:checked {
+    background-color: transparent;
+  }
+
+  .xl\:checked\:bg-current:checked {
+    background-color: currentColor;
+  }
+
+  .xl\:checked\:bg-sky:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(83, 165, 227, var(--tw-bg-opacity));
+  }
+
+  .xl\:checked\:bg-lavender:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(112, 87, 159, var(--tw-bg-opacity));
+  }
+
+  .xl\:checked\:bg-pink:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(237, 100, 175, var(--tw-bg-opacity));
+  }
+
+  .xl\:checked\:bg-aqua:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(17, 153, 142, var(--tw-bg-opacity));
+  }
+
+  .xl\:checked\:bg-goo:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(56, 239, 125, var(--tw-bg-opacity));
+  }
+
+  .xl\:checked\:bg-crayon:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(232, 101, 70, var(--tw-bg-opacity));
+  }
+
+  .xl\:checked\:bg-rose:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(227, 79, 101, var(--tw-bg-opacity));
+  }
+
+  .xl\:checked\:bg-black:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+  }
+
+  .xl\:checked\:bg-night:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(36, 36, 36, var(--tw-bg-opacity));
+  }
+
+  .xl\:checked\:bg-fog:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(66, 66, 66, var(--tw-bg-opacity));
+  }
+
+  .xl\:checked\:bg-smoke:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(117, 117, 117, var(--tw-bg-opacity));
+  }
+
+  .xl\:checked\:bg-commando:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(208, 200, 179, var(--tw-bg-opacity));
+  }
+
+  .xl\:checked\:bg-mist:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(224, 224, 224, var(--tw-bg-opacity));
+  }
+
+  .xl\:checked\:bg-ghost:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(245, 245, 245, var(--tw-bg-opacity));
+  }
+
+  .xl\:checked\:bg-halo:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(250, 250, 250, var(--tw-bg-opacity));
+  }
+
+  .xl\:checked\:bg-white:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  }
+
+  .xl\:checked\:bg-yellow:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(252, 197, 59, var(--tw-bg-opacity));
+  }
+
+  .xl\:checked\:bg-trustpilot:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(0, 182, 122, var(--tw-bg-opacity));
+  }
+
+  .xl\:checked\:bg-stripe:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(84, 51, 255, var(--tw-bg-opacity));
+  }
+
+  .xl\:checked\:bg-github:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(64, 120, 192, var(--tw-bg-opacity));
+  }
+
+  .xl\:checked\:bg-letsencrypt:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(44, 60, 105, var(--tw-bg-opacity));
+  }
+
+  .xl\:checked\:bg-digitalocean:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(21, 114, 254, var(--tw-bg-opacity));
+  }
+
+  .xl\:checked\:bg-youtube:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 0, 0, var(--tw-bg-opacity));
+  }
+
+  .xl\:checked\:bg-instagram:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(245, 96, 64, var(--tw-bg-opacity));
+  }
+
+  .xl\:checked\:bg-apple:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(117, 117, 117, var(--tw-bg-opacity));
+  }
+
+  .xl\:checked\:bg-android:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(164, 198, 57, var(--tw-bg-opacity));
+  }
+
   .group:hover .xl\:group-hover\:bg-transparent {
     background-color: transparent;
   }
@@ -106396,6 +107090,144 @@ header nav div #main-menu > li:hover > ul {
   }
 
   .\32xl\:bg-android {
+    --tw-bg-opacity: 1;
+    background-color: rgba(164, 198, 57, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:checked\:bg-transparent:checked {
+    background-color: transparent;
+  }
+
+  .\32xl\:checked\:bg-current:checked {
+    background-color: currentColor;
+  }
+
+  .\32xl\:checked\:bg-sky:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(83, 165, 227, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:checked\:bg-lavender:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(112, 87, 159, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:checked\:bg-pink:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(237, 100, 175, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:checked\:bg-aqua:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(17, 153, 142, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:checked\:bg-goo:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(56, 239, 125, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:checked\:bg-crayon:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(232, 101, 70, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:checked\:bg-rose:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(227, 79, 101, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:checked\:bg-black:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:checked\:bg-night:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(36, 36, 36, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:checked\:bg-fog:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(66, 66, 66, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:checked\:bg-smoke:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(117, 117, 117, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:checked\:bg-commando:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(208, 200, 179, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:checked\:bg-mist:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(224, 224, 224, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:checked\:bg-ghost:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(245, 245, 245, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:checked\:bg-halo:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(250, 250, 250, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:checked\:bg-white:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:checked\:bg-yellow:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(252, 197, 59, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:checked\:bg-trustpilot:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(0, 182, 122, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:checked\:bg-stripe:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(84, 51, 255, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:checked\:bg-github:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(64, 120, 192, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:checked\:bg-letsencrypt:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(44, 60, 105, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:checked\:bg-digitalocean:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(21, 114, 254, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:checked\:bg-youtube:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 0, 0, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:checked\:bg-instagram:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(245, 96, 64, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:checked\:bg-apple:checked {
+    --tw-bg-opacity: 1;
+    background-color: rgba(117, 117, 117, var(--tw-bg-opacity));
+  }
+
+  .\32xl\:checked\:bg-android:checked {
     --tw-bg-opacity: 1;
     background-color: rgba(164, 198, 57, var(--tw-bg-opacity));
   }
