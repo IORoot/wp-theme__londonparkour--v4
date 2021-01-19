@@ -108,7 +108,7 @@ class LiteYTEmbed extends HTMLElement {
 
     addIframe(){
         const iframeHTML = `
-<iframe width="560" height="315" frameborder="0"
+<iframe width="100%" height="100%" frameborder="0"
   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
   src="https://www.youtube-nocookie.com/embed/${this.videoId}?autoplay=1"
 ></iframe>`;
