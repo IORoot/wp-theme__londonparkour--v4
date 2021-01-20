@@ -6434,6 +6434,26 @@ button:focus {
   height: 100vh;
 }
 
+.h-screen-1\/4 {
+  height: calc(100vw / 4);
+}
+
+.h-screen-1\/3 {
+  height: calc(100vw / 3);
+}
+
+.h-screen-1\/2 {
+  height: calc(100vw / 2);
+}
+
+.h-screen-2\/3 {
+  height: calc((100vw / 3) * 2);
+}
+
+.h-screen-3\/4 {
+  height: calc((100vw / 4) * 3);
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -27542,6 +27562,26 @@ header nav div #main-menu > li:hover > ul {
     height: 100vh;
   }
 
+  .sm\:h-screen-1\/4 {
+    height: calc(100vw / 4);
+  }
+
+  .sm\:h-screen-1\/3 {
+    height: calc(100vw / 3);
+  }
+
+  .sm\:h-screen-1\/2 {
+    height: calc(100vw / 2);
+  }
+
+  .sm\:h-screen-2\/3 {
+    height: calc((100vw / 3) * 2);
+  }
+
+  .sm\:h-screen-3\/4 {
+    height: calc((100vw / 4) * 3);
+  }
+
   .sm\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -48542,6 +48582,26 @@ header nav div #main-menu > li:hover > ul {
 
   .md\:h-screen {
     height: 100vh;
+  }
+
+  .md\:h-screen-1\/4 {
+    height: calc(100vw / 4);
+  }
+
+  .md\:h-screen-1\/3 {
+    height: calc(100vw / 3);
+  }
+
+  .md\:h-screen-1\/2 {
+    height: calc(100vw / 2);
+  }
+
+  .md\:h-screen-2\/3 {
+    height: calc((100vw / 3) * 2);
+  }
+
+  .md\:h-screen-3\/4 {
+    height: calc((100vw / 4) * 3);
   }
 
   .md\:text-xs {
@@ -69546,6 +69606,26 @@ header nav div #main-menu > li:hover > ul {
     height: 100vh;
   }
 
+  .lg\:h-screen-1\/4 {
+    height: calc(100vw / 4);
+  }
+
+  .lg\:h-screen-1\/3 {
+    height: calc(100vw / 3);
+  }
+
+  .lg\:h-screen-1\/2 {
+    height: calc(100vw / 2);
+  }
+
+  .lg\:h-screen-2\/3 {
+    height: calc((100vw / 3) * 2);
+  }
+
+  .lg\:h-screen-3\/4 {
+    height: calc((100vw / 4) * 3);
+  }
+
   .lg\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -90548,6 +90628,26 @@ header nav div #main-menu > li:hover > ul {
     height: 100vh;
   }
 
+  .xl\:h-screen-1\/4 {
+    height: calc(100vw / 4);
+  }
+
+  .xl\:h-screen-1\/3 {
+    height: calc(100vw / 3);
+  }
+
+  .xl\:h-screen-1\/2 {
+    height: calc(100vw / 2);
+  }
+
+  .xl\:h-screen-2\/3 {
+    height: calc((100vw / 3) * 2);
+  }
+
+  .xl\:h-screen-3\/4 {
+    height: calc((100vw / 4) * 3);
+  }
+
   .xl\:text-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -111548,6 +111648,26 @@ header nav div #main-menu > li:hover > ul {
 
   .\32xl\:h-screen {
     height: 100vh;
+  }
+
+  .\32xl\:h-screen-1\/4 {
+    height: calc(100vw / 4);
+  }
+
+  .\32xl\:h-screen-1\/3 {
+    height: calc(100vw / 3);
+  }
+
+  .\32xl\:h-screen-1\/2 {
+    height: calc(100vw / 2);
+  }
+
+  .\32xl\:h-screen-2\/3 {
+    height: calc((100vw / 3) * 2);
+  }
+
+  .\32xl\:h-screen-3\/4 {
+    height: calc((100vw / 4) * 3);
   }
 
   .\32xl\:text-xs {

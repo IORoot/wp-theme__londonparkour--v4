@@ -55,8 +55,15 @@ module.exports = {
         'trustpilot': theme('colors.trustpilot'),
         'crayon': theme('colors.crayon'),
         'rose': theme('colors.rose'),
-      })
+      }),
 
+      height: theme => ({
+        "screen-1\/4": "calc(100vw / 4)",
+        "screen-1\/3": "calc(100vw / 3)",
+        "screen-1\/2": "calc(100vw / 2)",
+        "screen-2\/3": "calc((100vw / 3) * 2)",
+        "screen-3\/4": "calc((100vw / 4) * 3)",
+      }),
 
     },
   },
