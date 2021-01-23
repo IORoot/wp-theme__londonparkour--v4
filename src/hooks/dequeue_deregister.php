@@ -9,41 +9,51 @@
 
 add_action( 'wp_enqueue_scripts', 'ldnpk_deregister_styles', 100 );
 
+
 function ldnpk_deregister_styles() {
 
+    global $wp_scripts;
+    // global $wp_styles;
+
+    
     // Admin Bar needs this:
     // wp_deregister_style( 'dashicons' );                 // Wordpress dashicons / adminbar
-    wp_dequeue_style( 'dashicons' );            // Wordpress dashicons
-
-
-    // Dequeue CSS Styles
-    wp_dequeue_style( 'font-awesome' );
-    wp_dequeue_style( 'super-font-awesome' );   // Super Forms
-    wp_dequeue_style( 'rs-icon-set-pe-7s-' );   // revslider Icon-7
-    wp_dequeue_style( 'font-awesome-fa' );      // real-media-library
-    wp_dequeue_style( 'smile_fonts' );          // Ultimate_VC_Addons
-    wp_dequeue_style( 'wp-block-library' );     // Guttenburg blocks
-    wp_dequeue_style( 'js_composer_custom_css' );   // WPBakery - custom
 
     // Deregister CSS Styles
-    wp_deregister_style( 'font-awesome' );
-    wp_deregister_style( 'super-font-awesome' );        // Super Forms
-    wp_deregister_style( 'rs-icon-set-pe-7s-' );        // revslider Icon-7
     wp_deregister_style( 'font-awesome-fa' );           // real-media-library
-    wp_deregister_style( 'smile_fonts' );               // Ultimate_VC_Addons\
     wp_deregister_style( 'wp-block-library' );          // Guttenburg blocks
-    wp_deregister_style( 'js_composer_custom_css' );    // WPBakery - custom
-    wp_deregister_style( 'wp-my-instagram' );           // Instagram plugin
-
-    // This is replaced in the sass/vendor/js_composer.sass file so we
-    // can remove bits not needed.
-    wp_deregister_style( 'js_composer_front' );       // WPBakery - frontend
+    wp_deregister_style( 'buttons' );          
+    wp_deregister_style( 'imgareaselect' );          
+    wp_deregister_style( 'dashicons' );          
+    wp_deregister_style( 'thickbox' );          
+    wp_deregister_style( 'react' );          
+    wp_deregister_style( "rml-font" );          
+    wp_deregister_style( "react-aiot.vendor" );          
+    wp_deregister_style( "react-aiot" );          
+    wp_deregister_style( "real-media-library-rml" );          
+    wp_deregister_style( "wp-block-library" );          
+    wp_deregister_style( "media-views" );          
+    wp_deregister_style( "imgareaselect" );          
+    wp_deregister_style( "wp-media-picker" );          
 
     // Deregister JS Scripts
+    wp_deregister_script( "es6-shim" );
+    wp_deregister_script( "es7-shim" );
+    wp_deregister_script( "devowl-wp-utils" );
     wp_deregister_script( 'wp-embed' );
     wp_deregister_script( 'thickbox' );
     wp_deregister_script( 'wpb_composer_front_js' );
+    wp_deregister_script( "react" );
+    wp_deregister_script( "react-dom" );
+    wp_deregister_script( "mobx" );
+    wp_deregister_script( "jquery" );
+    wp_deregister_script( "jquery-ui-core" );
+    wp_deregister_script( "jquery-touch-punch" );
+    wp_deregister_script( "vendor-devowl-wp-utils" );
+    wp_deregister_script( "underscore" );
+    wp_deregister_script( "utils" );
 }
+
 
 
 //  ┌──────────────────────────────────────┐ 

@@ -1,7 +1,7 @@
 <?php
 
 
-class MainMenu_Walker extends Walker_Nav_Menu
+class SubMenu_Walker extends Walker_Nav_Menu
 {
 
     public $item_with_submenu;

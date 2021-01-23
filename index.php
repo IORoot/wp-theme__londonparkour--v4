@@ -1,10 +1,10 @@
 <?php
+
 $page_classes = get_field('page_classes');
 
 get_header();
 
 ?>
-
 
 	<main class="<?php echo $page_classes; ?>">
 
@@ -15,7 +15,9 @@ get_header();
 
 				the_post();
 
-				get_template_part('src/template-parts/content', get_post_type());
+				$post_type = get_post_type();
+
+				get_template_part('src/template-parts/content', $post_type);
 
 			}
 
@@ -29,7 +31,6 @@ get_header();
 		?>
 
 	</main>
-
 
 <?php
 get_footer();
