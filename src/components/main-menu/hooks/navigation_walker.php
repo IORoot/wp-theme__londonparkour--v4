@@ -194,7 +194,7 @@ class MainMenu_Walker extends Walker_Nav_Menu
             $t = "\t";
             $n = "\n";
         }
-        $item_output .= "</li>{$n}";
+        $item_output = "</li>{$n}";
 
         $output .= apply_filters( 'walker_nav_menu_close_el', $item_output, $item, $depth, $args );
 
@@ -237,10 +237,10 @@ class MainMenu_Walker extends Walker_Nav_Menu
          * @param stdClass $args    An object of `wp_nav_menu()` arguments.
          * @param int      $depth   Depth of menu item. Used for padding.
          */
-        $class_names = implode( ' ', apply_filters( 'nav_menu_submenu_css_class', $classes, $args, $depth, $this->current_item ) );
+        $class_names = implode( ' ', apply_filters( 'nav_menu_submenu_css_class', $classes, $args, $depth ) );
         $class_names = $class_names ? ' class="' . esc_attr( $class_names ) . '"' : '';
 
-        $start_lvl .= "{$n}{$indent}<ul$class_names>{$n}";
+        $start_lvl = "{$n}{$indent}<ul$class_names>{$n}";
 
         $output .= apply_filters( 'nav_menu_submenu_open', $start_lvl, $this->item_with_submenu );
 
@@ -268,7 +268,7 @@ class MainMenu_Walker extends Walker_Nav_Menu
             $n = "\n";
         }
         $indent  = str_repeat( $t, $depth );
-        $close_lvl .= "$indent</ul>{$n}";
+        $close_lvl = "$indent</ul>{$n}";
 
         $output .= apply_filters( 'nav_menu_submenu_close', $close_lvl, $this->item_with_submenu );
 

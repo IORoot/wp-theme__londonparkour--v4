@@ -190,7 +190,7 @@ class MainRight_Walker extends Walker_Nav_Menu
             $t = "\t";
             $n = "\n";
         }
-        $item_output .= "</li>{$n}";
+        $item_output = "</li>{$n}";
 
         $output .= apply_filters( 'walker_nav_menu_close_el', $item_output, $item, $depth, $args );
 

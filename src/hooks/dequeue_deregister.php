@@ -17,14 +17,14 @@ function ldnpk_deregister_styles() {
 
     
     // Admin Bar needs this:
+    // wp_deregister_script( "jquery" );
     // wp_deregister_style( 'dashicons' );                 // Wordpress dashicons / adminbar
 
     // Deregister CSS Styles
-    wp_deregister_style( 'font-awesome-fa' );           // real-media-library
-    wp_deregister_style( 'wp-block-library' );          // Guttenburg blocks
+    wp_deregister_style( 'font-awesome-fa' );           
+    wp_deregister_style( 'wp-block-library' );          
     wp_deregister_style( 'buttons' );          
-    wp_deregister_style( 'imgareaselect' );          
-    wp_deregister_style( 'dashicons' );          
+    wp_deregister_style( 'imgareaselect' );         
     wp_deregister_style( 'thickbox' );          
     wp_deregister_style( 'react' );          
     wp_deregister_style( "rml-font" );          
@@ -46,12 +46,12 @@ function ldnpk_deregister_styles() {
     wp_deregister_script( "react" );
     wp_deregister_script( "react-dom" );
     wp_deregister_script( "mobx" );
-    wp_deregister_script( "jquery" );
     wp_deregister_script( "jquery-ui-core" );
     wp_deregister_script( "jquery-touch-punch" );
     wp_deregister_script( "vendor-devowl-wp-utils" );
     wp_deregister_script( "underscore" );
     wp_deregister_script( "utils" );
+    wp_deregister_script( "hoverintent-js" );
 }
 
 

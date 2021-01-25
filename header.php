@@ -8,7 +8,7 @@
 <html <?php language_attributes(); ?>>
 
 	<head>
-		<title><?php if ($title_metatag != null){ echo $title_metatag; } else { echo wp_title(); } ?></title>
+		<title><?php echo wp_title(); ?></title>
 
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
