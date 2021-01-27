@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * 
+ * These hook into the andyp_theme_custom_Structure plugin.
+ * Adds more template locations to look into.
+ * 
+ */
 function labs_add_template_folders( $templates ) {
     
     $custom_templates = [
@@ -7,6 +13,7 @@ function labs_add_template_folders( $templates ) {
         'src/views/blog',
         'src/views/pages',
         'src/views/search',
+        'src/views/partials',
     ];
 
     return array_merge($templates, $custom_templates);

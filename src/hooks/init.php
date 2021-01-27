@@ -59,3 +59,8 @@ require get_template_directory() . '/src/hooks/remove_all_thumbnail_sizes.php';
  * Add new custom folders for themes to look in.
  */
 require get_template_directory() . '/src/hooks/theme_custom_structure.php';
+
+/**
+ * Add new custom folders for themes to look in.
+ */
+require get_template_directory() . '/src/hooks/theme_partials.php';

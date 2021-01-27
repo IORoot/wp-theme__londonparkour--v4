@@ -55,6 +55,8 @@ module.exports = {
         'trustpilot': theme('colors.trustpilot'),
         'crayon': theme('colors.crayon'),
         'rose': theme('colors.rose'),
+        'fog': theme('colors.fog'),
+        'smoke': theme('colors.smoke'),
       }),
 
       height: theme => ({

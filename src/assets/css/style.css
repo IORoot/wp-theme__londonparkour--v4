@@ -15946,6 +15946,14 @@ button:focus {
   fill: #e34f65;
 }
 
+.fill-fog {
+  fill: #424242;
+}
+
+.fill-smoke {
+  fill: #757575;
+}
+
 .hover\:fill-current:hover {
   fill: currentColor;
 }
@@ -15982,6 +15990,14 @@ button:focus {
   fill: #e34f65;
 }
 
+.hover\:fill-fog:hover {
+  fill: #424242;
+}
+
+.hover\:fill-smoke:hover {
+  fill: #757575;
+}
+
 .focus\:fill-current:focus {
   fill: currentColor;
 }
@@ -16016,6 +16032,14 @@ button:focus {
 
 .focus\:fill-rose:focus {
   fill: #e34f65;
+}
+
+.focus\:fill-fog:focus {
+  fill: #424242;
+}
+
+.focus\:fill-smoke:focus {
+  fill: #757575;
 }
 
 .stroke-current {
@@ -21691,6 +21715,16 @@ header nav div #main-menu > li:hover > ul {
 #progress-bar {
     width: 0%;
     height: 100%;
+  }
+
+/* For hovering */
+
+header nav div #sub-menu > li:hover > div {
+    display: block;
+  }
+
+header nav div #sub-menu > li:hover > ul {
+    display: block;
   }
 
 /* Add a new BASE layer to set default typography */
@@ -37061,6 +37095,14 @@ header nav div #main-menu > li:hover > ul {
     fill: #e34f65;
   }
 
+  .sm\:fill-fog {
+    fill: #424242;
+  }
+
+  .sm\:fill-smoke {
+    fill: #757575;
+  }
+
   .sm\:hover\:fill-current:hover {
     fill: currentColor;
   }
@@ -37097,6 +37139,14 @@ header nav div #main-menu > li:hover > ul {
     fill: #e34f65;
   }
 
+  .sm\:hover\:fill-fog:hover {
+    fill: #424242;
+  }
+
+  .sm\:hover\:fill-smoke:hover {
+    fill: #757575;
+  }
+
   .sm\:focus\:fill-current:focus {
     fill: currentColor;
   }
@@ -37131,6 +37181,14 @@ header nav div #main-menu > li:hover > ul {
 
   .sm\:focus\:fill-rose:focus {
     fill: #e34f65;
+  }
+
+  .sm\:focus\:fill-fog:focus {
+    fill: #424242;
+  }
+
+  .sm\:focus\:fill-smoke:focus {
+    fill: #757575;
   }
 
   .sm\:stroke-current {
@@ -58083,6 +58141,14 @@ header nav div #main-menu > li:hover > ul {
     fill: #e34f65;
   }
 
+  .md\:fill-fog {
+    fill: #424242;
+  }
+
+  .md\:fill-smoke {
+    fill: #757575;
+  }
+
   .md\:hover\:fill-current:hover {
     fill: currentColor;
   }
@@ -58119,6 +58185,14 @@ header nav div #main-menu > li:hover > ul {
     fill: #e34f65;
   }
 
+  .md\:hover\:fill-fog:hover {
+    fill: #424242;
+  }
+
+  .md\:hover\:fill-smoke:hover {
+    fill: #757575;
+  }
+
   .md\:focus\:fill-current:focus {
     fill: currentColor;
   }
@@ -58153,6 +58227,14 @@ header nav div #main-menu > li:hover > ul {
 
   .md\:focus\:fill-rose:focus {
     fill: #e34f65;
+  }
+
+  .md\:focus\:fill-fog:focus {
+    fill: #424242;
+  }
+
+  .md\:focus\:fill-smoke:focus {
+    fill: #757575;
   }
 
   .md\:stroke-current {
@@ -79105,6 +79187,14 @@ header nav div #main-menu > li:hover > ul {
     fill: #e34f65;
   }
 
+  .lg\:fill-fog {
+    fill: #424242;
+  }
+
+  .lg\:fill-smoke {
+    fill: #757575;
+  }
+
   .lg\:hover\:fill-current:hover {
     fill: currentColor;
   }
@@ -79141,6 +79231,14 @@ header nav div #main-menu > li:hover > ul {
     fill: #e34f65;
   }
 
+  .lg\:hover\:fill-fog:hover {
+    fill: #424242;
+  }
+
+  .lg\:hover\:fill-smoke:hover {
+    fill: #757575;
+  }
+
   .lg\:focus\:fill-current:focus {
     fill: currentColor;
   }
@@ -79175,6 +79273,14 @@ header nav div #main-menu > li:hover > ul {
 
   .lg\:focus\:fill-rose:focus {
     fill: #e34f65;
+  }
+
+  .lg\:focus\:fill-fog:focus {
+    fill: #424242;
+  }
+
+  .lg\:focus\:fill-smoke:focus {
+    fill: #757575;
   }
 
   .lg\:stroke-current {
@@ -100127,6 +100233,14 @@ header nav div #main-menu > li:hover > ul {
     fill: #e34f65;
   }
 
+  .xl\:fill-fog {
+    fill: #424242;
+  }
+
+  .xl\:fill-smoke {
+    fill: #757575;
+  }
+
   .xl\:hover\:fill-current:hover {
     fill: currentColor;
   }
@@ -100163,6 +100277,14 @@ header nav div #main-menu > li:hover > ul {
     fill: #e34f65;
   }
 
+  .xl\:hover\:fill-fog:hover {
+    fill: #424242;
+  }
+
+  .xl\:hover\:fill-smoke:hover {
+    fill: #757575;
+  }
+
   .xl\:focus\:fill-current:focus {
     fill: currentColor;
   }
@@ -100197,6 +100319,14 @@ header nav div #main-menu > li:hover > ul {
 
   .xl\:focus\:fill-rose:focus {
     fill: #e34f65;
+  }
+
+  .xl\:focus\:fill-fog:focus {
+    fill: #424242;
+  }
+
+  .xl\:focus\:fill-smoke:focus {
+    fill: #757575;
   }
 
   .xl\:stroke-current {
@@ -121149,6 +121279,14 @@ header nav div #main-menu > li:hover > ul {
     fill: #e34f65;
   }
 
+  .\32xl\:fill-fog {
+    fill: #424242;
+  }
+
+  .\32xl\:fill-smoke {
+    fill: #757575;
+  }
+
   .\32xl\:hover\:fill-current:hover {
     fill: currentColor;
   }
@@ -121185,6 +121323,14 @@ header nav div #main-menu > li:hover > ul {
     fill: #e34f65;
   }
 
+  .\32xl\:hover\:fill-fog:hover {
+    fill: #424242;
+  }
+
+  .\32xl\:hover\:fill-smoke:hover {
+    fill: #757575;
+  }
+
   .\32xl\:focus\:fill-current:focus {
     fill: currentColor;
   }
@@ -121219,6 +121365,14 @@ header nav div #main-menu > li:hover > ul {
 
   .\32xl\:focus\:fill-rose:focus {
     fill: #e34f65;
+  }
+
+  .\32xl\:focus\:fill-fog:focus {
+    fill: #424242;
+  }
+
+  .\32xl\:focus\:fill-smoke:focus {
+    fill: #757575;
   }
 
   .\32xl\:stroke-current {
