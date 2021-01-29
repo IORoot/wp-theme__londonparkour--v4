@@ -17,7 +17,7 @@ get_header();
 
 				$post_type = get_post_type();
 
-				get_template_part('src/template-parts/content', $post_type);
+				get_template_part('src/views/partials/content', $post_type);
 
 			}
 
@@ -25,7 +25,7 @@ get_header();
 			
         } else {
 
-			get_template_part( 'src/template-parts/content', 'none' );
+			get_template_part( 'src/views/partials/content', 'none' );
 
 		}
 		?>
