@@ -15954,6 +15954,10 @@ button:focus {
   fill: #757575;
 }
 
+.fill-youtube {
+  fill: #ff0000;
+}
+
 .hover\:fill-current:hover {
   fill: currentColor;
 }
@@ -15998,6 +16002,10 @@ button:focus {
   fill: #757575;
 }
 
+.hover\:fill-youtube:hover {
+  fill: #ff0000;
+}
+
 .focus\:fill-current:focus {
   fill: currentColor;
 }
@@ -16040,6 +16048,10 @@ button:focus {
 
 .focus\:fill-smoke:focus {
   fill: #757575;
+}
+
+.focus\:fill-youtube:focus {
+  fill: #ff0000;
 }
 
 .stroke-current {
@@ -37103,6 +37115,10 @@ header nav div #sub-menu > li:hover > ul {
     fill: #757575;
   }
 
+  .sm\:fill-youtube {
+    fill: #ff0000;
+  }
+
   .sm\:hover\:fill-current:hover {
     fill: currentColor;
   }
@@ -37147,6 +37163,10 @@ header nav div #sub-menu > li:hover > ul {
     fill: #757575;
   }
 
+  .sm\:hover\:fill-youtube:hover {
+    fill: #ff0000;
+  }
+
   .sm\:focus\:fill-current:focus {
     fill: currentColor;
   }
@@ -37189,6 +37209,10 @@ header nav div #sub-menu > li:hover > ul {
 
   .sm\:focus\:fill-smoke:focus {
     fill: #757575;
+  }
+
+  .sm\:focus\:fill-youtube:focus {
+    fill: #ff0000;
   }
 
   .sm\:stroke-current {
@@ -58149,6 +58173,10 @@ header nav div #sub-menu > li:hover > ul {
     fill: #757575;
   }
 
+  .md\:fill-youtube {
+    fill: #ff0000;
+  }
+
   .md\:hover\:fill-current:hover {
     fill: currentColor;
   }
@@ -58193,6 +58221,10 @@ header nav div #sub-menu > li:hover > ul {
     fill: #757575;
   }
 
+  .md\:hover\:fill-youtube:hover {
+    fill: #ff0000;
+  }
+
   .md\:focus\:fill-current:focus {
     fill: currentColor;
   }
@@ -58235,6 +58267,10 @@ header nav div #sub-menu > li:hover > ul {
 
   .md\:focus\:fill-smoke:focus {
     fill: #757575;
+  }
+
+  .md\:focus\:fill-youtube:focus {
+    fill: #ff0000;
   }
 
   .md\:stroke-current {
@@ -79195,6 +79231,10 @@ header nav div #sub-menu > li:hover > ul {
     fill: #757575;
   }
 
+  .lg\:fill-youtube {
+    fill: #ff0000;
+  }
+
   .lg\:hover\:fill-current:hover {
     fill: currentColor;
   }
@@ -79239,6 +79279,10 @@ header nav div #sub-menu > li:hover > ul {
     fill: #757575;
   }
 
+  .lg\:hover\:fill-youtube:hover {
+    fill: #ff0000;
+  }
+
   .lg\:focus\:fill-current:focus {
     fill: currentColor;
   }
@@ -79281,6 +79325,10 @@ header nav div #sub-menu > li:hover > ul {
 
   .lg\:focus\:fill-smoke:focus {
     fill: #757575;
+  }
+
+  .lg\:focus\:fill-youtube:focus {
+    fill: #ff0000;
   }
 
   .lg\:stroke-current {
@@ -100241,6 +100289,10 @@ header nav div #sub-menu > li:hover > ul {
     fill: #757575;
   }
 
+  .xl\:fill-youtube {
+    fill: #ff0000;
+  }
+
   .xl\:hover\:fill-current:hover {
     fill: currentColor;
   }
@@ -100285,6 +100337,10 @@ header nav div #sub-menu > li:hover > ul {
     fill: #757575;
   }
 
+  .xl\:hover\:fill-youtube:hover {
+    fill: #ff0000;
+  }
+
   .xl\:focus\:fill-current:focus {
     fill: currentColor;
   }
@@ -100327,6 +100383,10 @@ header nav div #sub-menu > li:hover > ul {
 
   .xl\:focus\:fill-smoke:focus {
     fill: #757575;
+  }
+
+  .xl\:focus\:fill-youtube:focus {
+    fill: #ff0000;
   }
 
   .xl\:stroke-current {
@@ -121287,6 +121347,10 @@ header nav div #sub-menu > li:hover > ul {
     fill: #757575;
   }
 
+  .\32xl\:fill-youtube {
+    fill: #ff0000;
+  }
+
   .\32xl\:hover\:fill-current:hover {
     fill: currentColor;
   }
@@ -121331,6 +121395,10 @@ header nav div #sub-menu > li:hover > ul {
     fill: #757575;
   }
 
+  .\32xl\:hover\:fill-youtube:hover {
+    fill: #ff0000;
+  }
+
   .\32xl\:focus\:fill-current:focus {
     fill: currentColor;
   }
@@ -121373,6 +121441,10 @@ header nav div #sub-menu > li:hover > ul {
 
   .\32xl\:focus\:fill-smoke:focus {
     fill: #757575;
+  }
+
+  .\32xl\:focus\:fill-youtube:focus {
+    fill: #ff0000;
   }
 
   .\32xl\:stroke-current {

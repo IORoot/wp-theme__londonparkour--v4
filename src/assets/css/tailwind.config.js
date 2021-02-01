@@ -37,7 +37,7 @@ module.exports = {
       youtube: '#ff0000',
       instagram: '#F56040',
       apple: '#757575',
-      android: '#a4c639',
+      android: '#a4c639', 
     },
     fontFamily: {
       sans: ['Gill Sans', 'Gill Sans MT', 'sans-serif'],
@@ -57,6 +57,7 @@ module.exports = {
         'rose': theme('colors.rose'),
         'fog': theme('colors.fog'),
         'smoke': theme('colors.smoke'),
+        'youtube': theme('colors.youtube'),
       }),
 
       height: theme => ({
