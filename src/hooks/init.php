@@ -1,7 +1,12 @@
 <?php
 
 /**
- * Enqueue scripts and styles.
+ * Add featured Image support
+ */
+require get_template_directory() . '/src/hooks/featured_image_support.php';
+
+/**
+ * Register menus
  */
 require get_template_directory() . '/src/hooks/register_nav_menus.php';
 
