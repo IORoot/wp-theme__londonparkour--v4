@@ -27,9 +27,14 @@
                 <?php 
 					$title  = explode(' - ', $post->post_title);
 					$prefix = preg_replace('/[0-9]+/', '', $title[0]);
-					
-					$title  = implode(' ', array_slice($title, 1));
-					$title = preg_replace('/slowmo|Front View|Side View|Back View|/i', '', $title);
+                    
+                    if (count($title) > 1){
+                        $title = array_slice($title, 1);
+                    }
+
+                    $title  = implode(' ', $title);
+                    $title = preg_replace('/slowmo|Front View|Side View|Back View|/i', '', $title);
+                    
 
                     echo ucwords($title);
                 ?>
