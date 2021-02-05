@@ -69,3 +69,8 @@ require get_template_directory() . '/src/hooks/theme_custom_structure.php';
  * Add new custom folders for themes to look in.
  */
 require get_template_directory() . '/src/hooks/theme_partials.php';
+
+/**
+ * Search filters
+ */
+require get_template_directory() . '/src/hooks/search.php';
