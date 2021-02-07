@@ -1,16 +1,5 @@
 <?php
 
-/**
- * Redirect CPTs to plural pages.
- */
-if ($post_type == 'tutorial' || $post_type == 'blog' || $post_type == 'demonstration' )
-{
-	$location = 'Location: '. WP_HOME.'/' . $post_type . 's';
-	header($location);
-	exit();
-}
-
-
 $page_classes = get_field('page_classes');
 
 get_header();
