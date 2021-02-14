@@ -14,6 +14,7 @@
 
 get_header();
 ?>
+<?php echo "FILE IS : " . __FILE__ ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">

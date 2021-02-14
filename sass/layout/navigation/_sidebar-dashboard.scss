@@ -10,48 +10,5 @@
             margin-bottom: 0px;
             font-weight: 400;
         }
-
-        .menu-articles-dashboard-container {
-
-            ul {
-        
-                padding: 0px 20px;
-                list-style: none;
-                
-                li {
-
-                    line-height: 58px;
-                    overflow: hidden;
-                    height: 58px;
-
-                    &.menu-item-current {
-                        background-color: #F5F5F5;
-                    }
-                    a {
-                        text-decoration: none;
-                        color: #757575;
-
-                        &:hover {
-                            color: #53A5E3;
-                        }
-
-                        &:active {
-                            color: #E34F65; 
-                        }
-
-                        .mdi {
-                            width: 24px;
-                            height: 24px;
-                            filter: url("#smoke");
-                            margin-right: 6px;
-                            background-position: 0px 2px;
-                        }
-                        
-                    }
-                    
-                }
-                
-            }
-        } 
     }
 }
