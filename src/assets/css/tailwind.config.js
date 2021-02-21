@@ -1,10 +1,15 @@
 module.exports = {
-  purge: [
-    '../../**/*.html',
-    '../../**/*.js',
-    '../../**/*.php',
-  ],
+
+  purge: {
+    content: [
+      'file_scans/**/*.html',
+    ],
+  },
+  
   darkMode: false, // or 'media' or 'class'
+
+
+
   theme: {
     colors: {
       transparent: 'transparent',
@@ -39,6 +44,7 @@ module.exports = {
       apple: '#757575',
       android: '#a4c639', 
     },
+
     fontFamily: {
       sans: ['Gill Sans', 'Gill Sans MT', 'sans-serif'],
       mono: ['Monaco', 'Consolas', 'Andale Mono', 'DejaVu Sans Mono', 'monospace' ],
@@ -70,6 +76,9 @@ module.exports = {
 
     },
   },
+
+
+
   variants: {
     extend: {
       display: ['hover'],
@@ -77,5 +86,8 @@ module.exports = {
       backgroundColor: ['checked'], 
     },
   },
+
+
+
   plugins: [],
 }
