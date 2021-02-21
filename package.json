@@ -10,6 +10,7 @@
     "tailwindcss": "^2.0.2"
   },
   "devDependencies": {
+    "cssnano": "^4.1.10",
     "postcss": "^8.2.2",
     "postcss-cli": "^8.3.1"
   },

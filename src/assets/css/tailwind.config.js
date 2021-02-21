@@ -1,10 +1,13 @@
 module.exports = {
-  purge: [
-    '../../**/*.html',
-    '../../**/*.js',
-    '../../**/*.php',
-  ],
+
+  purge: {
+    content: [
+      'file_scans/**/*.html',
+    ],
+  },
+
   darkMode: false, // or 'media' or 'class'
+  
   theme: {
     colors: {
       transparent: 'transparent',
