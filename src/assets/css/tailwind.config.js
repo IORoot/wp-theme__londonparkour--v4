@@ -43,11 +43,34 @@ module.exports = {
       instagram: '#F56040',
       apple: '#757575',
       android: '#a4c639', 
+
+      BlueGrey400: '#64748B',
+      BlueGrey900: '#0F172A',
+      CoolGrey800: '#1F2937',
+      CoolGrey100: '#F3F4F6',
+      TrueGrey400: '#A3A3A3',
+      Red800: '#991B1B',
+      Orange400: '#F97316',
+      Amber500: '#F59E0B',
+      Green400: '#4ADE80',
+      Emerald400: '#34D399',
+      Emerald800: '#065F46',
+      Cyan500: '#06B6D4',
+      LightBlue100: '#F0F9FF',
+      Blue900: '#1E3A8A',
+      Rose600: '#E11D48',
     },
 
     fontFamily: {
       sans: ['Gill Sans', 'Gill Sans MT', 'sans-serif'],
       mono: ['Monaco', 'Consolas', 'Andale Mono', 'DejaVu Sans Mono', 'monospace' ],
+    },
+
+    backgroundSize: {
+      'auto': 'auto',
+      'cover': 'cover',
+      'contain': 'contain',
+      'fifty': '50%',
     },
 
     extend: {

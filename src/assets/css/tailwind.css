@@ -24,3 +24,8 @@
         outline: 0px;
     }
 }
+
+@layer utilities {
+    .iso-1 { transform: rotateX(60deg) rotateY(0deg) rotate(-45deg) scale(1.2) translate3d(28rem, -20rem, 0rem); }
+    .iso-2 { transform: perspective(400px) rotateY(-26.6deg); }
+}
