@@ -87,14 +87,15 @@ module.exports = {
         'fog': theme('colors.fog'),
         'smoke': theme('colors.smoke'),
         'youtube': theme('colors.youtube'),
-      }),
-
-      height: theme => ({
-        "screen-1\/4": "calc(100vw / 4)",
-        "screen-1\/3": "calc(100vw / 3)",
-        "screen-1\/2": "calc(100vw / 2)",
-        "screen-2\/3": "calc((100vw / 3) * 2)",
-        "screen-3\/4": "calc((100vw / 4) * 3)",
+        'Blue900': theme('colors.Blue900'),
+        'Amber500': theme('colors.Amber500'),
+        'Red800' : theme('colors.Red800'),
+        'Orange400' : theme('colors.Orange400'),
+        'Emerald400' : theme('colors.Emerald400'),
+        'Emerald800' : theme('colors.Emerald800'),
+        'Cyan500' : theme('colors.Cyan500'),
+        'Rose600' : theme('colors.Rose600'),
+        'BlueGrey400' : theme('colors.BlueGrey400'),
       }),
 
     },
