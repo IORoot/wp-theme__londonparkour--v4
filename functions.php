@@ -35,7 +35,7 @@ require get_template_directory() . '/inc/enqueue_scripts.php';
 /**
  * Register Sidebars and Widgets.
  */
-require get_template_directory() . '/inc/defer_all_js.php';
+//require get_template_directory() . '/inc/defer_all_js.php';
 
 /**
  * Register Sidebars and Widgets.
@@ -65,7 +65,7 @@ require get_template_directory() . '/inc/disable_gutenberg.php';
 /**
  * DEqueue jQuery
  */
-require get_template_directory() . '/inc/dequeue_jQuery.php';
+//require get_template_directory() . '/inc/dequeue_jQuery.php';
 
 /**
  * DEqueue jQUery
