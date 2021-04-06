@@ -58,6 +58,11 @@ require get_template_directory() . '/src/hooks/dequeue_deregister.php';
 /**
  * Remove Frontend Styles & Scripts
  */
+// require get_template_directory() . '/src/hooks/disable_acf_styles.php';
+
+/**
+ * Remove Frontend Styles & Scripts
+ */
 require get_template_directory() . '/src/hooks/remove_all_thumbnail_sizes.php';
 
 /**
@@ -74,3 +79,10 @@ require get_template_directory() . '/src/hooks/theme_partials.php';
  * Search filters
  */
 require get_template_directory() . '/src/hooks/search.php';
+
+/**
+ * Create custom success message for contact form.
+ * (the textarea in the advanceed-custom-forms puts <p> tags around everything and
+ * messes up the HTML)
+ */
+require get_template_directory() . '/src/hooks/contact_success_message.php';
