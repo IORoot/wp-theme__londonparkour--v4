@@ -51,14 +51,29 @@ require get_template_directory() . '/src/hooks/turn_off_plugin_updates.php';
 require get_template_directory() . '/src/hooks/menu_locations.php';
 
 /**
- * Remove Frontend Styles & Scripts
+ * Remove Frontend HTML extras
  */
-require get_template_directory() . '/src/hooks/dequeue_deregister.php';
+require get_template_directory() . '/src/hooks/remove_html_extras.php';
+
+/**
+ * Remove Frontend Styles
+ */
+require get_template_directory() . '/src/hooks/deregister_css.php';
+
+/**
+ * Remove Frontend Scripts
+ */
+require get_template_directory() . '/src/hooks/deregister_js.php';
+
+/**
+ * Remove jquery migrate
+ */
+require get_template_directory() . '/src/hooks/deregister_jquery_migrate.php';
 
 /**
  * Remove Frontend Styles & Scripts
  */
-// require get_template_directory() . '/src/hooks/disable_acf_styles.php';
+// require get_template_directory() . '/src/hooks/deregister_acf_styles.php';
 
 /**
  * Remove Frontend Styles & Scripts

@@ -11,4 +11,5 @@ function my_deregister_acf_styles()
     wp_deregister_style('acf-global');
     wp_deregister_style('acf-input');
     wp_deregister_style('acf-datepicker');
+    
 }

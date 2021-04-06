@@ -34,4 +34,6 @@ function londonparkourv4_scripts() {
 	wp_enqueue_script( 'londonparkourv4-tagmanager', get_template_directory_uri() . '/src/assets/js/google_tag_manager.js', array(), null, false );
 
 }
+
+
 add_action( 'wp_enqueue_scripts', 'londonparkourv4_scripts' );
