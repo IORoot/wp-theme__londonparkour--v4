@@ -13,6 +13,11 @@
     html {
         scroll-behavior: smooth;
     }
+    body {
+        max-width: 1920px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     h1 {
         @apply text-6xl;
         @apply pb-2;
