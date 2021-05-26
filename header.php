@@ -14,7 +14,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		
-		<?php wp_head(); ?>
+		<?php 
+			wp_head(); 
+			do_action('page_builder_header_code'); 
+		?>
 	</head>
 
 
@@ -25,9 +28,9 @@
 		?>
 
 		<header>
-			<?php include( __DIR__.'/src/components/progress-bar/progress-bar.php' );  ?>
+			<?php //include( __DIR__.'/src/components/progress-bar/progress-bar.php' );  ?>
 
-			<nav class="h-16 bg-night flex">
+			<nav class="h-16 flex bg-green-600">
 
 				<?php include( __DIR__.'/src/components/main-menu-logo/main-menu-logo.php' );  ?>
 				<?php include( __DIR__.'/src/components/main-menu/main-menu.php' );  ?>
@@ -35,8 +38,8 @@
 
 			</nav>
 
-			<nav class="h-16 bg-black flex md:px-6">
-				<?php include( __DIR__.'/src/components/sub-menu/sub-menu.php' );  ?>
-			</nav>
+			<!-- <nav class="h-16 flex md:px-6">
+				<?php //include( __DIR__.'/src/components/sub-menu/sub-menu.php' );  ?>
+			</nav> -->
 
 		</header>

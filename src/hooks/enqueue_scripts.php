@@ -10,7 +10,7 @@ function londonparkourv4_scripts() {
 	/**
 	 * Custom Top Progress Bar
 	 */
-	wp_enqueue_script( 'londonparkourv4-progressbar', get_template_directory_uri() . '/src/assets/js/progress_bar.js', array(), null, true );
+	// wp_enqueue_script( 'londonparkourv4-progressbar', get_template_directory_uri() . '/src/assets/js/progress_bar.js', array(), null, true );
 
 	/**
 	 * Lazyloading images.

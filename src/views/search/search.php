@@ -13,7 +13,7 @@ $isotope_library = ANDYP_PAGEBUILDER_ISOTOPE_URL.'src/js/isotope.min.js';
 
 
 
-	<main class="bg-black block px-4 md:px-10 pb-10 text-white">
+	<main class=" block px-4 md:px-10 pb-10">
 
 		<?php include( __DIR__.'/../partials/search_query.php' ); ?>
 		<?php include( __DIR__.'/../partials/search_pagination.php' ); ?>
