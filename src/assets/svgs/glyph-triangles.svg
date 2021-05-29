@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="width:0;height:0;visibility:hidden;" class="svg-inherit">
+	<symbol id="glyph-triangles" viewBox="0 0 600 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<g >
+			<path d="M300,-2.84217094e-13 L600,500 L0,500 L300,-2.84217094e-13 Z M300,77.745 L70.646,460 L529.353,460 L300,77.745 Z" transform="translate(300.000000, 250.000000) rotate(-180.000000) translate(-300.000000, -250.000000) "></path>
+			<polygon points="522.467 0.222 300 371 77.533 0.222 124.181 0.222 300 293.255 475.821 0.222"></polygon>
+			<polygon points="444 1 300 241 156 1 202.647 1 300 163.255 397.354 1"></polygon>
+		</g>
+	</symbol>
+</svg>

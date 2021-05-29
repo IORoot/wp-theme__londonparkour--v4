@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="width:0;height:0;visibility:hidden;" class="svg-inherit">
+	<symbol id="glyph-logo" viewBox="0 0 688 618" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<g stroke="none" stroke-width="1" fill-rule="evenodd">
+				<g transform="translate(344.085481, 308.720404) rotate(34.000000) translate(-344.085481, -308.720404) translate(44.085481, 138.720404)" fill-rule="nonzero">
+					<polygon transform="translate(455.000000, 160.000000) rotate(-180.000000) translate(-455.000000, -160.000000) " points="430 120 480 200 430 200"></polygon>
+					<path d="M386.91452,60 L315.91452,60 L315.91452,280 L535.91452,280 L386.91452,60 Z M365.694748,100 L460.512748,240 L355.913748,240 L355.913748,100 L365.694748,100 Z" transform="translate(425.914519, 170.000000) rotate(-180.000000) translate(-425.914519, -170.000000) "></path>
+					<path d="M600,0 L211.034483,0 L433,340 L600,340 L600,0 Z M559.999,40 L559.999,300 L454.656,300 L284.917,40 L559.999,40 Z" ></path>
+					<path d="M174.363853,0 L0,0 L0,340 L400,340 L174.363853,0 Z M152.902,40 L325.447,300 L40,300 L40,40 L152.902,40 Z" ></path>
+					<path d="M140,60 L60,60 L60,280 L285,280 L140,60 Z M118.457,100 L210.729,240 L100,240 L100,100 L118.457,100 Z" ></path>
+					<polygon points="120 140 170 220 120 220"></polygon>
+				</g>
+			</g>
+	</symbol>
+</svg>

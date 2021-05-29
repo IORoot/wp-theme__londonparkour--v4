@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="width:0;height:0;visibility:hidden;"  class="svg-inherit">
+	<symbol id="glyph-rectangles" viewBox="0 0 724 566" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<g transform="translate(29.000000, 28.000000)" fill-rule="nonzero">
+		<path d="M454.710678,55 L54.710678,55 L54.710678,455 L454.710678,455 L454.710678,55 Z M414.71,95 L414.71,415 L94.71,415 L94.71,95 L414.71,95 Z" transform="translate(254.710678, 255.000000) rotate(-45.000000) translate(-254.710678, -255.000000) "></path>
+		<path d="M611.710678,55 L211.710678,55 L211.710678,455 L611.710678,455 L611.710678,55 Z M571.71,95 L571.71,415 L251.71,415 L251.71,95 L571.71,95 Z" transform="translate(411.710678, 255.000000) rotate(-45.000000) translate(-411.710678, -255.000000) "></path>
+		<path d="M334,105 L34,105 L34,405 L334,405 L334,105 Z M294,145 L294,365 L74,365 L74,145 L294,145 Z"  transform="translate(184.000000, 255.000000) rotate(-45.000000) translate(-184.000000, -255.000000) "></path>
+		</g>
+
+	</symbol>
+</svg>
+

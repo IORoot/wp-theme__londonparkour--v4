@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="width:0;height:0;visibility:hidden;" class="svg-inherit">
+	<symbol id="glyph-arches" viewBox="0 0 1262 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<g transform="translate(0.000000, -0.000000)" >
+			<rect x="521" y="300" width="40" height="300"></rect>
+			<rect x="581" y="300" width="39.666898" height="300"></rect>
+			<rect x="641" y="300" width="40" height="300"></rect>
+			<rect x="701" y="300" width="40" height="300"></rect>
+			<rect x="0" y="0" width="441" height="40"></rect>
+			<rect x="0" y="60" width="441" height="40"></rect>
+			<rect x="0" y="120" width="441" height="40"></rect>
+			<rect x="0" y="180" width="441" height="40"></rect>
+			<rect x="821" y="0" width="441" height="40"></rect>
+			<rect x="821" y="60" width="441" height="40"></rect>
+			<rect x="821" y="120" width="441" height="40"></rect>
+			<rect x="821" y="180" width="441" height="40"></rect>
+			<path d="M821,300 L781,300 L781,300 C781,156.405965 664.594035,40 521,40 L521,0 L521,0 C686.685425,0 821,134.314575 821,300 Z" transform="translate(671.000000, 150.000000) rotate(-90.000000) translate(-671.000000, -150.000000) "></path>
+			<path d="M821,300 L781,300 L781,300 C781,189.54305 691.45695,100 581,100 L581,60 L581,60 C713.54834,60 821,167.45166 821,300 Z" transform="translate(701.000000, 180.000000) rotate(-90.000000) translate(-701.000000, -180.000000) "></path>
+			<path d="M821,300 L781,300 L781,300 C781,222.680135 718.319865,160 641,160 L641,120 L641,120 C740.411255,120 821,200.588745 821,300 Z" transform="translate(731.000000, 210.000000) rotate(-90.000000) translate(-731.000000, -210.000000) "></path>
+			<path d="M821,300 L781,300 L781,300 C781,255.81722 745.18278,220 701,220 L701,180 L701,180 C767.27417,180 821,233.72583 821,300 Z" transform="translate(761.000000, 240.000000) rotate(-90.000000) translate(-761.000000, -240.000000) "></path>
+			<path d="M741,300 L701,300 L701,300 C701,156.405965 584.594035,40 441,40 L441,0 L441,0 C606.685425,0 741,134.314575 741,300 Z"></path>
+			<path d="M681,300 L641,300 L641,300 C641,189.54305 551.45695,100 441,100 L441,60 L441,60 C573.54834,60 681,167.45166 681,300 Z"></path>
+			<path d="M621,300 L581,300 L581,300 C581,222.680135 518.319865,160 441,160 L441,120 L441,120 C540.411255,120 621,200.588745 621,300 Z"></path>
+			<path d="M561,300 L521,300 L521,300 C521,255.81722 485.18278,220 441,220 L441,180 L441,180 C507.27417,180 561,233.72583 561,300 Z"></path>
+		</g>
+	</symbol>
+</svg>

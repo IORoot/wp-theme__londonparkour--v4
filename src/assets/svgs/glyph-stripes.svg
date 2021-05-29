@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="width:0;height:0;visibility:hidden;" class="svg-inherit">
+	<symbol id="glyph-stripes" viewBox="0 0 740 388" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<g >
+			<rect transform="translate(153.290459, 193.767160) rotate(34.000000) translate(-153.290459, -193.767160) " x="103.290459" y="-6.23284032" width="100" height="400"></rect>
+			<rect transform="translate(298.290459, 193.767160) rotate(34.000000) translate(-298.290459, -193.767160) " x="248.290459" y="-6.23284032" width="100" height="400"></rect>
+			<rect transform="translate(441.290459, 193.767160) rotate(34.000000) translate(-441.290459, -193.767160) " x="391.290459" y="-6.23284032" width="100" height="400"></rect>
+			<rect transform="translate(586.290459, 193.767160) rotate(34.000000) translate(-586.290459, -193.767160) " x="536.290459" y="-6.23284032" width="100" height="400"></rect>
+		</g>
+	</symbol>
+</svg>

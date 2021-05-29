@@ -42,6 +42,7 @@ module.exports = {
         'green': theme('colors.green'),
         'yellow': theme('colors.yellow'),
         'blue': theme('colors.blue'),
+        'gray': theme('colors.gray'),
       }),
 
       height: theme => ({
