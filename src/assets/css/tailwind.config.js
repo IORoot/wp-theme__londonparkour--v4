@@ -1,4 +1,5 @@
-const colors = require('tailwindcss/colors')
+const colors = require('tailwindcss/colors');
+const plugin = require('tailwindcss/plugin');
 
 module.exports = {
 
@@ -7,7 +8,7 @@ module.exports = {
       'file_scans/**/*.html',
     ],
   },
-  
+
   darkMode: false, // or 'media' or 'class'
 
 
@@ -25,13 +26,13 @@ module.exports = {
       tutorial: colors.green,
       blue: colors.blue,
       demonstration: colors.blue,
-      
+
     },
 
     fontFamily: {
       sans: ['Gill Sans', 'Gill Sans MT', 'sans-serif'],
-      serif:	['Optima', 'Segoe', 'Segoe UI', 'Candara', 'Calibri', 'Arial', 'sans-serif'],
-      mono: ['Monaco', 'Consolas', 'Andale Mono', 'DejaVu Sans Mono', 'monospace' ],
+      serif: ['Optima', 'Segoe', 'Segoe UI', 'Candara', 'Calibri', 'Arial', 'sans-serif'],
+      mono: ['Monaco', 'Consolas', 'Andale Mono', 'DejaVu Sans Mono', 'monospace'],
     },
 
     extend: {
@@ -45,29 +46,25 @@ module.exports = {
         'gray': theme('colors.gray'),
       }),
 
-      height: theme => ({
-        "screen-1\/4": "calc(100vw / 4)",
-        "screen-1\/3": "calc(100vw / 3)",
-        "screen-1\/2": "calc(100vw / 2)",
-        "screen-2\/3": "calc((100vw / 3) * 2)",
-        "screen-3\/4": "calc((100vw / 4) * 3)",
-      }),
-
     },
   },
 
+  plugins: [
+    require('./plugins/tailwind-on'), 
+    require('@tailwindcss/line-clamp'),
+  ],
 
 
   variants: {
     extend: {
       display: ['hover'],
-      fill:    ['hover', 'focus'],
-      backgroundColor: ['checked'], 
-      margin: ['first', 'last'],
+      fill: ['hover', 'focus'],
       backgroundColor: ['checked'],
+      margin: ['first', 'last', 'even', 'odd'],
+      padding: ['first', 'last', 'even', 'odd', 'on-1\/3', 'on-2\/3', 'on-3\/3'],
     },
   },
-  
 
-  plugins: [],
+
+  
 }
