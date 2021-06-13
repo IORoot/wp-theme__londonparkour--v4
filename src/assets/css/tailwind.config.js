@@ -52,6 +52,7 @@ module.exports = {
   plugins: [
     require('./plugins/tailwind-on'), 
     require('@tailwindcss/line-clamp'),
+    require('@tailwindcss/aspect-ratio'),
   ],
 
 
