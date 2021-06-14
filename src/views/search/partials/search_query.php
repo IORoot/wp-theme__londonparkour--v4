@@ -32,7 +32,7 @@
     // │                                                                         │
     // └─────────────────────────────────────────────────────────────────────────┘
     ?>
-    <div class="h-9 mt-10 -mr-10">
+    <div class="h-9 mt-10 md:-mr-10 w-full md:w-auto">
         <?php do_shortcode('[breadcrumb colour="green-500"]'); ?>
     </div>
 </div>

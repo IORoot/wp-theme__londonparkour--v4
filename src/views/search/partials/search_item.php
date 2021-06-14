@@ -35,7 +35,7 @@
             // │                                                                         │
             // └─────────────────────────────────────────────────────────────────────────┘
             ?>
-            <div class="text-lg max-h-8 leading-4 mb-1 pb-1 truncate">
+            <div class="text-lg h-16 leading-4 mb-1 pb-1 leading-7">
                 <?php 
                     echo ucwords($post->post_title);
                 ?>
@@ -48,7 +48,7 @@
             // │                                                                         │
             // └─────────────────────────────────────────────────────────────────────────┘
             ?>
-            <div class="text-smoke text-xs font-thin"><?php echo the_time('F j, Y'); ?></div>
+            <div class="text-gray-100 text-xs font-thin"><?php echo the_time('F j, Y'); ?></div>
 
             <?php
             // ┌─────────────────────────────────────────────────────────────────────────┐
