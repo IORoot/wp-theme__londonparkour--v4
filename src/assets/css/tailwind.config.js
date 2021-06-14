@@ -27,6 +27,21 @@ module.exports = {
       blue: colors.blue,
       demonstration: colors.blue,
 
+      sky: '#53a5e3',
+      lavender: '#70579f',
+      pink: '#ed64af',
+      aqua: '#11998e',
+      goo: '#38ef7d',
+      crayon: '#e86546',
+      rose: '#e34f65',
+      night: '#242424',
+      fog: '#424242',
+      smoke: '#757575',
+      commando: '#D0C8B3',
+      mist: '#e0e0e0',
+      ghost: '#f5f5f5',
+      halo: '#fafafa',
+
     },
 
     fontFamily: {

@@ -36,7 +36,7 @@ get_header();
 			
         } else {
 
-			get_template_part( 'src/views/partials/content', 'none' );
+			include( __DIR__ . '/src/views/404/404.php');
 
 		}
 		?>
