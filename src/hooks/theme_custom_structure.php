@@ -10,8 +10,6 @@ function labs_add_template_folders( $templates ) {
     
     $custom_templates = [
         'src/views/404',
-        'src/views/blog',
-        'src/views/pages',
         'src/views/search',
         'src/views/partials',
     ];

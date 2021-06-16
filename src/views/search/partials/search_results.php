@@ -35,7 +35,7 @@
             // │                                                                         │
             // └─────────────────────────────────────────────────────────────────────────┘
             ?>
-            <div class="text-lg h-16 leading-4 mb-1 pb-1 leading-7">
+            <div class="text-lg h-16 mb-1 pb-1 leading-7">
                 <?php 
                     echo ucwords($post->post_title);
                 ?>

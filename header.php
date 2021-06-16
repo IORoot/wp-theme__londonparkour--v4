@@ -38,8 +38,4 @@
 
 			</nav>
 
-			<!-- <nav class="h-16 flex md:px-6">
-				<?php //include( __DIR__.'/src/components/sub-menu/sub-menu.php' );  ?>
-			</nav> -->
-
 		</header>

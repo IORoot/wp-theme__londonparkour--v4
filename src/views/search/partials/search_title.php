@@ -1,0 +1,1 @@
+<div class="text-green-500 text-6xl"><?php echo esc_html( get_search_query() ); ?></div>
